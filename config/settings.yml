@@ -6626,6 +6626,11 @@ payload:
     name: BRU-57
     type: pylon
     weight: 175
+  ansq213:
+    name: AN/ASQ-213 HTS 
+    short: HTS
+    type: pod
+    weight: 126  
 loadout:
   a10:
     1: &a10station1
@@ -7133,6 +7138,8 @@ loadout:
       - weapon: agm88c
       - weapon: mxu648
       - weapon: ft300
+    5:
+      - weapon: ansq213  
     6:
       - weapon: ft300
       - weapon: mxu648
