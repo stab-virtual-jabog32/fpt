@@ -7020,6 +7020,14 @@ loadout:
       - weapon: cbu97
         amount: 2
         pylon: ter9a
+      - weapon: cbu103
+      - weapon: cbu103
+        amount: 2
+        pylon: bru57
+      - weapon: cbu105
+      - weapon: cbu105
+        amount: 2
+        pylon: bru57  
       - weapon: gbu10
       - weapon: gbu12
       - weapon: gbu12
