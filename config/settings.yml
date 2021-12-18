@@ -2939,6 +2939,19 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
+      cvn59:
+        name: CV-59 USS Forrestal
+        tacan: 59X
+        tower: 303.0
+        approach: 303.0
+        clearance: 303.0
+        ground: ICLS 6
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III          
       tarawa:
         name: LHA-1 Tarawa
         tacan: 77X
@@ -4104,6 +4117,19 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
+      cvn59:
+        name: CV-59 USS Forrestal
+        tacan: 59X
+        tower: 303.0
+        approach: 303.0
+        clearance: 303.0
+        ground: ICLS 6
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III          
     waypoints:
       - name: Al Ain Int
         lon: 55.60923727760395
@@ -5003,6 +5029,19 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
+      cvn59:
+        name: CV-59 USS Forrestal
+        tacan: 59X
+        tower: 303.0
+        approach: 303.0
+        clearance: 303.0
+        ground: ICLS 6
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III          
   mariana:
     name: Mariana Islands
     channels:
@@ -5145,6 +5184,19 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
+      cvn59:
+        name: CV-59 USS Forrestal
+        tacan: 59X
+        tower: 303.0
+        approach: 303.0
+        clearance: 303.0
+        ground: ICLS 6
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III          
 airframes:
   a10:
     name: A-10C
