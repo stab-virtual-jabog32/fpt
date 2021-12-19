@@ -22,4 +22,4 @@ jobs:
           chmod 600 .github/fpt_id_rsa
 
       - name: deploy fpt
-        run: ssh -i .guthub/fpt_id_rsa "{{ secrets.SSH_USERNAME }}"@virtual-jabog32.de 'bash -s' < .github/deploy.sh
+        run: ssh -i .github/fpt_id_rsa "{{ secrets.SSH_USERNAME }}"@virtual-jabog32.de 'bash -s' < .github/deploy.sh
