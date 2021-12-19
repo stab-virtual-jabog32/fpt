@@ -15,6 +15,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull code and restart FPT service
+      - name: setup ssh key
         run: |
-          echo "Test"
+          echo "{{ secrets.SSH_PRIVATE_KEY }}" > .github/fpt_id_rsa
+          chmod 600 .github/fpt_id_rsa
+
+      - name: deploy fpt
+        run: ssh -i .guthub/fpt_id_rsa {{ secrets.SSH_USERNAME }}@virtual-jabog32.de 'bash -s' < .github/deploy.sh
