@@ -17,5 +17,4 @@ jobs:
     steps:
       - name: Pull code and restart FPT service
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo "Test"
