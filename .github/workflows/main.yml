@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: setup ssh key
         run: |
+          echo ls 
           echo "{{ secrets.SSH_PRIVATE_KEY }}" > .github/fpt_id_rsa
           chmod 600 .github/fpt_id_rsa
 
