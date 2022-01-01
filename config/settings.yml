@@ -5439,16 +5439,21 @@ callsigns:
   - T-Rex
   - Tiger
   - Vanguard
+  - Ascot
   - Arco
   - Axe
   - BamBam
   - Beast
   - Boar
+  - Cargo
   - Chevy
+  - Check
   - Claw
   - Cobra
   - Colt
+  - Cowboy
   - Darkstar
+  - Devil
   - Dodge
   - Enfield
   - Falcon
@@ -5456,10 +5461,15 @@ callsigns:
   - Fury
   - Hammer
   - Hawg
+  - Hawk
+  - Heavy
+  - Hornet
   - Jedi
   - Joker
+  - Jury
   - Knife
   - Knight
+  - Lobo
   - Lugar
   - Magic
   - Merlin
@@ -5468,20 +5478,34 @@ callsigns:
   - Moonbeam
   - Nasty
   - Navy
+  - Ninja
   - Overlord
   - Pig
   - Playboy
   - Pontiac
+  - Python
+  - Ram
+  - Ragin
+  - Rattler
+  - Roman
   - Sandy
   - Shell
+  - Snake
   - Spectre
   - Springfield
+  - Squid
+  - Sting
   - Texaco
+  - Trash
   - Tusk
   - Uzi
   - Viper
+  - Venom
   - Warrior
+  - Weasel
+  - Wild
   - Wizzard
+  - Wolf
   - Zapper
   - Dustoff
 missions:
