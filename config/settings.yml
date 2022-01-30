@@ -5104,10 +5104,10 @@ theaters:
           none: none
       pgua:
         name: Andersen Air Force Base
-        ground: 
-        atis: 
-        tower: 250.1
-        elevation: 535
+        ground: 275.8
+        atis: 254.325
+        tower: 233.7
+        elevation: 618
         takeoff: 06
         tacan: 54X
         land: 06
@@ -5456,6 +5456,7 @@ callsigns:
   - Devil
   - Dodge
   - Enfield
+  - Eyeball
   - Falcon
   - Ford
   - Fury
@@ -5503,6 +5504,7 @@ callsigns:
   - Venom
   - Warrior
   - Weasel
+  - Whiplash
   - Wild
   - Wizzard
   - Wolf
