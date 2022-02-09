@@ -4063,6 +4063,7 @@ theaters:
         elevation: 72
         takeoff: 01
         land: 19
+        ils: 110.3
         runways:
           - name: 01
             length: 7513
@@ -4070,6 +4071,7 @@ theaters:
           - name: 19
             length: 7513
             elevation: 102
+            ils: 110.3
         departures:
           vfr: VFR
         recoveries:
