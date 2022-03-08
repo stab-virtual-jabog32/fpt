@@ -7229,6 +7229,7 @@ loadout:
     6:
       - weapon: ft300
       - weapon: mxu648
+      - weapon: alq184
     7:
       - weapon: aaq28
     8: *f16station4
