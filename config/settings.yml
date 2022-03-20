@@ -5249,6 +5249,21 @@ airframes:
       fuel: 11087
       tol: 46476
       flt: 51000
+  ah64d:
+    name: AH-64D
+    gun:
+      amount: 380
+      weight: 227
+      types:
+        hedp: HEDP
+        tp: TP
+    expendables:
+      - chaff: 30
+        fare: 60
+    weight:
+      empty: 12783
+      fuel: 3170
+      tol: 23000
   f18:
     name: F/A-18C
     weight:
@@ -6709,6 +6724,49 @@ payload:
     short: HTS
     type: pod
     weight: 126  
+  m299:
+    name: M299
+    type: pylon
+    weight: 146
+  agm114k:
+    name: AGM-114K
+    short: AGM114K
+    type: a2g
+    weight: 99
+  ft230:
+    name: Fuel tank 230 gal
+    short: FT230
+    type: tank
+    weight: 146
+    fuel: 1541
+  m261he:
+    name: M261 - HE
+    type: rockets
+    weight: 516
+  m261illum:
+    name: M261 - Illum
+    type: rockets
+    weight: 600   
+  m261hedp:
+    name: M261 - HEDP
+    type: rockets
+    weight: 745
+  m261smk:
+    name: M261 - SMK
+    type: rockets
+    weight: 633
+  m261mpp:
+    name: M261 - MPP
+    type: rockets
+    weight: 683
+  m2616pd6il:
+    name: M261 - 6PD+6IL
+    type: rockets
+    weight: 608
+  m2616pd6sk:
+    name: M261 - 6PD+6SK
+    type: rockets
+    weight: 608   
 loadout:
   a10:
     1: &a10station1
@@ -8076,3 +8134,26 @@ loadout:
       - weapon: kord127
     PKT:
       - weapon: pkt762
+  ah64d:
+    1: &ah64dstation1
+      - weapon: agm114k
+      - weapon: agm114k
+        amount: 2
+        pylon: m299
+      - weapon: agm114k
+        amount: 3
+        pylon: m299 
+      - weapon: agm114k
+        amount: 4
+        pylon: m299  
+      - weapon: ft230
+      - weapon: m261he
+      - weapon: m261hedp
+      - weapon: m261illum
+      - weapon: m261smk
+      - weapon: m261mpp
+      - weapon: m2616pd6il
+      - weapon: m2616pd6sk
+    2: *ah64dstation1
+    3: *ah64dstation1
+    4: *ah64dstation1
