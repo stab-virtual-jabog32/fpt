@@ -191,6 +191,22 @@ defaults:
     iff: 236
   chevy_7:
     iff: 237
+  claw:
+    iff: 450
+  claw_1:
+    iff: 451
+  claw_2:
+    iff: 452
+  claw_3:
+    iff: 453
+  claw_4:
+    iff: 454
+  claw_5:
+    iff: 455
+  claw_6:
+    iff: 456
+  claw_7:
+    iff: 457
   colt:
     iff: 240
   colt_1:
@@ -319,22 +335,6 @@ defaults:
     iff: 326
   navy_7:
     iff: 327
-  pig:
-    iff: 330
-  pig_1:
-    iff: 331
-  pig_2:
-    iff: 332
-  pig_3:
-    iff: 333
-  pig_4:
-    iff: 334
-  pig_5:
-    iff: 335
-  pig_6:
-    iff: 336
-  pig_7:
-    iff: 337
   pontiac:
     iff: 340
   pontiac_1:
@@ -351,6 +351,22 @@ defaults:
     iff: 346
   pontiac_7:
     iff: 347
+  rattler:
+    iff: 460
+  rattler_1:
+    iff: 461
+  rattler_2:
+    iff: 462
+  rattler_3:
+    iff: 463
+  rattler_4:
+    iff: 464
+  rattler_5:
+    iff: 465
+  rattler_6:
+    iff: 466
+  rattler_7:
+    iff: 467
   sandy:
     iff: 410
   sandy_1:
@@ -367,6 +383,22 @@ defaults:
     iff: 416
   sandy_7:
     iff: 417
+  snake:
+    iff: 440
+  snake_1:
+    iff: 441
+  snake_2:
+    iff: 442
+  snake_3:
+    iff: 443
+  snake_4:
+    iff: 444
+  snake_5:
+    iff: 445
+  snake_6:
+    iff: 446
+  snake_7:
+    iff: 447
   springfield:
     iff: 430
   springfield_1:
@@ -415,6 +447,22 @@ defaults:
     iff: 366
   uzi_7:
     iff: 367
+  vanguard:
+    iff: 330
+  vanguard_1:
+    iff: 331
+  vanguard_2:
+    iff: 332
+  vanguard_3:
+    iff: 333
+  vanguard_4:
+    iff: 334
+  vanguard_5:
+    iff: 335
+  vanguard_6:
+    iff: 336
+  vanguard_7:
+    iff: 337
   warrior:
     iff: 370
   warrior_1:
@@ -5457,76 +5505,70 @@ callsigns:
   - Tiger
   - Vanguard
   - Ascot
-  - Arco
   - Axe
   - BamBam
   - Beast
   - Boar
   - Cargo
   - Chevy
-  - Check
   - Claw
   - Cobra
   - Colt
   - Cowboy
-  - Darkstar
-  - Devil
+  - Darkstar*
+  - Devil*
   - Dodge
   - Enfield
-  - Eyeball
+  - Eyeball*
   - Falcon
-  - Ford
+  - Ford*
   - Fury
-  - Hammer
+  - Hammer*
   - Hawg
-  - Hawk
-  - Heavy
-  - Hornet
-  - Jedi
-  - Joker
-  - Jury
-  - Knife
-  - Knight
-  - Lobo
-  - Lugar
-  - Magic
-  - Merlin
+  - Hawk*
+  - Heavy*
+  - Hornet*
+  - Jedi*
+  - Joker*
+  - Jury*
+  - Knife*
+  - Knight*
+  - Lobo*
+  - Lugar*
+  - Magic*
+  - Merlin*
   - Mig
   - Misty
-  - Moonbeam
-  - Nasty
+  - Moonbeam*
+  - Nasty*
   - Navy
-  - Ninja
-  - Overlord
-  - Pig
-  - Playboy
+  - Ninja*
+  - Overlord*
+  - Playboy*
   - Pontiac
-  - Python
-  - Ram
-  - Ragin
+  - Python*
+  - Ram*
+  - Ragin*
   - Rattler
-  - Roman
+  - Roman*
   - Sandy
-  - Shell
   - Snake
-  - Spectre
+  - Spectre*
   - Springfield
-  - Squid
-  - Sting
-  - Texaco
-  - Trash
+  - Sting*
+  - Trash*
   - Tusk
   - Uzi
   - Viper
-  - Venom
+  - Venom*
   - Warrior
-  - Weasel
-  - Whiplash
-  - Wild
+  - Weasel*
+  - Whiplash*
+  - Wild*
   - Wizzard
-  - Wolf
-  - Zapper
-  - Dustoff
+  - Wolf*
+  - Zapper*
+  - Dustoff*
 missions:
   - Training
   - AI
@@ -5553,7 +5595,6 @@ missions:
   - Sweep
   - Tanker
 pilots:
-  - Baron
   - Bane
   - Bruce
   - Butcher
@@ -5594,17 +5635,14 @@ pilots:
   - SkyRat
   - SNAFU
   - Stiletto
-  - Striker
   - Striver
   - Tammi
   - Tank
   - Thunder
   - Toolface
-  - toto
   - Tronix
   - Uta
   - Warblade
-  - 132nd_Professor
   - vJaBoG66_Yurgon
   - vJaBoG66_Borin
   - vJaBoG66_Donner
