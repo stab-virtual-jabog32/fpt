@@ -5300,7 +5300,7 @@ airframes:
   ah64d:
     name: AH-64D
     gun:
-      amount: 380
+      amount: 300
       weight: 227
       types:
         hedp: HEDP
@@ -6805,6 +6805,10 @@ payload:
     name: M261 - 6PD+6SK
     type: rockets
     weight: 608   
+  m299empty:
+    name: MM299 - Empty Rack
+    type: A2G
+    weight: 146     
 loadout:
   a10:
     1: &a10station1
@@ -8192,6 +8196,7 @@ loadout:
       - weapon: m261mpp
       - weapon: m2616pd6il
       - weapon: m2616pd6sk
+      - weapon: m299empty
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
