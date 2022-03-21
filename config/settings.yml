@@ -5299,6 +5299,7 @@ airframes:
       flt: 51000
   ah64d:
     name: AH-64D
+    seats: 2
     gun:
       amount: 300
       weight: 227
