@@ -143,6 +143,22 @@ defaults:
     iff: 206
   axe_7:
     iff: 207
+  bambam:
+    iff: 470
+  bambam_1:
+    iff: 471
+  bambam_2:
+    iff: 472
+  bambam_3:
+    iff: 473
+  bambam_4:
+    iff: 474
+  bambam_5:
+    iff: 475
+  bambam_6:
+    iff: 476
+  bambam_7:
+    iff: 477
   beast:
     iff: 210
   beast_1:
@@ -207,6 +223,22 @@ defaults:
     iff: 456
   claw_7:
     iff: 457
+  cobra:
+    iff: 500
+  cobra_1:
+    iff: 501
+  cobra_2:
+    iff: 502
+  cobra_3:
+    iff: 503
+  cobra_4:
+    iff: 504
+  cobra_5:
+    iff: 505
+  cobra_6:
+    iff: 506
+  cobra_7:
+    iff: 507
   colt:
     iff: 240
   colt_1:
@@ -223,6 +255,22 @@ defaults:
     iff: 246
   colt_7:
     iff: 247
+  cowboy:
+    iff: 510
+  cowboy_1:
+    iff: 511
+  cowboy_2:
+    iff: 512
+  cowboy_3:
+    iff: 513
+  cowboy_4:
+    iff: 514
+  cowboy_5:
+    iff: 515
+  cowboy_6:
+    iff: 516
+  cowboy_7:
+    iff: 517
   dodge:
     iff: 250
   dodge_1:
@@ -255,6 +303,22 @@ defaults:
     iff: 426
   enfield_7:
     iff: 427
+  falcon:
+    iff: 540
+  falcon_1:
+    iff: 541
+  falcon_2:
+    iff: 542
+  falcon_3:
+    iff: 543
+  falcon_4:
+    iff: 544
+  falcon_5:
+    iff: 545
+  falcon_6:
+    iff: 546
+  falcon_7:
+    iff: 547
   ford:
     iff: 260
   ford_1:
@@ -271,6 +335,38 @@ defaults:
     iff: 266
   ford_7:
     iff: 267
+  fury:
+    iff: 550
+  fury_1:
+    iff: 551
+  fury_2:
+    iff: 552
+  fury_3:
+    iff: 553
+  fury_4:
+    iff: 554
+  fury_5:
+    iff: 555
+  fury_6:
+    iff: 556
+  fury_7:
+    iff: 557
+  hammer:
+    iff: 530
+  hammer_1:
+    iff: 531
+  hammer_2:
+    iff: 532
+  hammer_3:
+    iff: 533
+  hammer_4:
+    iff: 534
+  hammer_5:
+    iff: 535
+  hammer_6:
+    iff: 536
+  hammer_7:
+    iff: 537
   hawg:
     iff: 270
   hawg_1:
@@ -319,6 +415,22 @@ defaults:
     iff: 316
   misty_7:
     iff: 317
+  nasty:
+    iff: 560
+  nasty_1:
+    iff: 561
+  nasty_2:
+    iff: 562
+  nasty_3:
+    iff: 563
+  nasty_4:
+    iff: 564
+  nasty_5:
+    iff: 565
+  nasty_6:
+    iff: 566
+  nasty_7:
+    iff: 567
   navy:
     iff: 320
   navy_1:
@@ -335,6 +447,22 @@ defaults:
     iff: 326
   navy_7:
     iff: 327
+  outlaw:
+    iff: 570
+  outlaw_1:
+    iff: 571
+  outlaw_2:
+    iff: 572
+  outlaw_3:
+    iff: 573
+  outlaw_4:
+    iff: 574
+  outlaw_5:
+    iff: 575
+  outlaw_6:
+    iff: 576
+  outlaw_7:
+    iff: 577
   pontiac:
     iff: 340
   pontiac_1:
@@ -463,6 +591,22 @@ defaults:
     iff: 336
   vanguard_7:
     iff: 337
+  viper:
+    iff: 520
+  viper_1:
+    iff: 521
+  viper_2:
+    iff: 522
+  viper_3:
+    iff: 523
+  viper_4:
+    iff: 524
+  viper_5:
+    iff: 525
+  viper_6:
+    iff: 526
+  viper_7:
+    iff: 527
   warrior:
     iff: 370
   warrior_1:
@@ -5635,6 +5779,7 @@ pilots:
   - Skyhawk
   - SkyRat
   - SNAFU
+  - Snake
   - Stiletto
   - Striver
   - Tammi
