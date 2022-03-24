@@ -5297,7 +5297,7 @@ theaters:
         recoveries:
           none: none
       pgua:
-        name: Andersen Air Force Base
+        name: Andersen AFB
         ground: 275.8
         atis: 254.325
         tower: 233.7
