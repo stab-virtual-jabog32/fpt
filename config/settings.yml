@@ -6950,11 +6950,7 @@ payload:
   m2616pd6sk:
     name: M261 - 6PD+6SK
     type: rockets
-    weight: 608   
-  m299empty:
-    name: MM299 - Empty Rack
-    type: A2G
-    weight: 146     
+    weight: 608  
 loadout:
   a10:
     1: &a10station1
@@ -8325,6 +8321,7 @@ loadout:
   ah64d:
     1: &ah64dstation1
       - weapon: agm114k
+        pylon: m299
       - weapon: agm114k
         amount: 2
         pylon: m299
@@ -8342,7 +8339,7 @@ loadout:
       - weapon: m261mpp
       - weapon: m2616pd6il
       - weapon: m2616pd6sk
-      - weapon: m299empty
+      - pylon: m299
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
