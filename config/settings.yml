@@ -5543,8 +5543,27 @@ airframes:
         flares: 120
   f5:
     name: F-5E
+    weight:
+      empty: 10659
+      fuel: 4511
+      tol: 24663
+    gun:
+      amount: 560
+      weight: 392
+      types:
+        cm: CM
+        hei: HEI
+        ap: AP
+        tp: TP
+    expendables:
+      - chaff: 30
+        flares: 15
+      - chaff: 60
+        flares: 0
+      - chaff: 0
+        flares: 30
   f14:
-    name: F-14
+    name: F-14B
     seats: 2
     weight:
       empty: 44040
@@ -5563,15 +5582,164 @@ airframes:
         flares: 60
   jf17:
     name: JF-17
+    weight:
+      empty: 14520
+      fuel: 5126
+      tol: 27558
+    gun:
+      amount: 180
+      weight: 174
+      types:
+        default: Default
+    expendables:
+      - chaff: 36
+        flares: 32
+      - chaff: 68
+        flares: 0
+      - chaff: 64
+        flares: 4
+      - chaff: 60
+        flares: 8
+      - chaff: 56
+        flares: 12
+      - chaff: 52
+        flares: 16
+      - chaff: 48
+        flares: 20
+      - chaff: 44
+        flares: 24
+      - chaff: 40
+        flares: 28
+      - chaff: 32
+        flares: 36
+      - chaff: 28
+        flares: 40
+      - chaff: 24
+        flares: 44
+      - chaff: 20
+        flares: 48
+      - chaff: 16
+        flares: 52
+      - chaff: 12
+        flares: 56
+      - chaff: 8
+        flares: 60
+      - chaff: 28
+        flares: 40
+      - chaff: 4
+        flares: 64
+      - chaff: 0
+        flares: 68
   m2000:
     name: M-2000C
-  l39:
-    name: L-39
+    weight:
+      empty: 16755
+      fuel: 6978
+      tol: 36376
+    gun:
+      amount: 250
+      weight: 313
+      types:
+        ap: AP
+        apt: AP Tracers
+    expendables:
+      - chaff: 112
+        flares: 16
+  l39c:
+    name: L-39C
     seats: 2
-  c101:
-    name: C-101
+    weight:
+      empty: 7668
+      fuel: 2161
+      tol: 10362
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 0
+        flares: 0
+  l39za:
+    name: L-39ZA
+    seats: 2
+    weight:
+      empty: 7968
+      fuel: 2161
+      tol: 12346
+    gun:
+      amount: 150
+      weight: 146
+      types:
+        default: Default
+    expendables:
+      - chaff: 0
+        flares: 0
+  c101eb:
+    name: C-101EB
+    seats: 2
+    weight:
+      empty: 7798
+      fuel: 3960
+      tol: 11830
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 0
+        flares: 0
+  c101cc:
+    name: C-101CC
+    seats: 2
+    weight:
+      empty: 8014
+      fuel: 3960
+      tol: 13889
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 0
+        flares: 0
+  ajs37:
+    name: AJS37
+    weight:
+      empty: 23697
+      fuel: 9868
+      tol: 44092
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: None
+    expendables:
+      - chaff: 0
+        flares: 0
+  f14a135gr:
+    name: F-14A-135-GR
+    seats: 2
+    weight:
+      empty: 42086
+      fuel: 16200
+      tol: 74349
+    gun:
+      amount: 675
+      weight: 520
+      types:
+        hei: HEI
+        api: API
+        aphe: AP/HE
+        tp: TP
+    expendables:
+      - chaff: 140
+        flares: 60
   uh1h:
     name: UH-1H
+    seats: 4
     weight:
       empty: 6356
       fuel: 1391
@@ -5586,6 +5754,27 @@ airframes:
         flares: 60
   ka50:
     name: Ka-50
+    weight:
+      empty: 17703
+      fuel: 3197
+      tol: 26235
+    gun:
+      amount: 240
+      weight: 994
+      types:
+        he: HE
+        API: API
+    expendables:
+      - chaff: 0
+        flares: 128
+      - chaff: 0
+        flares: 96
+      - chaff: 0
+        flares: 64
+      - chaff: 0
+        flares: 32
+      - chaff: 0
+        flares: 0
   mi8:
     name: Mi-8
     weight:
@@ -5595,6 +5784,14 @@ airframes:
     expendables:
       - chaff: 0
         flares: 128
+      - chaff: 0
+        flares: 96
+      - chaff: 0
+        flares: 64
+      - chaff: 0
+        flares: 32
+      - chaff: 0
+        flares: 0
     gun:
       amount: 0
       weight: 0
@@ -5630,7 +5827,70 @@ airframes:
       amount: 250
       weight: 540
       types:
-        none: none		
+        cm: CM
+        cmmt: CM More Tracers
+        cmnt: CM no Tracers
+        he: HE
+        ap: AP
+  sa342l:
+    name: SA342L
+    weight:
+      empty: 3489
+      fuel: 918
+      tol: 4630
+    gun:
+      amount: 240
+      weight: 53
+      types:
+        cm: CM
+        hei: HEI
+        ap: AP
+        saphei: SAPHEI
+    expendables:
+      - chaff: 0
+        flares: 32
+  sa342m:
+    name: SA342M
+    weight:
+      empty: 3704
+      fuel: 918
+      tol: 4630
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 0
+        flares: 32
+  sa342minigun:
+    name: SA342Minigun
+    weight:
+      empty: 3369
+      fuel: 918
+      tol: 4630
+    gun:
+      amount: 4000
+      weight: 82
+      types:
+        default: Default
+    expendables:
+      - chaff: 0
+        flares: 32
+  sa342mistral:
+    name: SA342Mistral
+    weight:
+      empty: 3437
+      fuel: 918
+      tol: 4630
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        default: none
+    expendables:
+      - chaff: 0
+        flares: 32  
   e3a:
     name: E-3A
   kc135:
