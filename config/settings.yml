@@ -5453,6 +5453,10 @@ airframes:
     expendables:
       - chaff: 30
         fare: 60
+      - chaff: 0
+        fare: 90
+      - chaff: 90
+        fare: 0
     weight:
       empty: 12783
       fuel: 3170
@@ -6018,6 +6022,7 @@ pilots:
   - Hercules
   - Jemi
   - Joker
+  - Laud
   - Lempo
   - Lenzi
   - Marsy
