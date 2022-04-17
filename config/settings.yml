@@ -696,6 +696,9 @@ theaters:
         freq: 134.75
         laser: 167
         group: 41
+      rattler:
+        freq: 35.35
+        laser: 125
     channels:
       - name: Flight/Squadron specific
       - name: Nellis Clearance Delivery
@@ -1308,6 +1311,10 @@ theaters:
         dme: LAS 354/66 BLD 342/71
         lat: 37.172333333333333333333333333
         lon: -114.992166666666666666666666667
+      - name: DRY LAKE
+        dme: LSV 030/15
+        lat: 36.461333
+        lon: -114.870183
       - name: DUCK
         dme: LSV 052/7.5
         lat: 36.297333333333333333333333333
@@ -1956,8 +1963,9 @@ theaters:
         lat: 37.8783333333333
         lon: -116.471336666667
       - name: NORTH GAP
-        lat: 37.9228316666667
-        lon: -114.914496666667
+        dme: LSV 018/5.5
+        lat: 36.333333
+        lon: -114.988333
       - name: NUGGE
         dme: BLD 346/68
         lat: 37.1305
@@ -2241,6 +2249,14 @@ theaters:
       - name: SAND
         lat: 37.8023333333333
         lon: -116.053001666667
+      - name: SAND DUNES
+        dme: LSV 010/21
+        lat: 36.591333
+        lon: -114.936167
+      - name: SOUTH GAP
+        dme: LSV 160/2.9
+        lat: 36.199
+        lon: -114.006667
       - name: SARAH
         dme: LSV 315/25
         lat: 36.6075
@@ -2819,6 +2835,10 @@ theaters:
       - name: WEBUL
         lat: 37.7525166666667
         lon: -116.756222222222
+      - name: WEST FLEX
+        dme: LSV 307/6.5
+        lat: 36.310667
+        lon: -115.133333
       - name: WILD HORSE
         lat: 37.7931666666667
         lon: -116.396163333333
