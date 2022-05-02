@@ -5472,11 +5472,11 @@ airframes:
         tp: TP
     expendables:
       - chaff: 30
-        fares: 60
+        flares: 60
       - chaff: 0
-        fares: 90
+        flares: 90
       - chaff: 90
-        fares: 0
+        flares: 0
     weight:
       empty: 12783
       fuel: 3170
