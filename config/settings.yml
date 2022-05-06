@@ -5314,7 +5314,7 @@ theaters:
           none: none
         recoveries:
           none: none
-      ramatdavid:
+      llrd:
         name: Ramat David AFB
         ground: 
         atis: 118.4
@@ -5345,7 +5345,7 @@ theaters:
           none: none
         recoveries:
           none: none
-      incirlik:
+      ltag:
         name: Incirlik AFB
         ground: 
         atis: 377.475
@@ -5366,7 +5366,7 @@ theaters:
           none: none
         recoveries:
           none: none
-      cvn73:
+      carrier:
         name: CVN-73 USS G. Washington
         tacan: 55X
         tower: 304.0
@@ -5377,8 +5377,7 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
-      cvn59:
-      
+      cvn59:  
         name: CV-59 USS Forrestal
         tacan: 59X
         tower: 259.0
@@ -5390,7 +5389,6 @@ theaters:
           case2: CASE II
           case3: CASE III          
       tarawa:
-      
         name: LHA-1 Tarawa
         tacan: 85X
         tower: 302.0
