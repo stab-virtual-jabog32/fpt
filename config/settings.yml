@@ -5314,7 +5314,7 @@ theaters:
           none: none
         recoveries:
           none: none
-      llrd:
+      ramatdavid:
         name: Ramat David AFB
         ground: 
         atis: 118.4
@@ -5345,7 +5345,7 @@ theaters:
           none: none
         recoveries:
           none: none
-      ltag:
+      incirlik:
         name: Incirlik AFB
         ground: 
         atis: 377.475
@@ -5377,7 +5377,7 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
-      cvn59:  
+      cv59:  
         name: CV-59 USS Forrestal
         tacan: 59X
         tower: 259.0
