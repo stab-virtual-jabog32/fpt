@@ -5171,18 +5171,151 @@ theaters:
         lon: 57.79598302762791
         lat: 25.65346983416787
   syria:
-    name: Syria
+    name: European Test & Training Range Cyprus
     channels:
       - name: Flight/Squadron specific
+      - name: Akrotiri ATIS
+        freq: 288.2
+      - name: Akrotiri Ground
+        freq: 240.1
+      - name: Aktrotiri Tower
+        freq: 339.85
+      - name: Akrotiri Approach
+        freq: 335.050
+      - name: Incirlik Tower
+        freq: 360.1
+      - name: Incirlik Ground
+        freq: 371.350
+      - name: Incirlik ATIS
+        freq: 377.475
+      - name: No Preset
+      - name: Paphos ATIS
+        freq: 127.3
+      - name: Paphos Tower
+        freq: 353.8
+      - name: CVN-73 George Washington
+        freq: 304.0
+      - name: LHA-1 Tarawa
+        freq: 302.0
+      - name: CV-59 Forrestal
+        freq: 259.0
+      - name: No Preset
+      - name: Overlord
+        freq: 377.8
+      - name: KC-135 Texaco-1 medium/slow
+        freq: 265.0
+      - name: KC-135 Arco-1
+        freq: 319.8
+      - name: KC-135MPRS Arco-2
+        freq: 360.8
+      - name: S-3B Recovery Tanker
+        freq: 256.00
     navaids:
       - id: DAN
         name: Incirlik
         channel: 21
         pos: N37 00.950 E035 26.883
         elevation: 243
+      - id: AKR
+        name: Akrotiri
+        channel: 107
+        pos: N34 34.765 E032 57.769
+        elevation: 147
+      - id: PHA
+        name: Paphos
+        channel: 79
+        pos: N34 42.997 E032 28.963
+        elevation: 35
+      - id: RMD
+        name: Ramat David
+        channel: 84
+        pos: N32 39.892 E035 11.265
+        elevation: 136
     airbases:
+      akrotiri:
+        name: Akrotiri AFB
+        tacan: 107X
+        atis: 288.2
+        ground: 240.1
+        tower: 339.850
+        approach: 235.050
+        elevation: 62
+        ils: 109.7
+        takeoff: 10
+        land: 28
+        runways:
+          - name: 10
+            length: 8276
+            elevation: 62
+          - name: 28
+            length: 8276
+            elevation: 62
+            ils: 109.7
+        departures:
+          rwy10SID: RWY10 SID
+          rwy28SID: RWY28 SID
+        recoveries:
+          staralpha: STAR ALPHA
+          starbravo: STAR BRAVO
+          tac28: TAC 28
+          tactoils: TAC TO ILS
+      paphos:
+        name: Paphos Internationl
+        tacan: 79X
+        atis: 127.3
+        tower: 353.800
+        elevation: 40
+        ils: 108.9
+        takeoff: 29
+        land: 29
+        runways:
+          - name: 11
+            length: 8425
+            elevation: 40
+          - name: 29
+            length: 8425
+            elevation: 40
+            ils: 108.9
+        departures:
+          none: none
+        recoveries:
+          none: none
+      lakatamia:
+        name: Lakatamia Helicopter Airbase
+        tower: 251.950
+        elevation: 757
+        takeoff: 17
+        land: 35
+        runways:
+          - name: 17
+            length: 1230
+            elevation: 757
+          - name: 35
+            length: 1230
+            elevation: 757
+        departures:
+          none: none
+        recoveries:
+          none: none
+      talsiman:
+        name: FOB Tal Siman
+        tower: 252.500
+        elevation: 980
+        takeoff: 28
+        land: 10
+        runways:
+          - name: 28
+            length: 2616
+            elevation: 980
+          - name: 10
+            length: 2616
+            elevation: 980
+        departures:
+          none: none
+        recoveries:
+          none: none
       llrd:
-        name: Ramat David Intl
+        name: Ramat David AFB
         ground: 
         atis: 118.4
         tower: 118.6
@@ -5213,10 +5346,11 @@ theaters:
         recoveries:
           none: none
       ltag:
-        name: Incirlik Military AB
+        name: Incirlik AFB
         ground: 
-        atis: 129.6
-        tower: 129.2
+        atis: 377.475
+        ground: 371.350
+        tower: 339.850
         elevation: 190
         takeoff: 05
         tacan: 21X
@@ -5233,9 +5367,9 @@ theaters:
         recoveries:
           none: none
       carrier:
-        name: CV-73 USS G. Washington
-        tacan: 73X
-        tower: 305.0
+        name: CVN-73 USS G. Washington
+        tacan: 55X
+        tower: 304.0
         ground: ICLS 12
         departures:
           cat: CAT
@@ -5243,19 +5377,161 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
-      cvn59:
+      cvn59:  
         name: CV-59 USS Forrestal
         tacan: 59X
-        tower: 303.0
-        approach: 303.0
-        clearance: 303.0
-        ground: ICLS 6
+        tower: 259.0
+        ground: ICLS 5
         departures:
           cat: CAT
         recoveries:
           case1: CASE I
           case2: CASE II
           case3: CASE III          
+      tarawa:
+        name: LHA-1 Tarawa
+        tacan: 85X
+        tower: 302.0
+        ground:
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III          
+    support:
+      overlord:
+        callsign: OVERLORD2
+        type: AWACS
+        airframe: E-3A
+        comms: 377.8
+        speed: 450
+        position: N3713 E03643 - N3714 E03749
+        altitude: FL320
+      texaco1:
+        callsign: TEXACO 1
+        type: TANKER
+        aiframe: KC-135
+        comms: 265.0
+        tacan: 71Y
+        position: "TEXACO1: (N3657 E03434)"
+        altitude: FL170
+        speed: 300
+      arco1:
+        callsign: ARCO 1
+        type: TANKER
+        airframe: KC-135
+        comms: 319.8
+        tacan: 22Y
+        position: "ARCO1: (N3701 E03457)"
+        altitude: FL22
+        speed: 400
+      arco2:
+        callsign: ARCO 2
+        type: TANKER
+        airframe: KC-135MPRS
+        comms: 360.8
+        tacan: 41Y
+        position: "ARCO2: (N3653 E03452)"
+        altitude: FL220
+        speed: 400
+    waypoints:
+      - name: EAST POINT
+        lat: 34.4166667
+        lon: 33.53333333333333
+      - name: IREFA
+        lat: 34.4180556
+        lon: 34.42027777777778
+      - name: APLON
+        lat: 33.8666667
+        lon: 32.06666666666667
+      - name: WEST POINT
+        lat: 34.4
+        lon: 31.95
+      - name: MAROS
+        lat: 34.6166667
+        lon: 30.883333333333333
+      - name: AKB.T1
+        lat: 35.1683333
+        lon: 32.345000000000006
+      - name: AKB.T2
+        lat: 35.1661111
+        lon: 32.338611111111106
+      - name: AKB.T3
+        lat: 35.2691667
+        lon: 32.30777777777777
+      - name: AKB.T4
+        lat: 35.3372222
+        lon: 32.35361111111111
+      - name: AKB.T5
+        lat: 35.0944444
+        lon: 32.45583333333333
+      - name: SA11.1
+        lat: 34.95
+        lon: 32.36666666666667
+      - name: ITR.T1
+        lat: 34.7833333
+        lon: 32.96666666666667
+      - name: CTR.T1
+        lat: 35.15
+        lon: 33.266666666666666
+      - name: CHT.T1
+        lat: 35.05
+        lon: 33.61666666666667
+      - name: BOMBCIRCLEWEST
+        lat: 34.9333333
+        lon: 33.85
+      - name: BOMBCIRCLEEAST
+        lat: 34.95
+        lon: 33.86666666666667
+      - name: GTR.T1
+        lat: 35.2333333
+        lon: 33.71666666666667
+      - name: SA10.T1
+        lat: 35.3333333
+        lon: 33.28333333333333
+      - name: ECHO
+        lat: 36.8333333
+        lon: 35.21666666666667
+      - name: DELTA
+        lat: 36.75
+        lon: 35.45
+      - name: EAGLE
+        lat: 36.8666667
+        lon: 35.35
+      - name: FALCON
+        lat: 37.0833333
+        lon: 35.666666666666664
+      - name: CHRLE
+        lat: 37.1666667
+        lon: 35.666666666666664
+      - name: TIGER
+        lat: 37.1666667
+        lon: 35.583333333333336
+      - name: DAN
+        lat: 37.0166667
+        lon: 35.43333305555555
+      - name: AKR
+        lat: 34.5666667
+        lon: 32.95
+      - name: PHA
+        lat: 34.7166667
+        lon: 32.483333333333334
+      - name: LAKATAMIA
+        lat: 35.1
+        lon: 33.31666666666667
+      - name: TALSIMAN
+        lat: 36.25
+        lon: 38.916666666666664
+      - name: MEZUS
+        lat: 34.4180556
+        lon: 32.06472222222222
+      - name: ANANE
+        lat: 34.3088889
+        lon: 32.73555555555556
+      - name: ASR.T1
+        lat: 35.0166667
+        lon: 31.233333333333334
   mariana:
     name: Mariana Islands
     channels:
