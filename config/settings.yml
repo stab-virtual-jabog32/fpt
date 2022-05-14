@@ -7473,7 +7473,7 @@ payload:
     type: pod
     weight: 126  
   m299:
-    name: M299 Empty
+    name: M299
     type: pylon
     weight: 146
   agm114k:
@@ -7551,7 +7551,7 @@ loadout:
       - weapon: smokered
       - weapon: smokewhite
       - weapon: smokeyellow
-      - pylon: lau105
+      - weapon: lau105
     2: &a10station2
       - weapon: bdu50hd
       - weapon: bdu50ld
