@@ -5754,7 +5754,7 @@ airframes:
       - chaff: 90
         flares: 0
     weight:
-      empty: 12783
+      empty: 12782
       fuel: 3170
       tol: 23000
   f18:
@@ -7473,7 +7473,7 @@ payload:
     type: pod
     weight: 126  
   m299:
-    name: M299
+    name: M299 Empty
     type: pylon
     weight: 146
   agm114k:
@@ -7514,7 +7514,7 @@ payload:
   m2616pd6sk:
     name: M261 - 6PD+6SK
     type: rockets
-    weight: 608  
+    weight: 602  
 loadout:
   a10:
     1: &a10station1
@@ -8903,7 +8903,7 @@ loadout:
       - weapon: m261mpp
       - weapon: m2616pd6il
       - weapon: m2616pd6sk
-      - pylon: m299
+      - weapon: m299
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
