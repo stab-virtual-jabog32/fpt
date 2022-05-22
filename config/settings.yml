@@ -888,6 +888,7 @@ theaters:
           dream_low: DREAM LOW
           dream4: DREAM FOUR
           mmm4: MORMON MESA FOUR
+          helivfr: HELICOPTER DEP
         recoveries:
           stryk: STRYK
           acton: ACTON
@@ -909,6 +910,7 @@ theaters:
           ly21l: LOC Y RWY 21L
           t21l: TACAN RWY 21L
           tx21l: TACAN X RWY 21L
+          helivfr: HELICOPTER ARR
       creech:
         name: Creech AFB
         tacan: 87X
