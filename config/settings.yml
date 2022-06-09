@@ -5688,7 +5688,223 @@ theaters:
         recoveries:
           case1: CASE I
           case2: CASE II
-          case3: CASE III          
+          case3: CASE III
+  southatlantic:
+    name: South Atlantic
+    channels:
+      - name: Flight/Squadron specific
+    navaids:
+      - id: MPA
+        name: Mount Pleasant
+        channel: 59
+        pos: S51 49.444 W058 27.417
+        elevation: 243
+      - id: UAZ
+        name: Rio Grande
+        channel: 31
+        pos: S53 46.743 W067 44.878
+        elevation: 61
+    airbases:
+      portstanley:
+        name: Port Stanley
+        ground: 
+        atis: 
+        tower: 250.0
+        elevation: 255
+        takeoff: 09
+        land: 27
+        runways:
+          - name: 27
+            length: 4388
+            elevation: 67
+          - name: 09
+            length: 4388
+            elevation: 67
+        departures:
+          none: none
+        recoveries:
+          none: none
+      mountpleasant:
+        name: Mount Pleasant
+        ground: 
+        atis: 
+        tower: 250.050
+        elevation: 243
+        takeoff: 10
+        land: 28
+        ils: 111.9
+        runways:
+          - name: 10
+            length: 8494
+            elevation: 233
+          - name: 28
+            length: 8494
+            elevation: 197
+          - name: 05
+            length: 5003
+            elevation: 203
+          - name: 23
+            length: 5003
+            elevation: 191
+        departures:
+          none: none
+        recoveries:
+          none: none
+      sancarlos:
+        name: San Carlos FOB
+        ground: 
+        atis: 
+        tower: 
+        elevation: 65
+        takeoff: 11
+        land: 27
+        runways:
+          - name: 11
+            length: 1079
+            elevation: 65
+          - name: 28
+            length: 1079
+            elevation: 65
+        departures:
+          none: none
+        recoveries:
+          none: none
+      riogallegos:
+        name: Rio Gallegos
+        ground: 
+        atis: 
+        tower: 250.1
+        elevation: 50
+        takeoff: 07
+        land: 25
+        ils: 110.3
+        runways:
+          - name: 07
+            length: 10585
+            elevation: 50
+          - name: 25
+            length: 10585
+            elevation: 50
+            ils: 110.3
+        departures:
+          none: none
+        recoveries:
+          none: none
+      puntaarenas:
+        name: Punta Arenas
+        ground: 
+        atis: 
+        tower: 250.3
+        elevation: 122
+        takeoff: 07
+        land: 25
+        runways:
+          - name: 07
+            length: 9154
+            elevation: 139
+          - name: 25
+            length: 9154
+            elevation: 112
+          - name: 12
+            length: 787
+            elevation: 138
+          - name: 30
+            length: 7874
+            elevation: 112
+          - name: 01
+            length: 5502
+            elevation: 112
+          - name: 19
+            length: 5502
+            elevation: 110
+        departures:
+          none: none
+        recoveries:
+          none: none
+      riogrande:
+        name: Rio Grande
+        ground: 
+        atis: 
+        tower: 250.150
+        elevation: 60
+        takeoff: 08
+        land: 26
+        ils: 109.5
+        runways:
+          - name: 08
+            length: 6562
+            elevation: 63
+          - name: 26
+            length: 6562
+            elevation: 43
+        departures:
+          none: none
+        recoveries:
+          none: none
+      ushuaiahelo:
+        name: Ushuaia Helo Port
+        ground: 
+        atis: 
+        tower: 250.25
+        elevation: 42
+        takeoff: 16
+        land: 34
+        runways:
+          - name: 16
+            length: 5076
+            elevation: 42
+          - name: 34
+            length: 5076
+            elevation: 42
+        departures:
+          none: none
+        recoveries:
+          none: none
+      ushuaia:
+        name: Ushuaia
+        ground: 
+        atis: 
+        tower: 
+        elevation: 60
+        takeoff: 07
+        land: 25
+        ils: 111.3
+        runways:
+          - name: 07
+            length: 9199
+            elevation: 82
+          - name: 25
+            length: 9199
+            elevation: 69
+            ils: 111.3
+        departures:
+          none: none
+        recoveries:
+          none: none
+      carrier:
+        name: CV-73 USS G. Washington
+        tacan: 73X
+        tower: 305.0
+        ground: ICLS 12
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III
+      cvn59:
+        name: CV-59 USS Forrestal
+        tacan: 59X
+        tower: 303.0
+        approach: 303.0
+        clearance: 303.0
+        ground: ICLS 6
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III
 airframes:
   a10:
     name: A-10C
