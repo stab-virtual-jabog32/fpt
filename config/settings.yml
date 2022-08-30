@@ -5438,102 +5438,231 @@ theaters:
         altitude: FL220
         speed: 400
     waypoints:
-      - name: EAST POINT
-        lat: 34.4166667
-        lon: 33.53333333333333
-      - name: IREFA
-        lat: 34.4180556
-        lon: 34.42027777777778
-      - name: APLON
-        lat: 33.8666667
-        lon: 32.06666666666667
-      - name: WEST POINT
-        lat: 34.4
-        lon: 31.95
-      - name: MAROS
-        lat: 34.6166667
-        lon: 30.883333333333333
-      - name: AKB.T1
-        lat: 35.1683333
-        lon: 32.345000000000006
-      - name: AKB.T2
-        lat: 35.1661111
-        lon: 32.338611111111106
-      - name: AKB.T3
-        lat: 35.2691667
-        lon: 32.30777777777777
-      - name: AKB.T4
-        lat: 35.3372222
-        lon: 32.35361111111111
-      - name: AKB.T5
-        lat: 35.0944444
-        lon: 32.45583333333333
-      - name: SA11.1
-        lat: 34.95
-        lon: 32.36666666666667
-      - name: ITR.T1
-        lat: 34.7833333
-        lon: 32.96666666666667
-      - name: CTR.T1
-        lat: 35.15
-        lon: 33.266666666666666
-      - name: CHT.T1
-        lat: 35.05
-        lon: 33.61666666666667
-      - name: BOMBCIRCLEWEST
-        lat: 34.9333333
-        lon: 33.85
-      - name: BOMBCIRCLEEAST
-        lat: 34.95
-        lon: 33.86666666666667
-      - name: GTR.T1
-        lat: 35.2333333
-        lon: 33.71666666666667
-      - name: SA10.T1
-        lat: 35.3333333
-        lon: 33.28333333333333
-      - name: ECHO
-        lat: 36.8333333
-        lon: 35.21666666666667
-      - name: DELTA
-        lat: 36.75
-        lon: 35.45
-      - name: EAGLE
-        lat: 36.8666667
-        lon: 35.35
-      - name: FALCON
-        lat: 37.0833333
-        lon: 35.666666666666664
+      - name: BVRc-NW
+        lon: 30.2165267037995
+        lat: 37.4608396432282
+      - name: APlon
+        lon: 32.0666687895053
+        lat: 33.8666636092059
       - name: CHRLE
-        lat: 37.1666667
-        lon: 35.666666666666664
-      - name: TIGER
-        lat: 37.1666667
-        lon: 35.583333333333336
-      - name: DAN
-        lat: 37.0166667
-        lon: 35.43333305555555
-      - name: AKR
-        lat: 34.5666667
-        lon: 32.95
-      - name: PHA
-        lat: 34.7166667
-        lon: 32.483333333333334
-      - name: LAKATAMIA
-        lat: 35.1
-        lon: 33.31666666666667
-      - name: TALSIMAN
-        lat: 36.25
-        lon: 38.916666666666664
-      - name: MEZUS
-        lat: 34.4180556
-        lon: 32.06472222222222
-      - name: ANANE
-        lat: 34.3088889
-        lon: 32.73555555555556
+        lon: 35.6812692326427
+        lat: 37.1822286922111
+      - name: BVRc-SE
+        lon: 30.2585911785322
+        lat: 36.7382328382989
+      - name: AAR-N
+        lon: 34.8748993139397
+        lat: 36.9625072136544
+      - name: ALFA
+        lon: 35.4387114239545
+        lat: 37.2650466322199
+      - name: DELTA
+        lon: 35.4609334042459
+        lat: 36.7652664115809
+      - name: FALCON
+        lon: 35.6814714931615
+        lat: 37.0844571300706
+      - name: BFM-S
+        lon: 31.0960340998224
+        lat: 35.2704150332025
+      - name: IREFA
+        lon: 33.4444082954395
+        lat: 34.4221331315996
+      - name: CHT.T1
+        lon: 33.6195315702125
+        lat: 35.0547025953661
+      - name: BOMBCIRCLEWEST
+        lon: 33.864448240823
+        lat: 34.9487306894897
+      - name: BFM-E
+        lon: 31.3449037446095
+        lat: 35.5430984803418
+      - name: BOMBCIRCLEEAST
+        lon: 33.8692189866401
+        lat: 34.9501423572374
+      - name: GBR.T1
+        lon: 33.7219556263803
+        lat: 35.2359143373113
       - name: ASR.T1
-        lat: 35.0166667
-        lon: 31.233333333333334
+        lon: 31.2389589900629
+        lat: 35.0256243931862
+      - name: LOSOS
+        lon: 33.3698324080561
+        lat: 34.7098181807303
+      - name: BFM-N
+        lon: 31.0652711928534
+        lat: 35.7207996306476
+      - name: AKB.ETY
+        lon: 32.3936432777663
+        lat: 35.1586494614663
+      - name: AAA.T1
+        lon: 32.8460536848725
+        lat: 34.687935408651
+      - name: VADUS
+        lon: 32.0627858534717
+        lat: 35.3094247696799
+      - name: DOREN
+        lon: 33.2830572834037
+        lat: 35.9344310365948
+      - name: BFM-W
+        lon: 30.806616477905
+        lat: 35.4537639722412
+      - name: BONEK
+        lon: 32.932989852267
+        lat: 35.0731788861074
+      - name: DAROS
+        lon: 33.1463277059157
+        lat: 35.0124882974033
+      - name: ADLAS
+        lon: 33.3166583574826
+        lat: 34.9629912631369
+      - name: INITIAL 23
+        lon: 35.5311079906521
+        lat: 37.0659404246486
+      - name: SA11.1
+        lon: 32.3757912529625
+        lat: 34.9631585557211
+      - name: NORDI
+        lon: 33.087312870497
+        lat: 34.7971575831304
+      - name: DIPOS
+        lon: 32.8030010497879
+        lat: 34.7585148569842
+      - name: IVETI
+        lon: 32.7036337348038
+        lat: 34.7423191746508
+      - name: AKB.T5
+        lon: 32.2938108773727
+        lat: 35.0839706194309
+      - name: DASNI
+        lon: 30.8489854721249
+        lat: 35.6156456139765
+      - name: MAROS
+        lon: 30.8829915609823
+        lat: 34.6163137273559
+      - name: GENOS
+        lon: 31.9013306467235
+        lat: 34.6796507450357
+      - name: AKB.T4
+        lon: 32.3030387048206
+        lat: 35.0828564220873
+      - name: ANANE
+        lon: 32.726985210157
+        lat: 34.3007985263735
+      - name: EMILI
+        lon: 34.0431026058056
+        lat: 34.6398208235512
+      - name: ALSUS
+        lon: 34.6559943158952
+        lat: 35.0351614480092
+      - name: AKB.T3
+        lon: 32.3004939442776
+        lat: 35.0789466352227
+      - name: VELOX
+        lon: 34.0841526922006
+        lat: 33.8169849095174
+      - name: ECHO
+        lon: 33.1667280733421
+        lat: 34.708734285748
+      - name: TIGER
+        lon: 35.595530568226
+        lat: 37.1769701609274
+      - name: AKB.T2
+        lon: 32.3014379500791
+        lat: 35.0728528385256
+      - name: SIERRA
+        lon: 32.964989678815
+        lat: 34.4099756259954
+      - name: MILBA
+        lon: 36.4778656678565
+        lat: 36.9532965570415
+      - name: MANAZ
+        lon: 34.4104523473068
+        lat: 36.9148151529855
+      - name: AKB.T1
+        lon: 32.3182202687277
+        lat: 35.0728426518369
+      - name: KIVZE
+        lon: 37.3962825546576
+        lat: 36.7054809024183
+      - name: ANTIKE STADT KOURION
+        lon: 32.886632705308
+        lat: 34.6647191927741
+      - name: Burg St. Hilarion
+        lon: 33.2817505517933
+        lat: 35.3121725004673
+      - name: ITR.T1
+        lon: 32.9770404761827
+        lat: 34.788633281707
+      - name: BURG KOLOSSI
+        lon: 32.9339878079368
+        lat: 34.6648740823993
+      - name: KAP GRECO
+        lon: 34.0838797380311
+        lat: 34.9605296171397
+      - name: Mt. Olympus
+        lon: 32.8629886888287
+        lat: 34.9377799592798
+      - name: CTR.T1
+        lon: 33.2707340318167
+        lat: 35.157612970538
+      - name: NISSI BEACH
+        lon: 33.9691025684679
+        lat: 34.9879888877291
+      - name: INITIAL 05
+        lon: 35.3306471100492
+        lat: 36.944236776977
+      - name: SA10.T1
+        lon: 33.2916599356666
+        lat: 35.3492642210299
+      - name: BVR-SW
+        lon: 32.073373317169
+        lat: 35.7599629378651
+      - name: BVR-NW
+        lon: 32.0216172358063
+        lat: 36.5966518847981
+      - name: BVR-NE
+        lon: 34.2387383351044
+        lat: 36.6890341398657
+      - name: HOUSE OF DIONYSUS
+        lon: 32.4061276383747
+        lat: 34.7583080328794
+      - name: Antike Stadt Salamis
+        lon: 33.9023471627232
+        lat: 35.1843684907189
+      - name: EAGLE
+        lon: 35.3601911048808
+        lat: 36.8822980291021
+      - name: BVR-SE
+        lon: 34.2594630444083
+        lat: 35.8478846426028
+      - name: TARSU
+        lon: 34.5201336087397
+        lat: 36.6258193538559
+      - name: PAPA
+        lon: 32.819542307494
+        lat: 34.6622146101777
+      - name: LAKE
+        lon: 32.9236147678981
+        lat: 34.7460036512079
+      - name: BVRc-SE
+        lon: 32.9095882062585
+        lat: 36.8653874067476
+      - name: BAPAX
+        lon: 34.1736523143884
+        lat: 35.7016528440783
+      - name: MEZUS
+        lon: 32.0586540615656
+        lat: 34.4184781138718
+      - name: TOBAL
+        lon: 32.1228278788387
+        lat: 35.9246474944947
+      - name: BVRc-NE
+        lon: 32.8759533097878
+        lat: 37.6259740147369
+      - name: OTESA
+        lon: 33.4343280159776
+        lat: 34.9289888349775
   mariana:
     name: Mariana Islands
     channels:
