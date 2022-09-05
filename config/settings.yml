@@ -5368,7 +5368,7 @@ theaters:
           none: none
         recoveries:
           none: none
-      carrier:
+      cvn73:
         name: CVN-73 USS G. Washington
         tacan: 55X
         tower: 304.0
