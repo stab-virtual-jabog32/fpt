@@ -5437,6 +5437,24 @@ theaters:
         position: "ARCO2: (N3653 E03452)"
         altitude: FL220
         speed: 400
+      farpoly:
+        callsign: FARP Mount Olympus
+        type: FARP
+        airframe: Structure
+        comms: 377.8
+        tacan: N/A
+        position: "N345666, E0325174"
+        altitude: 5971ft
+        speed: 0
+      farpere:
+        callsign: FARP Erenköy
+        type: FARP
+        airframe: Structure
+        comms: 377.8
+        tacan: N/A
+        position: "N351119, E0323693"
+        altitude: 66ft
+        speed: 0
     waypoints:
       - name: BVRc-NW
         lon: 30.2165267037995
