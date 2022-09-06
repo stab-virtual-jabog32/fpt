@@ -5371,9 +5371,9 @@ theaters:
             length: 10000
             elevation: 230
         departures:
-          vfr: vfr
+          vfr: VFR
         recoveries:
-          vfr: vfr
+          vfr: VFR
       cvn73:
         name: CVN-73 USS G. Washington
         tacan: 55X
