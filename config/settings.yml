@@ -5256,11 +5256,17 @@ theaters:
         departures:
           rwy10SID: RWY10 SID
           rwy28SID: RWY28 SID
+          rwy28vfrdep: RWY28 VFR
+          rwy10vfrdep: RWY10 VFR
+          helivfr: Helicopter VFR
         recoveries:
           staralpha: STAR ALPHA
           starbravo: STAR BRAVO
           tac28: TAC 28
           tactoils: TAC TO ILS
+          rwy28vfrarr: RWY28 VFR
+          rwy10vfrarr: RWY10 VFR
+          helivfr: Helicopter VFR
       paphos:
         name: Paphos Internationl
         tacan: 79X
@@ -5365,9 +5371,9 @@ theaters:
             length: 10000
             elevation: 230
         departures:
-          none: none
+          vfr: vfr
         recoveries:
-          none: none
+          vfr: vfr
       cvn73:
         name: CVN-73 USS G. Washington
         tacan: 55X
