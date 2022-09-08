@@ -15,7 +15,7 @@ mdc = {
         },
         ["recovery"] = {
             ["ad"] = "<%= "#{@flight.theater}/#{@flight.land_airbase}/ad.png" if @flight.land_airbase %>",
-            ["procedure"] = "<%= "#{@flight.theater}/#{@flight.start_airbase}/recoveries/#{@flight.recovery}.png" if @flight.recovery %>",
+            ["procedure"] = "<%= "#{@flight.theater}/#{@flight.land_airbase}/recoveries/#{@flight.recovery}.png" if @flight.recovery %>",
         },
         ["divert"] = {
             ["ad"] = "<%= "#{@flight.theater}/#{@flight.divert_airbase}/ad.png" if @flight.divert_airbase %>",
