@@ -7901,11 +7901,11 @@ payload:
     type: a2g
     weight: 322
   m134dg:
-    name: M-134 Miniguns
+    name: M-134 Miniguns Doorgunner
     type: a2g
     weight: 595
   m60ddg:
-    name: M-60D Machineguns
+    name: M-60D Machineguns Doorgunner
     type: a2g
     weight: 311
   xm158he:
@@ -9327,39 +9327,28 @@ loadout:
   uh1h:
     1: &uh1hstation1
       - weapon: m134fm
-        amount: 2
         pylon: uh1hhp
     2: &uh1hstation2
       - weapon: m261he
-        amount: 2
         pylon: uh1hhp
       - weapon: m261smk
-        amount: 2
         pylon: uh1hhp
       - weapon: xm158he
-        amount: 2
         pylon: uh1hhp
       - weapon: xm158wp
-        amount: 2
         pylon: uh1hhp
       - weapon: xm158pi
-        amount: 2
         pylon: uh1hhp
       - weapon: xm158ps
-        amount: 2
         pylon: uh1hhp
       - weapon: xm158pr
-        amount: 2
         pylon: uh1hhp
       - weapon: xm158ht
-        amount: 2
         pylon: uh1hhp
     3: &uh1hstation3
       - weapon: m134dg
-        amount: 2
         pylon: uh1hhp
       - weapon: m60ddg
-        amount: 2
         pylon: uh1hhp
     4: *uh1hstation3
     5: *uh1hstation2
