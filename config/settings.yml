@@ -5443,6 +5443,24 @@ theaters:
         position: "ARCO2: (N3653 E03452)"
         altitude: FL220
         speed: 400
+      texaco2:
+        callsign: TEXACO 2
+        type: TANKER
+        aiframe: KC-130
+        comms: 244.78
+        tacan: 44Y
+        position: "TEXACO2: (N3424 E03403)"
+        altitude: FL150
+        speed: 250
+      shell3:
+        callsign: SHELL 3
+        type: TANKER
+        aiframe: KC-135
+        comms: 278.75
+        tacan: 93Y
+        position: "SHELL3: (N3436 E03419)"
+        altitude: FL170
+        speed: 215
       farpoly:
         callsign: FARP Mount Olympus
         type: FARP
