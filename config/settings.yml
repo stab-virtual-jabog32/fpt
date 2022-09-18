@@ -9361,8 +9361,8 @@ loadout:
       - weapon: m60ddg
         amount: 2
         pylon: uh1hhp
-    4: *ah64dstation3
-    5: *ah64dstation2
-    6: *ah64dstation1
+    4: *uh1hstation3
+    5: *uh1hstation2
+    6: *uh1hstation1
     HP: 
        - weapon: uh1hhp
