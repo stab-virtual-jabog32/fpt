@@ -6412,7 +6412,7 @@ airframes:
     name: UH-1H
     seats: 4
     weight:
-      empty: 6356
+      empty: 6047
       fuel: 1391
       tol: 9502
     gun:
@@ -7891,7 +7891,47 @@ payload:
   m2616pd6sk:
     name: M261 - 6PD+6SK
     type: rockets
-    weight: 602  
+    weight: 602
+  uh1hhp:
+    name: External Hardpoints
+    type: pylon
+    weight: 309
+  m134fm:
+    name: M-134 Frontal Miniguns
+    type: a2g
+    weight: 322
+  m134dg:
+    name: M-134 Miniguns
+    type: a2g
+    weight: 595
+  m60ddg:
+    name: M-60D Machineguns
+    type: a2g
+    weight: 311
+  xm158he:
+    name: M158 Rockets HE
+    type: a2g
+    weight: 247
+  xm158wp:
+    name: M158 Rockets WP
+    type: a2g
+    weight: 247
+  xm158pi:
+    name: M158 Rockets Para. Illum.
+    type: a2g
+    weight: 247
+  xm158ps:
+    name: M158 Rockets Practice Smoke
+    type: a2g
+    weight: 247
+  xm158pr:
+    name: M158 Rockets Practice
+    type: a2g
+    weight: 247
+  xm158ht:
+    name: M158 Rockets HT
+    type: a2g
+    weight: 247
 loadout:
   a10:
     1: &a10station1
@@ -9284,3 +9324,45 @@ loadout:
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
+  uh1h:
+    1: &uh1hstation1
+      - weapon: m134fm
+        amount: 2
+        pylon: uh1hhp
+    2: &uh1hstation2
+      - weapon: m261he
+        amount: 2
+        pylon: uh1hhp
+      - weapon: m261smk
+        amount: 2
+        pylon: uh1hhp
+      - weapon: xm158he
+        amount: 2
+        pylon: uh1hhp
+      - weapon: xm158wp
+        amount: 2
+        pylon: uh1hhp
+      - weapon: xm158pi
+        amount: 2
+        pylon: uh1hhp
+      - weapon: xm158ps
+        amount: 2
+        pylon: uh1hhp
+      - weapon: xm158pr
+        amount: 2
+        pylon: uh1hhp
+      - weapon: xm158ht
+        amount: 2
+        pylon: uh1hhp
+    3: &uh1hstation3
+      - weapon: m134dg
+        amount: 2
+        pylon: uh1hhp
+      - weapon: m60ddg
+        amount: 2
+        pylon: uh1hhp
+    4: *ah64dstation3
+    5: *ah64dstation2
+    6: *ah64dstation1
+    HP: 
+       - weapon: uh1hhp
