@@ -111,7 +111,7 @@
                   %input(type='checkbox' name='flight[support][]' value="#{support.key}" checked)
                 - else
                   %input(type='checkbox' name='flight[support][]' value="#{support.key}")
-              .col-2= support.type
+              .col-2= support.airframe.present? ? "#{support.type} (#{support.airframe})" : support.type
               .col-2= support.callsign
               .col-1= support.comms
               .col-1= support.tacan

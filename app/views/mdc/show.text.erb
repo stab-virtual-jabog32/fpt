@@ -127,6 +127,7 @@ mdc = {
 <% support.select { |s| s.type == 'TANKER' }.each do |t| %>
             {
                 ["callsign"] = "<%= t.callsign %>",
+                ["airframe"] = "<%= t.airframe %>",
                 ["tacan"] = "<%= t.tacan %>",
                 ["comms"] = "<%= t.comms %>",
                 ["altitude"] = "<%= t.altitude %>",
@@ -139,6 +140,7 @@ mdc = {
 <% support.select { |s| s.type == 'AWACS' }.each do |a| %>
             {
                 ["callsign"] = "<%= a.callsign %>",
+                ["airframe"] = "<%= a.airframe %>",
                 ["comms"] = "<%= a.comms %>",
                 ["altitude"] = "<%= a.altitude %>",
                 ["position"] = "<%= a.position %>",
