@@ -936,7 +936,7 @@ theaters:
       ar624:
         callsign: TEXACO 2
         type: TANKER
-        aiframe: KC-135
+        airframe: KC-135
         comms: 289.7
         tacan: 95Y
         position: "AR-624: CDC 166/102 (N3605 W11305)"
@@ -5419,7 +5419,7 @@ theaters:
       texaco1:
         callsign: TEXACO 1
         type: TANKER
-        aiframe: KC-135
+        airframe: KC-135
         comms: 265.0
         tacan: 71Y
         position: "TEXACO1: (N3657 E03434)"
@@ -5446,7 +5446,7 @@ theaters:
       texaco2:
         callsign: TEXACO 2
         type: TANKER
-        aiframe: KC-130
+        airframe: KC-130
         comms: 244.78
         tacan: 44Y
         position: "TEXACO2: (N3424 E03403)"
@@ -5455,7 +5455,7 @@ theaters:
       shell3:
         callsign: SHELL 3
         type: TANKER
-        aiframe: KC-135
+        airframe: KC-135
         comms: 278.75
         tacan: 93Y
         position: "SHELL3: (N3436 E03419)"
