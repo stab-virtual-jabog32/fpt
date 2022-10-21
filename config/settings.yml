@@ -5432,7 +5432,7 @@ theaters:
         comms: 319.8
         tacan: 22Y
         position: "ARCO1: (N3701 E03457)"
-        altitude: FL22
+        altitude: FL222
         speed: 400
       arco2:
         callsign: ARCO 2
