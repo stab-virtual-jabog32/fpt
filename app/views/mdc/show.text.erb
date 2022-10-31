@@ -3,8 +3,8 @@ mdc = {
     ["callsign"] = "<%= @flight.full_callsign %>",
     ["mission"] = "<%= @flight.mission %>",
     ["time"] = "<%= @flight.start.strftime('%d%H%M%^b%y') %>",
-    ["task"] = "<%= @flight.task %>",
-    ["ao"] = "<%= @flight.ao %>",
+    ["task"] = "<%= j(@flight.task) %>",
+    ["ao"] = "<%= j(@flight.ao) %>",
     ["frequency"] = "<%= @flight.frequency %>",
     ["departure"] = "<%= @flight.departure_name %>",
     ["recovery"] = "<%= @flight.recovery_name %>",
@@ -117,7 +117,7 @@ mdc = {
   comms = 1.upto(4).map { |num| [num, @flight.send("radio#{num}")] }.select { |e| e.last.present? }
   unless comms.empty? %>
     <% comms.each do |c| %>
-        [<%= c.first %>] = "<%= c.last %>",
+        [<%= j(c.first) %>] = "<%= j(c.last) %>",
     <% end %>
 <% end %>
     },
@@ -214,5 +214,5 @@ mdc = {
         },
 <% end %>
     },
-    ["notes"] = [===[<%= @flight.notes %>]===],
+    ["notes"] = [===[<%= j(@flight.notes) %>]===],
 }
