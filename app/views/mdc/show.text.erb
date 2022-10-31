@@ -168,8 +168,8 @@ mdc = {
             ["group_id"] = "<%= f.group_id %>",
             ["laser_mask"] = "<%= f.laser_mask %>",
             ["mission"] = "<%= f.mission %>",
-            ["ao"] = "<%= f.ao %>",
-            ["task"] = "<%= f.task %>",
+            ["ao"] = "<%= j(f.ao) %>",
+            ["task"] = "<%= j(f.task) %>",
         },
 <% end %>
     },
