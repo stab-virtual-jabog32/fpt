@@ -7263,6 +7263,11 @@ payload:
     short: G24
     type: a2g
     weight: 2396
+  gbu24ab:
+    name: GBU-24 A/B Paveway III
+    short: G24
+    type: a2g
+    weight: 3168
   gbu54:
     name: GBU-54
     short: G54
@@ -8735,6 +8740,7 @@ loadout:
         amount: 2
         pylon: bru33
       - weapon: gbu16
+      - weapon: gbu24ab
       - weapon: gbu31
       - weapon: gbu31v3b
       - weapon: gbu32v2b
@@ -8859,6 +8865,7 @@ loadout:
         amount: 2
         pylon: bru33
       - weapon: gbu16
+      - weapon: gbu24ab
       - weapon: gbu31
       - weapon: gbu31v3b
       - weapon: gbu32v2b
