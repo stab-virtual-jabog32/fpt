@@ -7669,7 +7669,7 @@ payload:
     type: a2g
     weight: 796
   adm141a:
-    name: ADM 141A
+    name: ADM-141A
     short: A141
     type: a2g
     weight: 805
@@ -7756,7 +7756,7 @@ payload:
     weight: 119
     type: pylon
   lau115dual:
-    name: LAU-115 Dual Missle
+    name: LAU-115 Dual Missile
     weight: 320
     type: pylon
   lau115clau127:
@@ -7964,6 +7964,18 @@ payload:
     name: M158 Rockets HT
     type: a2g
     weight: 247
+  bru423adm141a:
+    name: 3x ADM-141A - BRU-42
+    type: a2g
+    weight: 3144
+  bru422adm141a:
+    name: 2x ADM-141A - BRU-42
+    type: a2g
+    weight: 2747
+  bru421adm141a:
+    name: 1x ADM-141A - BRU-42
+    type: a2g
+    weight: 2350
 loadout:
   a10:
     1: &a10station1
@@ -8814,6 +8826,9 @@ loadout:
       - weapon: lau68mk5
         amount: 2
         pylon: bru33
+      - weapon: bru423adm141a
+      - weapon: bru422adm141a
+      - weapon: bru421adm141a
     3: &f18station3
       - weapon: aim120b
         pylon: lau115
@@ -8946,6 +8961,9 @@ loadout:
       - weapon: bdu45b
         amount: 2
         pylon: bru33
+      - weapon: bru423adm141a
+      - weapon: bru422adm141a
+      - weapon: bru421adm141a
     4:
       - weapon: aim120b
       - weapon: aim120c
