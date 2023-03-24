@@ -7314,7 +7314,12 @@ payload:
     name: ALQ-184
     short: A184
     type: pod
-    weight: 474
+    weight: 474  
+  alq184l:
+    name: ALQ-184 Long
+    short: A184L
+    type: pod
+    weight: 631
   asqt50:
     name: AN/ASQ-T50 TCTS Pod
     short: AT50
@@ -7554,6 +7559,16 @@ payload:
     short: M84
     type: a2g
     weight: 1971
+  mk84agp:
+    name: Mk-84 AIR GP
+    short: M84A-GP
+    type: a2g
+    weight: 2011
+  mk84atp:
+    name: Mk-84 AIR TP
+    short: M84A-TP
+    type: a2g
+    weight: 2011
   bdu33:
     name: BDU-33
     short: B33
@@ -8384,6 +8399,13 @@ loadout:
       - weapon: gbu12
         amount: 2
         pylon: ter9a
+      - weapon: gbu24
+      - weapon: gbu31v1b
+      - weapon: gbu31v3b
+      - weapon: gbu38
+      - weapon: gbu38
+        amount: 2
+        pylon: bru57  
       - weapon: mk82
       - weapon: mk82
         amount: 2
@@ -8442,6 +8464,10 @@ loadout:
       - weapon: agm154a
         amount: 2
         pylon: bru57
+      - weapon: mxu648
+      - weapon: alq131
+      - weapon: alq184
+      - weapon: alq184l       
     4: &f16station4
       - weapon: cbu87
       - weapon: cbu87
@@ -8461,6 +8487,7 @@ loadout:
         pylon: ter9a
       - weapon: gbu10
       - weapon: gbu12
+      - weapon: gbu24      
       - weapon: mk82
       - weapon: mk82
         amount: 2
@@ -8497,7 +8524,9 @@ loadout:
     6:
       - weapon: ft300
       - weapon: mxu648
+      - weapon: alq131
       - weapon: alq184
+      - weapon: alq184l
     7:
       - weapon: aaq28
     8: *f16station4
