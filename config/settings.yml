@@ -933,13 +933,13 @@ theaters:
         callsign: HILL
         type: FAC
         position: N3639.81 W11546.88
-      ar624:
+      pegasus:
         callsign: TEXACO 2
         type: TANKER
         airframe: KC-135
         comms: 289.7
         tacan: 95Y
-        position: "AR-624: CDC 166/102 (N3605 W11305)"
+        position: "Pegasus.1: CDC 166/102 (N3730 W11440)"
         altitude: FL220
         speed: 420
       ar625:
@@ -1053,12 +1053,12 @@ theaters:
       - name: AR231V.2
         lat: 36.566666666666666667
         lon: -116.516666666666666667
-      - name: AR624.1
-        lat: 36.083333333333333333
-        lon: -113.083333333333333333
-      - name: AR624.2
-        lat: 36.566666666666666667
-        lon: -113.083333333333333333
+      - name: Pegasus.1
+        lat: 37.303333333333333333
+        lon: -114.403333333333333333
+      - name: Pegasus.2
+        lat: 37.456666666666666667
+        lon: -114.403333333333333333
       - name: AR625.1
         lat: 37.283333333333333333
         lon: -118.033333333333333333
