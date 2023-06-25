@@ -9486,10 +9486,7 @@ loadout:
     HP:
       - weapon: uh1hhp
   f15e:
-    1: 
-      - weapon: aim9m
-        pylon: lau105
-    2a: &f15estation2a
+    2A: &f15estation2a
       - weapon: aim120b
       - weapon: aim120c
       - weapon: aim9j
@@ -9497,3 +9494,22 @@ loadout:
       - weapon: aim9m
       - weapon: aim9p
       - weapon: cap9m
+    2: &f15estation2
+      - weapon: bdu50hd
+      - weapon: bdu50ld
+      - weapon: bdu50lgb
+      - weapon: cbu87
+      - weapon: cbu97
+      - weapon: gbu10
+      - weapon: gbu12
+      - weapon: gbu24
+      - weapon: mk20
+      - weapon: mk82
+      - weapon: mk82air
+      - weapon: mk82se
+      - weapon: mk84
+      - weapon: mk84agp
+      - weapon: mk84atp
+      - weapon: f15eft610
+      - weapon: mxu648
+    2b: *f15estation2a
