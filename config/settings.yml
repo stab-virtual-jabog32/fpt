@@ -9651,3 +9651,7 @@ loadout:
     HP:
       - weapon: uh1hhp
   f15e:
+    1: 
+      - weapon: aim9m
+        pylon: lau105
+      
