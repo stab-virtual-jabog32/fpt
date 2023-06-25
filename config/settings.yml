@@ -7185,7 +7185,7 @@ payload:
     name: AWW-13 Datalink Pod
     type: pod
     weight: 580
-  axq-14:
+  axq14:
     name: AN/AXQ-14 Datalink Pod
     type: pod
     short: AXQ14
@@ -9644,3 +9644,9 @@ loadout:
       - weapon: f15eft610
       - weapon: mxu648
       - weapon: axq14
+    NVP:
+      - weapon: aaq13
+    R-CFT: *f15estationlcft
+    8A: *f15estation2a
+    8: *f15estation2
+    8B: *f15estation2a
