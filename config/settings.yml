@@ -6142,6 +6142,182 @@ airframes:
       empty: 13074
       fuel: 3170
       tol: 23000
+  ajs37:
+    name: AJS37
+    weight:
+      empty: 23697
+      fuel: 9868
+      tol: 44092
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: None
+    expendables:
+      - chaff: 0
+        flares: 0
+  av8b:
+    name: AV-8B N/A
+    expendables:
+      - chaff: 60
+        flares: 120
+    weight:
+      empty: 14804
+      fuel: 7758
+      tol: 31085
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+  c101eb:
+    name: C-101EB
+    seats: 2
+    weight:
+      empty: 7798
+      fuel: 3960
+      tol: 11830
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 0
+        flares: 0
+  c101cc:
+    name: C-101CC
+    seats: 2
+    weight:
+      empty: 8014
+      fuel: 3960
+      tol: 13889
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 0
+        flares: 0
+  e3a:
+    name: E-3A
+  f5:
+    name: F-5E
+    weight:
+      empty: 10659
+      fuel: 4511
+      tol: 24663
+    gun:
+      amount: 560
+      weight: 392
+      types:
+        cm: CM
+        hei: HEI
+        ap: AP
+        tp: TP
+    expendables:
+      - chaff: 30
+        flares: 15
+      - chaff: 60
+        flares: 0
+      - chaff: 0
+        flares: 30
+  f14:
+    name: F-14B
+    seats: 2
+    weight:
+      empty: 44040
+      fuel: 16200
+      tol: 74349
+    gun:
+      amount: 675
+      weight: 520
+      types:
+        hei: HEI
+        api: API
+        aphe: AP/HE
+        tp: TP
+    expendables:
+      - chaff: 140
+        flares: 60
+  f14a135gr:
+    name: F-14A-135-GR
+    seats: 2
+    weight:
+      empty: 42086
+      fuel: 16200
+      tol: 74349
+    gun:
+      amount: 675
+      weight: 520
+      types:
+        hei: HEI
+        api: API
+        aphe: AP/HE
+        tp: TP
+    expendables:
+      - chaff: 140
+        flares: 60
+  f15e:
+    name: F-15E
+    seats: 2
+    weight:
+      empty: 38936
+      fuel: 22588
+      tol: 61815
+    gun:
+      amount: 510
+      weight: 293
+      types:
+        saphei: SAPHEI
+        hei: HEI
+    expendables:
+      - chaff: 240
+        flares: 0
+      - chaff: 210
+        flares: 15
+      - chaff: 180
+        flares: 30
+      - chaff: 150
+        flares: 45
+      - chaff: 120
+        flares: 60
+      - chaff: 90
+        flares: 75
+      - chaff: 60
+        flares: 90
+      - chaff: 30
+        flares: 105
+      - chaff: 0
+        flares: 120
+  f16:
+    name: F-16C
+    weight:
+      empty: 19900
+      fuel: 7163
+      tol: 42300
+    gun:
+      amount: 300
+      weight: 293
+      types:
+        heit: HEI-T
+        hei: HEI
+        ap: AP
+        tp: TP
+        saphei: SAPHEI
+        tppgu: TP PGU
+    expendables:
+      - chaff: 120
+        flares: 0
+      - chaff: 90
+        flares: 30
+      - chaff: 60
+        flares: 60
+      - chaff: 30
+        flares: 90
+      - chaff: 0
+        flares: 120
   f18:
     name: F/A-18C
     weight:
@@ -6184,87 +6360,9 @@ airframes:
       - chaff: 10
         flares: 110
       - chaff: 0
-        flares: 120
-  av8b:
-    name: AV-8B N/A
-    expendables:
-      - chaff: 60
-        flares: 120
-    weight:
-      empty: 14804
-      fuel: 7758
-      tol: 31085
-    gun:
-      amount: 0
-      weight: 0
-      types:
-        none: none
-  f16:
-    name: F-16C
-    weight:
-      empty: 19900
-      fuel: 7163
-      tol: 42300
-    gun:
-      amount: 300
-      weight: 293
-      types:
-        heit: HEI-T
-        hei: HEI
-        ap: AP
-        tp: TP
-        saphei: SAPHEI
-        tppgu: TP PGU
-    expendables:
-      - chaff: 120
-        flares: 0
-      - chaff: 90
-        flares: 30
-      - chaff: 60
-        flares: 60
-      - chaff: 30
-        flares: 90
-      - chaff: 0
-        flares: 120
-  f5:
-    name: F-5E
-    weight:
-      empty: 10659
-      fuel: 4511
-      tol: 24663
-    gun:
-      amount: 560
-      weight: 392
-      types:
-        cm: CM
-        hei: HEI
-        ap: AP
-        tp: TP
-    expendables:
-      - chaff: 30
-        flares: 15
-      - chaff: 60
-        flares: 0
-      - chaff: 0
-        flares: 30
-  f14:
-    name: F-14B
-    seats: 2
-    weight:
-      empty: 44040
-      fuel: 16200
-      tol: 74349
-    gun:
-      amount: 675
-      weight: 520
-      types:
-        hei: HEI
-        api: API
-        aphe: AP/HE
-        tp: TP
-    expendables:
-      - chaff: 140
-        flares: 60
+        flares: 120      
+  ground:
+    name: Ground
   jf17:
     name: JF-17
     weight:
@@ -6315,21 +6413,33 @@ airframes:
         flares: 64
       - chaff: 0
         flares: 68
-  m2000:
-    name: M-2000C
+  ka50:
+    name: Ka-50
     weight:
-      empty: 16755
-      fuel: 6978
-      tol: 36376
+      empty: 17703
+      fuel: 3197
+      tol: 26235
     gun:
-      amount: 250
-      weight: 313
+      amount: 240
+      weight: 994
       types:
-        ap: AP
-        apt: AP Tracers
+        he: HE
+        API: API
     expendables:
-      - chaff: 112
-        flares: 16
+      - chaff: 0
+        flares: 128
+      - chaff: 0
+        flares: 96
+      - chaff: 0
+        flares: 64
+      - chaff: 0
+        flares: 32
+      - chaff: 0
+        flares: 0
+  kc135:
+    name: KC-135
+  kc135mprs:
+    name: KC-135MPRS
   l39c:
     name: L-39C
     seats: 2
@@ -6360,106 +6470,21 @@ airframes:
     expendables:
       - chaff: 0
         flares: 0
-  c101eb:
-    name: C-101EB
-    seats: 2
+  m2000:
+    name: M-2000C
     weight:
-      empty: 7798
-      fuel: 3960
-      tol: 11830
+      empty: 16755
+      fuel: 6978
+      tol: 36376
     gun:
-      amount: 0
-      weight: 0
+      amount: 250
+      weight: 313
       types:
-        none: none
+        ap: AP
+        apt: AP Tracers
     expendables:
-      - chaff: 0
-        flares: 0
-  c101cc:
-    name: C-101CC
-    seats: 2
-    weight:
-      empty: 8014
-      fuel: 3960
-      tol: 13889
-    gun:
-      amount: 0
-      weight: 0
-      types:
-        none: none
-    expendables:
-      - chaff: 0
-        flares: 0
-  ajs37:
-    name: AJS37
-    weight:
-      empty: 23697
-      fuel: 9868
-      tol: 44092
-    gun:
-      amount: 0
-      weight: 0
-      types:
-        none: None
-    expendables:
-      - chaff: 0
-        flares: 0
-  f14a135gr:
-    name: F-14A-135-GR
-    seats: 2
-    weight:
-      empty: 42086
-      fuel: 16200
-      tol: 74349
-    gun:
-      amount: 675
-      weight: 520
-      types:
-        hei: HEI
-        api: API
-        aphe: AP/HE
-        tp: TP
-    expendables:
-      - chaff: 140
-        flares: 60
-  uh1h:
-    name: UH-1H
-    seats: 4
-    weight:
-      empty: 6047
-      fuel: 1391
-      tol: 9502
-    gun:
-      amount: 0
-      weight: 0
-      types:
-        none: none
-    expendables:
-      - chaff: 0
-        flares: 60
-  ka50:
-    name: Ka-50
-    weight:
-      empty: 17703
-      fuel: 3197
-      tol: 26235
-    gun:
-      amount: 240
-      weight: 994
-      types:
-        he: HE
-        API: API
-    expendables:
-      - chaff: 0
-        flares: 128
-      - chaff: 0
-        flares: 96
-      - chaff: 0
-        flares: 64
-      - chaff: 0
-        flares: 32
-      - chaff: 0
-        flares: 0
+      - chaff: 112
+        flares: 16
   mi8:
     name: Mi-8
     weight:
@@ -6523,14 +6548,6 @@ airframes:
       empty: 3489
       fuel: 918
       tol: 4630
-    gun:
-      amount: 240
-      weight: 53
-      types:
-        cm: CM
-        hei: HEI
-        ap: AP
-        saphei: SAPHEI
     expendables:
       - chaff: 0
         flares: 32
@@ -6562,28 +6579,21 @@ airframes:
     expendables:
       - chaff: 0
         flares: 32
-  sa342mistral:
-    name: SA342Mistral
+  uh1h:
+    name: UH-1H
+    seats: 4
     weight:
-      empty: 3437
-      fuel: 918
-      tol: 4630
+      empty: 6047
+      fuel: 1391
+      tol: 9502
     gun:
       amount: 0
       weight: 0
       types:
-        default: none
+        none: none
     expendables:
       - chaff: 0
-        flares: 32  
-  e3a:
-    name: E-3A
-  kc135:
-    name: KC-135
-  kc135mprs:
-    name: KC-135MPRS
-  ground:
-    name: Ground
+        flares: 60
 callsigns:
   - Cougar
   - Edelweiss
@@ -6632,6 +6642,7 @@ callsigns:
   - Moonbeam*
   - Nasty*
   - Navy
+  - Nazgul*
   - Ninja*
   - Outlaw*
   - Overlord*
@@ -6708,6 +6719,7 @@ pilots:
   - Hudson
   - Jemi
   - Joker
+  - Kosmoss
   - Laud
   - Lempo
   - Lenzi
@@ -7173,6 +7185,11 @@ payload:
     name: AWW-13 Datalink Pod
     type: pod
     weight: 580
+  axq-14:
+    name: AN/AXQ-14 Datalink Pod
+    type: pod
+    short: AXQ14
+    weight: 661  
   aim9l:
     name: AIM-9L Sidewinder IR AAM
     short: A9L
@@ -7183,6 +7200,16 @@ payload:
     short: A9M
     type: a2a
     weight: 197
+  aim9j:
+    name: AIM-9J Sidewinder IR AAM
+    short: A9J
+    type: a2a
+    weight: 170  
+  aim9p:
+    name: AIM-9P Sidewinder IR AAM
+    short: A9P
+    type: a2a
+    weight: 190 
   aim54am47:
     name: AIM-54A-Mk47
     short: A54AM47
@@ -7359,6 +7386,16 @@ payload:
     short: TGP
     type: pod
     weight: 492
+  aaq13:
+    name: AN/AAQ-13 LANTIRN NAV POD
+    short: NAV
+    type: pod
+    weight: 520
+  aaq14:
+    name: AN/AAQ-14 LANTIRN TGT POD
+    short: TGT
+    type: pod
+    weight: 520     
   asq228:
     name: AN/ASQ-228 ATFLIR 
     short: TGP
@@ -7992,6 +8029,16 @@ payload:
     name: 1x ADM-141A - BRU-42
     type: a2g
     weight: 2350
+  f15eft610:
+    name: Fuel tank 610 gal
+    short: FT610
+    type: tank
+    weight: 320
+    fuel: 3965
+  blu107:
+    name: BLU-107
+    type: a2g
+    weight: 483
 loadout:
   a10:
     1: &a10station1
@@ -9344,6 +9391,171 @@ loadout:
         pylon: bru34
       - weapon: lantirn
     8a: *f14station1a
+  f15e:
+    2A: &f15estation2a
+      - weapon: aim120b
+      - weapon: aim120c
+      - weapon: aim9j
+      - weapon: aim9l
+      - weapon: aim9m
+      - weapon: aim9p
+      - weapon: cap9m
+    2: &f15estation2
+      - weapon: bdu50hd
+      - weapon: bdu50ld
+      - weapon: bdu50lgb
+      - weapon: cbu87
+      - weapon: cbu97
+      - weapon: gbu10
+      - weapon: gbu12
+      - weapon: gbu24
+      - weapon: mk20
+      - weapon: mk82
+      - weapon: mk82air
+      - weapon: mk82se
+      - weapon: mk84
+      - weapon: mk84agp
+      - weapon: mk84atp
+      - weapon: f15eft610
+      - weapon: mxu648
+    2B: *f15estation2a
+    L-CFT: &f15estationlcft
+      - weapon: bdu50hd
+        amount: 1
+      - weapon: bdu50hd
+        amount: 2
+      - weapon: bdu50hd
+        amount: 3
+      - weapon: bdu50hd
+        amount: 6
+      - weapon: bdu50ld
+        amount: 1
+      - weapon: bdu50ld
+        amount: 2
+      - weapon: bdu50ld
+        amount: 3
+      - weapon: bdu50ld
+        amount: 6
+      - weapon: bdu50lgb
+        amount: 1
+      - weapon: bdu50lgb
+        amount: 2
+      - weapon: bdu50lgb
+        amount: 4
+      - weapon: blu107
+        amount: 3
+      - weapon: blu107
+        amount: 6
+      - weapon: cbu87
+        amount: 3
+      - weapon: cbu87
+        amount: 6
+      - weapon: cbu97
+        amount: 3
+      - weapon: cbu97
+        amount: 6
+      - weapon: gbu10
+        amount: 1
+      - weapon: gbu10
+        amount: 2
+      - weapon: gbu12
+        amount: 1
+      - weapon: gbu12
+        amount: 2
+      - weapon: gbu12
+        amount: 4
+      - weapon: gbu24
+      - weapon: mk20
+        amount: 3
+      - weapon: mk20
+        amount: 6
+      - weapon: mk82
+        amount: 1
+      - weapon: mk82
+        amount: 2
+      - weapon: mk82
+        amount: 3
+      - weapon: mk82
+        amount: 6
+      - weapon: mk82air
+        amount: 1
+      - weapon: mk82air
+        amount: 2
+      - weapon: mk82air
+        amount: 3
+      - weapon: mk82air
+        amount: 6
+      - weapon: mk82se
+        amount: 1
+      - weapon: mk82se
+        amount: 2
+      - weapon: mk82se
+        amount: 3
+      - weapon: mk82se
+        amount: 6
+      - weapon: mk84
+        amount: 1
+      - weapon: mk84
+        amount: 2
+      - weapon: mk84agp
+        amount: 1
+      - weapon: mk84agp
+        amount: 2
+      - weapon: mk84atp
+        amount: 1
+      - weapon: mk84atp
+        amount: 2
+      - weapon: mxu648
+        amount: 1
+      - weapon: mxu648
+        amount: 2
+      - weapon: aim120b
+        amount: 1
+      - weapon: aim120b
+        amount: 2
+      - weapon: aim120c
+        amount: 1
+      - weapon: aim120c
+        amount: 2
+      - weapon: aim7f
+        amount: 1
+      - weapon: aim7f
+        amount: 2
+      - weapon: aim7m
+        amount: 1
+      - weapon: aim7m
+        amount: 2
+      - weapon: aim7mh
+        amount: 1
+      - weapon: aim7mh
+        amount: 2
+    TGP:
+      - weapon: aaq14
+    5:
+      - weapon: bdu50hd
+      - weapon: bdu50ld
+      - weapon: bdu50lgb
+      - weapon: cbu87
+      - weapon: cbu97
+      - weapon: gbu10
+      - weapon: gbu12
+      - weapon: gbu24
+      - weapon: mk20
+      - weapon: mk82
+      - weapon: mk82air
+      - weapon: mk82se
+      - weapon: mk84
+      - weapon: mk84agp
+      - weapon: mk84atp
+      - weapon: f15eft610
+      - weapon: mxu648
+      - weapon: axq14
+    NVP:
+      - weapon: aaq13
+    R-CFT: *f15estationlcft
+    8A: *f15estation2a
+    8: *f15estation2
+    8B: *f15estation2a
   mi8:
     1: &mi8station1
       - weapon: fab100
