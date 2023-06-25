@@ -6265,7 +6265,7 @@ airframes:
     weight:
       empty: 38936
       fuel: 22588
-      tol: 61815
+      tol: 81000
     gun:
       amount: 510
       weight: 293
@@ -9512,4 +9512,114 @@ loadout:
       - weapon: mk84atp
       - weapon: f15eft610
       - weapon: mxu648
-    2b: *f15estation2a
+    2B: *f15estation2a
+    LCFT: &f15estationlcft
+      - weapon: bdu50hd
+        amount: 1
+      - weapon: bdu50hd
+        amount: 2
+      - weapon: bdu50hd
+        amount: 3
+      - weapon: bdu50hd
+        amount: 6
+      - weapon: bdu50ld
+        amount: 1
+      - weapon: bdu50ld
+        amount: 2
+      - weapon: bdu50ld
+        amount: 3
+      - weapon: bdu50ld
+        amount: 6
+      - weapon: bdu50lgb
+        amount: 1
+      - weapon: bdu50lgb
+        amount: 2
+      - weapon: bdu50lgb
+        amount: 4
+      - weapon: blu107
+        amount: 3
+      - weapon: blu107
+        amount: 6
+      - weapon: cbu87
+        amount: 3
+      - weapon: cbu87
+        amount: 6
+      - weapon: cbu97
+        amount: 3
+      - weapon: cbu97
+        amount: 6
+      - weapon: gbu10
+        amount: 1
+      - weapon: gbu10
+        amount: 2
+      - weapon: gbu12
+        amount: 1
+      - weapon: gbu12
+        amount: 2
+      - weapon: gbu12
+        amount: 4
+      - weapon: gbu24
+      - weapon: mk20
+        amount: 3
+      - weapon: mk20
+        amount: 6
+      - weapon: mk82
+        amount: 1
+      - weapon: mk82
+        amount: 2
+      - weapon: mk82
+        amount: 3
+      - weapon: mk82
+        amount: 6
+      - weapon: mk82air
+        amount: 1
+      - weapon: mk82air
+        amount: 2
+      - weapon: mk82air
+        amount: 3
+      - weapon: mk82air
+        amount: 6
+      - weapon: mk82se
+        amount: 1
+      - weapon: mk82se
+        amount: 2
+      - weapon: mk82se
+        amount: 3
+      - weapon: mk82se
+        amount: 6
+      - weapon: mk84
+        amount: 1
+      - weapon: mk84
+        amount: 2
+      - weapon: mk84agp
+        amount: 1
+      - weapon: mk84agp
+        amount: 2
+      - weapon: mk84atp
+        amount: 1
+      - weapon: mk84atp
+        amount: 2
+      - weapon: mxu648
+        amount: 1
+      - weapon: mxu648
+        amount: 2
+      - weapon: aim120b
+        amount: 1
+      - weapon: aim120b
+        amount: 2
+      - weapon: aim120c
+        amount: 1
+      - weapon: aim120c
+        amount: 2
+      - weapon: aim7f
+        amount: 1
+      - weapon: aim7f
+        amount: 2
+      - weapon: aim7m
+        amount: 1
+      - weapon: aim7m
+        amount: 2
+      - weapon: aim7mh
+        amount: 1
+      - weapon: aim7mh
+        amount: 2
