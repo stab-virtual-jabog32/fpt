@@ -9489,4 +9489,11 @@ loadout:
     1: 
       - weapon: aim9m
         pylon: lau105
-      
+    2a: &f15estation2a
+      - weapon: aim120b
+      - weapon: aim120c
+      - weapon: aim9j
+      - weapon: aim9l
+      - weapon: aim9m
+      - weapon: aim9p
+      - weapon: cap9m
