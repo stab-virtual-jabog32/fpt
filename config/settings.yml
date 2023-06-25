@@ -9391,7 +9391,7 @@ loadout:
         pylon: bru34
       - weapon: lantirn
     8a: *f14station1a
-  f15e:
+  #f15e:
     2a: &f15estation2a
       - weapon: aim120b
       - weapon: aim120c
@@ -9650,3 +9650,4 @@ loadout:
     6: *uh1hstation1
     HP:
       - weapon: uh1hhp
+  f15e:
