@@ -9513,7 +9513,7 @@ loadout:
       - weapon: f15eft610
       - weapon: mxu648
     2B: *f15estation2a
-    LCFT: &f15estationlcft
+    L-CFT: &f15estationlcft
       - weapon: bdu50hd
         amount: 1
       - weapon: bdu50hd
@@ -9623,3 +9623,5 @@ loadout:
         amount: 1
       - weapon: aim7mh
         amount: 2
+    tgp:
+      - weapon: aaq14
