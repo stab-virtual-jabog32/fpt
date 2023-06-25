@@ -9623,5 +9623,24 @@ loadout:
         amount: 1
       - weapon: aim7mh
         amount: 2
-    tgp:
+    TGP:
       - weapon: aaq14
+    5:
+      - weapon: bdu50hd
+      - weapon: bdu50ld
+      - weapon: bdu50lgb
+      - weapon: cbu87
+      - weapon: cbu97
+      - weapon: gbu10
+      - weapon: gbu12
+      - weapon: gbu24
+      - weapon: mk20
+      - weapon: mk82
+      - weapon: mk82air
+      - weapon: mk82se
+      - weapon: mk84
+      - weapon: mk84agp
+      - weapon: mk84atp
+      - weapon: f15eft610
+      - weapon: mxu648
+      - weapon: axq14
