@@ -9392,7 +9392,7 @@ loadout:
       - weapon: lantirn
     8a: *f14station1a
   f15e:
-    2A: &f15estation2a
+    2a: &f15estation2a
       - weapon: aim120b
       - weapon: aim120c
       - weapon: aim9j
@@ -9418,8 +9418,8 @@ loadout:
       - weapon: mk84atp
       - weapon: f15eft610
       - weapon: mxu648
-    2B: *f15estation2a
-    L-CFT: &f15estationlcft
+    2b: *f15estation2a
+    lfct: &f15estationlcft
       - weapon: bdu50hd
         amount: 1
       - weapon: bdu50hd
@@ -9529,7 +9529,7 @@ loadout:
         amount: 1
       - weapon: aim7mh
         amount: 2
-    TGP:
+    tgp:
       - weapon: aaq14
     5:
       - weapon: bdu50hd
@@ -9550,12 +9550,12 @@ loadout:
       - weapon: f15eft610
       - weapon: mxu648
       - weapon: axq14
-    NVP:
+    nvp:
       - weapon: aaq13
-    R-CFT: *f15estationlcft
-    8A: *f15estation2a
+    rcft: *f15estationlcft
+    8a: *f15estation2a
     8: *f15estation2
-    8B: *f15estation2a
+    8b: *f15estation2a
   mi8:
     1: &mi8station1
       - weapon: fab100
