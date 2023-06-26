@@ -6076,6 +6076,332 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
+  sinai:
+    name: Sinai
+    channels:
+      - name: Flight/Squadron specific
+    navaids:
+      - id: BGN
+        name: Ben-Gurion
+        channel: 82
+        pos: N32 00.801 E034 52.597
+        elevation: 99
+      - id: NAT
+        name: Natania
+        channel: 71
+        pos: N32 19.920 E034 58.079
+        elevation: 49
+    airbases:
+      sdedov:
+        name: Sde Dov
+        ground: 
+        atis: 
+        tower: 250.7
+        elevation: 19
+        takeoff: 21
+        land: 21
+        runways:
+          - name: 21
+            length: 5712
+            elevation: 13
+          - name: 03
+            length: 5712
+            elevation: 32
+        departures:
+          none: none
+        recoveries:
+          none: none
+      bengurion:
+        name: Ben-Gurion
+        ground: 
+        atis: 
+        tower: 250.800
+        elevation: 90
+        takeoff: 12
+        land: 12
+        tacan: 82x
+        runways:
+          - name: 03
+            length: 9094
+            elevation: 134
+          - name: 21
+            length: 9094
+            elevation: 134
+            ils: 109.7
+          - name: 08
+            length: 13327
+            elevation: 96
+            ils: 110.9
+          - name: 26
+            length: 13327
+            elevation: 134
+            ils: 108.7
+          - name: 12
+            length: 10210
+            elevation: 102
+            ils: 110.8
+          - name: 30
+            length: 10210
+            elevation: 130
+            ils: 111.9
+        departures:
+          none: none
+        recoveries:
+          none: none
+      palmahim:
+        name: Palmahim
+        ground: 
+        atis: 
+        tower: 250.650
+        elevation: 33
+        takeoff: 03R
+        land: 03R
+        runways:
+          - name: 03L
+            length: 3230
+            elevation: 33
+          - name: 21R
+            length: 3230
+            elevation: 33
+          - name: 03R
+            length: 7856
+            elevation: 33
+          - name: 21L
+            length: 7856
+            elevation: 33
+        departures:
+          none: none
+        recoveries:
+          none: none
+      telnof:
+        name: Rio Gallegos
+        ground: 
+        atis: 
+        tower: 250.75
+        elevation: 142
+        takeoff: 36
+        land: 36
+        ils: 109.1
+        tacan: 87X
+        runways:
+          - name: 18
+            length: 9022
+            elevation: 142
+          - name: 36
+            length: 9022
+            elevation: 142
+            ils: 109.1
+          - name: 15R
+            length: 7835
+            elevation: 142
+          - name: 33L
+            length: 7835
+            elevation: 142
+          - name: 15L
+            length: 7830
+            elevation: 142
+          - name: 33R
+            length: 7830
+            elevation: 142
+        departures:
+          none: none
+        recoveries:
+          none: none
+      hatzor:
+        name: hatzor
+        ground: 
+        atis: 
+        tower: 250.6
+        elevation: 100
+        takeoff: 05
+        land: 05
+        ils: 108.5
+        tacan: 106X
+        runways:
+          - name: 05
+            length: 7905
+            elevation: 100
+            ils: 108.5
+          - name: 23
+            length: 7905
+            elevation: 100
+          - name: 11R
+            length: 8040
+            elevation: 100
+          - name: 29L
+            length: 8040
+            elevation: 100
+          - name: 11L
+            length: 8005
+            elevation: 100
+          - name: 29R
+            length: 8005
+            elevation: 100
+        departures:
+          none: none
+        recoveries:
+          none: none
+      nevatim:
+        name: Nevatim
+        ground: 
+        atis: 
+        tower: 251.45
+        elevation: 1303
+        takeoff: 26L
+        land: 26R
+        ils: 108.3
+        runways:
+          - name: 08L
+            length: 8530
+            elevation: 1304
+          - name: 26R
+            length: 8530
+            elevation: 1303
+            ils: 108.3
+          - name: 08R
+            length: 10990
+            elevation: 1303
+          - name: 26L
+            length: 10990
+            elevation: 1303
+          - name: 07
+            length: 12795
+            elevation: 1305
+          - name: 25
+            length: 12795
+            elevation: 1311
+            ils: 111.5
+        departures:
+          none: none
+        recoveries:
+          none: none
+      hatzerim:
+        name: Hatzerim
+        ground: 
+        atis: 
+        tower: 251.4
+        elevation: 676
+        takeoff: 28R
+        land: 28L
+        tacan: 96X
+        ils: 111.3
+        runways:
+          - name: 10R
+            length: 9022
+            elevation: 673
+          - name: 28L
+            length: 9022
+            elevation: 676
+            ils: 111.3
+          - name: 10L
+            length: 8005
+            elevation: 669
+          - name: 28R
+            length: 8005
+            elevation: 687
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kedem:
+        name: Kedem
+        ground: 
+        atis: 
+        tower: 250.15
+        elevation: 601
+        takeoff: 28
+        land: 28
+        runways:
+          - name: 10
+            length: 6240
+            elevation: 636
+          - name: 28
+            length: 6240
+            elevation: 636
+        departures:
+          none: none
+        recoveries:
+          none: none
+      ramon:
+        name: Ramon Airbase
+        ground: 
+        atis: 
+        tower: 251.5
+        elevation: 2031
+        takeoff: 25L
+        land: 25R
+        tacan: 105X
+        ils: 110.7
+        runways:
+          - name: 07R
+            length: 9875
+            elevation: 2031
+          - name: 25L
+            length: 9875
+            elevation: 2031
+          - name: 07L
+            length: 8858
+            elevation: 2031
+          - name: 25R
+            length: 8858
+            elevation: 2031
+            ils: 110.7
+        departures:
+          none: none
+        recoveries:
+          none: none
+      ovda:
+        name: Ovda
+        ground: 
+        atis: 
+        tower: 250.05
+        elevation: 1402
+        takeoff: 21L
+        land: 21R
+        tacan: 63X
+        ils: 109.7
+        runways:
+          - name: 03L
+            length: 8530
+            elevation: 1434
+          - name: 21R
+            length: 8530
+            elevation: 1394
+            ils: 109.7
+          - name: 03R
+            length: 9843
+            elevation: 2031
+          - name: 21L
+            length: 1391
+            elevation: 1438
+        departures:
+          none: none
+        recoveries:
+          none: none
+      carrier:
+        name: CV-73 USS G. Washington
+        tacan: 73X
+        tower: 305.0
+        ground: ICLS 12
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III
+      cvn59:
+        name: CV-59 USS Forrestal
+        tacan: 59X
+        tower: 303.0
+        approach: 303.0
+        clearance: 303.0
+        ground: ICLS 6
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III       
 airframes:
   a10:
     name: A-10C
