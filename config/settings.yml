@@ -6119,7 +6119,7 @@ theaters:
         elevation: 90
         takeoff: 12
         land: 12
-        tacan: 82x
+        tacan: 82X
         runways:
           - name: 03
             length: 9094
@@ -7024,7 +7024,6 @@ missions:
   - Tanker
 pilots:
   - addiks
-  - Bane
   - Bruce
   - Butcher
   - Candyman
@@ -7073,6 +7072,7 @@ pilots:
   - Snake
   - Stiletto
   - Striver
+  - TaB
   - Tammi
   - Tank
   - Taxman
