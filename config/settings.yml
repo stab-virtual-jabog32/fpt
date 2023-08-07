@@ -9797,7 +9797,7 @@ loadout:
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
-    5: &ah64dstation5
+    IAFS:
       - weapon: robby
   uh1h:
     1: &uh1hstation1
