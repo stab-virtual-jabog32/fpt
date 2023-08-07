@@ -5832,7 +5832,6 @@ theaters:
             length: 7001
             elevation: 213
         departures:
-        departures:
           none: none
         recoveries:
           none: none
@@ -8288,7 +8287,7 @@ payload:
     name: M274 - SMK
     type: rockets
     weight: 522
- m151herc:
+  m151herc:
     name: M151 - HE RC
     type: rockets
     weight: 522
@@ -9798,7 +9797,7 @@ loadout:
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
-    5:
+    5: &ah64dstation5
       - weapon: robby
   uh1h:
     1: &uh1hstation1
