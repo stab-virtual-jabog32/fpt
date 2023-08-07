@@ -6456,8 +6456,8 @@ airframes:
     name: AH-64D
     seats: 2
     gun:
-      amount: 300
-      weight: 227
+      amount: 1200
+      weight: 908
       types:
         hedp: HEDP
         tp: TP
@@ -6466,7 +6466,7 @@ airframes:
         flares: 60
     weight:
       empty: 13074
-      fuel: 3170
+      fuel: 2513
       tol: 23000
   ajs37:
     name: AJS37
@@ -8277,7 +8277,7 @@ payload:
     type: rockets
     weight: 522  
   m229he:
-    name: M229 - HE
+    name: M229 - HE MPP
     type: rockets
     weight: 668
   m257illum:
@@ -8285,17 +8285,17 @@ payload:
     type: rockets
     weight: 556  
   m151hedp:
-    name: M151 - HEDP
+    name: M151 - HE
     type: rockets
-    weight: 745
+    weight: 522
   m274smk:
     name: M274 - SMK
     type: rockets
     weight: 522
-  m282mpp:
-    name: M282 - MPP
+ m151herc:
+    name: M151 - HE RC
     type: rockets
-    weight: 606
+    weight: 522
   m2616pd6il:
     name: M261 - 6PD+6IL
     type: rockets
@@ -8366,6 +8366,17 @@ payload:
     name: BLU-107
     type: a2g
     weight: 483
+  robby:
+    name: Robby Tank
+    short: Robby
+    type: tank
+    weight: 320
+    fuel: 657
+  agm114l:
+    name: AGM-114L
+    short: AGM114L
+    type: a2g
+    weight: 108
 loadout:
   a10:
     1: &a10station1
@@ -9767,20 +9778,33 @@ loadout:
         pylon: m299 
       - weapon: agm114k
         amount: 4
-        pylon: m299  
+        pylon: m299
+      - weapon: agm114l
+        pylon: m299
+      - weapon: agm114l
+        amount: 2
+        pylon: m299
+      - weapon: agm114l
+        amount: 3
+        pylon: m299 
+      - weapon: agm114l
+        amount: 4
+        pylon: m299
       - weapon: ft230
       - weapon: m151he
       - weapon: m151hedp
       - weapon: m229he
       - weapon: m257illum
       - weapon: m274smk
-      - weapon: m282mpp
+      - weapon: m151herc
       - weapon: m2616pd6il
       - weapon: m2616pd6sk
       - weapon: m299
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
+    5: 
+      - weapon: robby
   uh1h:
     1: &uh1hstation1
       - weapon: m134fm
