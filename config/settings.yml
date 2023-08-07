@@ -8283,11 +8283,7 @@ payload:
   m257illum:
     name: M257 - Illum
     type: rockets
-    weight: 556  
-  m151hedp:
-    name: M151 - HE
-    type: rockets
-    weight: 522
+    weight: 556
   m274smk:
     name: M274 - SMK
     type: rockets
@@ -9792,7 +9788,6 @@ loadout:
         pylon: m299
       - weapon: ft230
       - weapon: m151he
-      - weapon: m151hedp
       - weapon: m229he
       - weapon: m257illum
       - weapon: m274smk
@@ -9803,7 +9798,7 @@ loadout:
     2: *ah64dstation1
     3: *ah64dstation1
     4: *ah64dstation1
-    5: 
+    5:
       - weapon: robby
   uh1h:
     1: &uh1hstation1
