@@ -5260,10 +5260,8 @@ theaters:
           rwy10vfrdep: RWY10 VFR
           helivfr: Helicopter VFR
         recoveries:
-          staralpha: STAR ALPHA
-          starbravo: STAR BRAVO
           tac28: TAC 28
-          tactoils: TAC TO ILS
+          tactoils: ILS 28
           rwy28vfrarr: RWY28 VFR
           rwy10vfrarr: RWY10 VFR
           helivfr: Helicopter VFR
