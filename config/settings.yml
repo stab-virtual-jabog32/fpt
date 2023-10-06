@@ -8399,6 +8399,7 @@ loadout:
       - weapon: mk82air
       - weapon: alq131
       - weapon: alq184
+      - weapon: alq184l
       - weapon: asqt50
         pylon: lau105
       - weapon: smokeblue
