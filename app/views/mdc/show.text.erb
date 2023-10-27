@@ -214,5 +214,5 @@ mdc = {
         },
 <% end %>
     },
-    ["notes"] = [===[<%= j(@flight.notes.encode(@flight.notes.encoding, crlf_newline: true)) %>]===],
+    ["notes"] = [===[<%= j(@flight.notes.sub('\n','\r\n')) %>]===],
 }
