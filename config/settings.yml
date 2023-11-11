@@ -5233,6 +5233,11 @@ theaters:
         channel: 84
         pos: N32 39.892 E035 11.265
         elevation: 136
+      - id: OS66
+        name: Kuweires Military Aviation Institute
+        channel: 36
+        pos: N36 11.362 E037 34.226
+        elevation: 1200
     airbases:
       akrotiri:
         name: Akrotiri AFB
@@ -5404,7 +5409,25 @@ theaters:
         recoveries:
           case1: CASE I
           case2: CASE II
-          case3: CASE III          
+          case3: CASE III
+      kuwaires:
+        name: Kuweires Military Aviation Institute
+        tacan: 36X
+        tower: 251.250
+        elevation: 1200
+        takeoff: 10
+        land: 28
+        runways:
+          - name: 10
+            length: 6662
+            elevation: 1201
+          - name: 28
+            length: 6662
+            elevation: 1201
+        departures:
+          none: none
+        recoveries:
+          none: none
     support:
       overlord:
         callsign: OVERLORD2
