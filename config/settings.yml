@@ -5234,7 +5234,7 @@ theaters:
         pos: N32 39.892 E035 11.265
         elevation: 136
       - id: OS66
-        name: Kuweires Military Aviation Institute
+        name: Kuweires MAI
         channel: 36
         pos: N36 11.362 E037 34.226
         elevation: 1200
@@ -5410,7 +5410,7 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
-      kuwaires:
+      kuweires:
         name: Kuweires Military Aviation Institute
         tacan: 36X
         tower: 251.250
