@@ -1,6 +1,9 @@
 defaults:
   tiger:
     iff: 100
+    freq: 261.15
+    laser: 155
+    tcn: 11
   tiger_1:
     iff: 101
   tiger_2:
@@ -16,7 +19,9 @@ defaults:
   tiger_7:
     iff: 107
   cougar:
-    iff: 110
+    freq: 261.25
+    laser: 156
+    tcn: 21
   cougar_1:
     iff: 111
   cougar_2:
@@ -33,6 +38,9 @@ defaults:
     iff: 117
   panther:
     iff: 120
+    freq: 261.35
+    laser: 157
+    tcn: 31
   panther_1:
     iff: 121
   panther_2:
@@ -49,6 +57,9 @@ defaults:
     iff: 127
   lion:
     iff: 130
+    freq: 261.45
+    laser: 158
+    tcn: 41
   lion_1:
     iff: 131
   lion_2:
@@ -65,6 +76,10 @@ defaults:
     iff: 137
   monster:
     iff: 140
+    freq: 132.15
+    laser: 161
+    group: 21
+    tcn: 25
   monster_1:
     iff: 141
   monster_2:
@@ -81,6 +96,10 @@ defaults:
     iff: 147
   t-rex:
     iff: 150
+    freq: 132.25
+    laser: 165
+    group: 25
+    tcn: 27
   t-rex_1:
     iff: 151
   t-rex_2:
@@ -113,20 +132,38 @@ defaults:
     iff: 167
   edelweiss:
     iff: 170
+    freq: 264.05
+    laser: 170
   edelweiss_1:
     iff: 171
+    freq: 264.15
+    laser: 171
   edelweiss_2:
     iff: 172
+    freq: 264.25
+    laser: 172
   edelweiss_3:
     iff: 173
+    freq: 264.35
+    laser: 173
   edelweiss_4:
     iff: 174
+    freq: 264.45
+    laser: 174
   edelweiss_5:
     iff: 175
+    freq: 264.55
+    laser: 175
   edelweiss_6:
     iff: 176
+    freq: 134.65
+    laser: 166
+    group: 40
   edelweiss_7:
     iff: 177
+    freq: 134.75
+    laser: 167
+    group: 41
   axe:
     iff: 200
   axe_1:
@@ -481,6 +518,8 @@ defaults:
     iff: 347
   rattler:
     iff: 460
+    freq: 35.35
+    laser: 125
   rattler_1:
     iff: 461
   rattler_2:
@@ -643,62 +682,6 @@ theaters:
   nttr:
     name: Nellis Test & Training Range
     link: https://www.google.com/maps/d/viewer?mid=1PZePuO8-bXETstbVcoQbbp8PmqG1QQJY&ll=36.68943668897938%2C-115.5734395&z=8
-    defaults:
-      tiger:
-        freq: 261.15
-        laser: 155
-        tcn: 11
-      cougar:
-        freq: 261.25
-        laser: 156
-        tcn: 21
-      panther:
-        freq: 261.35
-        laser: 157
-        tcn: 31
-      lion:
-        freq: 261.45
-        laser: 158
-        tcn: 41
-      monster:
-        freq: 132.15
-        laser: 161
-        group: 21
-        tcn: 25
-      t-rex:
-        freq: 132.25
-        laser: 165
-        group: 25
-        tcn: 27
-      edelweiss:
-        freq: 264.05
-        laser: 170
-      edelweiss_1:
-        freq: 264.15
-        laser: 171
-      edelweiss_2:
-        freq: 264.25
-        laser: 172
-      edelweiss_3:
-        freq: 264.35
-        laser: 173
-      edelweiss_4:
-        freq: 264.45
-        laser: 174
-      edelweiss_5:
-        freq: 264.55
-        laser: 175
-      edelweiss_6:
-        freq: 134.65
-        laser: 166
-        group: 40
-      edelweiss_7:
-        freq: 134.75
-        laser: 167
-        group: 41
-      rattler:
-        freq: 35.35
-        laser: 125
     channels:
       - name: Flight/Squadron specific
       - name: Nellis Clearance Delivery
@@ -2872,157 +2855,6 @@ theaters:
   caucasus:
     name: Caucasus
     link: https://www.google.com/maps/d/viewer?mid=10zhS5hK6jx8uj2jVPM1vwrE4wNEl2_5i&ll=42.270911099028204%2C42.999008499999945&z=8
-    defaults:
-      tiger:
-        iff: 100
-      tiger_1:
-        iff: 101
-      tiger_2:
-        iff: 102
-      tiger_3:
-        iff: 103
-      tiger_4:
-        iff: 104
-      tiger_5:
-        iff: 105
-      tiger_6:
-        iff: 106
-      tiger_7:
-        iff: 107
-      cougar:
-        iff: 120
-      cougar_1:
-        iff: 121
-      cougar_2:
-        iff: 122
-      cougar_3:
-        iff: 123
-      cougar_4:
-        iff: 124
-      cougar_5:
-        iff: 125
-      cougar_6:
-        iff: 126
-      cougar_7:
-        iff: 127
-      panther:
-        iff: 140
-      panther_1:
-        iff: 141
-      panther_2:
-        iff: 142
-      panther_3:
-        iff: 143
-      panther_4:
-        iff: 144
-      panther_5:
-        iff: 145
-      panther_6:
-        iff: 146
-      panther_7:
-        iff: 147
-      lion:
-        iff: 170
-      lion_1:
-        iff: 171
-      lion_2:
-        iff: 172
-      lion_3:
-        iff: 173
-      lion_4:
-        iff: 174
-      lion_5:
-        iff: 175
-      lion_6:
-        iff: 176
-      lion_7:
-        iff: 177
-      monster:
-        freq: 32.15
-        laser: 161
-        group: 21
-        tcn: 21
-        iff: 200
-      monster_1:
-        iff: 201
-      monster_2:
-        iff: 202
-      monster_3:
-        iff: 203
-      monster_4:
-        iff: 204
-      monster_5:
-        iff: 205
-      monster_6:
-        iff: 206
-      monster_7:
-        iff: 207
-      t-rex:
-        freq: 32.25
-        laser: 165
-        group: 25
-        tcn: 27
-        iff: 220
-      t-rex_1:
-        iff: 221
-      t-rex_2:
-        iff: 222
-      t-rex_3:
-        iff: 223
-      t-rex_4:
-        iff: 224
-      t-rex_5:
-        iff: 225
-      t-rex_6:
-        iff: 226
-      t-rex_7:
-        iff: 227
-      raptor:
-        iff: 250
-      raptor_1:
-        iff: 251
-      raptor_2:
-        iff: 252
-      raptor_3:
-        iff: 253
-      raptor_4:
-        iff: 254
-      raptor_5:
-        iff: 255
-      raptor_6:
-        iff: 256
-      raptor_7:
-        iff: 257
-      edelweiss:
-        iff: 400
-      edelweiss_1:
-        iff: 401
-      edelweiss_2:
-        iff: 402
-      edelweiss_3:
-        iff: 403
-      edelweiss_4:
-        iff: 404
-      edelweiss_5:
-        iff: 405
-      edelweiss_6:
-        iff: 406
-      edelweiss_7:
-        iff: 407
-      mig_1:
-        iff: 571
-      mig_2:
-        iff: 572
-      mig_3:
-        iff: 573
-      mig_4:
-        iff: 574
-      mig_5:
-        iff: 575
-      mig_6:
-        iff: 576
-      mig_7:
-        iff: 577
     channels:
       - name: Flight/Squadron specific
     navaids:
@@ -6941,12 +6773,13 @@ airframes:
       - chaff: 0
         flares: 60
 callsigns:
-  - Cougar
   - Edelweiss
   - Lion
   - Monster
+  - Nazgul
   - Panther
   - Raptor
+  - Rattler
   - T-Rex
   - Tiger
   - Vanguard
@@ -6961,6 +6794,7 @@ callsigns:
   - Cobra
   - Colt
   - Cowboy
+  - Cougar*
   - Darkstar*
   - Devil*
   - Dodge
@@ -6988,7 +6822,6 @@ callsigns:
   - Moonbeam*
   - Nasty*
   - Navy
-  - Nazgul*
   - Ninja*
   - Outlaw*
   - Overlord*
@@ -6997,7 +6830,6 @@ callsigns:
   - Python*
   - Ram*
   - Ragin*
-  - Rattler
   - Roman*
   - Sandy
   - Snake
