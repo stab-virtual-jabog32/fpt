@@ -3,7 +3,6 @@ defaults:
     iff: 100
     freq: 261.15
     laser: 155
-    tcn: 11
   tiger_1:
     iff: 101
   tiger_2:
@@ -18,29 +17,10 @@ defaults:
     iff: 106
   tiger_7:
     iff: 107
-  cougar:
-    freq: 261.25
-    laser: 156
-    tcn: 21
-  cougar_1:
-    iff: 111
-  cougar_2:
-    iff: 112
-  cougar_3:
-    iff: 113
-  cougar_4:
-    iff: 114
-  cougar_5:
-    iff: 115
-  cougar_6:
-    iff: 116
-  cougar_7:
-    iff: 117
   panther:
     iff: 120
     freq: 261.35
     laser: 157
-    tcn: 31
   panther_1:
     iff: 121
   panther_2:
@@ -59,7 +39,6 @@ defaults:
     iff: 130
     freq: 261.45
     laser: 158
-    tcn: 41
   lion_1:
     iff: 131
   lion_2:
@@ -79,7 +58,6 @@ defaults:
     freq: 132.15
     laser: 161
     group: 21
-    tcn: 25
   monster_1:
     iff: 141
   monster_2:
@@ -94,12 +72,29 @@ defaults:
     iff: 146
   monster_7:
     iff: 147
+  nazgul:
+    iff: 110
+    freq: 262.45
+    laser: 156
+  nazgul_1:
+    iff: 111
+  nazgul_2:
+    iff: 112
+  nazgul_3:
+    iff: 113
+  nazgul_4:
+    iff: 114
+  nazgul_5:
+    iff: 115
+  nazgul_6:
+    iff: 116
+  nazgul_7:
+    iff: 117
   t-rex:
     iff: 150
     freq: 132.25
     laser: 165
     group: 25
-    tcn: 27
   t-rex_1:
     iff: 151
   t-rex_2:
@@ -116,6 +111,8 @@ defaults:
     iff: 157
   raptor:
     iff: 160
+    freq: 134.00
+    laser: 162
   raptor_1:
     iff: 161
   raptor_2:
@@ -518,7 +515,7 @@ defaults:
     iff: 347
   rattler:
     iff: 460
-    freq: 35.35
+    freq: 133.5
     laser: 125
   rattler_1:
     iff: 461
@@ -6783,12 +6780,12 @@ callsigns:
   - T-Rex
   - Tiger
   - Vanguard
-  - Ascot
+  - Ascot*
   - Axe
   - BamBam
   - Beast
   - Boar
-  - Cargo
+  - Cargo*
   - Chevy
   - Claw
   - Cobra
@@ -6803,7 +6800,7 @@ callsigns:
   - Falcon
   - Ford*
   - Fury
-  - Hammer*
+  - Hammer
   - Hawg
   - Hawk*
   - Heavy*
@@ -6820,10 +6817,10 @@ callsigns:
   - Mig
   - Misty
   - Moonbeam*
-  - Nasty*
+  - Nasty
   - Navy
   - Ninja*
-  - Outlaw*
+  - Outlaw
   - Overlord*
   - Playboy*
   - Pontiac
@@ -6852,6 +6849,7 @@ callsigns:
 missions:
   - Training
   - AI
+  - Air Assault
   - AR
   - AWACS
   - ATC
@@ -6874,18 +6872,14 @@ missions:
   - Strike
   - Sweep
   - Tanker
+  - Transport
 pilots:
   - addiks
-  - Akula
-  - Bruce
   - Butcher
-  - Candyman
   - Chance
-  - Cobra
   - Cookie
   - Crusader
   - Cyking
-  - DirtDiver
   - Florida
   - Firefly
   - G-Rex
@@ -6896,7 +6890,6 @@ pilots:
   - Hercules
   - Hudson
   - Jemi
-  - Joker
   - Kosmoss
   - Laud
   - Lempo
@@ -6906,21 +6899,15 @@ pilots:
   - Mütze
   - Nerkub
   - Newbie
-  - Obi
-  - Octave
-  - Pepsi
   - PixelFace
   - Poet
   - Prinz
-  - Rapture
   - Razorback
   - Repsus
   - Retai
   - Sandman
   - Siddharta
-  - Skyhawk
   - SkyRat
-  - Smoky
   - SNAFU
   - Snake
   - Stiletto
