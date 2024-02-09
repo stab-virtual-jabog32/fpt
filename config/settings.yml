@@ -9677,7 +9677,7 @@ loadout:
       - weapon: mk84atp
       - weapon: f15eft610
       - weapon: mxu648
-      - weaopn: gbu31v1b
+      - weapon: gbu31v1b
       - weapon: gbu31v3b
       - weapon: gbu38
       - weapon: gbu54
@@ -9792,8 +9792,7 @@ loadout:
         amount: 1
       - weapon: aim7mh
         amount: 2
-      - weaopn: agm154a
-        amount: 1
+      - weapon: agm154a
       - weapon: gbu31v1b
         amount: 1
       - weapon: gbu31v1b
