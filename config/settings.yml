@@ -5187,7 +5187,6 @@ theaters:
           none: none
       incirlik:
         name: Incirlik AFB
-        ground: 
         atis: 377.475
         ground: 371.350
         tower: 360.100
@@ -8066,31 +8065,6 @@ payload:
     name: BDU-45B
     type: a2g
     weight: 511
-  gbu31v1b:
-    name: GBU-31(V)1/B
-    short: G311B
-    type: a2g
-    weight: 2059
-  gbu31v2b:
-    name: GBU-31(V)2/B
-    short: G312B
-    type: a2g
-    weight: 2059
-  gbu31v4b:
-    name: GBU-31(V)4/B
-    short: G314B
-    type: a2g
-    weight: 2138
-  gbu32v2b:
-    name: GBU-32(V)2/B
-    short: G322B
-    type: a2g
-    weight: 1030
-  asq228:
-    name: AN/ASQ-228 ATFLIR
-    short: TGP
-    type: pod
-    weight: 364
   bru57:
     name: BRU-57
     type: pylon
