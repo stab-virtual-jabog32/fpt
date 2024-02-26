@@ -6314,9 +6314,9 @@ airframes:
       - chaff: 30
         flares: 60
     weight:
-      empty: 13074
+      empty: 13073
       fuel: 2513
-      tol: 23000
+      tol: 20260
   ajs37:
     name: AJS37
     weight:
@@ -8191,6 +8191,11 @@ payload:
     short: AGM114L
     type: a2g
     weight: 108
+  apg78:
+    name: AN/APG-78
+    short: APG78
+    type: pylon
+    weight: 522
 loadout:
   a10:
     1: &a10station1
@@ -9619,6 +9624,8 @@ loadout:
     4: *ah64dstation1
     IAFS:
       - weapon: robby
+    MMS:
+      - weapon: apg78
   uh1h:
     1: &uh1hstation1
       - weapon: m134fm
