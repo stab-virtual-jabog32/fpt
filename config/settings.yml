@@ -5003,6 +5003,7 @@ theaters:
         lat: 25.65346983416787
   syria:
     name: European Test & Training Range Cyprus
+    link: https://docs.google.com/document/d/1FCcryLWd9mrTLO7JFuyjp3oaaUbEDpXcV_h5d2JGOuU/edit
     channels:
       - name: Flight/Squadron specific
       - name: Akrotiri ATIS
