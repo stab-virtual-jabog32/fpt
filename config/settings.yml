@@ -5257,6 +5257,24 @@ theaters:
           none: none
         recoveries:
           none: none
+      kingabdulla:
+        name: King Abulla II. AFB
+        tower: 118.0
+        ground: 121.9
+        elevation: 2291
+        takeoff: 31
+        land: 31
+        runways:
+          - name: 31
+            length: 7000
+            elevation: 2291
+          - name: 13
+            length: 7000
+            elevation: 2291
+        departures:
+          none: none
+        recoveries:
+          none: none    
     support:
       overlord:
         callsign: OVERLORD2
