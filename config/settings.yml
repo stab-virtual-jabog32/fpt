@@ -6268,6 +6268,303 @@ theaters:
         recoveries:
           case1: CASE I
           case2: CASE II
+          case3: CASE III
+  kola:
+    name: Kola
+    channels:
+      - name: Flight/Squadron specific
+    navaids:
+      - id: BOO
+        name: Bodo
+        channel: 45
+        pos: N67 15.838 E014 20.046
+        elevation: 43
+      - id: BNK
+        name: Lakselv Banak 
+        channel: 47
+        pos: N70 03.937 E024 58.181
+        elevation: 17
+    airbases:
+      bodo:
+        name: Bodo
+        ground: 
+        atis: 
+        tower: 250.450
+        elevation: 19
+        takeoff: 07
+        land: 25
+        tacan: 45X
+        ils: 110.30
+        runways:
+          - name: 07
+            length: 9167
+            elevation: 19
+            ils: 110.30
+          - name: 25
+            length: 9167
+            elevation: 40
+            ils: 108.70
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kalixfors:
+        name: kalixfors
+        ground: 
+        atis: 
+        tower: 301.100
+        elevation: 1549
+        takeoff: 05
+        land: 23
+        runways:
+          - name: 17
+            length: 3949
+            elevation: 1549
+          - name: 35
+            length: 3949
+            elevation: 1549
+          - name: 05
+            length: 3017
+            elevation: 1549
+          - name: 23
+            length: 3017
+            elevation: 1549
+          - name: 10
+            length: 3014
+            elevation: 1549
+          - name: 28
+            length: 3014
+            elevation: 1549
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kiruna:
+        name: Kiruna
+        ground: 
+        atis: 
+        tower: 250.350
+        elevation: 1509
+        takeoff: 03
+        land: 21
+        ils: 110.30
+        runways:
+          - name: 03
+            length: 8209
+            elevation: 1509
+          - name: 21
+            length: 8209
+            elevation: 1432
+            ils: 110.30
+        departures:
+          none: none
+        recoveries:
+          none: none
+      lakselv:
+        name: Lakselv Banak
+        ground: 
+        atis: 
+        tower: 250.200
+        elevation: 26
+        takeoff: 36
+        land: 36
+        ils: 109.1
+        tacan: 47X
+        runways:
+          - name: 16
+            length: 9137
+            elevation: 16
+          - name: 34
+            length: 9137
+            elevation: 26
+            ils: 108.30
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kemitornio:
+        name: Kemi Tornio
+        ground: 
+        atis: 
+        tower: 250.300
+        elevation: 62
+        takeoff: 18
+        land: 36
+        ils: 110.9
+        tacan: 106X
+        runways:
+          - name: 18
+            length: 8212
+            elevation: 49
+            ils: 110.9
+          - name: 36
+            length: 8212
+            elevation: 33
+        departures:
+          none: none
+        recoveries:
+          none: none
+      rovaniemi:
+        name: Rovaniemi
+        ground: 
+        atis: 
+        tower: 250.250
+        elevation: 643
+        takeoff: 03
+        land: 21
+        ils: 111.7
+        runways:
+          - name: 03
+            length: 9849
+            elevation: 634
+          - name: 21
+            length: 9849
+            elevation: 610
+            ils: 111.7
+        departures:
+          none: none
+        recoveries:
+          none: none
+      bas100:
+        name: BAS 100
+        ground: 
+        atis: 
+        tower: 257.1
+        elevation: 736
+        takeoff: 04
+        land: 22
+        runways:
+          - name: 04
+            length: 8312
+            elevation: 736
+          - name: 22
+            length: 8312
+            elevation: 736
+        departures:
+          none: none
+        recoveries:
+          none: none
+      murmansk:
+        name: Murmansk Int.
+        ground: 
+        atis: 
+        tower: 250.15
+        elevation: 267
+        takeoff: 13
+        land: 31
+        ils: 108.5
+        runways:
+          - name: 13
+            length: 8202
+            elevation: 242
+            ils: 110.3
+          - name: 31
+            length: 8202
+            elevation: 267
+            ils: 108.5
+        departures:
+          none: none
+        recoveries:
+          none: none
+      severomorsk1:
+        name: Severomorsk 1
+        ground: 
+        atis: 
+        tower: 250.5
+        elevation: 239
+        takeoff: 14
+        land: 32
+        runways:
+          - name: 14
+            length: 10329
+            elevation: 263
+          - name: 32
+            length: 10329
+            elevation: 272
+        departures:
+          none: none
+        recoveries:
+          none: none
+      severomorsk3:
+        name: Severomorsk 3
+        ground: 
+        atis: 
+        tower: 250.4
+        elevation: 564
+        takeoff: 17
+        land: 35
+        runways:
+          - name: 17
+            length: 8202
+            elevation: 539
+          - name: 35
+            length: 8202
+            elevation: 568
+        departures:
+          none: none
+        recoveries:
+          none: none
+      olenegorsk:
+        name: Olenegorsk
+        ground: 
+        atis: 
+        tower: 250.550
+        elevation: 702
+        takeoff: 18
+        land: 36
+        runways:
+          - name: 01
+            length: 11028
+            elevation: 539
+          - name: 19
+            length: 11028
+            elevation: 721
+        departures:
+          none: none
+        recoveries:
+          none: none
+      monchegorsk:
+        name: Monchegorsk
+        ground: 
+        atis: 
+        tower: 250.050
+        elevation: 548
+        takeoff: 01
+        land: 19
+        runways:
+          - name: 01
+            length: 7874
+            elevation: 548
+          - name: 19
+            length: 7874
+            elevation: 538
+        departures:
+          none: none
+        recoveries:
+          none: none
+      carrier:
+        name: CV-73 USS G. Washington
+        tacan: 73X
+        tower: 305.0
+        ground: ICLS 12
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III
+      cvn59:
+        name: CV-59 USS Forrestal
+        tacan: 59X
+        tower: 303.0
+        approach: 303.0
+        clearance: 303.0
+        ground: ICLS 6
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
           case3: CASE III       
 airframes:
   a10:
