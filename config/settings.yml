@@ -678,7 +678,7 @@ defaults:
 theaters:
   nttr:
     name: Nellis Test & Training Range
-    link: https://www.google.com/maps/d/viewer?mid=1PZePuO8-bXETstbVcoQbbp8PmqG1QQJY&ll=36.68943668897938%2C-115.5734395&z=8
+    link: https://www.google.com/maps/d/viewer?mid=1adVszfiqfC7doa053kfy8NHeeApHJjY&ll=36.745344315949986%2C-115.42567133155856&z=8
     channels:
       - name: Flight/Squadron specific
       - name: Nellis Clearance Delivery
