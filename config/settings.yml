@@ -675,6 +675,24 @@ defaults:
     iff: 406
   wizzard_7:
     iff: 407
+  balrog:
+    iff: 600
+    laser: 163
+    freq: 262.55
+  balrog_1:
+    iff: 601
+  balrog_2:
+    iff: 602
+  balrog_3:
+    iff: 603
+  balrog_4:
+    iff: 604
+  balrog_5:
+    iff: 605
+  balrog_6:
+    iff: 606
+  balrog_7:
+    iff: 607
 theaters:
   nttr:
     name: Nellis Test & Training Range
@@ -7077,6 +7095,31 @@ airframes:
         flares: 0
   e3a:
     name: E-3A
+  f4e45mc:
+    name: F-4E
+    weight:
+      empty: 32501
+      fuel: 12149
+      tol: 61998
+    gun:
+      amount: 693
+      weight: 492
+      types:
+        aphe: AP&HE
+        hei: HEI
+        api: API
+        tp: TP
+    expendables:
+      - chaff: 120
+        flares: 0
+      - chaff: 90
+        flares: 15
+      - chaff: 60
+        flares: 30
+      - chaff: 0
+        flares: 30
+      - chaff: 0
+        flares: 0
   f5:
     name: F-5E
     weight:
@@ -7474,6 +7517,7 @@ callsigns:
   - Lion
   - Monster
   - Nazgul
+  - Balrog
   - Panther
   - Raptor
   - Rattler
