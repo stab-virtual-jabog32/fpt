@@ -7286,11 +7286,17 @@ airframes:
     seats: 2
     expendables:
       - chaff: 0
+        flares: 0
+      - chaff: 0
         flares: 30
-      - chaff: 60
+      - chaff: 10
+        flares: 20
+      - chaff: 20
+        flares: 10
+      - chaff: 30
         flares: 0
     weight:
-      empty: 3922
+      empty: 3914
       fuel: 736
       tol: 5200
     gun:
@@ -8995,70 +9001,70 @@ payload:
   m260m151l:
     name: M260 - 7x M151L (HE APKWS)
     short: APKWS
-    type: A2G
+    type: a2g
     weight: 267
   m260m151he:
     name: M260 - 7x M151 HE
     short: M151 HE
-    type: A2G
+    type: a2g
     weight: 196
   m260m156sm:
     name: M260 - 7x M156 SM
     short: Smoke
-    type: A2G
+    type: a2g
     weight: 198
   m260m229he:
     name: M260 - 7x M229 HE (MPP)
     short: MPP
-    type: A2G
+    type: a2g
     weight: 249
   m260m257il:
     name: M260 - 7x M229 IL
     short: Illum
-    type: A2G
+    type: a2g
     weight: 207
   m260m259sm:
     name: M260 - 7x M259 SM
     short: Smoke
-    type: A2G
+    type: a2g
     weight: 190
   m260m274tpsm:
     name: M260 - 7x M274 TP-SM
     short: Smoke
-    type: A2G
+    type: a2g
     weight: 196
   kiowablue:
     Name: Blue Smoke Grenade
     short: Blue
-    type: A2G
+    type: a2g
     weight: 2
   kiowagreen:
     Name: Green Smoke Grenade
     short: Green
-    type: A2G
+    type: a2g
     weight: 2
   kiowared:
     Name: Red Smoke Grenade
     short: Red
-    type: A2G
+    type: a2g
     weight: 2
-  kiowavioket:
+  kiowaviolet:
     Name: Violet Smoke Grenade
     short: Violet
-    type: A2G
+    type: a2g
     weight: 2
   kiowawhite:
-    Name: white Smoke Grenade
+    Name: White Smoke Grenade
     short: White
-    type: A2G
+    type: a2g
     weight: 2
   kiowayellow:
     Name: Yellow Smoke Grenade
     short: Yellow
-    type: A2G
+    type: a2g
     weight: 2
   kiowamms:
-    name: AR MMS
+    name: Mast Mounted Sight
     short: MMS
     type: pylon
     weight: 271
@@ -10734,23 +10740,23 @@ loadout:
       - weapon: m260m274tpsm 
     Dash R:
       - weapon: kiowablue
-      - weapon: smokegreen
+      - weapon: kiowagreen
       - weapon: kiowared
-      - weapon: kiowavioket
+      - weapon: kiowaviolet
       - weapon: kiowawhite
       - weapon: kiowayellow
     Dash C:
       - weapon: kiowablue
-      - weapon: smokegreen
+      - weapon: kiowagreen
       - weapon: kiowared
-      - weapon: kiowavioket
+      - weapon: kiowaviolet
       - weapon: kiowawhite
       - weapon: kiowayellow
     Dash L:
       - weapon: kiowablue
-      - weapon: smokegreen
+      - weapon: kiowagreen
       - weapon: kiowared
-      - weapon: kiowavioket
+      - weapon: kiowaviolet
       - weapon: kiowawhite
       - weapon: kiowayellow
     Left:
