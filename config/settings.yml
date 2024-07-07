@@ -7278,9 +7278,24 @@ airframes:
       - chaff: 10
         flares: 110
       - chaff: 0
-        flares: 120      
+        flares: 120
   ground:
     name: Ground
+  oh58D:
+    name: OH-58D(R)
+    seats: 2
+    expendables:
+      - chaff: 0
+        flares: 30
+      - chaff: 60
+        flares: 0
+    weight:
+      empty: 3922
+      fuel: 736
+      tol: 5200
+    gun:
+      amount: 100
+      weight: 3
   jf17:
     name: JF-17
     weight:
@@ -8945,6 +8960,111 @@ payload:
     short: APG78
     type: pylon
     weight: 522
+  fim92:
+    name: FIM-92
+    short: Stinger
+    type: A2A
+    weight: 95
+  m3p100:
+    name: M3P 100 Rounds
+    short: M2
+    type: pod
+    weight: 190
+  m3p200:
+    name: M3P 200 Rounds
+    short: M2
+    type: pod
+    weight: 218
+  m3p300:
+    name: M3P 300 Rounds
+    short: M2
+    type: pod
+    weight: 249
+  m3p400:
+    name: M3P 400 Rounds
+    short: M2
+    type: pod
+    weight: 278
+  m3p500:
+    name: M3P 500 Rounds
+    short: M2
+    type: pod
+    weight: 306
+  m260m151l:
+    name: M260 - 7x M151L (HE APKWS)
+    short: APKWS
+    type: A2G
+    weight: 267
+  m260m151he:
+    name: M260 - 7x M151 HE
+    short: M151 HE
+    type: A2G
+    weight: 196
+  m260m156sm:
+    name: M260 - 7x M156 SM
+    short: Smoke
+    type: A2G
+    weight: 198
+  m260m229he:
+    name: M260 - 7x M229 HE (MPP)
+    short: MPP
+    type: A2G
+    weight: 249
+  m260m257il:
+    name: M260 - 7x M229 IL
+    short: Illum
+    type: A2G
+    weight: 207
+  m260m259sm:
+    name: M260 - 7x M259 SM
+    short: Smoke
+    type: A2G
+    weight: 190
+  m260m274tpsm:
+    name: M260 - 7x M274 TP-SM
+    short: Smoke
+    type: A2G
+    weight: 196
+  kiowablue:
+    Name: Blue Smoke Grenade
+    short: Blue
+    type: A2G
+    weight: 2
+  kiowagreen:
+    Name: Green Smoke Grenade
+    short: Green
+    type: A2G
+    weight: 2
+  kiowared:
+    Name: Red Smoke Grenade
+    short: Red
+    type: A2G
+    weight: 2
+  kiowavioket:
+    Name: Violet Smoke Grenade
+    short: Violet
+    type: A2G
+    weight: 2
+  kiowawhite:
+    Name: white Smoke Grenade
+    short: White
+    type: A2G
+    weight: 2
+  kiowayellow:
+    Name: Yellow Smoke Grenade
+    short: Yellow
+    type: A2G
+    weight: 2
+  kiowamms:
+    name: AR MMS
+    short: MMS
+    type: pylon
+    weight: 271
+  kiowadoor:
+    name: R + L Doors
+    short: Door
+    type: pylon
+    weight: 8
 loadout:
   a10:
     1: &a10station1
@@ -10594,3 +10714,67 @@ loadout:
     8A: *f15estation2a
     8: *f15estation2
     8B: *f15estation2a
+  oh58d:
+    Right:
+      - weapon: fim92
+      - weapon: agm114k
+        pylon: m299
+        amount: 1
+      - weapon: agm114k
+        pylon: m299
+        amount: 2
+      - weapon: m260m151he
+      - weapon: m260m156sm
+      - weapon: m260m229he
+      - weapon: m260m257il
+      - weapon: m260m259sm
+      - weapon: m260m274tpsm 
+    Dash R:
+      - weapon: kiowablue
+      - weapon: smokegreen
+      - weapon: kiowared
+      - weapon: kiowavioket
+      - weapon: kiowawhite
+      - weapon: kiowayellow
+    Dash C:
+      - weapon: kiowablue
+      - weapon: smokegreen
+      - weapon: kiowared
+      - weapon: kiowavioket
+      - weapon: kiowawhite
+      - weapon: kiowayellow
+    Dash L:
+      - weapon: kiowablue
+      - weapon: smokegreen
+      - weapon: kiowared
+      - weapon: kiowavioket
+      - weapon: kiowawhite
+      - weapon: kiowayellow
+    Left:
+      - weapon: fim92
+      - weapon: agm114k
+        pylon: m299
+        amount: 1
+      - weapon: agm114k
+        pylon: m299
+        amount: 2 
+      - weapon: m3p100
+        pylon: pod
+      - weapon: m3p200
+        pylon: pod
+      - weapon: m3p300
+        pylon: pod
+      - weapon: m3p400
+        pylon: pod
+      - weapon: m3p500
+        pylon: pod
+      - weapon: m260m151he
+      - weapon: m260m156sm
+      - weapon: m260m229he
+      - weapon: m260m257il
+      - weapon: m260m259sm
+      - weapon: m260m274tpsm  
+    MMS:
+      - weapon: kiowamms
+    Doors:
+      - weapon: kiowadoor
