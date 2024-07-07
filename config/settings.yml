@@ -8864,6 +8864,7 @@ payload:
     fuel: 1548
   m151he:
     name: M151 - HE
+    short: HE w/o RC
     type: rockets
     weight: 522  
   m229he:
@@ -8879,15 +8880,18 @@ payload:
     type: rockets
     weight: 522
   m151herc:
-    name: M151 - HE RC
+    name: M151 - HE w/ RC fuze
+    short: HE w/ RC
     type: rockets
     weight: 522
   m2616pd6il:
-    name: M261 - 6PD+6IL
+    name: 16x M151 HE + 3x M257 IL
+    short: HE + IL
     type: rockets
     weight: 527
   m2616pd6sk:
-    name: M261 - 6PD+6SK
+    name: 16x M151 HE + 3x M257 SM
+    short: HE + SM
     type: rockets
     weight: 522
   uh1hhp:
@@ -9034,39 +9038,39 @@ payload:
     type: a2g
     weight: 196
   kiowablue:
-    Name: Blue Smoke Grenade
+    Name: Grenade Blue
     short: Blue
     type: a2g
     weight: 2
   kiowagreen:
-    Name: Green Smoke Grenade
+    Name: Grenade Green
     short: Green
     type: a2g
     weight: 2
   kiowared:
-    Name: Red Smoke Grenade
+    Name: Grenade Red
     short: Red
     type: a2g
     weight: 2
   kiowaviolet:
-    Name: Violet Smoke Grenade
+    Name: Grenade Violet
     short: Violet
     type: a2g
     weight: 2
   kiowawhite:
-    Name: White Smoke Grenade
+    Name: Grenade White
     short: White
     type: a2g
     weight: 2
   kiowayellow:
-    Name: Yellow Smoke Grenade
+    Name: Grenade Yellow
     short: Yellow
     type: a2g
     weight: 2
   kiowamms:
     name: Mast Mounted Sight
     short: MMS
-    type: pylon
+    type: pod
     weight: 271
   kiowadoor:
     name: R + L Doors
