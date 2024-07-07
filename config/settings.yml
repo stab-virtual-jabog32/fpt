@@ -7281,7 +7281,7 @@ airframes:
         flares: 120
   ground:
     name: Ground
-  oh58d:
+  oh58D:
     name: OH-58D(R)
     seats: 2
     expendables:
@@ -8967,27 +8967,27 @@ payload:
     weight: 95
   m3p100:
     name: M3P 100 Rounds
-    short: 100 Shts
+    short: M2
     type: pod
     weight: 190
   m3p200:
     name: M3P 200 Rounds
-    short: 200 Shts
+    short: M2
     type: pod
     weight: 218
   m3p300:
     name: M3P 300 Rounds
-    short: 300 Shts
+    short: M2
     type: pod
     weight: 249
   m3p400:
     name: M3P 400 Rounds
-    short: 400 Shts
+    short: M2
     type: pod
     weight: 278
   m3p500:
     name: M3P 500 Rounds
-    short: 500 Shts
+    short: M2
     type: pod
     weight: 306
   m260m151l:
