@@ -10725,6 +10725,7 @@ loadout:
       - weapon: agm114k
         pylon: m299
         amount: 2
+      - weapon: m260m151l
       - weapon: m260m151he
       - weapon: m260m156sm
       - weapon: m260m229he
@@ -10765,6 +10766,7 @@ loadout:
       - weapon: m3p300
       - weapon: m3p400
       - weapon: m3p500
+      - weapon: m260m151l
       - weapon: m260m151he
       - weapon: m260m156sm
       - weapon: m260m229he
