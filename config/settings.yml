@@ -10759,15 +10759,10 @@ loadout:
         pylon: m299
         amount: 2 
       - weapon: m3p100
-        pylon: pod
       - weapon: m3p200
-        pylon: pod
       - weapon: m3p300
-        pylon: pod
       - weapon: m3p400
-        pylon: pod
       - weapon: m3p500
-        pylon: pod
       - weapon: m260m151he
       - weapon: m260m156sm
       - weapon: m260m229he
