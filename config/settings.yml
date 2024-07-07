@@ -8963,7 +8963,7 @@ payload:
   fim92:
     name: FIM-92
     short: Stinger
-    type: A2A
+    type: a2a
     weight: 95
   m3p100:
     name: M3P 100 Rounds
