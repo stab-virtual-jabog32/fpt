@@ -7296,6 +7296,8 @@ airframes:
     gun:
       amount: 100
       weight: 3
+      types:
+        556mm: 5,56 x 45 mm
   jf17:
     name: JF-17
     weight:
