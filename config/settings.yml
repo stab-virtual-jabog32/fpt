@@ -9038,39 +9038,39 @@ payload:
     type: a2g
     weight: 196
   kiowablue:
-    Name: Grenade Blue
+    name: Grenade Blue
     short: Blue
     type: a2g
     weight: 2
   kiowagreen:
-    Name: Grenade Green
+    name: Grenade Green
     short: Green
     type: a2g
     weight: 2
   kiowared:
-    Name: Grenade Red
+    name: Grenade Red
     short: Red
     type: a2g
     weight: 2
   kiowaviolet:
-    Name: Grenade Violet
+    name: Grenade Violet
     short: Violet
     type: a2g
     weight: 2
   kiowawhite:
-    Name: Grenade White
+    name: Grenade White
     short: White
     type: a2g
     weight: 2
   kiowayellow:
-    Name: Grenade Yellow
+    name: Grenade Yellow
     short: Yellow
     type: a2g
     weight: 2
   kiowamms:
     name: Mast Mounted Sight
     short: MMS
-    type: pod
+    type: pylon
     weight: 271
   kiowadoor:
     name: R + L Doors
@@ -10730,11 +10730,11 @@ loadout:
     Right:
       - weapon: fim92
       - weapon: agm114k
-        pylon: m299
         amount: 1
-      - weapon: agm114k
         pylon: m299
+      - weapon: agm114k
         amount: 2
+        pylon: m299
       - weapon: m260m151l
       - weapon: m260m151he
       - weapon: m260m156sm
@@ -10766,11 +10766,11 @@ loadout:
     Left:
       - weapon: fim92
       - weapon: agm114k
-        pylon: m299
         amount: 1
-      - weapon: agm114k
         pylon: m299
-        amount: 2 
+      - weapon: agm114k
+        amount: 2
+        pylon: m299 
       - weapon: m3p100
       - weapon: m3p200
       - weapon: m3p300
