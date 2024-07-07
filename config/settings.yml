@@ -7281,7 +7281,7 @@ airframes:
         flares: 120
   ground:
     name: Ground
-  oh58D:
+  oh58d:
     name: OH-58D(R)
     seats: 2
     expendables:
