@@ -7093,6 +7093,21 @@ airframes:
     expendables:
       - chaff: 0
         flares: 0
+  ch47f:
+    name: CH-47F
+    seats: 6
+    weight:
+      empty: 25133
+      fuel: 6734
+      tol: 50001
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 120
+        flares: 120
   e3a:
     name: E-3A
   f4e45mc:
@@ -7645,7 +7660,7 @@ pilots:
   - addiks
   - Butcher
   - Chance
-  - Cookie
+  - Coach
   - Crusader
   - Cyking
   - Florida
@@ -7670,7 +7685,6 @@ pilots:
   - Mütze
   - Nerkub
   - Newbie
-  - Phil
   - PixelFace
   - Poet
   - Prinz
@@ -7680,7 +7694,6 @@ pilots:
   - Retai
   - Sandman
   - Siddharta
-  - Shin
   - SkyRat
   - SNAFU
   - Snake
@@ -7695,9 +7708,8 @@ pilots:
   - Thunder
   - Toolface
   - Tronix
-  - Uta
+  - UTA
   - Void
-  - Venom
   - Warblade
   - Woodman
   - vJaBoG66_Yurgon
@@ -8133,6 +8145,11 @@ payload:
     type: pod
     short: AXQ14
     weight: 661  
+  aim9b:
+    name: AIM-9B Sidewinder IR AAM
+    short: A9B
+    type: a2a
+    weight: 163
   aim9l:
     name: AIM-9L Sidewinder IR AAM
     short: A9L
@@ -8143,16 +8160,41 @@ payload:
     short: A9M
     type: a2a
     weight: 197
+  f4e45mcaim9m:
+    name: AIM-9M Sidewinder IR AAM
+    short: A9M
+    type: a2a
+    weight: 192
   aim9j:
     name: AIM-9J Sidewinder IR AAM
     short: A9J
     type: a2a
-    weight: 170  
+    weight: 170
+  aim9juli:
+    name: AIM-9JULI Sidewinder IR AAM
+    short: A9J
+    type: a2a
+    weight: 181    
   aim9p:
     name: AIM-9P Sidewinder IR AAM
     short: A9P
     type: a2a
-    weight: 190 
+    weight: 190
+  f4e45mcaim9p:
+    name: AIM-9P Sidewinder IR AAM
+    short: A9P
+    type: a2a
+    weight: 165
+  aim9p3:
+    name: AIM-9P3 Sidewinder IR AAM
+    short: A9P3
+    type: a2a
+    weight: 179
+  aim9p5:
+    name: AIM-9P5 Sidewinder IR AAM
+    short: A9P5
+    type: a2a
+    weight: 179 
   aim54am47:
     name: AIM-54A-Mk47
     short: A54AM47
@@ -8195,31 +8237,171 @@ payload:
     short: B50H
     type: a2g
     weight: 511
+  f4e45mcbdu50hdmer6:
+    name: 6x BDU-50HD - 500lb Practice Bomb HD (MER)
+    short: 6xB50H
+    type: a2g
+    weight: 3408
+  f4e45mcbdu50hdmer6sta5:
+    name: 6x BDU-50HD - 500lb Practice Bomb HD (MER Station 5)
+    short: 6xB50H
+    type: a2g
+    weight: 3479
+  f4e45mcbdu50hdswater2:
+    name: 2x BDU-50HD - 500lb Practice Bomb HD (TER on SWA)
+    short: 2xB50H
+    type: a2g
+    weight: 1411
+  f4e45mcbdu50hdter2:
+    name: 2x BDU-50HD - 500lb Practice Bomb HD (TER)
+    short: 2xB50H
+    type: a2g
+    weight: 1345
+  f4e45mcbdu50hdter3:
+    name: 3x BDU-50HD - 500lb Practice Bomb HD (TER)
+    short: 3xB50H
+    type: a2g
+    weight: 1876
   bdu50ld:
     name: BDU-50LD
     short: B50
     type: a2g
     weight: 511
+  f4e45mcbdu50ldmer6:
+    name: 6x BDU-50LD - 500lb Practice Bomb LD (MER)
+    short: 6xB50
+    type: a2g
+    weight: 3408
+  f4e45mcbdu50ldmer6sta5:
+    name: 6x BDU-50LD - 500lb Practice Bomb LD (MER Station 5)
+    short: 6xB50
+    type: a2g
+    weight: 3479
+  f4e45mcbdu50ldswater2:
+    name: 2x BDU-50LD - 500lb Practice Bomb LD (TER on SWA)
+    short: 2xB50
+    type: a2g
+    weight: 1411
+  f4e45mcbdu50ldter2:
+    name: 2x BDU-50LD - 500lb Practice Bomb LD (TER)
+    short: 2xB50
+    type: a2g
+    weight: 1345
+  f4e45mcbdu50ldter3:
+    name: 3x BDU-50LD - 500lb Practice Bomb LD (TER)
+    short: 3xB50
+    type: a2g
+    weight: 1876
   bdu50lgb:
     name: BDU-50LGB
     short: B50L
     type: a2g
     weight: 617
+  f4e45mccbu1aamer1:
+    name: 1x CBU-1A/A x 27x19 (513) BLU-4B Bomblets, HE (MER)
+    short: 1xC1AA
+    type: a2g
+    weight: 946
+  f4e45mccbu1aamer1sta5:
+    name: 1x CBU-1A/A x 27x19 (513) BLU-4B Bomblets, HE (MER Station 5)
+    short: 1xC1AA
+    type: a2g
+    weight: 1016
+  f4e45mccbu2amer1:
+    name: 1x CBU-2/A x 19x19 (361) BLU-3 Bomblets, HE (MER)
+    short: 1xC2A
+    type: a2g
+    weight: 966
+  f4e45mccbu2amer1sta5:
+    name: 1x CBU-2/A x 19x19 (361) BLU-3 Bomblets, HE (MER Station 5)
+    short: 1xC2A
+    type: a2g
+    weight: 1036
+  f4e45mccbu2bamer1:
+    name: 1x CBU-2B/A x 22x19 (418) BLU-3B Bomblets, HE (MER)
+    short: 1xC2A
+    type: a2g
+    weight: 1065
+  f4e45mccbu2bamer1sta5:
+    name: 1x CBU-2B/A x 22x19 (418) BLU-3B Bomblets, HE (MER)
+    short: 1xC2A
+    type: a2g
+    weight: 1135
+  f4e45mccbu1aamer2:
+    name: 2x CBU-1A/A x 27x19 (513) BLU-4B Bomblets, HE (MER)
+    short: 1xC1AA
+    type: a2g
+    weight: 1673
+  f4e45mccbu2amer2:
+    name: 2x CBU-2/A x 19x19 (361) BLU-3 Bomblets, HE (MER)
+    short: 2xC2A
+    type: a2g
+    weight: 1711
+  f4e45mccbu2bamer2:
+    name: 2x CBU-2B/A x 22x19 (418) BLU-3B Bomblets, HE (MER)
+    short: 2xC2A
+    type: a2g
+    weight: 1909
   cbu87:
     name: CBU-87
     short: C87
     type: a2g
     weight: 948
+  f4e45mccbu87mer3:
+    name: 3x CBU-87 - 202 x CEM Cluster Bomb (MER)
+    short: 3xC87
+    type: a2g
+    weight: 3064
+  f4e45mccbu87mer4:
+    name: 4x CBU-87 - 202 x CEM Cluster Bomb (MER)
+    short: 4xC87
+    type: a2g
+    weight: 4083
+  f4e45mccbu87swa:
+    name: CBU-87 - 202 x CEM Cluster Bomb (SWA)
+    short: C87
+    type: a2g
+    weight: 1014
+  f4e45mccbu87swater2:
+    name: 2x CBU-87 - 202 x CEM Cluster Bomb (TER on SWA)
+    short: 2xC87
+    type: a2g
+    weight: 2244
+  f4e45mccbu87ter2:
+    name: 2x CBU-87 - 202 x CEM Cluster Bomb (TER)
+    short: 2xC87
+    type: a2g
+    weight: 2178
   cbu97:
     name: CBU-97
     short: C97
     type: a2g
     weight: 919
+  gbu8:
+    name: GBU-8 HOBOS
+    short: G8
+    type: a2g
+    weigt: 2264
   gbu12:
     name: GBU-12
     short: G12
     type: a2g
     weight: 611
+  f4e45mcgbu12swa:
+    name: GBU-12 - 500lb Laser Guided Bomb (SWA)
+    short: G12
+    type: a2g
+    weight: 677
+  f4e45mcgbu12swater2:
+    name: 2x GBU-12 - 500lb Laser Guided Bomb (TER on SWA)
+    short: 2xG12
+    type: a2g
+    weight: 1570
+  f4e45mcgbu12ter2:
+    name: 2x GBU-12 - 500lb Laser Guided Bomb (TER)
+    short: 2xG12
+    type: a2g
+    weight: 1504
   gbu16:
     name: GBU-16
     short: G16
@@ -8232,9 +8414,14 @@ payload:
     weight: 2396
   gbu24ab:
     name: GBU-24 A/B Paveway III
-    short: G24
+    short: G24AB
     type: a2g
     weight: 3168
+  gbu24bb:
+    name: GBU-24B/B Paveway III - 2000lb Laser Guided Bomb
+    short: G24BB
+    type: a2g
+    weight: 2396
   gbu54:
     name: GBU-54
     short: G54
@@ -8245,41 +8432,211 @@ payload:
     short: M20
     type: a2g
     weight: 489
+  f4e45mcmk20swater2:
+    name: 2x Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets (TER on SWA)
+    short: 2xM20
+    type: a2g
+    weight: 1327
+  f4e45mcmk20ter2:
+    name: 2x Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets (TER)
+    short: 2xM20
+    type: a2g
+    weight: 1261
+  f4e45mcmk20ter3:
+    name: 3x Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets (TER)
+    short: 3xM20
+    type: a2g
+    weight: 1750
+  f4e45mcmk20mer6:
+    name: 6x Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets (MER)
+    short: 6xM20
+    type: a2g
+    weight: 3228
   mk81:
     name: Mk-81
     short: M81
     type: a2g
     weight: 260
+  f4e45mcmk81mer6:
+    name: 6x Mk-81 - 250lb GP Bomb LD (MER)
+    short: 6xM81
+    type: a2g
+    weight: 1781
+  f4e45mcmk81mer6sta5:
+    name: 6x Mk-81 - 250lb GP Bomb LD (MER Station 5)
+    short: 6xM81
+    type: a2g
+    weight: 1852
+  f4e45mcmk81swater2:
+    name: 2x Mk-81 - 250lb GP Bomb LD (TER on SWA)
+    short: 2xM81
+    type: a2g
+    weight: 869
+  f4e45mcmk81ter2:
+    name: 2x Mk-81 - 250lb GP Bomb LD (TER)
+    short: 2xM81
+    type: a2g
+    weight: 802
+  f4e45mcmk81ter3:
+    name: 3x Mk-81 - 250lb GP Bomb LD (TER)
+    short: 3xM81
+    type: a2g
+    weight: 1063
   mk82:
     name: Mk-82
     short: M82
     type: a2g
     weight: 531
+  f4e45mcmk82mer6:
+    name: 6x Mk-82 - 500lbs GP Bomb LD (MER)
+    short: 6xM82
+    type: a2g
+    weight: 3236
+  f4e45mcmk82mer6sta5:
+    name: 6x Mk-82 - 500lbs GP Bomb LD (MER Station 5)
+    short: 6xM82
+    type: a2g
+    weight: 3307
+  f4e45mcmk82swater2:
+    name: 2x Mk-82 - 500lbs GP Bomb LD (TER on SWA)
+    short: 2xM82
+    type: a2g
+    weight: 1354
+  f4e45mcmk82ter2:
+    name: 2x Mk-82 - 500lbs GP Bomb LD (TER)
+    short: 2xM82
+    type: a2g
+    weight: 1287
+  f4e45mcmk82ter3:
+    name: 3x Mk-82 - 500lbs GP Bomb LD (TER)
+    short: 3xM82
+    type: a2g
+    weight: 1790
   mk82y:
     name: MK-82Y
     short: M82Y
     type: a2g
     weight: 511
   mk82se:
-    name: Mk-82 SnakeEye
+    name: Mk-82 Snakeye
     short: M82SE
     type: a2g
     weight: 531
+  f4e45mcmk82semer6:
+    name: 6x Mk-82 Snakeye (MER)
+    short: 6xM82SE
+    type: a2g
+    weight: 3521
+  f4e45mcmk82semer6sta5:
+    name: 6x Mk-82 Snakeye (MER Station 5)
+    short: 6xM82SE
+    type: a2g
+    weight: 3591
+  f4e45mcmk82seswater2:
+    name: 2x Mk-82 Snakeye (TER on SWA)
+    short: 2xM82SE
+    type: a2g
+    weight: 1448
+  f4e45mcmk82seter2:
+    name: 2x Mk-82 Snakeye (TER)
+    short: 2xM82SE
+    type: a2g
+    weight: 1382
+  f4e45mcmk82seter3:
+    name: 3x Mk-82 Snakeye (TER)
+    short: 3xM82SE
+    type: a2g
+    weight: 1933
   mk82air:
     name: Mk-82AIR
     short: M82A
     type: a2g
     weight: 531
+  f4e45mcmk82airmer6:
+    name: 6x Mk-82 Air Ballute - 500lb GP Bomb HD (MER)
+    short: 6xM82A
+    type: a2g
+    weight: 3422
+  f4e45mcmk82airmer6sta5:
+    name: 6x Mk-82 Air Ballute - 500lb GP Bomb HD (MER Station 5)
+    short: 6xM82A
+    type: a2g
+    weight: 3492
+  f4e45mcmk82airswater2:
+    name: 2x Mk-82 Air Ballute - 500lb GP Bomb HD (TER on SWA)
+    short: 2xM82A
+    type: a2g
+    weight: 1415
+  f4e45mcmk82airter2:
+    name: 2x Mk-82 Air Ballute - 500lb GP Bomb HD (TER)
+    short: 2xM82A
+    type: a2g
+    weight: 1349
+  f4e45mcmk82airter3:
+    name: 3x Mk-82 Air Ballute - 500lb GP Bomb HD (TER)
+    short: 3xM82A
+    type: a2g
+    weight: 1883
   mk83:
     name: Mk-83
     short: M83
     type: a2g
     weight: 985
+  f4e45mcmk83mer1:
+    name: 1x Mk-83 (MER)
+    short: 1xM83
+    type: a2g
+    weight: 1221
+  f4e45mcmk83mer2:
+    name: 2x Mk-83 (MER)
+    short: 2xM83
+    type: a2g
+    weight: 2222
+  f4e45mcmk83mer3:
+    name: 3x Mk-83 (MER)
+    short: 3xM83
+    type: a2g
+    weight: 3294
+  f4e45mcmk83ter2:
+    name: 2x Mk-83 (TER)
+    short: 2xM83
+    type: a2g
+    weight: 2284
+  f4e45mcmk83ter3:
+    name: 3x Mk-83 (TER)
+    short: 3xM83
+    type: a2g
+    weight: 3285
+  f4e45mcm117mer3:
+    name: 3x M117 - 750lb GP Bomb LD (MER)
+    short: 3xM117
+    type: a2g
+    weight: 2469
+  f4e45mcm117mer5:
+    name: 5x M117 - 750lb GP Bomb LD (MER)
+    short: 5xM117
+    type: a2g
+    weight: 4039
+  f4e45mcm117ter2:
+    name: 2x M117 - 750lb GP Bomb LD (TER)
+    short: 2xM117
+    type: a2g
+    weight: 1781
+  f4e45mcm117ter3:
+    name: 3x M117 - 750lb GP Bomb LD (TER)
+    short: 3xM117
+    type: a2g
+    weight: 2531
   alq131:
     name: ALQ-131
     short: A131
     type: pod
     weight: 672
+  f4e45mcalq131rack:
+    name: ALQ-131 - ECM Pod Rack
+    short: A131
+    type: pod
+    weight: 730
   alq184:
     name: ALQ-184
     short: A184
@@ -8320,10 +8677,30 @@ payload:
     type: pod
     weight: 441
   suuluu:
-    name: SUU-25 * 8 LUU-2
+    name: SUU-25 * 8 LUU-2 - Target Marker Flares
     short: 8LU2
     type: a2g
     weight: 287
+  f4e45mcsuuluumer2:
+    name: 2x SUU-25 * 8 LUU-2 - Target Marker Flares (MER)
+    short: 2x8LU2
+    type: a2g
+    weight: 1219
+  f4e45mcsuuluumer2sta5:
+    name: 2x SUU-25 * 8 LUU-2 - Target Marker Flares (MER Station 5)
+    short: 2x8LU2
+    type: a2g
+    weight: 1292
+  suu23:
+    name: SUU-23 Gun Pod
+    short: S23
+    type: pod
+    weight: 1349
+  f4e45mcsuu23sta5:
+    name: SUU-23 Gun Pod (Station 5)
+    short: S23
+    type: pod
+    weight: 1422
   aaq28:
     name: AN/AAQ-28 LITENING
     short: TGP
@@ -8344,6 +8721,16 @@ payload:
     short: TGP
     type: pod
     weight: 430
+  avq23:
+    name: AN/AVQ-23 Pave Spike - Targeting Pod Rack
+    short: TGP
+    type: pod
+    weight: 481
+  avq23fst:
+    name: AN/AVQ-23 Pave Spike (Fast/Smart Track) - Targeting Pod Rack
+    short: TGP(FST)
+    type: pod
+    weight: 481
   alq164:
     name: AN/ALQ-164 DECM Pod
     type: pod
@@ -8368,6 +8755,21 @@ payload:
     short: 7M156
     type: rockets
     weight: 256
+  f4e45mclau68m156ter1:
+    name: LAU-68 pod - 7 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (TER)
+    short: 7M156
+    type: rockets
+    weight: 547
+  f4e45mclau68m156ter2:
+    name: 2x LAU-68 pod - 7 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (TER)
+    short: 2x7M156
+    type: rockets
+    weight: 811
+  f4e45mclau68m156ter3:
+    name: 3x LAU-68 pod - 7 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (TER)
+    short: 3x7M156
+    type: rockets
+    weight: 1078
   lau131m156:
     name: LAU-131 - 7x M156 (WP)
     short: 7M156
@@ -8398,6 +8800,21 @@ payload:
     short: 7MK5
     type: rockets
     weight: 227
+  f4e45mclau68mk5ter1:
+    name: LAU-68 Pod - 7 x 2.75" FFAR, UnGd Rkts Mk5, HEAT (TER)
+    short: 7MK5
+    type: rockets
+    weight: 525
+  f4e45mclau68mk5ter2:
+    name: 2x LAU-68 Pod - 7 x 2.75" FFAR, UnGd Rkts Mk5, HEAT (TER)
+    short: 2x7MK5
+    type: rockets
+    weight: 769
+  f4e45mclau68mk5ter3:
+    name: 3x LAU-68 Pod - 7 x 2.75" FFAR, UnGd Rkts Mk5, HEAT (TER)
+    short: 3x7MK5
+    type: rockets
+    weight: 1012
   lau131mk5:
     name: LAU-131 - 7x MK5 (HE)
     short: 7MK5
@@ -8408,11 +8825,41 @@ payload:
     short: 7MK1
     type: rockets
     weight: 234
+  f4e45mclau68mk1ter1:
+    name: LAU-68 pod - 7 x 2.75" FFAR, UnGd Rkts Mk1, HE (TER)
+    short: 7MK1
+    type: rockets
+    weight: 525
+  f4e45mclau68mk1ter2:
+    name: 2x LAU-68 pod - 7 x 2.75" FFAR, UnGd Rkts Mk1, HE (TER)
+    short: 2x7MK1
+    type: rockets
+    weight: 767
+  f4e45mclau68mk1ter3:
+    name: LAU-68 pod - 7 x 2.75" FFAR, UnGd Rkts Mk1, HE (TER)
+    short: 3x7MK1
+    type: rockets
+    weight: 1010
   lau131mk1:
     name: LAU-131 - 7x MK1 (Practice)
     short: 7MK1
     type: rockets
     weight: 205
+  f4e45mclau68mk4m156:
+    name: LAU-68 - 7 x UnGd Rkts, 70 mm Mk 4 FFAR M156 SM
+    short: 7MK4M156
+    type: rockets
+    weight: 236
+  f4e45mclau68mk4mk1:
+    name: LAU-68 - 7 x UnGd Rkts, 70 mm Mk 4 FFAR MK1 HE
+    short: 7MK4MK1
+    type: rockets
+    weight: 214
+  f4e45mclau68mk4mk5:
+    name: LAU-68 - 7 x UnGd Rkts, 70 mm Mk 4 FFAR MK5 HEAT
+    short: 7MK4MK5
+    type: rockets
+    weight: 216
   lau68mk61:
     name: LAU-68/A - 7x MK61 (Practice)
     short: 7MK61
@@ -8453,17 +8900,107 @@ payload:
     short: 19M156
     type: rockets
     weight: 690
+  f4e45mclau3m156mer3:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (MER)
+    short: 3x19M156
+    type: rockets
+    weight: 1856
+  f4e45mclau3m156mer3sta5:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (MER Station 5)
+    short: 3x19M156
+    type: rockets
+    weight: 1856
+  f4e45mclau3m156ter1:
+    name: LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (TER)
+    short: 19M156
+    type: rockets
+    weight: 827
+  f4e45mclau3m156ter2:
+    name: LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (TER)
+    short: 2x19M156
+    type: rockets
+    weight: 1373
+  f4e45mclau3m156ter3:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts M156, Wht Phos (TER)
+    short: 3x19M156
+    type: rockets
+    weight: 1918
   lau3mk1:
     name: LAU-3 - 19x FFAR MK1 HE
     short: 19MK1
     type: rockets
     weight: 628
+  f4e45mclau3mk1mer3:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk1, HE (MER)
+    short: 3x19MK1
+    type: rockets
+    weight: 1673
+  f4e45mclau3mk1mer3sta5:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk1, HE (MER Station 5)
+    short: 3x19MK1
+    type: rockets
+    weight: 1744
+  f4e45mclau3mk1ter1:
+    name: LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk1, HE (TER)
+    short: 19MK1
+    type: rockets
+    weight: 767
+  f4e45mclau3mk1ter2:
+    name: 2x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk1, HE (TER)
+    short: 2x19MK1
+    type: rockets
+    weight: 1252
+  f4e45mclau3mk1ter3:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk1, HE (TER)
+    short: 3x19MK1
+    type: rockets
+    weight: 1735
+  f4e45mclau3mk4m156:
+    name: LAU-3 - 19 x UnGd Rkts, 70 mm Mk 4 FFAR M156 SM
+    short: 19MK4M156
+    type: rockets
+    weight: 467
+  f4e45mclau3mk4mk1:
+    name: LAU-3 - 19 x UnGd Rkts, 70 mm Mk 4 FFAR Mk1 HE
+    short: 19MK4Mk1
+    type: rockets
+    weight: 406
+  f4e45mclau3mk4mk5:
+    name: LAU-3 - 19 x UnGd Rkts, 70 mm Mk 4 FFAR Mk5 HEAT
+    short: 19MK4Mk5
+    type: rockets
+    weight: 410
   lau3mk5:
     name: LAU-3 - 19x FFAR MK5 HEAT
     short: 19MK5
     type: rockets
     weight: 631
   # same LAU3 container and rockets with different weights for Harrier and Viper??
+  f4e45mclau3mk5mer3:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk3, HEAT (MER)
+    short: 3x19MK5
+    type: rockets
+    weight: 1680
+  f4e45mclau3mk5mer3sta5:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk3, HEAT (MER Station 5)
+    short: 3x19MK5
+    type: rockets
+    weight: 1750
+  f4e45mclau3mk5ter1:
+    name: LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk3, HEAT (TER)
+    short: 19MK5
+    type: rockets
+    weight: 769
+  f4e45mclau3mk5ter2:
+    name: 2x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk3, HEAT (TER)
+    short: 2x19MK5
+    type: rockets
+    weight: 1254
+  f4e45mclau3mk5ter3:
+    name: 3x LAU-3 pod - 19 x 2.75" FFAR, UnGd Rkts Mk3, HEAT (TER)
+    short: 3x19MK5
+    type: rockets
+    weight: 1742
   lau3mk151:
     name: LAU-3 - MK151 HE
     type: rockets
@@ -8484,6 +9021,31 @@ payload:
     name: LAU-61 - 19x MK151 HE
     type: rockets
     weight: 641
+  cbu52b:
+    name: CBU-52B - 220 x HE/Frag bomblets
+    short: C52B
+    type: a2g
+    weight: 785
+  f4e45mccbu52bmer3:
+    name: 3x CBU-52B - 220 x HE/Frag bomblets (MER)
+    short: 3xC52B
+    type: a2g
+    weight: 2575
+  f4e45mccbu52bswa:
+    name: CBU-52B - 220 x HE/Frag bomblets (SWA)
+    short: C52B
+    type: a2g
+    weight: 851
+  f4e45mccbu52bswater2:
+    name: 2x CBU-52B - 220 x HE/Frag bomblets (TER on SWA)
+    short: 2xC52B
+    type: a2g
+    weight: 1918
+  f4e45mccbu52bter2:
+    name: 2x CBU-52B - 220 x HE/Frag bomblets (TER)
+    short: 2xC52B
+    type: a2g
+    weight: 1852
   cbu103:
     name: CBU-103
     short: C103
@@ -8499,6 +9061,16 @@ payload:
     short: G10
     type: a2g
     weight: 2562
+  f4e45mcgbu10:
+    name: GBU-10
+    short: G10
+    type: a2g
+    weight: 2114
+  f4e45mcgbu10sta82:
+    name: GBU-10
+    short: G10
+    type: a2g
+    weight: 2004  
   gbu31:
     name: GBU-31
     short: G31
@@ -8539,6 +9111,11 @@ payload:
     short: M84
     type: a2g
     weight: 1971
+  f4e45mcmk84sta5:
+    name: Mk-84 (Station 5)
+    short: M84
+    type: a2g
+    weight: 2041
   mk84agp:
     name: Mk-84 AIR GP
     short: M84A-GP
@@ -8554,6 +9131,16 @@ payload:
     short: B33
     type: a2g
     weight: 25
+  f4e45mcbdu33mer6:
+    name: 6x BDU-33 - 25lb Practice Bomb LD (MER)
+    short: 6xB33
+    type: a2g
+    weight: 370
+  f4e45mcbdu33mer6sta5:
+    name: 6x BDU-33 - 25lb Practice Bomb LD (MER Station 5)
+    short: 6xB33
+    type: a2g
+    weight: 441
   bru42:
     name: BRU-42
     type: pylon
@@ -8575,11 +9162,71 @@ payload:
     name: LAU-117
     type: pylon
     weight: 131
+  f4e45mcagm65aswa:
+    name: AGM-65A - Maverick A (TV Guided) (SWA)
+    short: A65A
+    type: agm
+    weight: 551
+  f4e45mcagm65alau882:
+    name: 2x AGM-65A - Maverick A (TV Guided) (LAU-88)
+    short: 2xA65A
+    type: agm
+    weight: 1283
+  f4e45mcagm65alau883:
+    name: 2x AGM-65A - Maverick A (TV Guided) (LAU-88)
+    short: 3xA65A
+    type: agm
+    weight: 1748
+  f4e45mcagm65alau117:
+    name: AGM-65A - Maverick A (TV Guided) (LAU-117)
+    short: A65A
+    type: agm
+    weight: 485
+  f4e45mcagm65bswa:
+    name: AGM-65B - Maverick B (TV Guided) (SWA)
+    short: A65B
+    type: agm
+    weight: 551
+  f4e45mcagm65blau882:
+    name: 2x AGM-65B - Maverick B (TV Guided) (LAU-88)
+    short: 2xA65B
+    type: agm
+    weight: 1283
+  f4e45mcagm65blau883:
+    name: 3x AGM-65B - Maverick B (TV Guided) (LAU-88)
+    short: 3xA65B
+    type: agm
+    weight: 1748
+  f4e45mcagm65blau117:
+    name: AGM-65B - Maverick A (TV Guided) (LAU-117)
+    short: A65B
+    type: agm
+    weight: 485
   agm65d:
     name: AGM-65D
     short: A65D
     type: agm
     weight: 480
+  f4e45mcagm65dswa:
+    name: AGM-65D - Maverick D (IIR ASM) (SWA)
+    short: A65D
+    type: agm
+    weight: 551
+  f4e45mcagm65dlau882:
+    name: 2x AGM-65D - Maverick D (IIR ASM) (LAU-88)
+    short: 2xA65D
+    type: agm
+    weight: 1283
+  f4e45mcagm65dlau883:
+    name: 3x AGM-65D - Maverick D (IIR ASM) (LAU-88)
+    short: 3xA65D
+    type: agm
+    weight: 1748
+  f4e45mcagm65dlau117:
+    name: AGM-65D - Maverick A (IIR ASM) (LAU-117)
+    short: A65D
+    type: agm
+    weight: 485
   agm65e:
     name: AGM-65E
     short: A65E
@@ -8595,6 +9242,11 @@ payload:
     short: A65G
     type: agm
     weight: 663
+  f4e45mcagm65glau117:
+    name: AGM-65G - Maverick G (IIR ASM - Lg Whd) (LAU-117)
+    short: A65G
+    type: agm
+    weight: 683
   agm65h:
     name: AGM-65H
     short: A65H
@@ -8630,10 +9282,50 @@ payload:
     short: T65H
     type: agm
     weight: 458
+  agm12a:
+    name: AGM-12A Bullpup MCLOS ASM
+    short: A12A
+    type: a2g
+    weight: 653
+  f4e45mcagm12asta82:
+    name: AGM-12A Bullpup MCLOS ASM (Station 2/8)
+    short: A12A
+    type: a2g
+    weight: 542
+  agm12b:
+    name: AGM-12B Bullpup MCLOS ASM
+    short: A120B
+    type: a2g
+    weight: 666
+  f4e45mcagm12bsta82:
+    name: AGM-12B Bullpup MCLOS ASM (Station 2/8)
+    short: A120B
+    type: a2g
+    weight: 556
+  agm12c:
+    name: AGM-12C Bullpup MCLOS ASM
+    short: A120B
+    type: a2g
+    weight: 1680
+  agm45a:
+    name: AGM-45A Shrike ARM
+    short: A45A
+    type: a2g
+    weight: 483
+  f4e45mcagm45asta82:
+    name: AGM-45A Shrike ARM (Station 2/8)
+    short: A45A
+    type: a2g
+    weight: 373
+  f4e45mcagm45aswa:
+    name: AGM-45A Shrike ARM (SWA)
+    short: A45A
+    type: a2g
+    weight: 439
   agm122:
     name: AGM-122 Sidearm
     short: A122
-    type: agm
+    type: a2g
     weight: 203
   agm154a:
     name: AGM-154A
@@ -8682,6 +9374,30 @@ payload:
     type: tank
     weight: 243
     fuel: 4000
+  f4e45mcft370:
+    name: Sargent Fletcher Fuel Tank 370 gallons
+    short: FT370
+    type: tank
+    weight: 119
+    fuel: 2410
+  f4e45mcft370e:
+    name: Sargent Fletcher Fuel Tank 370 gallons (Empty)
+    short: FT370E
+    type: tank
+    weight: 119
+    fuel: 22
+  f4e45mcft600:
+    name: Sargent Fletcher Fuel Tank 600 gallons
+    short: FT370
+    type: tank
+    weight: 249
+    fuel: 3909
+  f4e45mcft600e:
+    name: Sargent Fletcher Fuel Tank 600 gallons (Empty)
+    short: FT370E
+    type: tank
+    weight: 249
+    fuel: 81 
   fpu8a:
     name: FPU-8A Fuel Tank 330 gallons
     short: FPU-8A
@@ -8704,11 +9420,16 @@ payload:
     type: tank
     weight: 110
     fuel: 2475
-  agm62:
-    name: AGM-62
+  agm62w2:
+    name: AGM-62 Walleye II - Guided Weapon Mk5 (TV Guided)
     short: A62
     type: a2g
     weight: 2339
+  agm62w1:
+    name: AGM-62 Walleye I - Guided Weapon Mk1 (TV Guided)
+    short: A62
+    type: a2g
+    weight: 1124
   cbu99:
     name: CBU-99
     short: C99
@@ -8727,6 +9448,16 @@ payload:
   aim7m:
     name: AIM-7M
     short: A7M
+    type: a2a
+    weight: 507
+  aim7e:
+    name: AIM-7E Sparrow Semi-Active Radar
+    short: A7E
+    type: a2a
+    weight: 507
+  aim7e2:
+    name: AIM-7E-2 Sparrow Semi-Active Radar
+    short: A7E
     type: a2a
     weight: 507
   aim7f:
@@ -8839,6 +9570,26 @@ payload:
     name: BDU-45B
     type: a2g
     weight: 511
+  bdu45lg:
+    name: BDU-45 LG - 500lbs Practice Laser Guided Bomb
+    type: a2g
+    short: B45L
+    weight: 611
+  f4e45mcbdu45lgswa:
+    name: BDU-45 LG - 500lbs Practice Laser Guided Bomb (SWA)
+    type: a2g
+    short: B45L
+    weight: 677
+  f4e45mcbdu45lgswater2:
+    name: 2x BDU-45 LG - 500lb Practice Laser Guided Bomb (TER on SWA)
+    type: a2g
+    short: 2xB45L
+    weight: 1570
+  f4e45mcbdu45lgter2:
+    name: 2x BDU-45 LG - 500lb Practice Laser Guided Bomb (TER)
+    type: a2g
+    short: 2xB45L
+    weight: 1504
   bru57:
     name: BRU-57
     type: pylon
@@ -8911,6 +9662,10 @@ payload:
     name: M-60D Machineguns Doorgunner
     type: a2g
     weight: 311
+  m60ddgch47:
+    name: M-60D Machinegun Doorgunner
+    type: a2g
+    weight: 249
   xm158he:
     name: M158 Rockets HE
     type: a2g
@@ -8957,6 +9712,21 @@ payload:
     name: BLU-107
     type: a2g
     weight: 483
+  f4e45mcblu107bswater3:
+    name: 3x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster (TER on SWA)
+    type: a2g
+    short: 3xB107B
+    weight: 1797
+  f4e45mcblu107bter3:
+    name: 3x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster (TER)
+    type: a2g
+    short: 3xB107B
+    weight: 1731
+  f4e45mcblu107bmer6:
+    name: 6x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster (MER)
+    type: a2g
+    short: 6xB107B
+    weight: 3188
   robby:
     name: Robby Tank
     short: Robby
@@ -10788,3 +11558,196 @@ loadout:
       - weapon: kiowamms
     Doors:
       - weapon: kiowadoor
+  ch47f:
+    R-MG: &ch47fstation1
+      -weapon: m60ddgch47
+    L-MG: *ch47fstation1
+  f4e45mc:
+    1: &f4e45mcstation1
+      - weapon: agm12a
+      - weapon: agm12b
+      - weapon: agm45a
+      - weapon: f4e45mcmk83mer1
+      - weapon: f4e45mcmk83mer2
+      - weapon: f4e45mccbu52bmer3
+      - weapon: f4e45mccbu87mer3
+      - weapon: f4e45mcm117mer3
+      - weapon: f4e45mcbdu33mer6
+      - weapon: f4e45mcbdu50hdmer6
+      - weapon: f4e45mcbdu50ldmer6
+      - weapon: f4e45mcmk81mer6
+      - weapon: f4e45mcmk82mer6
+      - weapon: f4e45mcmk82airmer6
+      - weapon: f4e45mcmk82semer6
+      - weapon: agm62w1
+      - weapon: bdu45lg
+      - weapon: cbu52b
+      - weapon: cbu87
+      - weapon: f4e45mcgbu10
+      - weapon: gbu12
+      - weapon: gbu24bb
+      - weapon: gbu8
+      - weapon: mk84
+      - weapon: mk84agp
+      - weapon: suuluu
+      - weapon: f4e45mcft370
+      - weapon: f4e45mcft370e
+      - weapon: f4e45mccbu1aamer1
+      - weapon: f4e45mccbu2amer1
+      - weapon: f4e45mccbu2bamer1
+      - weapon: f4e45mccbu1aamer2
+      - weapon: f4e45mccbu2amer2
+      - weapon: f4e45mccbu2bamer2
+      - weapon: f4e45mcsuuluumer2
+      - weapon: suu23
+      - weapon: f4e45mclau3m156mer3
+      - weapon: f4e45mclau3mk1mer3
+      - weapon: f4e45mclau3mk5mer3
+      - weapon: f4e45mclau3mk4m156
+      - weapon: f4e45mclau3mk4mk1
+      - weapon: f4e45mclau3mk4mk5
+    2L: &f4e45mcstation2l
+      - weapon: aim9b
+      - weapon: aim9j
+      - weapon: aim9juli
+      - weapon: aim9l
+      - weapon: f4e45mcaim9m
+      - weapon: f4e45mcaim9p
+      - weapon: aim9p3
+      - weapon: aim9p5
+      - weapon: cap9m
+    2: &f4e45mcstation2
+      - weapon: f4e45mcagm45aswa
+      - weapon: f4e45mcagm65aswa
+      - weapon: f4e45mcagm65bswa
+      - weapon: f4e45mcagm65dswa
+      - weapon: f4e45mcagm65alau882
+      - weapon: f4e45mcagm65blau882
+      - weapon: f4e45mcagm65dlau882
+      - weapon: f4e45mcagm65alau883
+      - weapon: f4e45mcagm65blau883
+      - weapon: f4e45mcagm12asta82
+      - weapon: f4e45mcagm12bsta82
+      - weapon: agm12c
+      - weapon: f4e45mcagm45asta82
+      - weapon: f4e45mcagm65alau117
+      - weapon: f4e45mcagm65blau117
+      - weapon: f4e45mcagm65dlau117
+      - weapon: f4e45mcagm65glau117
+      - weapon: f4e45mcbdu45lgswater2
+      - weapon: f4e45mcbdu50hdswater2
+      - weapon: f4e45mcbdu50ldswater2
+      - weapon: f4e45mccbu52bswater2
+      - weapon: f4e45mccbu87swater2
+      - weapon: f4e45mcgbu12swater2
+      - weapon: f4e45mcmk20swater2
+      - weapon: f4e45mcmk81swater2
+      - weapon: f4e45mcmk82swater2
+      - weapon: f4e45mcmk82airswater2
+      - weapon: f4e45mcmk82seswater2
+      - weapon: f4e45mcblu107bswater3
+      - weapon: f4e45mcbdu45lgswa
+      - weapon: f4e45mccbu52bswa
+      - weapon: f4e45mccbu87swa
+      - weapon: f4e45mcgbu12swa
+      - weapon: f4e45mcbdu45lgter2
+      - weapon: f4e45mcbdu50hdter2
+      - weapon: f4e45mcbdu50ldter2
+      - weapon: f4e45mccbu52bter2
+      - weapon: f4e45mccbu87ter2
+      - weapon: f4e45mcgbu12ter2
+      - weapon: f4e45mcm117ter2
+      - weapon: f4e45mcmk20ter2
+      - weapon: f4e45mcmk81ter2
+      - weapon: f4e45mcmk82ter2
+      - weapon: f4e45mcmk82airter2
+      - weapon: f4e45mcmk82seter2
+      - weapon: f4e45mcmk83ter2
+      - weapon: f4e45mcbdu50hdter3
+      - weapon: f4e45mcbdu50ldter3
+      - weapon: f4e45mcblu107bter3
+      - weapon: f4e45mcm117ter3
+      - weapon: f4e45mcmk20ter3
+      - weapon: f4e45mcmk81ter3
+      - weapon: f4e45mcmk82ter3
+      - weapon: f4e45mcmk82airter3
+      - weapon: f4e45mcmk83ter3
+      - weapon: agm62w1
+      - weapon: agm62w2
+      - weapon: bdu45lg
+      - weapon: cbu52b
+      - weapon: cbu87
+      - weapon: f4e45mcgbu10sta82
+      - weapon: gbu12
+      - weapon: gbu24bb
+      - weapon: gbu8
+      - weapon: mk84agp
+      - weapon: alq131
+      - weapon: f4e45mclau3m156ter1
+      - weapon: f4e45mclau3mk1ter1
+      - weapon: f4e45mclau3mk5ter1
+      - weapon: f4e45mclau68m156ter1
+      - weapon: f4e45mclau68mk1ter1
+      - weapon: f4e45mclau68mk5ter1
+      - weapon: f4e45mclau3m156ter2
+      - weapon: f4e45mclau3mk1ter2
+      - weapon: f4e45mclau3mk5ter2
+      - weapon: f4e45mclau68m156ter2
+      - weapon: f4e45mclau68mk1ter2
+      - weapon: f4e45mclau68mk5ter2
+      - weapon: f4e45mclau3m156ter3
+      - weapon: f4e45mclau3mk1ter3
+      - weapon: f4e45mclau3mk5ter3
+      - weapon: f4e45mclau68m156ter3
+      - weapon: f4e45mclau68mk1ter3
+      - weapon: f4e45mclau68mk5ter3
+      - weapon: f4e45mclau3mk4m156
+      - weapon: f4e45mclau3mk4mk1
+      - weapon: f4e45mclau3mk4mk5
+      - weapon: f4e45mclau68mk4m156
+      - weapon: f4e45mclau68mk4mk1
+      - weapon: f4e45mclau68mk4mk5
+    2R: *f4e45mcstation2l
+    3: &f4e45mcstation3
+      - weapon: aim7e
+      - weapon: aim7e2
+      - weapon: aim7f
+      - weapon: aim7m
+    4: &f4e45mcstation4
+      - weapon: aim7e
+      - weapon: aim7e2
+      - weapon: aim7f
+      - weapon: aim7m
+      - weapon: f4e45mcalq131rack
+      - weapon: avq23
+      - weapon: avq23fst
+    5: &f4e45mcstation5
+      - weapon: f4e45mcmk83mer3
+      - weapon: f4e45mccbu87mer4
+      - weapon: f4e45mcm117mer5
+      - weapon: f4e45mcbdu33mer6sta5
+      - weapon: f4e45mcbdu50hdmer6sta5
+      - weapon: f4e45mcbdu50ldmer6sta5
+      - weapon: f4e45mcblu107bmer6
+      - weapon: f4e45mcmk20mer6
+      - weapon: f4e45mcmk81mer6sta5
+      - weapon: f4e45mcmk82mer6sta5
+      - weapon: f4e45mcmk82airmer6sta5
+      - weapon: f4e45mcmk82semer6sta5
+      - weapon: f4e45mcmk84sta5
+      - weapon: f4e45mcft600
+      - weapon: f4e45mcft600e
+      - weapon: f4e45mccbu1aamer1sta5
+      - weapon: f4e45mccbu2amer1sta5
+      - weapon: f4e45mccbu2bamer1sta5
+      - weapon: f4e45mcsuuluumer2sta5
+      - weapon: f4e45mcsuu23sta5
+      - weapon: f4e45mclau3m156mer3sta5
+      - weapon: f4e45mclau3mk1mer3sta5
+      - weapon: f4e45mclau3mk5mer3sta5
+    6: *f4e45mcstation3
+    7: *f4e45mcstation3
+    8L: *f4e45mcstation2l
+    8: *f4e45mcstation2
+    8R: *f4e45mcstation2l
+    9: *f4e45mcstation1
