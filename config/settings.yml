@@ -7093,6 +7093,21 @@ airframes:
     expendables:
       - chaff: 0
         flares: 0
+  ch47f:
+    name: CH-47F
+    seats: 6
+    weight:
+      empty: 25133
+      fuel: 6734
+      tol: 50001
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 120
+        flares: 120
   e3a:
     name: E-3A
   f4e45mc:
@@ -8908,6 +8923,10 @@ payload:
     name: M-60D Machineguns Doorgunner
     type: a2g
     weight: 311
+  m60ddgch47:
+    name: M-60D Machinegun Doorgunner
+    type: a2g
+    weight: 249
   xm158he:
     name: M158 Rockets HE
     type: a2g
@@ -10785,3 +10804,7 @@ loadout:
       - weapon: kiowamms
     Doors:
       - weapon: kiowadoor
+  ch47f:
+    R-MG: &ch47fstation1
+      -weapon: m60ddgch47
+    L-MG: *ch47fstation1
