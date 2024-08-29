@@ -8381,7 +8381,7 @@ payload:
     name: GBU-8 HOBOS
     short: G8
     type: a2g
-    weigt: 2264
+    weight: 2264
   gbu12:
     name: GBU-12
     short: G12
@@ -11559,9 +11559,9 @@ loadout:
     Doors:
       - weapon: kiowadoor
   ch47f:
-    R-MG: &ch47fstation1
-      -weapon: m60ddgch47
-    L-MG: *ch47fstation1
+    L-MG: &ch47fstation1
+      - weapon: m60ddgch47
+    R-MG: *ch47fstation1
   f4e45mc:
     1: &f4e45mcstation1
       - weapon: agm12a
