@@ -10628,7 +10628,7 @@ loadout:
         pylon: lau115
       - weapon: aim7mh
         pylon: lau115
-      - weapon: agm62
+      - weapon: agm62w2
       - weapon: cbu99
       - weapon: cbu99
         amount: 2
@@ -10756,7 +10756,7 @@ loadout:
         pylon: lau115
       - weapon: aim7mh
         pylon: lau115
-      - weapon: agm62
+      - weapon: agm62w2
       - weapon: cbu99
       - weapon: cbu99
         amount: 2
