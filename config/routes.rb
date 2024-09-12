@@ -26,6 +26,9 @@ Rails.application.routes.draw do
     resource :loadout, only: %i[edit update]
   end
 
+  # Add packages routes
+  resources :packages
+
   get 'airbases', to: 'airbases#index'
   get 'procedures', to: 'airbases#procedures'
   get 'spins', to: 'spins#show'
