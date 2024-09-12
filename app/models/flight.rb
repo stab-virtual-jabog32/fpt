@@ -17,6 +17,7 @@ class Flight < ApplicationRecord
     if package && package.lead_flight_id.present? && package.lead_flight_id != id
       errors.add(:lead_flight, "must be a part of the package")
     end
+  end  # Added this end
 
   def full_callsign
     callsign_number.present? ? "#{callsign} #{callsign_number}" : callsign
