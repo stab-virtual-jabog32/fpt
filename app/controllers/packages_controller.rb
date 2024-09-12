@@ -15,8 +15,10 @@ class PackagesController < ApplicationController
     @flights = Flight.all # Ensure @flights is populated for the view
 
     if @package.save
+      Rails.logger.debug("Package created: #{@package.inspect}")
       redirect_to packages_path, notice: 'Package was successfully created.'
     else
+      Rails.logger.debug("Failed to create package: #{@package.errors.full_messages}")
       render :new
     end
   end
