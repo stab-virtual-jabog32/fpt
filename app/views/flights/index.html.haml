@@ -1,4 +1,5 @@
 %h1 Listing flights
+
 - if @all
   %p
     Showing all flights.
@@ -18,38 +19,31 @@
         = flight.name
         - if package&.lead_flight_id == flight.id
           %strong (Lead Flight)
-      .container.border.rounded-sm.border-dark.bg-light
-        .row.border.font-weight-bold
-          .col= link_to flight.full_callsign, flight
-          .col
-            = "#{flight.slots}x"
-            = Settings.airframes[flight.airframe].name
-          .col= flight.frequency
-        - flight.slots.times.each_with_index do |i|
-          - pilot = flight.pilots.find_by(number: i+1)
-          .row.border.small
-            .col= pilot&.callsign
-            .col= pilot&.name
-            .col= pilot&.iff
-        .row.border.font-weight-bold
-          .col= flight.mission
-          .col= flight.task
-          .col= flight.ao
-        .row.border
-          .col= link_to_start_airbase(flight)
-          .col= link_to_departure(flight)
-          .col= "#{flight.iff}X"
-        .row.border
-          .col= link_to_land_airbase(flight)
-          .col= link_to_recovery(flight)
-          .col= flight.minimum_weather_requirements
-
-      <% if package&.lead_flight_id == flight.id %>
-        <strong>(Lead Flight)</strong>
-      <% end %>
-    <% end %>
-  </div>
-<% end %>
+        .container.border.rounded-sm.border-dark.bg-light
+          .row.border.font-weight-bold
+            .col= link_to flight.full_callsign, flight
+            .col
+              = "#{flight.slots}x"
+              = Settings.airframes[flight.airframe].name
+            .col= flight.frequency
+          - flight.slots.times.each_with_index do |i|
+            - pilot = flight.pilots.find_by(number: i + 1)
+            .row.border.small
+              .col= pilot&.callsign
+              .col= pilot&.name
+              .col= pilot&.iff
+          .row.border.font-weight-bold
+            .col= flight.mission
+            .col= flight.task
+            .col= flight.ao
+          .row.border
+            .col= link_to_start_airbase(flight)
+            .col= link_to_departure(flight)
+            .col= "#{flight.iff}X"
+          .row.border
+            .col= link_to_land_airbase(flight)
+            .col= link_to_recovery(flight)
+            .col= flight.minimum_weather_requirements
 
 %br
 = link_to 'New Flight', new_flight_path, class: 'btn btn-primary'
