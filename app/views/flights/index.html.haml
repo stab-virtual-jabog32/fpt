@@ -17,10 +17,6 @@
         (AO: 
         = package.ao
         )
-      %p Package Frequency: #{package.frequency}
-      
-      - if package.lead_flight
-        %h4 Lead Flight: #{package.lead_flight.full_callsign}
 
       - flights.each do |flight|
         .container.border.rounded-sm.border-dark.bg-light
@@ -52,6 +48,10 @@
             .col= link_to_land_airbase(flight)
             .col= link_to_recovery(flight)
             .col= flight.minimum_weather_requirements
+
+      %div
+        = link_to 'Delete Package', package_path(package), method: :delete, data: { confirm: 'Are you sure you want to delete this package?' }, class: 'btn btn-danger mt-2'
+
   - else
     - flights.each do |flight|
       .container.border.rounded-sm.border-dark.bg-light.mb-4

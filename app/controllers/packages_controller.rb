@@ -37,6 +37,7 @@ class PackagesController < ApplicationController
   end
 
   def destroy
+    @package.flights.update_all(package_id: nil) # Unlink all flights from the package
     @package.destroy
     redirect_to packages_url, notice: 'Package was successfully deleted.'
   end

@@ -4,7 +4,7 @@ class Flight < ApplicationRecord
 
   belongs_to :package, optional: true # A flight can belong to a package
 
-  # Ensure only one flight can be the lead of a package
+  # Validation to ensure the lead flight must be part of the package it leads
   validate :lead_flight_must_be_in_package, if: -> { package.present? && package.lead_flight_id.present? }
 
   scope :ordered, -> { order(start: :asc, callsign: :asc, callsign_number: :asc) }
@@ -14,10 +14,10 @@ class Flight < ApplicationRecord
   validates :start, presence: true
   validates :iff, presence: true, numericality: { only_integer: true, greater_than: 99, less_than: 800 }
 
-  # Custom validation to ensure the lead flight is part of the package it leads
+  # Ensure the lead flight is part of the package
   def lead_flight_must_be_in_package
-    if package && package.lead_flight_id == id && package.flights.exclude?(self)
-      errors.add(:lead_flight, 'must be part of the package.')
+    if package&.lead_flight_id == id && package.flights.exclude?(self)
+      errors.add(:lead_flight, 'must be part of the package')
     end
   end
 

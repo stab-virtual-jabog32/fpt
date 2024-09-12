@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'flights#index'
 
+  # Flight-related routes
   resources :flights do
     collection do
       get :defaults
@@ -26,13 +27,15 @@ Rails.application.routes.draw do
     resource :loadout, only: %i[edit update]
   end
 
-  # Add packages routes
-  resources :packages
+  # Package-related routes
+  resources :packages, only: %i[index new create edit update destroy]
 
+  # Additional routes
   get 'airbases', to: 'airbases#index'
   get 'procedures', to: 'airbases#procedures'
   get 'spins', to: 'spins#show'
   get 'mdc/:pilot', to: 'mdc#show', as: 'mdc'
 
+  # Catch-all route
   get '*anythingelse', to: redirect('/404')
 end

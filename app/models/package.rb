@@ -6,6 +6,7 @@ class Package < ApplicationRecord
   validates :ao, presence: true
   validates :frequency, presence: true
 
+  # Validation to ensure the lead flight is part of the package
   validate :lead_flight_must_be_part_of_package
 
   private
