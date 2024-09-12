@@ -2,12 +2,21 @@ class Flight < ApplicationRecord
   has_many :pilots, -> { order(:number) }, dependent: :destroy
   has_many :waypoints, dependent: :destroy
 
+  belongs_to :package, optional: true # A flight can belong to a package
+  # Ensure only one flight can be the lead of a package
+  validate :lead_flight_must_be_in_package
+
   scope :ordered, -> { order(start: :asc, callsign: :asc, callsign_number: :asc) }
   scope :current, -> { where('date(start) >= ?', Date.today) }
   scope :with_pilot, ->(pilot) { joins(:pilots).where('pilots.name like ?', "%#{pilot}%") }
 
   validates :start, presence: true
   validates :iff, presence: true, numericality: { only_integer: true, greater_than: 99, less_than: 800 }
+
+  def lead_flight_must_be_in_package
+    if package && package.lead_flight_id.present? && package.lead_flight_id != id
+      errors.add(:lead_flight, "must be a part of the package")
+    end
 
   def full_callsign
     callsign_number.present? ? "#{callsign} #{callsign_number}" : callsign
