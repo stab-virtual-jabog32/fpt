@@ -17,6 +17,10 @@
         (AO: 
         = package.ao
         )
+      %p Package Frequency: #{package.frequency}
+      
+      - if package.lead_flight
+        %h4 Lead Flight: #{package.lead_flight.full_callsign}
 
       - flights.each do |flight|
         .container.border.rounded-sm.border-dark.bg-light
