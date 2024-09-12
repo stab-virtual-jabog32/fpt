@@ -8,13 +8,16 @@
     Showing current and upcoming flights.
     = link_to 'Also show past flights.', root_path(params: { all: true })
 
-<% @flights.group_by(&:package).each do |package, flights| %>
-  <div class="package-group">
-    <% if package %>
-      <h3>Package: <%= package.task %> (AO: <%= package.ao %>)</h3>
-    <% end %>
+- @flights.group_by(&:package).each do |package, flights|
+  .package-group
+    - if package
+      %h3 Package: #{package.task} (AO: #{package.ao})
 
-    <% flights.each do |flight| %>
+    - flights.each do |flight|
+      .flight
+        = flight.name
+        - if package&.lead_flight_id == flight.id
+          %strong (Lead Flight)
       .container.border.rounded-sm.border-dark.bg-light
         .row.border.font-weight-bold
           .col= link_to flight.full_callsign, flight
