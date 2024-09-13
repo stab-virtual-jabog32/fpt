@@ -10,14 +10,13 @@
     - @stations.each do |station|
       %tr
         %th.table-secondary= station.number
-        %td(colspan=4)= f.select station.number, station_options(station, f.object.send(station.number)), {}, class: 'form-control form-control-sm'
+        %td(colspan=4)= f.select station.number, station_options(station, f.object.send(station.number)), {}, class: 'form-control  form-control-sm'
         %td(data-ref="loadout_#{station.number}")
     %tr
       %th.bg-secondary(colspan=6) Gun
     %tr
       %th.table-secondary Amount
       %td= f.range_field :gun_amount, class: 'custom-range', data: { amount: Settings.airframes[@flight.airframe].gun.amount, weight: Settings.airframes[@flight.airframe].gun.weight }
-      /  %input.custom-range(type='range')
       %td#gun_amount
       %th.table-secondary Type
       %td= f.select :gun_type, Settings.airframes[@flight.airframe].gun.types.to_h.invert, {}, class: 'form-control form-control-sm'
@@ -56,20 +55,17 @@
 
 / Additions for loadout template functionality
 %h3 Load from template
-- if @templates.any?
+- if @templates&.any?
   %ul
     - @templates.each do |template|
       %li= link_to template.name, load_template_flight_loadout_path(@flight, template_id: template.id), method: :post, class: 'btn btn-secondary'
-- else
-  %p No templates available
 
 %h3 Save current loadout as template
-= form_for :loadout_template, url: save_template_flight_loadout_path(@flight), method: :post do |f|
+= form_tag save_template_flight_loadout_path(@flight), method: :post do
   .form-group
-    = f.label :name, "Template Name"
-    = f.text_field :name, class: 'form-control'
-  = f.hidden_field :loadout, value: @flight.loadout.to_json
-  = f.submit 'Save as Template', class: 'btn btn-primary'
+    = label_tag :template_name, "Template Name"
+    = text_field_tag :template_name, nil, class: 'form-control'
+  = submit_tag 'Save as Template', class: 'btn btn-primary'
 
 %p
 = link_to 'Back', flight_path(@flight)

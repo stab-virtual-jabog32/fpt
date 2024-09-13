@@ -4,7 +4,6 @@ class LoadoutController < ApplicationController
   def edit
     @loadout = Loadout.parse @flight.airframe, @flight.loadout
     @stations = Settings.loadout.send(@flight.airframe).map { |config| Station.new(config) }
-    @templates = LoadoutTemplate.where(airframe: @flight.airframe).presence || [] # Templates are optional
   end
 
   def update
