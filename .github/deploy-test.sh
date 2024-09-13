@@ -13,7 +13,7 @@ git pull --force -r
 
 # DB migration
 export $(cat /home/fpt/.env-test | xargs)
-rvm . do rails db:migrate
+/home/fpt/.rvm/bin/rvm . do rails db:migrate
 
 #Start service again
 sudo systemctl start fpt-test
