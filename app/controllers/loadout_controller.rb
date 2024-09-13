@@ -1,32 +1,31 @@
-# app/controllers/loadout_controller.rb
 class LoadoutController < ApplicationController
   before_action :set_flight
 
   def edit
     @loadout = Loadout.parse @flight.airframe, @flight.loadout
     @stations = Settings.loadout.send(@flight.airframe).map { |config| Station.new(config) }
-    @templates = LoadoutTemplate.where(airframe: @flight.airframe)
+    @templates = LoadoutTemplate.where(airframe: @flight.airframe).presence || [] # Templates are optional
   end
 
   def update
     @loadout = Loadout.new @flight.airframe, loadout_params
-    @flight.update loadout: @loadout
+    @flight.update(loadout: @loadout)
     redirect_to flight_path(@flight)
   end
 
   def save_template
     template = LoadoutTemplate.new(template_params.merge(airframe: @flight.airframe))
     if template.save
-      redirect_to edit_flight_loadout_path(@flight), notice: 'Template saved successfully'
+      redirect_to edit_flight_loadout_path(@flight), notice: 'Loadout template saved successfully.'
     else
-      redirect_to edit_flight_loadout_path(@flight), alert: 'Failed to save template'
+      redirect_to edit_flight_loadout_path(@flight), alert: 'Failed to save the loadout template.'
     end
   end
 
   def load_template
     template = LoadoutTemplate.find(params[:template_id])
     @flight.update(loadout: template.loadout)
-    redirect_to edit_flight_loadout_path(@flight), notice: 'Template loaded successfully'
+    redirect_to edit_flight_loadout_path(@flight), notice: 'Loadout template loaded successfully.'
   end
 
   private
