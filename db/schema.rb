@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_09_201326) do
+ActiveRecord::Schema.define(version: 2024_09_12_134549) do
 
   create_table "flights", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -49,6 +49,17 @@ ActiveRecord::Schema.define(version: 2021_06_09_201326) do
     t.integer "bingo_fuel"
     t.integer "landing_fuel"
     t.integer "iff"
+    t.integer "package_id"
+    t.index ["package_id"], name: "index_flights_on_package_id"
+  end
+
+  create_table "packages", force: :cascade do |t|
+    t.string "task"
+    t.string "ao"
+    t.string "frequency"
+    t.integer "lead_flight_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "pilots", force: :cascade do |t|
@@ -77,6 +88,7 @@ ActiveRecord::Schema.define(version: 2021_06_09_201326) do
     t.index ["flight_id"], name: "index_waypoints_on_flight_id"
   end
 
+  add_foreign_key "flights", "packages"
   add_foreign_key "pilots", "flights"
   add_foreign_key "waypoints", "flights"
 end
