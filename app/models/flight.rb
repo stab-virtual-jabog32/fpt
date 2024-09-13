@@ -2,6 +2,11 @@ class Flight < ApplicationRecord
   has_many :pilots, -> { order(:number) }, dependent: :destroy
   has_many :waypoints, dependent: :destroy
 
+  belongs_to :package, optional: true # A flight can belong to a package
+
+  # Validation to ensure the lead flight must be part of the package it leads
+  validate :lead_flight_must_be_in_package, if: -> { package.present? && package.lead_flight_id.present? }
+
   scope :ordered, -> { order(start: :asc, callsign: :asc, callsign_number: :asc) }
   scope :current, -> { where('date(start) >= ?', Date.today) }
   scope :with_pilot, ->(pilot) { joins(:pilots).where('pilots.name like ?', "%#{pilot}%") }
@@ -9,14 +14,24 @@ class Flight < ApplicationRecord
   validates :start, presence: true
   validates :iff, presence: true, numericality: { only_integer: true, greater_than: 99, less_than: 800 }
 
+  # Ensure the lead flight is part of the package
+  def lead_flight_must_be_in_package
+    if package&.lead_flight_id == id && package.flights.exclude?(self)
+      errors.add(:lead_flight, 'must be part of the package')
+    end
+  end
+
+  # Helper method to display the full callsign (e.g., "Callsign 123")
   def full_callsign
     callsign_number.present? ? "#{callsign} #{callsign_number}" : callsign
   end
 
+  # Helper method to format TACAN (Tactical Air Navigation)
   def tacan
     "#{tacan_channel}#{tacan_polarization}"
   end
 
+  # Methods for handling support types
   def support
     return [] unless self[:support].present?
 
@@ -36,6 +51,7 @@ class Flight < ApplicationRecord
     end.compact
   end
 
+  # Methods for retrieving airbase names
   def departure_name
     return unless start_airbase && departure && Settings.theaters[theater].airbases[start_airbase]&.departures
 
@@ -54,6 +70,7 @@ class Flight < ApplicationRecord
     Settings.theaters[theater].airbases[divert_airbase].recoveries[divert]
   end
 
+  # Other methods related to flight attributes and actions
   def airframes
     "#{slots}x #{Settings.airframes[airframe].name}"
   end
