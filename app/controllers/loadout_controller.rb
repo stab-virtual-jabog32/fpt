@@ -4,20 +4,15 @@ class LoadoutController < ApplicationController
   # Edit loadout for the flight
   def edit
     Rails.logger.debug("Entering LoadoutController#edit for flight #{@flight.id}")
-    if @flight.loadout.present?
-      Rails.logger.debug("Flight #{@flight.id} has a loadout. Parsing loadout...")
-      @loadout = Loadout.parse(@flight.airframe, @flight.loadout)
-    else
-      Rails.logger.debug("Flight #{@flight.id} does not have a loadout. Creating a blank loadout...")
-      @loadout = Loadout.new(@flight.airframe) # Create a new blank loadout if none exists
-    end
-
+    @loadout = Loadout.parse(@flight.airframe, @flight.loadout)
     @stations = Settings.loadout.send(@flight.airframe).map { |config| Station.new(config) }
-
-    # Load any existing templates for this airframe
-    @templates = LoadoutTemplate.where(airframe: @flight.airframe)
-    Rails.logger.debug("LoadoutController#edit completed for flight #{@flight.id}")
+  
+    # Temporarily comment out template loading
+    # @templates = LoadoutTemplate.where(airframe: @flight.airframe)
+  
+    Rails.logger.debug("Loadout and stations loaded successfully.")
   end
+  
 
   # Update the loadout for the flight
   def update
