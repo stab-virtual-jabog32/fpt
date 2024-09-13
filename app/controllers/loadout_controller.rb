@@ -3,7 +3,12 @@ class LoadoutController < ApplicationController
 
   # Edit loadout for the flight
   def edit
-    @loadout = Loadout.parse(@flight.airframe, @flight.loadout)
+    if @flight.loadout.present?
+      @loadout = Loadout.parse(@flight.airframe, @flight.loadout)
+    else
+      @loadout = Loadout.new(@flight.airframe) # Create a new blank loadout if none exists
+    end
+
     @stations = Settings.loadout.send(@flight.airframe).map { |config| Station.new(config) }
 
     # Load any existing templates for this airframe
@@ -21,7 +26,7 @@ class LoadoutController < ApplicationController
   def save_template
     template_name = params[:template_name]
     loadout = Loadout.new(@flight.airframe, loadout_params)
-    LoadoutTemplate.create(name: template_name, airframe: @flight.airframe, loadout: loadout)
+    LoadoutTemplate.create(name: template_name, airframe: @flight.airframe, loadout: loadout.to_s) # Store loadout as a string
 
     redirect_to edit_flight_loadout_path(@flight), notice: 'Template saved successfully.'
   end
