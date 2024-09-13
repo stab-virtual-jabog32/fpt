@@ -58,17 +58,15 @@
 
 / Additions for loadout template functionality
 %h3 Load from Template
-- if @templates.present? && @templates.any?
+- if @templates.any?
   %ul
     - @templates.each do |template|
       %li= link_to template.name, load_template_flight_loadout_path(@flight, template_id: template.id), method: :post, class: 'btn btn-secondary'
 - else
   %p No templates available for this airframe.
 
-= form_with url: save_template_flight_loadout_path(@flight), method: :post do |f|
-  %div.form-group
-    = f.label :template_name, 'Save current loadout as template:'
-    = f.text_field :template_name, class: 'form-control'
-  = f.submit 'Save as Template', class: 'btn btn-primary'
+= form_with url: save_template_flight_loadout_path(@flight), method: :post, local: true do |f|
+  = f.text_field :template_name, placeholder: "Template Name", class: 'form-control'
+  = f.submit 'Save as Template', class: 'btn btn-secondary'
 
 = link_to 'Back', flight_path(@flight)
