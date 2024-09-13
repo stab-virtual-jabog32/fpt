@@ -1,30 +1,37 @@
 class LoadoutController < ApplicationController
   before_action :set_flight
 
+  # Edit loadout for the flight
   def edit
-    @loadout = Loadout.parse @flight.airframe, @flight.loadout
+    @loadout = Loadout.parse(@flight.airframe, @flight.loadout)
     @stations = Settings.loadout.send(@flight.airframe).map { |config| Station.new(config) }
+
+    # Load any existing templates for this airframe
+    @templates = LoadoutTemplate.where(airframe: @flight.airframe)
   end
 
+  # Update the loadout for the flight
   def update
-    @loadout = Loadout.new @flight.airframe, loadout_params
+    @loadout = Loadout.new(@flight.airframe, loadout_params)
     @flight.update(loadout: @loadout)
     redirect_to flight_path(@flight)
   end
 
+  # Save the current loadout as a template
   def save_template
-    template = LoadoutTemplate.new(template_params.merge(airframe: @flight.airframe))
-    if template.save
-      redirect_to edit_flight_loadout_path(@flight), notice: 'Loadout template saved successfully.'
-    else
-      redirect_to edit_flight_loadout_path(@flight), alert: 'Failed to save the loadout template.'
-    end
+    template_name = params[:template_name]
+    loadout = Loadout.new(@flight.airframe, loadout_params)
+    LoadoutTemplate.create(name: template_name, airframe: @flight.airframe, loadout: loadout)
+
+    redirect_to edit_flight_loadout_path(@flight), notice: 'Template saved successfully.'
   end
 
+  # Load a template into the current flight's loadout
   def load_template
     template = LoadoutTemplate.find(params[:template_id])
     @flight.update(loadout: template.loadout)
-    redirect_to edit_flight_loadout_path(@flight), notice: 'Loadout template loaded successfully.'
+
+    redirect_to edit_flight_loadout_path(@flight), notice: 'Template loaded successfully.'
   end
 
   private
@@ -35,9 +42,5 @@ class LoadoutController < ApplicationController
 
   def loadout_params
     params.require(:loadout).permit(Settings.loadout.send(@flight.airframe).keys + %w[f e g])
-  end
-
-  def template_params
-    params.require(:loadout_template).permit(:name, :loadout)
   end
 end
