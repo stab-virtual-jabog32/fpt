@@ -24,7 +24,12 @@ Rails.application.routes.draw do
         get :export
       end
     end
-    resource :loadout, only: %i[edit update]
+
+    # Loadout-related routes, including save/load template functionality
+    resource :loadout, only: %i[edit update] do
+      post 'save_template', to: 'loadout#save_template', as: 'save_template'
+      post 'load_template', to: 'loadout#load_template', as: 'load_template'
+    end
   end
 
   # Package-related routes
