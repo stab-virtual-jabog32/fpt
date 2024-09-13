@@ -1,7 +1,8 @@
-%h1 Edit loadout
+%h1 Edit loadout for #{@flight.full_callsign}
+
 %img(src="/loadout/#{@flight.airframe}.png" width=600)
+
 = form_for @loadout, url: flight_loadout_path(@flight), method: :put do |f|
-  = f.hidden_field :g
   %table.table.table-striped.table-bordered.table-sm.table-hover
     %tr
       %th.bg-secondary Station
@@ -12,20 +13,22 @@
         %th.table-secondary= station.number
         %td(colspan=4)= f.select station.number, station_options(station, f.object.send(station.number)), {}, class: 'form-control form-control-sm'
         %td(data-ref="loadout_#{station.number}")
+
     %tr
       %th.bg-secondary(colspan=6) Gun
     %tr
       %th.table-secondary Amount
       %td= f.range_field :gun_amount, class: 'custom-range', data: { amount: Settings.airframes[@flight.airframe].gun.amount, weight: Settings.airframes[@flight.airframe].gun.weight }
-      /  %input.custom-range(type='range')
       %td#gun_amount
       %th.table-secondary Type
       %td= f.select :gun_type, Settings.airframes[@flight.airframe].gun.types.to_h.invert, {}, class: 'form-control form-control-sm'
       %td#gun_weight
+
     %tr
       %th.bg-secondary Expendables
       %td(colspan=2)= f.select :e, expendable_options(@flight), {}, class: 'form-control form-control-sm'
       %td(colspan=3)
+
     %tr
       %th.bg-secondary(colspan=6) Fuel
     %tr
@@ -35,6 +38,7 @@
       %th.table-secondary External
       %td#external_fuel
       %td#total_fuel
+
     %tr
       %th.bg-secondary(colspan=6) Weight
     %tr
@@ -52,24 +56,33 @@
       %td#fuel_weight
       %td#total_weight{ data: { max: Settings.airframes[@flight.airframe].weight.tol } }
 
-  = f.submit 'Save', class: 'btn btn-primary'
+  = f.submit 'Save Loadout', class: 'btn btn-primary'
 
 / Additions for loadout template functionality
-%h3 Load from template
-- if @templates.any?
-  %ul
-    - @templates.each do |template|
-      %li= link_to template.name, load_template_flight_loadout_path(@flight, template_id: template.id), method: :post, class: 'btn btn-secondary'
-- else
-  %p No templates available
+%h3 Load from Template
 
-%h3 Save current loadout as template
-= form_for :loadout_template, url: save_template_flight_loadout_path(@flight), method: :post do |f|
-  .form-group
-    = f.label :name, "Template Name"
-    = f.text_field :name, class: 'form-control'
-  = f.hidden_field :loadout, value: @flight.loadout.to_json
+/ Check if there are templates present for this airframe
+- if @templates.present? && @templates.any?
+  = form_with url: load_template_flight_loadout_path(@flight), method: :post do |f|
+    %div.form-group
+      = f.label :template_id, 'Select a template to load'
+      = f.select :template_id, @templates.map { |t| [t.name, t.id] }, {}, class: 'form-control'
+    = f.submit 'Load Template', class: 'btn btn-secondary'
+- else
+  %p No templates available for this airframe.
+
+%h3 Save as Template
+= form_with url: save_template_flight_loadout_path(@flight), method: :post do |f|
+  %div.form-group
+    = f.label :template_name, 'Save current loadout as template:'
+    = f.text_field :template_name, class: 'form-control'
+
+  / Wrap the loadout fields under the loadout key
+  = f.fields_for :loadout do |l|
+    - Settings.loadout.send(@flight.airframe).keys.each do |key|
+      = l.hidden_field key, value: @loadout[key]
+
   = f.submit 'Save as Template', class: 'btn btn-primary'
 
-%p
+
 = link_to 'Back', flight_path(@flight)
