@@ -76,6 +76,12 @@
   %div.form-group
     = f.label :template_name, 'Save current loadout as template:'
     = f.text_field :template_name, class: 'form-control'
+
+  / Add hidden fields to pass the loadout data
+  - Settings.loadout.send(@flight.airframe).keys.each do |key|
+    = f.hidden_field key, value: @loadout[key]
+
   = f.submit 'Save as Template', class: 'btn btn-primary'
+
 
 = link_to 'Back', flight_path(@flight)
