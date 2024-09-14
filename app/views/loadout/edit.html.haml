@@ -68,8 +68,6 @@
       = f.label :template_id, 'Select a template to load'
       = f.select :template_id, @templates.map { |t| [t.name, t.id] }, {}, class: 'form-control'
     = f.submit 'Load Template', class: 'btn btn-secondary'
-
-/ If no templates are available, display a helpful message
 - else
   %p No templates available for this airframe.
 
