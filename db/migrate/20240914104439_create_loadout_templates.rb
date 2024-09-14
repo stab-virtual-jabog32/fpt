@@ -4,7 +4,6 @@ class CreateLoadoutTemplates < ActiveRecord::Migration[6.0]
       t.string :name, null: false                # Name of the template
       t.string :airframe, null: false            # Airframe the template is associated with
       t.text :loadout, null: false               # The loadout data as text or JSON
-      t.references :user, foreign_key: true      # Optional: if you want to associate templates with users
       t.timestamps
     end
 
