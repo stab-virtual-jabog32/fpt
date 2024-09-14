@@ -11,3 +11,6 @@
     %ul
       - package.flights.each do |flight|
         %li= flight.full_callsign
+
+%br
+= link_to 'Back to Main App', root_path, class: 'btn btn-secondary'

@@ -2,7 +2,7 @@ class PackagesController < ApplicationController
   before_action :set_package, only: %i[show edit update destroy]
 
   def index
-    @packages = Package.all
+    @packages = Package.joins(:flights).where('flights.start > ?', Time.now).distinct
   end
 
   def new
