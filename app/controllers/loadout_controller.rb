@@ -4,11 +4,13 @@ class LoadoutController < ApplicationController
   # Edit loadout for the flight
   def edit
     Rails.logger.debug("Entering LoadoutController#edit for flight #{@flight.id}")
-    @loadout = Loadout.parse(@flight.airframe, @flight.loadout)
+  
+    @loadout = Loadout.parse(@flight.airframe, @flight.loadout || '') # Handle case where loadout is nil
     @stations = Settings.loadout.send(@flight.airframe).map { |config| Station.new(config) }
-
-    # Ensure that @templates is an empty array if no templates are available
-    @templates = LoadoutTemplate.where(airframe: @flight.airframe).to_a
+  
+    # Fetch templates if they exist for this airframe
+    @templates = LoadoutTemplate.where(airframe: @flight.airframe)
+  
     Rails.logger.debug("Loadout and stations loaded successfully.")
   end
 
@@ -24,9 +26,9 @@ class LoadoutController < ApplicationController
     template_name = params[:template_name]
     loadout = Loadout.new(@flight.airframe, loadout_params)
     
-    # Create a new loadout template with the loadout string and the name
-    LoadoutTemplate.create(name: template_name, airframe: @flight.airframe, loadout: loadout.to_s)
-    
+    # Save loadout as a string representation (assuming this format is correct for loading later)
+    LoadoutTemplate.create!(name: template_name, airframe: @flight.airframe, loadout: loadout.to_s)
+
     redirect_to edit_flight_loadout_path(@flight), notice: 'Template saved successfully.'
   end
 
@@ -34,9 +36,10 @@ class LoadoutController < ApplicationController
   def load_template
     template = LoadoutTemplate.find(params[:template_id])
     
-    # Load the template loadout into the flight
-    @flight.update(loadout: template.loadout)
-    
+    # Assuming loadout is a string, ensure it is parsed back into a usable format
+    loadout = Loadout.parse(@flight.airframe, template.loadout)
+    @flight.update(loadout: loadout.to_s)
+
     redirect_to edit_flight_loadout_path(@flight), notice: 'Template loaded successfully.'
   end
 

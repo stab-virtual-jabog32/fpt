@@ -1,5 +1,7 @@
 %h1 Edit loadout for #{@flight.full_callsign}
+
 %img(src="/loadout/#{@flight.airframe}.png" width=600)
+
 = form_for @loadout, url: flight_loadout_path(@flight), method: :put do |f|
   %table.table.table-striped.table-bordered.table-sm.table-hover
     %tr
@@ -9,7 +11,7 @@
     - @stations.each do |station|
       %tr
         %th.table-secondary= station.number
-        %td(colspan=4)= f.select station.number, station_options(station, f.object.send(station.number)), {}, class: 'form-control  form-control-sm'
+        %td(colspan=4)= f.select station.number, station_options(station, f.object.send(station.number)), {}, class: 'form-control form-control-sm'
         %td(data-ref="loadout_#{station.number}")
 
     %tr
@@ -58,15 +60,24 @@
 
 / Additions for loadout template functionality
 %h3 Load from Template
-- if @templates.any?
-  %ul
-    - @templates.each do |template|
-      %li= link_to template.name, load_template_flight_loadout_path(@flight, template_id: template.id), method: :post, class: 'btn btn-secondary'
+
+/ Check if there are templates present for this airframe
+- if @templates.present? && @templates.any?
+  = form_with url: load_template_flight_loadout_path(@flight), method: :post do |f|
+    %div.form-group
+      = f.label :template_id, 'Select a template to load'
+      = f.select :template_id, @templates.map { |t| [t.name, t.id] }, {}, class: 'form-control'
+    = f.submit 'Load Template', class: 'btn btn-secondary'
+
+/ If no templates are available, display a helpful message
 - else
   %p No templates available for this airframe.
 
-= form_with url: save_template_flight_loadout_path(@flight), method: :post, local: true do |f|
-  = f.text_field :template_name, placeholder: "Template Name", class: 'form-control'
-  = f.submit 'Save as Template', class: 'btn btn-secondary'
+%h3 Save as Template
+= form_with url: save_template_flight_loadout_path(@flight), method: :post do |f|
+  %div.form-group
+    = f.label :template_name, 'Save current loadout as template:'
+    = f.text_field :template_name, class: 'form-control'
+  = f.submit 'Save as Template', class: 'btn btn-primary'
 
 = link_to 'Back', flight_path(@flight)
