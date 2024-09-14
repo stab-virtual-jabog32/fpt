@@ -57,11 +57,9 @@ ActiveRecord::Schema.define(version: 2024_09_14_104439) do
     t.string "name", null: false
     t.string "airframe", null: false
     t.text "loadout", null: false
-    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name", "airframe"], name: "index_loadout_templates_on_name_and_airframe", unique: true
-    t.index ["user_id"], name: "index_loadout_templates_on_user_id"
   end
 
   create_table "packages", force: :cascade do |t|
@@ -100,7 +98,6 @@ ActiveRecord::Schema.define(version: 2024_09_14_104439) do
   end
 
   add_foreign_key "flights", "packages"
-  add_foreign_key "loadout_templates", "users"
   add_foreign_key "pilots", "flights"
   add_foreign_key "waypoints", "flights"
 end
