@@ -20,10 +20,16 @@
       %td= f.text_field :frequency, class: 'form-control'
     %tr
       %th.align-middle.table-secondary Lead Flight
-      %td= f.collection_select :lead_flight_id, @flights.select { |flight| flight.start >= Time.current }, :id, :full_callsign, { prompt: "Select Lead Flight" }, class: 'form-control'
+      %td
+        .form-row
+          .col-md-12
+            = f.collection_select :lead_flight_id, @flights.select { |flight| flight.start >= Time.current }, :id, :full_callsign, { prompt: "Select Lead Flight" }, class: 'form-control'
       %th.align-middle.table-secondary Select Flights
-      %td= f.collection_select :flight_ids, @flights.select { |flight| flight.start >= Time.current }, :id, :full_callsign, {}, multiple: true, class: 'form-control'
+      %td
+        .form-row
+          .col-md-12
+            = f.collection_select :flight_ids, @flights.select { |flight| flight.start >= Time.current }, :id, :full_callsign, {}, multiple: true, class: 'form-control'
 
   = f.submit 'Create Package', class: 'btn btn-primary'
 
-= link_to 'Back', packages_path
+= link_to 'Back', packages_path, class: 'btn btn-secondary'
