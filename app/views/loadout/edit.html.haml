@@ -3,6 +3,7 @@
 %img(src="/loadout/#{@flight.airframe}.png" width=600)
 
 = form_for @loadout, url: flight_loadout_path(@flight), method: :put do |f|
+  = f.hidden_field :g
   %table.table.table-striped.table-bordered.table-sm.table-hover
     %tr
       %th.bg-secondary Station
@@ -18,11 +19,8 @@
       %th.bg-secondary(colspan=6) Gun
     %tr
       %th.table-secondary Amount
-      %td= f.range_field :gun_amount, class: 'custom-range', data: { amount: Settings.airframes[@flight.airframe].gun.amount, weight: Settings.airframes[@flight.airframe].gun.weight }
+      %td= f.range_field :g, class: 'custom-range', data: { amount: Settings.airframes[@flight.airframe].gun.amount, weight: Settings.airframes[@flight.airframe].gun.weight }
       %td#gun_amount
-      %th.table-secondary Type
-      %td= f.select :gun_type, Settings.airframes[@flight.airframe].gun.types.to_h.invert, {}, class: 'form-control form-control-sm'
-      %td#gun_weight
 
     %tr
       %th.bg-secondary Expendables
@@ -61,9 +59,12 @@
 / Additions for loadout template functionality
 %h3 Load from Template
 
+/ Feedback Section for displaying feedback messages
+%div#template-feedback{ style: "display: none;" }
+
 / Check if there are templates present for this airframe
 - if @templates.present? && @templates.any?
-  = form_with url: load_template_flight_loadout_path(@flight), method: :post do |f|
+  = form_with url: load_template_flight_loadout_path(@flight), method: :post, remote: true, id: "load-template-form" do |f|
     %div.form-group
       = f.label :template_id, 'Select a template to load'
       = f.select :template_id, @templates.map { |t| [t.name, t.id] }, {}, class: 'form-control'
@@ -72,21 +73,18 @@
   %p No templates available for this airframe.
 
 %h3 Save as Template
-= form_with url: save_template_flight_loadout_path(@flight), method: :post do |f|
+= form_with url: save_template_flight_loadout_path(@flight), method: :post, remote: true do |f|
   %div.form-group
     = f.label :template_name, 'Save current loadout as template:'
     = f.text_field :template_name, class: 'form-control'
 
-  / Add hidden fields to pass the current loadout data
-  - Settings.loadout.send(@flight.airframe).keys.each do |key|
-    = f.hidden_field "loadout[#{key}]", value: @loadout[key]
-
-  / Include additional fields like gun_amount, gun_type, fuel, etc.
-  = f.hidden_field "loadout[gun_amount]", value: @loadout.gun_amount
-  = f.hidden_field "loadout[gun_type]", value: @loadout.gun_type
-  = f.hidden_field "loadout[f]", value: @loadout[:f]
-  = f.hidden_field "loadout[e]", value: @loadout[:e]
+  - @stations.each do |station|
+    = f.hidden_field "loadout[#{station.number}]", value: @loadout[station.number] # Ensure the stations are passed
+  = f.hidden_field "loadout[f]", value: @loadout.f
+  = f.hidden_field "loadout[e]", value: @loadout.e
+  = f.hidden_field "loadout[g]", value: @loadout.g
 
   = f.submit 'Save as Template', class: 'btn btn-primary'
+
 
 = link_to 'Back', flight_path(@flight)

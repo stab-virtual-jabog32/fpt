@@ -23,51 +23,51 @@ class LoadoutController < ApplicationController
 # Save the current loadout as a template
 def save_template
   template_name = params[:template_name]
-  
-  # Initialize the Loadout object with current loadout parameters
-  loadout = Loadout.new(@flight.airframe, loadout_params)
 
-  # Serialize the loadout into a JSON format for full data capture
+  # Permit all the required fields dynamically based on the current loadout
+  permitted_loadout = loadout_params
+
+  # Creating the Loadout instance using the permitted params
+  loadout = Loadout.new(@flight.airframe, permitted_loadout)
+
+  # Serialize the full loadout object
   serialized_loadout = {
-    stations: loadout.stations,
-    gun: {
-      amount: loadout.gun_amount,
-      type: loadout.gun_type
-    },
-    expendables: loadout.expendables,
-    fuel: loadout.fuel
-  }.to_json
+    airframe: @flight.airframe,
+    stations: loadout.to_h, # Station data
+    gun: { amount: loadout[:g] },  # Gun amount
+    fuel: loadout[:f],
+    expendables: loadout[:e]
+  }
 
-  # Save the template with the full serialized loadout
-  LoadoutTemplate.create!(name: template_name, airframe: @flight.airframe, loadout: serialized_loadout)
+  # Save the template as JSON
+  LoadoutTemplate.create(
+    name: template_name,
+    airframe: @flight.airframe,
+    loadout: serialized_loadout.to_json
+  )
 
-  redirect_to edit_flight_loadout_path(@flight), notice: 'Template saved successfully.'
+  render json: { message: 'Template saved successfully.' }, status: :ok
 end
 
 
-  # Load a template into the current flight's loadout
 # Load a template into the current flight's loadout
 def load_template
   template = LoadoutTemplate.find(params[:template_id])
 
-  # Parse the serialized loadout from the template
-  parsed_loadout = JSON.parse(template.loadout, symbolize_names: true)
+  # Deserialize the loadout template JSON
+  template_loadout = JSON.parse(template.loadout)
 
-  # Create a new Loadout object from the parsed data
-  loadout = Loadout.new(@flight.airframe)
-  loadout.stations = parsed_loadout[:stations]
-  loadout.gun_amount = parsed_loadout.dig(:gun, :amount)
-  loadout.gun_type = parsed_loadout.dig(:gun, :type)
-  loadout.expendables = parsed_loadout[:expendables]
-  loadout.fuel = parsed_loadout[:fuel]
-
-  # Save the flight's loadout with the updated values
-  @flight.update!(loadout: loadout.to_s)
+  # Convert the deserialized data back to the flight loadout format
+  flight_loadout = template_loadout['stations'].map { |k, v| "#{k}:#{v}" }.join(' ')
+  
+  # Update the flight’s loadout, not flight attributes directly
+  @flight.update(
+    loadout: flight_loadout
+  )
 
   redirect_to edit_flight_loadout_path(@flight), notice: 'Template loaded successfully.'
-  Rails.logger.debug("Loaded template: #{template.loadout}")
-  Rails.logger.debug("Updated flight loadout: #{loadout.to_s}")
 end
+
 
 
   private
@@ -77,6 +77,7 @@ end
   end
 
   def loadout_params
-    params.require(:loadout).permit(Settings.loadout.send(@flight.airframe).keys + %w[f e g gun_amount gun_type])
+    params.require(:loadout).permit(Settings.loadout.send(@flight.airframe).keys + %w[f e g])
   end
+  
 end
