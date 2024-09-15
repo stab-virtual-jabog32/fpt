@@ -2,7 +2,7 @@
 
 %img(src="/loadout/#{@flight.airframe}.png" width=600)
 
-= form_for @loadout, url: flight_loadout_path(@flight), method: :put do |f|
+= form_for @loadout, url: flight_loadout_path(@flight), method: :put, id: 'save-loadout-form' do |f|
   = f.hidden_field :g
   %table.table.table-striped.table-bordered.table-sm.table-hover
     %tr
@@ -12,26 +12,29 @@
     - @stations.each do |station|
       %tr
         %th.table-secondary= station.number
-        %td(colspan=4)= f.select station.number, station_options(station, f.object.send(station.number)), {}, class: 'form-control form-control-sm'
+        %td(colspan=4)= f.select station.number, station_options(station, f.object.send(station.number)), {}, class: 'form-control form-control-sm', id: "station_#{station.number}"
         %td(data-ref="loadout_#{station.number}")
 
     %tr
       %th.bg-secondary(colspan=6) Gun
     %tr
       %th.table-secondary Amount
-      %td= f.range_field :g, class: 'custom-range', data: { amount: Settings.airframes[@flight.airframe].gun.amount, weight: Settings.airframes[@flight.airframe].gun.weight }
+      %td= f.range_field :gun_amount, class: 'custom-range', data: { amount: Settings.airframes[@flight.airframe].gun.amount, weight: Settings.airframes[@flight.airframe].gun.weight }, id: 'loadout_gun_amount'
+      /  %input.custom-range(type='range')
       %td#gun_amount
-
+      %th.table-secondary Type
+      %td= f.select :gun_type, Settings.airframes[@flight.airframe].gun.types.to_h.invert, {}, class: 'form-control form-control-sm'
+      %td#gun_weight
     %tr
       %th.bg-secondary Expendables
-      %td(colspan=2)= f.select :e, expendable_options(@flight), {}, class: 'form-control form-control-sm'
+      %td(colspan=2)= f.select :e, expendable_options(@flight), {}, class: 'form-control form-control-sm', id: 'expendable-field'
       %td(colspan=3)
 
     %tr
       %th.bg-secondary(colspan=6) Fuel
     %tr
       %th.table-secondary Internal
-      %td= f.range_field :f, class: 'custom-range', data: { weight: Settings.airframes[@flight.airframe].weight.fuel }
+      %td= f.range_field :f, class: 'custom-range', data: { weight: Settings.airframes[@flight.airframe].weight.fuel }, id: 'loadout_f'
       %td#internal_fuel
       %th.table-secondary External
       %td#external_fuel
@@ -56,35 +59,92 @@
 
   = f.submit 'Save Loadout', class: 'btn btn-primary'
 
-/ Additions for loadout template functionality
-%h3 Load from Template
-
 / Feedback Section for displaying feedback messages
 %div#template-feedback{ style: "display: none;" }
 
-/ Check if there are templates present for this airframe
-- if @templates.present? && @templates.any?
-  = form_with url: load_template_flight_loadout_path(@flight), method: :post, remote: true, id: "load-template-form" do |f|
-    %div.form-group
-      = f.label :template_id, 'Select a template to load'
-      = f.select :template_id, @templates.map { |t| [t.name, t.id] }, {}, class: 'form-control'
-    = f.submit 'Load Template', class: 'btn btn-secondary'
-- else
-  %p No templates available for this airframe.
+/ Add a horizontal line or spacer to visually separate sections
+%hr{ style: "margin-top: 50px; margin-bottom: 30px;" }
+
 
 %h3 Save as Template
-= form_with url: save_template_flight_loadout_path(@flight), method: :post, remote: true do |f|
+= form_for :template, url: save_template_flight_loadout_path(@flight), method: :post, html: { id: 'save-template-form' } do |f|
   %div.form-group
     = f.label :template_name, 'Save current loadout as template:'
     = f.text_field :template_name, class: 'form-control'
 
+  / Hidden fields that will be populated by JavaScript
   - @stations.each do |station|
-    = f.hidden_field "loadout[#{station.number}]", value: @loadout[station.number] # Ensure the stations are passed
-  = f.hidden_field "loadout[f]", value: @loadout.f
-  = f.hidden_field "loadout[e]", value: @loadout.e
-  = f.hidden_field "loadout[g]", value: @loadout.g
+    = f.hidden_field "loadout[#{station.number}]", id: "template_station_#{station.number}"
+  = f.hidden_field "loadout[g]", id: 'template-gun-field'
+  = f.hidden_field "loadout[e]", id: 'template-expendable-field'
+  = f.hidden_field "loadout[f]", id: 'template-fuel-field'
 
-  = f.submit 'Save as Template', class: 'btn btn-primary'
+  = f.submit 'Save as Template', class: 'btn btn-secondary'
 
+
+%h3 Load from Template
+/ Check if there are templates present for this airframe
+- if @templates.present? && @templates.any?
+  = form_for :template, url: load_template_flight_loadout_path(@flight), method: :post do |f|
+    %div.form-group
+      = f.label :template_name, 'Select a template to load'
+      = f.select :template_name, @templates.map { |t| [t.name, t.id] }, {}, class: 'form-control'
+    = f.submit 'Load Template', class: 'btn btn-primary'
+- else
+  %p No templates available for this airframe.
 
 = link_to 'Back', flight_path(@flight)
+
+:javascript
+  document.addEventListener('DOMContentLoaded', function() {
+    const saveTemplateForm = document.getElementById('save-template-form');
+  
+    // Check if the form exists before trying to add an event listener
+    if (saveTemplateForm) {
+      console.log("Found save-template-form");
+      // Add an event listener to sync values before submitting the form
+      saveTemplateForm.addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent immediate form submission
+  
+        // Copy gun amount
+        const gunField = document.getElementById('loadout_gun_amount');
+        const templateGunField = document.getElementById('template-gun-field');
+        if (gunField && templateGunField) {
+          templateGunField.value = gunField.value;
+          console.log("Gun value copied: ", gunField.value);
+        }
+  
+        // Copy expendable field
+        const expendableField = document.getElementById('expendable-field');
+        const templateExpendableField = document.getElementById('template-expendable-field');
+        if (expendableField && templateExpendableField) {
+          templateExpendableField.value = expendableField.value;
+          console.log("Expendable value copied: ", expendableField.value);
+        }
+  
+        // Copy fuel field
+        const fuelField = document.getElementById('loadout_f');
+        const templateFuelField = document.getElementById('template-fuel-field');
+        if (fuelField && templateFuelField) {
+          templateFuelField.value = fuelField.value;
+          console.log("Fuel value copied: ", fuelField.value);
+        }
+  
+        // Copy station values from Save Loadout form to Save as Template form
+        const stationFields = document.querySelectorAll('[id^="station_"]');
+        stationFields.forEach(function(stationField) {
+          const stationNumber = stationField.id.split('_')[1]; // Extract station number from id
+          const templateStationField = document.getElementById(`template_station_${stationNumber}`);
+          if (templateStationField) {
+            templateStationField.value = stationField.value;
+            console.log(`Station ${stationNumber} value copied: `, stationField.value);
+          }
+        });
+  
+        // Submit the form after copying values
+        saveTemplateForm.submit();
+      });
+    } else {
+      console.error("save-template-form not found in the DOM.");
+    }
+  });
