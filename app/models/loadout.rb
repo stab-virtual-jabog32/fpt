@@ -7,16 +7,11 @@ class Loadout < OpenStruct
   end
 
   def self.parse(airframe, loadout)
-    Rails.logger.debug("Parsing loadout for airframe: #{airframe}")
     data = loadout&.split&.map do |e|
       k, v = e.split /:/
       [k.to_sym, v]
     end
-    Rails.logger.debug("Parsed data: #{data.inspect}")
     new(airframe, data.to_h)
-  rescue => e
-    Rails.logger.error("Error parsing loadout: #{e.message}")
-    raise
   end
 
   def to_s
