@@ -18,54 +18,38 @@ class LoadoutController < ApplicationController
     @loadout = Loadout.new(@flight.airframe, loadout_params)
     @flight.update(loadout: @loadout)
     redirect_to flight_path(@flight)
+    Rails.logger.debug("Request format: #{request.format}")
   end
 
 # Save the current loadout as a template
 def save_template
   template_name = params[:template_name]
 
-  # Permit all the required fields dynamically based on the current loadout
-  permitted_loadout = loadout_params
+  # Directly capture the loadout data from the form without serializing
+  loadout_data = @flight.loadout
 
-  # Creating the Loadout instance using the permitted params
-  loadout = Loadout.new(@flight.airframe, permitted_loadout)
-
-  # Serialize the full loadout object
-  serialized_loadout = {
-    airframe: @flight.airframe,
-    stations: loadout.to_h, # Station data
-    gun: { amount: loadout[:g] },  # Gun amount
-    fuel: loadout[:f],
-    expendables: loadout[:e]
-  }
-
-  # Save the template as JSON
-  LoadoutTemplate.create(
+  # Save the template with the loadout string
+  LoadoutTemplate.create!(
     name: template_name,
     airframe: @flight.airframe,
-    loadout: serialized_loadout.to_json
+    loadout: loadout_data
   )
 
-  render json: { message: 'Template saved successfully.' }, status: :ok
+  redirect_to flight_path(@flight)
 end
 
 
 # Load a template into the current flight's loadout
 def load_template
+  # Fetch the loadout template by its ID
   template = LoadoutTemplate.find(params[:template_id])
 
-  # Deserialize the loadout template JSON
-  template_loadout = JSON.parse(template.loadout)
+  # Directly update the flight's loadout with the template's loadout data
+  @flight.update(loadout: template.loadout)
 
-  # Convert the deserialized data back to the flight loadout format
-  flight_loadout = template_loadout['stations'].map { |k, v| "#{k}:#{v}" }.join(' ')
-  
-  # Update the flight’s loadout, not flight attributes directly
-  @flight.update(
-    loadout: flight_loadout
-  )
-
-  redirect_to edit_flight_loadout_path(@flight), notice: 'Template loaded successfully.'
+  # Redirect back to the loadout edit page with a success message
+  redirect_to flight_path(@flight)
+  Rails.logger.debug("Request format: #{request.format}")
 end
 
 
