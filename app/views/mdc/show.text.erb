@@ -173,6 +173,23 @@ mdc = {
         },
 <% end %>
     },
+    <% if @flight.package.present? %>
+    ["package"] = {
+        ["task"] = "<%= @flight.package.task %>",
+        ["ao"] = "<%= @flight.package.ao %>",
+        ["lead_callsign"] = "<%= @flight.package.lead_flight.full_callsign %>",
+        ["frequency"] = "<%= @flight.package.frequency %>",
+        ["flights"] = [
+        <% @flight.package.flights.each do |flight| %>
+            {
+                ["callsign"] = "<%= flight.full_callsign %>",
+                ["task"] = "<%= flight.task %>",
+                ["airframe"] = "<%= flight.slots %>x <%= Settings.airframes[flight.airframe].name %>"
+            },
+        <% end %>
+        ]
+    },
+<% end %>
     ["presets"] = {
 <% Settings.theaters[@flight.theater].channels.each_with_index do |c, i| %>
         [<%= i+1 %>] = {
