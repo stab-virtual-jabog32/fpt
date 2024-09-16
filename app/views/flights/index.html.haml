@@ -8,18 +8,59 @@
     Showing current and upcoming flights.
     = link_to 'Also show past flights.', root_path(params: { all: true })
 
-- @flights.group_by(&:package).each do |package, flights|
-  - if package
-    .package-box.border.border-dark.rounded.p-2.mb-4
-      %h3
-        Package: 
-        = package.task
-        (AO: 
-        = package.ao
-        )
+- @dates.each do |date|
+  %h2
+    = date
+    \/
+    = link_to 'SPINS', spins_path(params: { date: date })
 
+  - @flights.ordered.where('date(start) = ?', date).group_by(&:package).each do |package, flights|
+    - if package
+      .package-box.border.border-dark.rounded.p-2.mb-4
+        %h3
+          Package: 
+          = package.task
+          (AO: 
+          = package.ao
+          )
+
+        - flights.each do |flight|
+          .container.border.rounded-sm.border-dark.bg-light
+            .row.border.font-weight-bold
+              .col= link_to flight.full_callsign, flight
+              .col
+                = "#{flight.slots}x"
+                = Settings.airframes[flight.airframe].name
+              .col= flight.frequency
+
+            - flight.slots.times.each_with_index do |i|
+              - pilot = flight.pilots.find_by(number: i + 1)
+              .row.border.small
+                .col= pilot&.callsign
+                .col= pilot&.name
+                .col= pilot&.iff
+
+            .row.border.font-weight-bold
+              .col= flight.mission
+              .col= flight.task
+              .col= flight.ao
+
+            .row.border
+              .col= link_to_start_airbase(flight)
+              .col= link_to_departure(flight)
+              .col= "#{flight.iff}X"
+
+            .row.border
+              .col= link_to_land_airbase(flight)
+              .col= link_to_recovery(flight)
+              .col= flight.minimum_weather_requirements
+
+        %div
+          = link_to 'Delete Package', package_path(package), method: :delete, data: { confirm: 'Are you sure you want to delete this package?' }, class: 'btn btn-danger mt-2'
+
+    - else
       - flights.each do |flight|
-        .container.border.rounded-sm.border-dark.bg-light
+        .container.border.rounded-sm.border-dark.bg-light.mb-4
           .row.border.font-weight-bold
             .col= link_to flight.full_callsign, flight
             .col
@@ -48,41 +89,6 @@
             .col= link_to_land_airbase(flight)
             .col= link_to_recovery(flight)
             .col= flight.minimum_weather_requirements
-
-      %div
-        = link_to 'Delete Package', package_path(package), method: :delete, data: { confirm: 'Are you sure you want to delete this package?' }, class: 'btn btn-danger mt-2'
-
-  - else
-    - flights.each do |flight|
-      .container.border.rounded-sm.border-dark.bg-light.mb-4
-        .row.border.font-weight-bold
-          .col= link_to flight.full_callsign, flight
-          .col
-            = "#{flight.slots}x"
-            = Settings.airframes[flight.airframe].name
-          .col= flight.frequency
-
-        - flight.slots.times.each_with_index do |i|
-          - pilot = flight.pilots.find_by(number: i + 1)
-          .row.border.small
-            .col= pilot&.callsign
-            .col= pilot&.name
-            .col= pilot&.iff
-
-        .row.border.font-weight-bold
-          .col= flight.mission
-          .col= flight.task
-          .col= flight.ao
-
-        .row.border
-          .col= link_to_start_airbase(flight)
-          .col= link_to_departure(flight)
-          .col= "#{flight.iff}X"
-
-        .row.border
-          .col= link_to_land_airbase(flight)
-          .col= link_to_recovery(flight)
-          .col= flight.minimum_weather_requirements
 
 %br
 = link_to 'New Flight', new_flight_path, class: 'btn btn-primary'
