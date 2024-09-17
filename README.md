@@ -155,3 +155,6 @@ rails server
 ```
 
 The server will be available at <http://localhost:3000>.
+
+## How to Pull Request
+Please only use rebase option for easy changes (e.g. JSON config update for adding a user)
