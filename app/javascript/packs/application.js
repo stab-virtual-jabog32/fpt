@@ -4,6 +4,8 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
+require('../index_map.js')  // Make sure this points to the correct location
+
 
 import 'expose-loader?$!jquery';
 import 'bootstrap';

@@ -7,11 +7,20 @@
   %p
     Showing current and upcoming flights.
     = link_to 'Also show past flights.', root_path(params: { all: true })
-- @dates.each do |date|
+- @dates.each_with_index do |date, index|
   %h2
     = date
     \/
     = link_to 'SPINS', spins_path(params: { date: date })
+
+  // Map container for this date
+  .map-container{ id: "map_#{index}", "data-flight-map": {
+    index: index,
+    waypoints: @flights.ordered.where('date(start) = ?', date).map { |flight| flight.waypoints.map { |wp| { lat: wp.latitude, lon: wp.longitude } if wp.latitude && wp.longitude } }.compact,
+    callsign: @flights.ordered.where('date(start) = ?', date).map(&:full_callsign),
+    flightIndex: index
+  }.to_json }
+
   - @flights.ordered.where('date(start) = ?', date).each do |flight|
     .container.border.rounded-sm.border-dark.bg-light
       .row.border.font-weight-bold
@@ -26,17 +35,22 @@
           .col= pilot&.callsign
           .col= pilot&.name
           .col= pilot&.iff
+      
       .row.border.font-weight-bold
         .col= flight.mission
         .col= flight.task
         .col= flight.ao
+      
       .row.border
         .col= link_to_start_airbase(flight)
         .col= link_to_departure(flight)
         .col= "#{flight.iff}X"
+      
       .row.border
         .col= link_to_land_airbase(flight)
         .col= link_to_recovery(flight)
         .col= flight.minimum_weather_requirements
-    %br
+
+  %br
+
 = link_to 'New Flight', new_flight_path, class: 'btn btn-primary'
