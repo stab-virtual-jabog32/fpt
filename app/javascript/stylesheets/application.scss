@@ -1,3 +1,33 @@
 @import 'bootstrap';
 // Import custom styles
 @import "custom";
+#map {
+    height: 600px;
+    width: 600px;
+    margin: 0 auto; // This centers the map within its container
+    border: 2px solid #000; // Optional border for better visibility
+  }
+  .legend {
+    background: white;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+    background-color: #ccc;
+  }  
+  .map-container {
+    width: 100%;
+    height: 400px; // Adjust the height to your needs
+    margin-bottom: 20px; // Add some space between maps, if necessary
+    border: 2px solid #000; // Optional: Add borders or other styles
+  }
+  

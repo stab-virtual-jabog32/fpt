@@ -6,10 +6,11 @@ class FlightsController < ApplicationController
   def index
     set_all_flights if params['all'].present?
     @all = all_flights?
-    @flights = all_flights? ? Flight.all : Flight.current
+    # Eager load waypoints to avoid N+1 queries and ensure waypoints are available
+    @flights = all_flights? ? Flight.includes(:waypoints).all : Flight.includes(:waypoints).current
     min_id = all_flights? ? Flight.offset([Flight.count - 500, 0].max).first.id : 0
     @dates = @flights.where('id >= ?', min_id).select('date(start) as date').order('date').group('date(start)').map(&:date)
-  end
+  end  
 
   def show
     @loadout = Loadout.parse @flight.airframe, @flight.loadout
