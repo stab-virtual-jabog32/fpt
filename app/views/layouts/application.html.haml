@@ -9,10 +9,12 @@
     = csp_meta_tag
     = stylesheet_pack_tag 'application', media: 'all'
     = javascript_pack_tag 'application'
-    
+
     // Leaflet styles and scripts with the correct integrity attribute
     %link{ href: "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css", rel: "stylesheet", integrity: "sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==", crossorigin: "anonymous" }
-    %script{ src: "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js", integrity: "sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==", crossorigin: "anonymous" }
+    
+    // Add Fullscreen plugin CSS
+    %link{ href: "https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.6.0/Control.FullScreen.min.css", rel: "stylesheet" }
 
   %body.container
     = yield

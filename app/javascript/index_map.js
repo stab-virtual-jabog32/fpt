@@ -1,3 +1,6 @@
+import L from 'leaflet';  // Import Leaflet
+import 'leaflet.fullscreen';  // Import Fullscreen plugin
+
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll("[data-flight-map]").forEach(function(mapElement) {
     const flightData = JSON.parse(mapElement.getAttribute("data-flight-map"));
@@ -11,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
       maxZoom: 17,
       attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)'
     }).addTo(map);
+
+    // Add fullscreen control using the correct class
+    L.control.fullscreen().addTo(map);
 
     // Add a legend for this map
     var legend = L.control({ position: "bottomright" });

@@ -9,6 +9,8 @@
     "bootstrap": "^4.4.1",
     "expose-loader": "^0.7.5",
     "jquery": "^3.4.1",
+    "leaflet": "^1.9.4",
+    "leaflet.fullscreen": "^3.0.2",
     "original-fs": "^1.1.0",
     "popper.js": "^1.16.0",
     "xml2js": "^0.4.23"
