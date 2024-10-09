@@ -35,10 +35,11 @@
 
             - flight.slots.times.each_with_index do |i|
               - pilot = flight.pilots.find_by(number: i + 1)
-              .row.border.small
-                .col= pilot&.callsign
-                .col= pilot&.name
-                .col= pilot&.iff
+              - if pilot.present?
+                .row.border.small
+                  .col= pilot&.callsign
+                  .col= pilot&.name
+                  .col= pilot&.iff
 
             .row.border.font-weight-bold
               .col= flight.mission
@@ -72,10 +73,11 @@
 
           - flight.slots.times.each_with_index do |i|
             - pilot = flight.pilots.find_by(number: i + 1)
-            .row.border.small
-              .col= pilot&.callsign
-              .col= pilot&.name
-              .col= pilot&.iff
+            - if pilot.present?
+              .row.border.small
+                .col= pilot&.callsign
+                .col= pilot&.name
+                .col= pilot&.iff
 
           .row.border.font-weight-bold
             .col= flight.mission
