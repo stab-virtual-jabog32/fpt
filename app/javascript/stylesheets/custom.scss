@@ -163,6 +163,47 @@ th.table-secondary {
 .bg-dark {
   background-color: $navbar-bg !important;  // Dark Blue background
 }
+// Modal styling for a dark theme
+.modal-content {
+  background-color: #1a2942;  // Dark blue background for modal content
+  color: #ffffff;             // White text
+  border-color: #4caf50;      // Green border for modal
+}
+
+.modal-header {
+  background-color: #253d5b;  // Lighter dark blue for header contrast
+  color: #ffffff;             // White text for the header
+  border-bottom: 1px solid #4caf50;  // Green border line for header
+}
+
+.modal-body {
+  background-color: #1a2942;  // Dark blue background for the body
+  color: #ffffff;             // White text for modal content
+}
+
+.modal-footer {
+  background-color: #253d5b;  // Lighter dark blue for footer contrast
+  color: #ffffff;             // White text for the footer
+  border-top: 1px solid #4caf50;  // Green border line for footer
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);  // Semi-transparent black background behind modal
+}
+
+// Adjust buttons inside modals for consistency
+.modal-footer .btn {
+  border-radius: 30px;  // Apply the same rounded design as other buttons
+  padding: 10px 20px;
+  background-color: #4caf50;  // Military Green for consistency
+  color: #fff;
+  border-color: #4caf50;
+}
+
+.modal-footer .btn:hover {
+  background-color: darken(#4caf50, 10%);
+}
+
 
 // Ensure section headings are consistent (remove orange)
 h1, h2, h3, h4, h5, h6 {
