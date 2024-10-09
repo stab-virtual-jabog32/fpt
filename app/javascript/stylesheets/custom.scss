@@ -1,7 +1,7 @@
 // app/assets/stylesheets/custom.scss
 
 // Color Variables for Military Theme
-$body-bg: #03264d;             // Dark Navy Blue
+$body-bg: #1a2942;             // Dark Navy Blue
 $body-color: #ffffff;           // White text for body
 $navbar-bg: #1a2942;            // Dark Blue for Navbars
 $link-color: #6a7c9b;           // Light Blue for links
@@ -62,6 +62,12 @@ a {
   background-color: #e74c3c;   // Red for Danger buttons
   border-color: darken(#e74c3c, 10%);
   color: #fff;
+}
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-danger:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  // Subtle shadow on hover
+  transform: translateY(-2px);               // Slight lift effect on hover
 }
 
 // Container background styling
