@@ -1,20 +1,20 @@
 // app/assets/stylesheets/custom.scss
 
 // Color Variables for Military Theme
-$body-bg: #1c4572;             // Dark Navy Blue
-$body-color: #ffffff;           // Military Green Text
+$body-bg: #03264d;             // Dark Navy Blue
+$body-color: #ffffff;           // White text for body
 $navbar-bg: #1a2942;            // Dark Blue for Navbars
-$link-color: #4e6a9c;           // Military Green for links
-$btn-primary-bg: #61789e;       // Military Green for Primary Buttons
+$link-color: #6a7c9b;           // Light Blue for links
+$btn-primary-bg: #61789e;       // Muted Blue for Primary Buttons
 $btn-primary-color: #fff;       // White text on Primary Buttons
 $table-header-bg: #1a2942;      // Dark Blue for Table Headers
-$table-header-text: #4caf50;    // Yellow Text for Table Headers
-$table-secondary-bg: #0d1b2a;      // Yellow Text for Table Header
+$table-header-text: #4caf50;    // Green Text for Table Headers
+$table-secondary-bg: #253d5b;   // Lighter Dark Blue for Table Rows (Theater, Callsign, Task, AO)
 $table-bg: #0d1b2a;             // Dark Navy for Tables
 $table-hover-bg: #162237;       // Slightly lighter navy on hover
-$border-color: #ffffff;         // Green borders
+$border-color: #ffffff;         // White borders
 $input-bg: #1a2942;             // Dark Blue Input Background
-$highlight-text: #ffffff;       // Yellow for highlighted text like headers (MISSION DATA, SLOTS)
+$highlight-text: #ffffff;       // White for highlighted text like headers (MISSION DATA, SLOTS)
 
 // Include Bootstrap components
 @import "bootstrap";
@@ -42,7 +42,7 @@ a {
 
 // Button styling overrides
 .btn-primary {
-  background-color: $btn-primary-bg; // Military Green
+  background-color: $btn-primary-bg; // Muted Blue
   color: $btn-primary-color;         // White text
   border-color: darken($btn-primary-bg, 10%);
 }
@@ -84,8 +84,8 @@ select,
 textarea,
 .form-control {
   background-color: $input-bg;  // Dark Blue
-  color: $body-color;           // Military Green text
-  border-color: $border-color;  // Green border
+  color: $body-color;           // White text
+  border-color: $border-color;  // White border
   border-radius: 4px;
 }
 
@@ -117,7 +117,7 @@ textarea:focus,
 // Table styling
 .table {
   background-color: $table-bg;   // Dark Navy background
-  color: $body-color;            // Military Green text
+  color: $body-color;            // White text
 }
 
 .table-hover tbody tr:hover {
@@ -125,27 +125,28 @@ textarea:focus,
 }
 
 .table-bordered {
-  border: 1px solid $border-color;  // Green borders
+  border: 1px solid $border-color;  // White borders
 }
 
-// Table headers styling
+// Table headers styling for top-level headers (MISSION DATA, SLOTS, LOADOUT)
 .table th {
-  background-color: $table-header-bg !important;   // Dark Blue for uniform table header color
-  color: $highlight-text !important;               // Yellow text for table headers
-  border-color: $border-color;                     // Green borders
+  background-color: $table-header-bg !important;   // Dark Blue for table header background
+  color: $highlight-text !important;               // White text for table headers
+  border-color: $border-color;                     // White borders
 }
 
-// Highlight specific section headers (like MISSION DATA, SLOTS)
-th.bg-secondary {
-  background-color: $table-header-bg !important;   // Dark Blue for background
-  color: $highlight-text !important;               // Yellow text for emphasis
+// Secondary table background for sections like Theater, Callsign, Task, AO
+.table-secondary,
+th.table-secondary {
+  background-color: $table-secondary-bg !important;  // Lighter Dark Blue
+  color: $highlight-text !important;                 // White text for section headers
 }
 
 // Alerts and notices styling
 .alert-success {
   background-color: $table-header-bg;  // Dark Blue
-  color: $table-header-text;           // Yellow text
-  border-color: $border-color;         // Green borders
+  color: $table-header-text;           // Green text
+  border-color: $border-color;         // White borders
 }
 
 // General border and background adjustments for cards, containers, and other elements
@@ -157,7 +158,7 @@ th.bg-secondary {
   background-color: $navbar-bg !important;  // Dark Blue background
 }
 
-// Remove any unnecessary orange fonts
+// Ensure section headings are consistent (remove orange)
 h1, h2, h3, h4, h5, h6 {
-  color: $highlight-text !important; // Yellow for headings
+  color: $highlight-text !important; // White for headings
 }
