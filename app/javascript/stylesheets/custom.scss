@@ -1,0 +1,163 @@
+// app/assets/stylesheets/custom.scss
+
+// Color Variables for Military Theme
+$body-bg: #1c4572;             // Dark Navy Blue
+$body-color: #ffffff;           // Military Green Text
+$navbar-bg: #1a2942;            // Dark Blue for Navbars
+$link-color: #4e6a9c;           // Military Green for links
+$btn-primary-bg: #61789e;       // Military Green for Primary Buttons
+$btn-primary-color: #fff;       // White text on Primary Buttons
+$table-header-bg: #1a2942;      // Dark Blue for Table Headers
+$table-header-text: #4caf50;    // Yellow Text for Table Headers
+$table-secondary-bg: #0d1b2a;      // Yellow Text for Table Header
+$table-bg: #0d1b2a;             // Dark Navy for Tables
+$table-hover-bg: #162237;       // Slightly lighter navy on hover
+$border-color: #ffffff;         // Green borders
+$input-bg: #1a2942;             // Dark Blue Input Background
+$highlight-text: #ffffff;       // Yellow for highlighted text like headers (MISSION DATA, SLOTS)
+
+// Include Bootstrap components
+@import "bootstrap";
+
+// Body styling
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+// Navbar styling
+.navbar {
+  background-color: $navbar-bg;
+  color: #fff;
+}
+
+// Link styling, overriding any default orange
+a {
+  color: $link-color;
+  
+  &:hover {
+    color: lighten($link-color, 15%);
+  }
+}
+
+// Button styling overrides
+.btn-primary {
+  background-color: $btn-primary-bg; // Military Green
+  color: $btn-primary-color;         // White text
+  border-color: darken($btn-primary-bg, 10%);
+}
+
+.btn-primary:hover {
+  background-color: darken($btn-primary-bg, 10%);
+  border-color: darken($btn-primary-bg, 15%);
+}
+
+.btn-secondary {
+  background-color: #3498db;  // Military Blue
+  color: #fff;
+  border-color: darken(#3498db, 10%);
+}
+
+.btn-danger {
+  background-color: #e74c3c;   // Red for Danger buttons
+  border-color: darken(#e74c3c, 10%);
+  color: #fff;
+}
+
+// Container background styling
+.container {
+  background-color: #1a2942;  // Dark Blue for container background
+  color: #f8f9fa;             // Light text color
+  border-color: #333;         // Adjust border color if necessary
+}
+
+// Ensure any `.bg-light` or `.bg-white` classes are overridden to dark theme
+.bg-light,
+.bg-white {
+  background-color: #1a2942 !important;  // Dark Blue
+  color: #f8f9fa !important;             // Ensure text remains light
+}
+
+// Form Inputs and Selects styling
+input,
+select,
+textarea,
+.form-control {
+  background-color: $input-bg;  // Dark Blue
+  color: $body-color;           // Military Green text
+  border-color: $border-color;  // Green border
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.form-control:focus {
+  background-color: lighten($input-bg, 5%);
+  border-color: $link-color;
+  color: #fff;
+}
+
+// Dropdown menus
+.dropdown-menu {
+  background-color: $input-bg;
+  color: $body-color;
+}
+
+.dropdown-item {
+  background-color: transparent;
+  color: $body-color;
+}
+
+.dropdown-item:hover {
+  background-color: lighten($input-bg, 10%);
+  color: $link-color;
+}
+
+// Table styling
+.table {
+  background-color: $table-bg;   // Dark Navy background
+  color: $body-color;            // Military Green text
+}
+
+.table-hover tbody tr:hover {
+  background-color: $table-hover-bg;  // Lighter navy on hover
+}
+
+.table-bordered {
+  border: 1px solid $border-color;  // Green borders
+}
+
+// Table headers styling
+.table th {
+  background-color: $table-header-bg !important;   // Dark Blue for uniform table header color
+  color: $highlight-text !important;               // Yellow text for table headers
+  border-color: $border-color;                     // Green borders
+}
+
+// Highlight specific section headers (like MISSION DATA, SLOTS)
+th.bg-secondary {
+  background-color: $table-header-bg !important;   // Dark Blue for background
+  color: $highlight-text !important;               // Yellow text for emphasis
+}
+
+// Alerts and notices styling
+.alert-success {
+  background-color: $table-header-bg;  // Dark Blue
+  color: $table-header-text;           // Yellow text
+  border-color: $border-color;         // Green borders
+}
+
+// General border and background adjustments for cards, containers, and other elements
+.border-dark {
+  border-color: $border-color !important;
+}
+
+.bg-dark {
+  background-color: $navbar-bg !important;  // Dark Blue background
+}
+
+// Remove any unnecessary orange fonts
+h1, h2, h3, h4, h5, h6 {
+  color: $highlight-text !important; // Yellow for headings
+}
