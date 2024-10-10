@@ -3,8 +3,9 @@ import 'leaflet.fullscreen';  // Import Fullscreen plugin
 
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll("[data-flight-map]").forEach(function(mapElement) {
+    // Parse flight data from the map element's data attribute
     const flightData = JSON.parse(mapElement.getAttribute("data-flight-map"));
-    const { index, waypoints, callsign } = flightData;
+    const { index, waypoints, callsign, tasks, airframes, pilots } = flightData;  // Destructure all needed data
     const colors = ["#ff0000", "#00ff00", "#0000ff", "#ff00ff", "#00ffff", "#ffff00"];
 
     // Initialize the map for each date
@@ -18,17 +19,47 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add fullscreen control using the correct class
     L.control.fullscreen().addTo(map);
 
-    // Add a legend for this map
-    var legend = L.control({ position: "bottomright" });
-    legend.onAdd = function(map) {
-      var div = L.DomUtil.create("div", "legend");
-      div.innerHTML += "<h4>Flights</h4>";
-      callsign.forEach((call, flightIndex) => {
-        div.innerHTML += `<i style="background: ${colors[flightIndex % colors.length]};"></i> ${call}<br>`;
-      });
-      return div;
-    };
-    legend.addTo(map);
+// Add a legend for this map
+var legend = L.control({ position: "bottomright" });
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Flights</h4>";
+
+  callsign.forEach((call, flightIndex) => {
+    const task = tasks[flightIndex] || 'N/A';
+    const airframe = airframes[flightIndex] || 'N/A';
+    const pilotList = pilots[flightIndex] && pilots[flightIndex].length > 0 ? pilots[flightIndex].join(', ') : 'N/A';
+
+    div.innerHTML += `
+      <div style="margin-bottom: 10px;">
+        <i style="background: ${colors[flightIndex % colors.length]};"></i> 
+        ${call} 
+        <button class="expand-button" data-flight-index="${flightIndex}">+</button>
+        <div id="details_${flightIndex}" class="flight-details" style="display: none;">
+          Task: ${task}<br>
+          Airframe: ${airframe}<br>
+          Pilots: ${pilotList}
+        </div>
+      </div>`;
+  });
+
+  return div;
+};
+legend.addTo(map);
+
+
+    // Event listeners for expanding flight details
+    document.addEventListener('click', function(e) {
+      if (e.target && e.target.classList.contains('expand-button')) {
+        const flightIndex = e.target.getAttribute('data-flight-index');
+        const detailsElement = document.getElementById(`details_${flightIndex}`);
+        if (detailsElement.style.display === 'none') {
+          detailsElement.style.display = 'block';
+        } else {
+          detailsElement.style.display = 'none';
+        }
+      }
+    });
 
     // Prepare for auto-centering
     let bounds = new L.LatLngBounds();
