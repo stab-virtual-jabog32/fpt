@@ -89,11 +89,60 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Fit the map to the bounds of all waypoints
-    if (bounds.isValid()) {
-      map.fitBounds(bounds);
-    } else {
-      map.setView([51.505, -0.09], 8); // Default location if no valid bounds
-    }
-  });
+   // Fetch external JSON for static overlays
+   fetch('/staticOverlay.json')
+   .then(response => response.json())
+   .then(data => {
+     // Add airspace polygons with dashed borders
+     data.airspaces.forEach(function (airspace) {
+       var polygon = L.polygon(airspace.polygon, {
+         color: airspace.color,
+         fillColor: airspace.fillColor,
+         fillOpacity: airspace.fillOpacity,
+         dashArray: '5, 10'  // Dashed border for polygons
+       }).addTo(map).bindPopup(airspace.name);
+
+       // Ensure it goes to the back after it's added
+       polygon.on('add', function() {
+         polygon.bringToBack();
+       });
+     });
+
+     // Add static waypoints
+     data.staticwaypoints.forEach(function (staticwaypoint) {
+       var waypoint = L.circleMarker(staticwaypoint.coordinates, {
+         radius: staticwaypoint.radius,
+         color: staticwaypoint.color
+       }).addTo(map).bindPopup(staticwaypoint.name);
+
+       // Ensure waypoint comes to the front after it's added
+       waypoint.on('add', function() {
+         waypoint.bringToFront();
+       });
+     });
+
+     // Add threat circles
+     data.threats.forEach(function (threat) {
+       var threatCircle = L.circle(threat.coordinates, {
+         radius: threat.radius,
+         color: threat.color,
+         fillColor: threat.fillColor,
+         fillOpacity: threat.fillOpacity
+       }).addTo(map).bindPopup(threat.name);
+
+       // Ensure threat comes to the front after it's added
+       threatCircle.on('add', function() {
+         threatCircle.bringToFront();
+       });
+     });
+
+     // Fit the map to the bounds of all waypoints and polygons
+     if (bounds.isValid()) {
+       map.fitBounds(bounds);
+     } else {
+       map.setView([51.505, -0.09], 8);
+     }
+   })
+   .catch(error => console.error('Error loading static overlays:', error));
+});
 });
