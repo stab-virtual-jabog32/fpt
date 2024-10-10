@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var flightMarker = L.circleMarker(latLng, {
               color: colors[flightIndex % colors.length],
-              radius: 10
+              radius: 2  // Smaller radius for waypoints
             }).addTo(map);
 
             flightMarker.bindPopup(`Flight: ${callsign[flightIndex]}`);
@@ -60,12 +60,46 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // Fit the map to the bounds of all waypoints
-    if (bounds.isValid()) {
-      map.fitBounds(bounds);
-    } else {
-      // If no valid bounds, fall back to a default location
-      map.setView([51.505, -0.09], 8);
-    }
+    // Fetch external JSON for static overlays
+    fetch('/staticOverlay.json')
+      .then(response => response.json())
+      .then(data => {
+        // Add airspace polygons with dashed borders
+        data.airspaces.forEach(function (airspace) {
+          L.polygon(airspace.polygon, {
+            color: airspace.color,             // Border color
+            fillColor: airspace.fillColor,     // Fill color
+            fillOpacity: airspace.fillOpacity, // Fill opacity
+            dashArray: '5, 10'                 // Dashed border
+          }).addTo(map).bindPopup(airspace.name);
+        });
+
+
+        // Add staticwaypoint markers
+        data.staticwaypoints.forEach(function (staticwaypoint) {
+          L.circleMarker(staticwaypoint.coordinates, {
+            radius: staticwaypoint.radius,
+            color: staticwaypoint.color
+          }).addTo(map).bindPopup(staticwaypoint.name);
+        });
+
+        // Add threat circles
+        data.threats.forEach(function (threat) {
+          L.circle(threat.coordinates, {
+            radius: threat.radius,
+            color: threat.color,
+            fillColor: threat.fillColor,
+            fillOpacity: threat.fillOpacity
+          }).addTo(map).bindPopup(threat.name);
+        });
+
+        // Fit the map to the bounds of all waypoints
+        if (bounds.isValid()) {
+          map.fitBounds(bounds);
+        } else {
+          map.setView([51.505, -0.09], 8);
+        }
+      })
+      .catch(error => console.error('Error loading static overlays:', error));
   });
 });

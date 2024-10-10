@@ -1,0 +1,61 @@
+{
+    "airspaces": [
+      {
+        "name": "Airspace Alpha",
+        "polygon": [
+          [36.244, -115.025],
+          [36.586, -115.682],
+          [37.101, -116.312],
+          [36.244, -115.025]
+        ],
+        "color": "#ff0000",
+        "fillColor": "#ff9999",
+        "fillOpacity": 0.5
+      },
+      {
+        "name": "Airspace Bravo",
+        "polygon": [
+          [37.244, -114.025],
+          [37.586, -114.682],
+          [38.101, -115.312],
+          [37.244, -114.025]
+        ],
+        "color": "#0000ff",
+        "fillColor": "#9999ff",
+        "fillOpacity": 0.5
+      }
+    ],
+    "staticwaypoints": [
+      {
+        "name": "Waypoint 1",
+        "coordinates": [36.244, -115.025],
+        "radius": 2,
+        "color": "#ffffff"
+      },
+      {
+        "name": "Waypoint 2",
+        "coordinates": [36.586, -115.682],
+        "radius": 2,
+        "color": "#ffffff"
+      }
+    ],
+    "threats": [
+      {
+        "name": "Threat 1",
+        "coordinates": [36.344, -116.125],
+        "radius": 10000,
+        "color": "#ff0000",
+        "fillColor": "#ffcccc",
+        "fillOpacity": 0.7
+      },
+      {
+        "name": "Threat 2",
+        "coordinates": [37.101, -117.312],
+        "radius": 15000,
+        "color": "#00ff00",
+        "fillColor": "#ccffcc",
+        "fillOpacity": 0.7
+      }
+    ]
+  }
+  
