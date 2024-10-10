@@ -7,6 +7,7 @@
   %p
     Showing current and upcoming flights.
     = link_to 'Also show past flights.', root_path(params: { all: true })
+
 - @dates.each_with_index do |date, index|
   %h2
     = date
@@ -18,6 +19,9 @@
     index: index,
     waypoints: @flights.ordered.where('date(start) = ?', date).map { |flight| flight.waypoints.map { |wp| { lat: wp.latitude, lon: wp.longitude } if wp.latitude && wp.longitude } }.compact,
     callsign: @flights.ordered.where('date(start) = ?', date).map(&:full_callsign),
+    tasks: @flights.ordered.where('date(start) = ?', date).map(&:task),  # Include task
+    airframes: @flights.ordered.where('date(start) = ?', date).map { |flight| "#{flight.slots}x #{Settings.airframes[flight.airframe].name}" }, # Include airframes
+    pilots: @flights.ordered.where('date(start) = ?', date).map { |flight| flight.pilots.map(&:name) },  # Include pilots
     flightIndex: index
   }.to_json } }
 

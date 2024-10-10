@@ -6,11 +6,23 @@ class FlightsController < ApplicationController
   def index
     set_all_flights if params['all'].present?
     @all = all_flights?
-    # Eager load waypoints to avoid N+1 queries and ensure waypoints are available
-    @flights = all_flights? ? Flight.includes(:waypoints).all : Flight.includes(:waypoints).current
+
+    # Eager load waypoints and pilots to avoid N+1 queries
+    @flights = all_flights? ? Flight.includes(:waypoints, :pilots).all : Flight.includes(:waypoints, :pilots).current
     min_id = all_flights? ? Flight.offset([Flight.count - 500, 0].max).first.id : 0
     @dates = @flights.where('id >= ?', min_id).select('date(start) as date').order('date').group('date(start)').map(&:date)
-  end  
+
+    # Prepare flight data to pass to the view for the map
+    @flight_data = @flights.map do |flight|
+      {
+        callsign: flight.full_callsign,
+        task: flight.task || 'Unknown Task',
+        airframes: "#{flight.slots}x #{Settings.airframes[flight.airframe].name}" || 'Unknown Airframe',
+        pilots: flight.pilots.map(&:name),
+        waypoints: flight.waypoints.map { |wp| { lat: wp.latitude, lon: wp.longitude } if wp.latitude && wp.longitude }.compact
+      }
+    end
+  end 
 
   def show
     @loadout = Loadout.parse @flight.airframe, @flight.loadout
