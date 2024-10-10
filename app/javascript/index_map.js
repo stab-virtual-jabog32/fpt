@@ -1,11 +1,9 @@
 import L from 'leaflet';  // Import Leaflet
 import 'leaflet.fullscreen';  // Import Fullscreen plugin
-
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll("[data-flight-map]").forEach(function(mapElement) {
-    // Parse flight data from the map element's data attribute
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("[data-flight-map]").forEach(function (mapElement) {
     const flightData = JSON.parse(mapElement.getAttribute("data-flight-map"));
-    const { index, waypoints, callsign, tasks, airframes, pilots } = flightData;  // Destructure all needed data
+    const { index, waypoints, callsign, tasks, airframes, pilots } = flightData;
     const colors = ["#ff0000", "#00ff00", "#0000ff", "#ff00ff", "#00ffff", "#ffff00"];
 
     // Initialize the map for each date
@@ -19,44 +17,44 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add fullscreen control using the correct class
     L.control.fullscreen().addTo(map);
 
-// Add a legend for this map
-var legend = L.control({ position: "bottomright" });
-legend.onAdd = function(map) {
-  var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Flights</h4>";
+    // Add a legend for this map
+    var legend = L.control({ position: "bottomright" });
+    legend.onAdd = function (map) {
+      var div = L.DomUtil.create("div", "legend");
+      div.innerHTML += "<h4>Flights</h4>";
+      
+      callsign.forEach((call, flightIndex) => {
+        const task = tasks[flightIndex] || "N/A";  // Handle missing task
+        const airframe = airframes[flightIndex] || "Unknown airframe";
+        const pilotNames = pilots[flightIndex].length > 0 ? pilots[flightIndex].join(', ') : "No pilots assigned";
 
-  callsign.forEach((call, flightIndex) => {
-    const task = tasks[flightIndex] || 'N/A';
-    const airframe = airframes[flightIndex] || 'N/A';
-    const pilotList = pilots[flightIndex] && pilots[flightIndex].length > 0 ? pilots[flightIndex].join(', ') : 'N/A';
+        div.innerHTML += `
+          <div style="margin-bottom: 10px;">
+            <i style="background: ${colors[flightIndex % colors.length]};"></i> ${call}
+            <button class="expand-button" data-flight-index="${flightIndex}" data-map-index="${index}">+</button>
+            <div id="details_${index}_${flightIndex}" class="flight-details" style="display: none;">
+              Task: ${task}<br>
+              Airframe: ${airframe}<br>
+              Pilots: ${pilotNames}
+            </div>
+          </div>`;
+      });
 
-    div.innerHTML += `
-      <div style="margin-bottom: 10px;">
-        <i style="background: ${colors[flightIndex % colors.length]};"></i> 
-        ${call} 
-        <button class="expand-button" data-flight-index="${flightIndex}">+</button>
-        <div id="details_${flightIndex}" class="flight-details" style="display: none;">
-          Task: ${task}<br>
-          Airframe: ${airframe}<br>
-          Pilots: ${pilotList}
-        </div>
-      </div>`;
-  });
+      return div;
+    };
+    legend.addTo(map);
 
-  return div;
-};
-legend.addTo(map);
-
-
-    // Event listeners for expanding flight details
-    document.addEventListener('click', function(e) {
-      if (e.target && e.target.classList.contains('expand-button')) {
-        const flightIndex = e.target.getAttribute('data-flight-index');
-        const detailsElement = document.getElementById(`details_${flightIndex}`);
-        if (detailsElement.style.display === 'none') {
-          detailsElement.style.display = 'block';
-        } else {
-          detailsElement.style.display = 'none';
+    // Add event listener for expanding flight details
+    mapElement.addEventListener("click", function (e) {
+      if (e.target.classList.contains("expand-button")) {
+        const flightIndex = e.target.getAttribute("data-flight-index");
+        const mapIndex = e.target.getAttribute("data-map-index");
+        const detailsElement = document.getElementById(`details_${mapIndex}_${flightIndex}`);
+        
+        if (detailsElement) {
+          const isVisible = detailsElement.style.display === "block";
+          detailsElement.style.display = isVisible ? "none" : "block";
+          e.target.textContent = isVisible ? "+" : "-";  // Toggle button text
         }
       }
     });
@@ -71,7 +69,7 @@ legend.addTo(map);
       if (flightWaypoints && Array.isArray(flightWaypoints) && flightWaypoints.length > 0) {
         flightWaypoints.forEach(waypoint => {
           if (waypoint && waypoint.lat !== null && waypoint.lon !== null && !isNaN(waypoint.lat) && !isNaN(waypoint.lon)) {
-            const latLng = [waypoint.lat, waypoint.lon];
+            const latLng = [parseFloat(waypoint.lat), parseFloat(waypoint.lon)];
             latLngs.push(latLng);
             bounds.extend(latLng); // Add each waypoint to bounds for auto-centering
 
@@ -91,60 +89,11 @@ legend.addTo(map);
       }
     });
 
-    // Fetch external JSON for static overlays
-    fetch('/staticOverlay.json')
-      .then(response => response.json())
-      .then(data => {
-        // Add airspace polygons with dashed borders
-        data.airspaces.forEach(function (airspace) {
-          var polygon = L.polygon(airspace.polygon, {
-            color: airspace.color,
-            fillColor: airspace.fillColor,
-            fillOpacity: airspace.fillOpacity,
-            dashArray: '5, 10'  // Dashed border for polygons
-          }).addTo(map).bindPopup(airspace.name);
-
-          // Ensure it goes to the back after it's added
-          polygon.on('add', function() {
-            polygon.bringToBack();
-          });
-        });
-
-        // Add static waypoints
-        data.staticwaypoints.forEach(function (staticwaypoint) {
-          var waypoint = L.circleMarker(staticwaypoint.coordinates, {
-            radius: staticwaypoint.radius,
-            color: staticwaypoint.color
-          }).addTo(map).bindPopup(staticwaypoint.name);
-
-          // Ensure waypoint comes to the front after it's added
-          waypoint.on('add', function() {
-            waypoint.bringToFront();
-          });
-        });
-
-        // Add threat circles
-        data.threats.forEach(function (threat) {
-          var threatCircle = L.circle(threat.coordinates, {
-            radius: threat.radius,
-            color: threat.color,
-            fillColor: threat.fillColor,
-            fillOpacity: threat.fillOpacity
-          }).addTo(map).bindPopup(threat.name);
-
-          // Ensure threat comes to the front after it's added
-          threatCircle.on('add', function() {
-            threatCircle.bringToFront();
-          });
-        });
-
-        // Fit the map to the bounds of all waypoints and polygons
-        if (bounds.isValid()) {
-          map.fitBounds(bounds);
-        } else {
-          map.setView([51.505, -0.09], 8);
-        }
-      })
-      .catch(error => console.error('Error loading static overlays:', error));
+    // Fit the map to the bounds of all waypoints
+    if (bounds.isValid()) {
+      map.fitBounds(bounds);
+    } else {
+      map.setView([51.505, -0.09], 8); // Default location if no valid bounds
+    }
   });
 });
