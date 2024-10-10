@@ -64,16 +64,22 @@
     ],
     "staticwaypoints": [
       {
-        "name": "Waypoint 1",
-        "coordinates": [36.244, -115.025],
+        "name": "GASS PEAK",
+        "coordinates": [36.402333, -115.177667],
         "radius": 2,
-        "color": "#ffffff"
+        "color": "#0000ff"
       },
       {
-        "name": "Waypoint 2",
-        "coordinates": [36.586, -115.682],
+        "name": "DREAM2",
+        "coordinates": [37.172333, -114.992167],
         "radius": 2,
-        "color": "#ffffff"
+        "color": "#0000ff"
+      },
+      {
+        "name": "STRYK",
+        "coordinates": [36.427, -115.511667],
+        "radius": 2,
+        "color": "#0000ff"
       }
     ],
     "threats": [
