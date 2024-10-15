@@ -305,10 +305,25 @@
 = link_to 'Clone', clone_flight_path(@flight), method: :post, class: 'btn btn-info'
 = link_to 'Export', export_flight_waypoints_path(@flight), class: 'btn btn-success'
 = link_to 'Destroy', @flight, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
+%button.btn.btn-primary.waypoints_map_show{data:{target:"#flight_waypoints_map"}}
+  Map
 %p
 = link_to 'Back', flights_path
+
+
 %h3 Map
 %div#map(style="height: 600px; width: 600px;")
+
+#flight_waypoints_map.waypoints_map{
+    data: {'source-url' => url_for(controller: 'flights', action: 'waypointsJson', id: @flight.id)},
+    style: "width: 100vw; height: 100vh; position: fixed; left: 0px; top: 0px; z-index: 1000; display: none; background-color: #ddd"
+}
+  %button.btn.btn-primary.waypoints_map_hide{
+      data:{target:"#flight_waypoints_map"}, 
+      style:"position: absolute; top: 5px; right: 5px; z-index: 1100;"
+    }
+    Close
+
 
 :javascript
   document.addEventListener('DOMContentLoaded', function() {

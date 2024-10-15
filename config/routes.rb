@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get :print
       get :print_images
       post :clone
+      get 'waypoints.json', action: 'waypointsJson'
     end
     resources :pilots
     resources :waypoints, only: %i[index create destroy] do
