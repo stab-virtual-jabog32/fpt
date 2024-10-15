@@ -11,6 +11,8 @@ import 'expose-loader?$!jquery';
 import 'bootstrap';
 import '../stylesheets/application';
 
+import '../waypoints_map.js';
+
 let toBuffer = require('blob-to-buffer')
 let AdmZip = require('adm-zip');
 let parseString = require('xml2js').parseString;
