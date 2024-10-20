@@ -380,99 +380,47 @@ document.addEventListener("DOMContentLoaded", function() {
                     var hdms = toStringHDMS(coordinateClicked);
                     
                     var formId = uuid();
-                    var $form = $('<div id="' + formId + '" />');
                     
-                    var addFormGroup = function(content) {
-                        var $row = $('<div class="row" />');
-                        var $cell = $('<div class="col-md-12" />');
-                        var $formGroup = $('<div class="form-group" />');
-                        
-                        $formGroup.append(content);
-                        
-                        $cell.append($formGroup);
-                        $row.append($cell);
-                        $form.append($row);
-                    };
+                    var templateHtml = $("> .waypoints_map_menu_template", $map).html();
                     
-                    var addFormInput = function(title, name, value) {
-                        var inputId = uuid();
-                        
-                        var $label = $('<label for="' + inputId + '">' + title + '</label>');
-                        
-                        if (name == null) {
-                            var $input = $('<input disabled '
-                                +'type="text" '
-                                +'class="form-control input-sm" '
-                                +'id="' + inputId + '" '
-                                +'value="' + value + '" '
-                                +'/>');
-                            
-                        } else {
-                            var $input = $('<input '
-                                +'type="text" '
-                                +'class="form-control input-sm" '
-                                +'id="' + inputId + '" '
-                                +'name="' + name + '" '
-                                +'value="' + value + '" '
-                                +'/>');
-                        }
-                        
-                        addFormGroup($label.prop('outerHTML') + "\n" + $input.prop('outerHTML'));
-                    };
+                    templateHtml = templateHtml.replaceAll("FORM_UUID", formId);
+                    templateHtml = templateHtml.replaceAll("FORM_INPUT_LATLONG", latLong);
+                    templateHtml = templateHtml.replaceAll("FORM_INPUT_HDMS", hdms);
                     
-                    var addFormButton = function(title, callback, type) {
-                        
-                        var buttonId = uuid();
-                        
-                        var $button = $('<button '
-                            +'id="' + buttonId + '"'
-                            +'class="btn btn-'+type+' w-100"'
-                            +'>' + title + '</button>');
-                        
-                        addFormGroup($button.prop('outerHTML'));
-                        
-                        $(document).on('click', '#' + buttonId, callback);
-                    };
+                    var $menu = $(templateHtml);
                     
-                    addFormInput('LatLong', null, latLong);
-                    addFormInput('HDMS', null, hdms);
-                    
-                    if (waypoint != null) {
-                        console.log(waypoint);
-                        
-                        $form.append($('<hr />'));
-                        
-                        addFormButton('modify waypoint', function () {
-                            $target.popover('hide');
-                            $target.remove();
-                
-                            $("button[data-id="+ waypoint.id +"]").click();
-                        }, 'primary');
-                        
-                        addFormButton('add waypoint before', function () {
-                            $target.popover('hide');
-                            $target.remove();
-                
-                            $("[data-insert="+ waypoint.id +"]").trigger("click");
-                        }, 'success');
+                    if (waypoint == null) {
+                        $(".btn-mod-wp", $menu).remove();
+                        $(".btn-add-wp-before", $menu).remove();
                         
                     } else {
-                        addFormButton('add waypoint here', function () {
-                            $target.popover('hide');
-                            $target.remove();
-                            
-                            $("#add-waypoint button").trigger("click");
-                            $("#waypoint_pos").val(latLong);
-                
-                        }, 'success');
+                        $(".btn-add-wp-here", $menu).remove();
                     }
                     
-                    addFormButton('close', function () {
+                    var closeMenu = function () {
                         $target.popover('hide');
                         $target.remove();
-                    }, 'danger');
+                    };
                     
-                    return $form.prop('outerHTML');
+                    $(document).on('click', '#' + formId + '-mod-wp-btn', function () {
+                        closeMenu();
+                        $("button[data-id="+ waypoint.id +"]").click();
+                    });
+
+                    $(document).on('click', '#' + formId + '-add-wp-before-btn', function () {
+                        closeMenu();
+                        $("[data-insert="+ waypoint.id +"]").trigger("click");
+                    });
+                        
+                    $(document).on('click', '#' + formId + '-add-wp-here-btn', function () {
+                        closeMenu();
+                        $("#add-waypoint button").trigger("click");
+                        $("#waypoint_pos").val(latLong);
+                    });
+                        
+                    $(document).on('click', '#' + formId + '-close-btn', closeMenu);
+                    
+                    return $menu.prop('outerHTML');
                 }
             }).on('shown.bs.popover', function() {
                 $('body .popover').css({ 'max-width': '800px' });

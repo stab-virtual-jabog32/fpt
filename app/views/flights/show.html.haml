@@ -320,3 +320,30 @@
       style:"position: absolute; top: 5px; right: 5px; z-index: 1100;"
     }
     Close
+  .waypoints_map_menu_template{style:"display: none"}
+    #FORM_UUID
+      .row
+        .col-md-12
+          .btn-group
+            %button#FORM_UUID-mod-wp-btn.btn.btn-primary.btn-mod-wp{title:"Modify this Waypoint"}
+              = bootstrap_icon 'pencil-fill', width: 16, height: 20, viewbox: '0 0 16 20'
+            %button#FORM_UUID-add-wp-before-btn.btn.btn-success.btn-add-wp-before{title:"Add Waypoint Before"}
+              = bootstrap_icon 'plus-circle-fill', width: 16, height: 20, viewbox: '0 0 16 20'
+            %button#FORM_UUID-add-wp-here-btn.btn.btn-success.btn-add-wp-here{title:"Add Waypoint here"}
+              = bootstrap_icon 'plus-circle-fill', width: 16, height: 20, viewbox: '0 0 16 20'
+          %button#FORM_UUID-close-btn.btn.btn-light.bt-close.pull-right{style:"position: absolute; right: 10px"}
+            = bootstrap_icon 'x', width: 16, height: 20, viewbox: '0 0 16 20'
+      %hr
+      .row.latlong
+        .col-md-12
+          .form-group
+            %label{for:"FORM_UUID-latlong"}
+              LatLong
+            %input.form-control.input-sm#FORM_UUID-latlong{type:"text", value:"FORM_INPUT_LATLONG", disabled: true}
+      .row.hdms
+        .col-md-12
+          .form-group
+            %label{for:"FORM_UUID-hdms"}
+              HDMS
+            %input.form-control.input-sm#FORM_UUID-hdms{type:"text", value:"FORM_INPUT_HDMS", disabled: true}
+      
