@@ -312,8 +312,11 @@
 
 
 #flight_waypoints_map.waypoints_map{
-    data: {'source-url' => url_for(controller: 'flights', action: 'waypointsJson', id: @flight.id)},
-    style: "width: 100vw; height: 100vh; position: fixed; left: 0px; top: 0px; z-index: 1000; display: none; background-color: #ddd"
+  data: {
+      'source-type' => 'flight',
+      'source-url' => url_for(controller: 'flights', action: 'waypointsJsonForFlight', id: @flight.id)
+  },
+  style: "width: 100vw; height: 100vh; position: fixed; left: 0px; top: 0px; z-index: 1000; display: none; background-color: #ddd"
 }
   %button.btn.btn-primary.waypoints_map_hide{
       data:{target:"#flight_waypoints_map"}, 

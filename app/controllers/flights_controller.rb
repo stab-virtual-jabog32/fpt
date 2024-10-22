@@ -1,7 +1,7 @@
 require 'zip'
 
 class FlightsController < ApplicationController
-  before_action :set_flight, only: %i[show edit update destroy print print_images clone waypointsJson]
+  before_action :set_flight, only: %i[show edit update destroy print print_images clone waypointsJsonForFlight]
 
   def index
     set_all_flights if params['all'].present?
@@ -16,7 +16,12 @@ class FlightsController < ApplicationController
     @loadout = Loadout.parse @flight.airframe, @flight.loadout
   end
   
-  def waypointsJson
+  def waypointsJsonForDate
+    @flights = Flight.where('date(start) = ?', params[:date]);
+    render :json => @flights.map{ |f| f.waypoints }
+  end
+
+  def waypointsJsonForFlight
     render :json => @flight.waypoints
   end
 

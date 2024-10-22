@@ -14,6 +14,14 @@
     \/
     = link_to 'SPINS', spins_path(params: { date: date })
 
+  .waypoints_map.mb-4{
+    data: {
+        'source-type' => 'day',
+        'source-url' => url_for(controller: 'flights', action: 'waypointsJsonForDate', date: date)
+    },
+    style: "width: 100%; height: 400px; z-index: 1000; background-color: #ddd"
+  }
+
   - @flights.ordered.where('date(start) = ?', date).group_by(&:package).each do |package, flights|
     - if package
       .package-box.border.border-dark.rounded.p-2.mb-4

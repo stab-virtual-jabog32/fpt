@@ -5,12 +5,13 @@ Rails.application.routes.draw do
   resources :flights do
     collection do
       get :defaults
+      get '(:date).waypoints.json', action: 'waypointsJsonForDate'
     end
     member do
       get :print
       get :print_images
       post :clone
-      get 'waypoints.json', action: 'waypointsJson'
+      get 'waypoints.json', action: 'waypointsJsonForFlight'
     end
     resources :pilots
     resources :waypoints, only: %i[index create destroy] do

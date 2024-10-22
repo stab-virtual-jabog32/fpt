@@ -8,35 +8,20 @@ import Map from 'ol/Map.js';
 import View from 'ol/View.js';
 import { Circle as CircleStyle, Fill, Stroke, Style, Icon, Text } from 'ol/style.js';
 import XYZ from 'ol/source/XYZ';
-// import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer.js';
-// import Icon from 'ol/style/Icon.js';
 import * as proj from 'ol/proj';
 import * as extent from 'ol/extent.js';
 import * as olPixel from 'ol/pixel';
 import { toContext } from 'ol/render.js';
 import TileLayer from 'ol/layer/Tile';
 import VectorLayer from 'ol/layer/Vector';
-// import Cluster from 'ol/source/Cluster';
 import VectorSource from 'ol/source/Vector';
 import TileGrid from 'ol/tilegrid/TileGrid';
 import { createXYZ } from 'ol/tilegrid';
 import { toStringHDMS } from 'ol/coordinate.js';
+import * as md5 from 'md5';
+import * as Color from 'color';
 
 import 'ol/ol.css';
-
-
-
-// POST http://localhost:3000/flights/2/waypoints/4
-//     insert	""
-//     name	"DREAM"
-//     dme	"LAS+354/66+BLD+342/71"
-//     pos	"N37+10.340+W114+59.530"
-//     lat	"37.1723333333333"
-//     lon	"-114.992166666667"
-//     fmt	"dm"
-//     prec	"3"
-//     elev	"4000"
-//     tot	""
 
 document.addEventListener("DOMContentLoaded", function() {
     
@@ -53,102 +38,284 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     document.querySelectorAll(".waypoints_map").forEach(function(mapElement) {
-      
-        console.log(mapElement);
-      
         var $map = $(mapElement);
         
         var id = $map.attr('id');
-        
         if (typeof id == 'undefined') {
             id = 'waypoints_map_' + uuid();
-            
             $map.attr('id', id);
         }
         
+        var bounds = [null, null, null, null]; // [minX, minY, maxX, maxY]
+        var minMaxCoordinate = function (coordinate) {
+            if (bounds[0] == null || bounds[0] > coordinate[0]) {
+                bounds[0] = coordinate[0];
+            }
+            if (bounds[1] == null || bounds[1] > coordinate[1]) {
+                bounds[1] = coordinate[1];
+            }
+            if (bounds[2] == null || bounds[2] < coordinate[0]) {
+                bounds[2] = coordinate[0];
+            }
+            if (bounds[3] == null || bounds[3] < coordinate[1]) {
+                bounds[3] = coordinate[1];
+            }
+        }
+        
+        var waypointsJsonToGeoFeatures = function (waypointJson) {
+            var features = [];
+            var previousCoordinates = null;
+            
+            for (var waypoint of waypointJson) {
+                var coordinates = proj.fromLonLat([
+                    parseFloat(waypoint.longitude),
+                    parseFloat(waypoint.latitude)
+                ]);
+                
+                minMaxCoordinate(coordinates);
+                
+                features.push({
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': coordinates,
+                    },
+                    'properties': {
+                        'type': 'waypoint',
+                        'id': waypoint.id,
+                        'number': waypoint.number,
+                        'name': waypoint.name,
+                        'altitude': waypoint.elevation,
+                        'tot': waypoint.tot,
+                        'flight_id': waypoint.flight_id
+                    },
+                });
+                
+                if (previousCoordinates != null) {
+                    features.push({
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'LineString',
+                            'coordinates': [
+                                previousCoordinates,
+                                coordinates
+                            ],
+                        },
+                        'properties': {
+                            'type': 'waypoint-edge',
+                            'flight_id': waypoint.flight_id
+                        },
+                    });
+                }
+                
+                previousCoordinates = coordinates;
+            }
+            
+            var geoJson = {
+                'type': 'FeatureCollection',
+                'features': features,
+                'crs': {
+                    'type': 'name',
+                    'properties': {
+                        'name': 'EPSG:4326'
+                    }
+                }
+            };
+
+            return (new GeoJSON()).readFeatures(geoJson);
+        };
+        
+        var coordinatesToLatLong = function (coordinate) {
+            var ns = (coordinate[1] < 0) ? "S" : "N";
+            var nsDegree = parseInt(Math.abs(coordinate[1]));
+            var nsMinutes = parseFloat(Math.abs(coordinate[1]) - nsDegree) * 60;
+            nsMinutes = nsMinutes.toLocaleString('en-US', {minimumFractionDigits: 3, maximumFractionDigits: 3});
+            
+            var we = (coordinate[0] < 0) ? "W" : "E";
+            var weDegree = parseInt(Math.abs(coordinate[0]));
+            var weMinutes = parseFloat(Math.abs(coordinate[0]) - weDegree) * 60;
+            weMinutes = weMinutes.toLocaleString('en-US', {minimumFractionDigits: 3, maximumFractionDigits: 3});
+            
+            // Produces a coord like: N36 14.680 W115 01.500
+            return `${ns}${nsDegree} ${nsMinutes} ${we}${weDegree} ${weMinutes}`;
+        };
+        
         var updateMap = function () {
             $.ajax({
-              url: $map.attr('data-source-url'),
-              success: function (xhr) {
+                url: $map.attr('data-source-url'),
+                success: function (xhr) {
                     if (typeof xhr.responseJSON != "undefined") {
-                        var waypointJson = xhr.responseJSON;
+                        var responseJson = xhr.responseJSON;
                     } else {
-                        var waypointJson = xhr;
+                        var responseJson = xhr;
                     }
 
-                    console.log(waypointJson);
-                    console.log(proj);
-                    
-                    var features = [];
-                    var previousCoordinates = null;
-                    
-                    var minX = null;
-                    var maxX = null;
-                    var minY = null;
-                    var maxY = null;
+                    bounds = [null, null, null, null]; // [minX, minY, maxX, maxY]
+
+                    var sourceType = $map.attr('data-source-type');
+                    if (sourceType == 'flight') {
+                        waypointsVectorLayer.setSource(new VectorSource({
+                            features: waypointsJsonToGeoFeatures(responseJson)
+                        }));
                         
-                    var minMaxCoordinate = function (coordinate)
-                    {
-                        if (minX == null || minX > coordinate[0]) {
-                            minX = coordinate[0];
+                    } else if (sourceType == 'day') {
+                        var allFeatures = [];
+                        
+                        for (var waypointJson of responseJson) {
+                            allFeatures = allFeatures.concat(waypointsJsonToGeoFeatures(waypointJson));
                         }
-                        if (maxX == null || maxX < coordinate[0]) {
-                            maxX = coordinate[0];
-                        }
-                        if (minY == null || minY > coordinate[1]) {
-                            minY = coordinate[1];
-                        }
-                        if (maxY == null || maxY < coordinate[1]) {
-                            maxY = coordinate[1];
-                        }
+                        
+                        waypointsVectorLayer.setSource(new VectorSource({
+                            features: allFeatures
+                        }));
+                        
+                    } else {
+                        throw new Error("Unknown or unspecified waypoint-map-source-type!");
+                    }
+            
+                    var width  = bounds[2] - bounds[0];
+                    var height = bounds[3] - bounds[1];
+                    
+                    view.setCenter([
+                        bounds[0] + (width / 2),
+                        bounds[1] + (height / 2),
+                    ]);
+                    view.setZoom(10);
+                }
+            });
+        };
+        
+        var randomColorByString = function(input) {
+            return Color("#" + md5(input).substring(0, 6));
+        };  
+        var strokeColorFor = function(color) {
+            if (color.isLight()) {
+                return 'black';
+            } else {
+                return 'white';
+            }
+        };
+        
+        updateMap();
+
+        $(document).on('click', '[type=submit]', function () {
+            window.setTimeout(updateMap, 1000); // looks like there is no onSuccess event for normal forms
+        });
+      
+        $.ajax({
+            url: '/staticOverlay.json',
+            success: function (xhr) {
+                
+                if (typeof xhr.responseJSON != "undefined") {
+                    var responseJson = xhr.responseJSON;
+                } else {
+                    var responseJson = xhr;
+                }
+                
+                var features = [];
+                var circles = [];
+                
+                for (var airspace of responseJson['airspaces']) {
+                    
+                    var lonSum = 0.0;
+                    var latSum = 0.0;
+                    
+                    var airspaceCoordinates = [];
+                    for (var airspaceVertice of airspace['polygon']) {
+                        airspaceCoordinates.push(proj.fromLonLat([
+                            airspaceVertice[1],
+                            airspaceVertice[0]
+                        ]));
+                        
+                        lonSum += airspaceVertice[1];
+                        latSum += airspaceVertice[0];
                     }
                     
-                    for (var waypoint of waypointJson) {
-                        console.log(waypoint);
-                        
-                        var coordinates = proj.fromLonLat([
-                            parseFloat(waypoint.longitude),
-                            parseFloat(waypoint.latitude)
-                        ]);
-                        
-                        minMaxCoordinate(coordinates);
-                        
-                        features.push({
-                            'type': 'Feature',
-                            'geometry': {
-                                'type': 'Point',
-                                'coordinates': coordinates,
-                            },
-                            'properties': {
-                                'type': 'waypoint',
-                                'id': waypoint.id,
-                                'number': waypoint.number,
-                                'name': waypoint.name,
-                                'altitude': waypoint.elevation,
-                                'tot': waypoint.tot,
-                            },
-                        });
-                        
-                        if (previousCoordinates != null) {
-                            features.push({
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'LineString',
-                                    'coordinates': [
-                                        previousCoordinates,
-                                        coordinates
-                                    ],
-                                },
-                                'properties': {
-                                    'type': 'waypoint-edge',
-                                },
-                            });
-                        }
-                        
-                        previousCoordinates = coordinates;
-                    }
+                    features.push({
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [airspaceCoordinates],
+                        },
+                        'properties': {
+                            'type': 'airspace',
+                            'name': airspace.name,
+                            'color': airspace.fillColor,
+                            'opacity': airspace.fillOpacity,
+                        },
+                    });
                     
-                    var geoJson = {
+                    features.push({
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': proj.fromLonLat([
+                                lonSum / airspace['polygon'].length,
+                                latSum / airspace['polygon'].length,
+                            ]),
+                        },
+                        'properties': {
+                            'type': 'airspace-center',
+                            'name': airspace.name,
+                            'color': airspace.color,
+                        },
+                    });
+                }
+                
+                for (var waypoint of responseJson['staticwaypoints']) {
+                    features.push({
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': proj.fromLonLat([
+                                waypoint.coordinates[1],
+                                waypoint.coordinates[0]
+                            ]),
+                        },
+                        'properties': {
+                            'type': 'static-waypoint',
+                            'name': waypoint.name,
+                            'color': waypoint.color,
+                        },
+                    });
+                }
+                
+                for (var threat of responseJson['threats']) {
+                    var threatFeature = new Feature({
+                        geometry: new Circle(
+                            proj.fromLonLat([
+                                threat.coordinates[1],
+                                threat.coordinates[0]
+                            ]), 
+                            threat.radius / proj.METERS_PER_UNIT.m
+                        ),
+                    });
+                    
+                    var color = new Color(threat.fillColor);
+                    
+                    threatFeature.setStyle(new Style({
+                        fill: new Fill({color: color.fade(threat.fillOpacity)}),
+                        stroke: new Stroke({
+                            color: threat.color,
+                            width: 1,
+                        }),
+                        text: new Text({
+                            text: threat.name,
+                            textBaseline: 'top',
+                            offsetY: 12,
+                            fill: new Fill({color: color.hex()}),
+                            stroke: new Stroke({
+                                color: strokeColorFor(color),
+                                width: 3,
+                            }),
+                        }),
+                    }));
+                    
+                    circles.push(threatFeature);
+                }
+
+                var vectorSource = new VectorSource({
+                    features: (new GeoJSON()).readFeatures({
                         'type': 'FeatureCollection',
                         'features': features,
                         'crs': {
@@ -157,36 +324,72 @@ document.addEventListener("DOMContentLoaded", function() {
                                 'name': 'EPSG:4326'
                             }
                         }
-                    };
+                    })
+                });
+
+                staticOverlayVectorLayer.setSource(vectorSource);
+                
+                for (var circle of circles) {
+                    vectorSource.addFeature(circle);
+                }
+            }
+        });
+        
+        const staticOverlayVectorLayer = new VectorLayer({
+            style: function (feature, resolution) {
+                var properties = feature.getProperties();
+                
+                if (properties.type == 'static-waypoint') {
                     
-                    var width = maxX - minX;
-                    var height = maxY - minY;
+                    var color = new Color(properties.color);
                     
-                    view.setCenter([
-                        minX + (width / 2),
-                        minY + (height / 2),
-                    ]);
-                    view.setZoom(10);
-                    
-                    console.log(geoJson);
-                    
-                    var vectorSource = new VectorSource({
-                        features: new GeoJSON().readFeatures(geoJson),
+                    return new Style({
+                        image: new CircleStyle({
+                            radius: 7,
+                            fill: new Fill({color: color.hex()}),
+                            stroke: new Stroke({color: strokeColorFor(color), width: 3}),
+                        }),
+                        text: new Text({
+                            text: properties.name,
+                            textBaseline: 'top',
+                            offsetY: 12,
+                            fill: new Fill({color: color.hex()}),
+                            stroke: new Stroke({
+                                color: strokeColorFor(color),
+                                width: 3,
+                            }),
+                        }),
                     });
                     
-                    vectorLayer.setSource(vectorSource);
+                } else if (properties.type == 'airspace') {
+                    var color = new Color(properties.color);
+                    
+                    return new Style({
+                        fill: new Fill({color: color.fade(properties.opacity)}),
+                        stroke: new Stroke({
+                            color: strokeColorFor(color),
+                            width: 1,
+                        }),
+                    });
+                    
+                } else if (properties.type == 'airspace-center') {
+                    var color = new Color(properties.color);
+                    
+                    return new Style({
+                        text: new Text({
+                            text: properties.name,
+                            fill: new Fill({color: color.hex()}),
+                            stroke: new Stroke({
+                                color: strokeColorFor(color),
+                                width: 3,
+                            }),
+                        }),
+                    });
                 }
-            });
-        };
-        updateMap();
-        
-        console.log(updateMap);
-        
-        $(document).on('click', '[type=submit]', function () {
-            window.setTimeout(updateMap, 1000); // looks like there is no onSuccess event for normal forms
+            },
         });
       
-        const vectorLayer = new VectorLayer({
+        const waypointsVectorLayer = new VectorLayer({
             style: function (feature, resolution) {
                 var properties = feature.getProperties();
                 
@@ -208,29 +411,33 @@ document.addEventListener("DOMContentLoaded", function() {
                         text.push("italic 8px monospace");
                     }
                     
+                    var flightColor = randomColorByString(properties.flight_id);
+                    
                     return new Style({
                         image: new CircleStyle({
                             radius: 7,
-                            fill: new Fill({color: 'black'}),
-                            stroke: new Stroke({color: 'white', width: 3}),
+                            fill: new Fill({color: flightColor.hex()}),
+                            stroke: new Stroke({color: strokeColorFor(flightColor), width: 3}),
                         }),
                         text: new Text({
                             text: text,
                             textBaseline: 'top',
                             offsetY: 12,
-                            fill: new Fill({color: 'black'}),
+                            fill: new Fill({color: flightColor.hex()}),
                             stroke: new Stroke({
-                                color: 'white',
+                                color: strokeColorFor(flightColor),
                                 width: 3,
                             }),
                         }),
                     });
                 
                 } else if (properties.type == 'waypoint-edge') {
+                    var flightColor = randomColorByString(properties.flight_id);
+                    
                     return new Style({
-                        fill: new Fill({color: 'black'}),
+                        fill: new Fill({color: flightColor.hex()}),
                         stroke: new Stroke({
-                            color: 'black',
+                            color: flightColor.hex(),
                             width: 4,
                         }),
                     });
@@ -257,15 +464,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // EPSG:3857
         // EPSG:4326
-        
         var defaultTileGrid = createXYZ({extent: proj.get('EPSG:3857').getExtent()});
-        
-        console.log(proj);
-        // console.log(proj.transformExtent(
-        //                 [35.34068259788386, -110.69943216228121, 40.12071687216515, -119.54401291957859],
-        //                 'EPSG:4326',
-        //                 'EPSG:3857'
-        //             ));
         
         var map = new Map({
             layers: [
@@ -303,51 +502,38 @@ document.addEventListener("DOMContentLoaded", function() {
                 //         }),
                 //     })
                 // }),
-                vectorLayer,
+                staticOverlayVectorLayer,
+                waypointsVectorLayer,
             ],
             target: id,
             view: view,
         });
         
-        console.log(map);
-        
         var $target = null;
         
         map.on("click", function(event) {
-            
-            if ($target != null) {
-                $target.popover('hide');
-                $target.remove();
-            }
-            
-            var clickId = uuid();
             
             var coordinateClicked = proj.transform(
                 map.getCoordinateFromPixel(event.pixel),
                 "EPSG:3857",
                 "EPSG:4326"
             );
-            
-            console.log(event.pixel);
-            console.log(coordinateClicked);
                 
             var waypoint = null;
-            
             map.forEachFeatureAtPixel(event.pixel, function (feature, layer) {
-                
-                console.log(feature);
-                
                 var properties = feature.getProperties();
                 
                 if (properties.type == 'waypoint') {
                     waypoint = properties;
-                    
-                    // console.log(properties);
-                    // $("button[data-id="+ properties.id +"]").click();
                 }
             });
             
             var formId = uuid();
+            
+            if ($target != null) {
+                $target.popover('hide');
+                $target.remove();
+            }
             
             $target = $("<div />");
             $target.attr("id", uuid());
@@ -362,24 +548,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 sanitize: false,
                 placement: 'auto',
                 content: function () {
-                    
-                    
-                    var ns = (coordinateClicked[1] < 0) ? "S" : "N";
-                    var nsDegree = parseInt(Math.abs(coordinateClicked[1]));
-                    var nsMinutes = parseFloat(Math.abs(coordinateClicked[1]) - nsDegree) * 60;
-                    nsMinutes = nsMinutes.toLocaleString('en-US', {minimumFractionDigits: 3, maximumFractionDigits: 3});
-                    
-                    var we = (coordinateClicked[0] < 0) ? "W" : "E";
-                    var weDegree = parseInt(Math.abs(coordinateClicked[0]));
-                    var weMinutes = parseFloat(Math.abs(coordinateClicked[0]) - weDegree) * 60;
-                    weMinutes = weMinutes.toLocaleString('en-US', {minimumFractionDigits: 3, maximumFractionDigits: 3});
-                    
-                    // Produces a coord like: N36 14.680 W115 01.500
-                    var latLong = `${ns}${nsDegree} ${nsMinutes} ${we}${weDegree} ${weMinutes}`;
-                    
-                    var hdms = toStringHDMS(coordinateClicked);
-                    
                     var formId = uuid();
+                    var latLong = coordinatesToLatLong(coordinateClicked);
+                    var hdms = toStringHDMS(coordinateClicked);
                     
                     var templateHtml = $("> .waypoints_map_menu_template", $map).html();
                     
