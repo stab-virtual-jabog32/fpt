@@ -19,8 +19,9 @@
         'source-type' => 'day',
         'source-url' => url_for(controller: 'flights', action: 'waypointsJsonForDate', date: date)
     },
-    style: "width: 100%; height: 400px; z-index: 1000; background-color: #ddd"
+    style: "width: 100%; height: 400px; z-index: 1000; background-color: #ddd; position: relative"
   }
+    .flight_name_legend{style: "position: absolute; right: 5px; bottom: 5px; z-index: 1000; width: 130px"}
 
   - @flights.ordered.where('date(start) = ?', date).group_by(&:package).each do |package, flights|
     - if package
