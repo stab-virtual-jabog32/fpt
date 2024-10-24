@@ -20,6 +20,7 @@ import { createXYZ } from 'ol/tilegrid';
 import { toStringHDMS } from 'ol/coordinate.js';
 import * as md5 from 'md5';
 import * as Color from 'color';
+import YAML from 'yaml'
 
 import 'ol/ol.css';
 
@@ -62,11 +63,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
         
+        var allFlightIds = [];
         var waypointsJsonToGeoFeatures = function (waypointJson) {
             var features = [];
             var previousCoordinates = null;
             
             for (var waypoint of waypointJson) {
+                
+                if (allFlightIds.indexOf(waypoint.flight_id) < 0) {
+                    allFlightIds.push(waypoint.flight_id);
+                }
+                
                 var coordinates = proj.fromLonLat([
                     parseFloat(waypoint.longitude),
                     parseFloat(waypoint.latitude)
@@ -150,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         var responseJson = xhr;
                     }
 
+                    allFlightIds = [];
                     bounds = [null, null, null, null]; // [minX, minY, maxX, maxY]
 
                     var sourceType = $map.attr('data-source-type');
@@ -172,6 +180,25 @@ document.addEventListener("DOMContentLoaded", function() {
                     } else {
                         throw new Error("Unknown or unspecified waypoint-map-source-type!");
                     }
+                    
+                    var $flightNameLegend = $(".flight_name_legend", $map);
+                    
+                    if ($flightNameLegend.length > 0) {
+                        $flightNameLegend.empty();
+                        
+                        for (var flightId of allFlightIds) {
+                            var flightColor = randomColorByString(flightId);
+                            var flightName = $("a[href='/flights/" + flightId + "']").text();
+                            
+                            var $flightName = $('<div class="row"><span>' + flightName + "</span></div>");
+                            $flightName.css("color", flightColor.hex());
+                            $flightName.css("font-weight", "bold");
+                            $flightName.css("paint-order", "stroke fill");
+                            $flightName.css("-webkit-text-stroke", "2px " + strokeColorFor(flightColor));
+                            
+                            $flightNameLegend.append($flightName);
+                        }
+                    }
             
                     var width  = bounds[2] - bounds[0];
                     var height = bounds[3] - bounds[1];
@@ -180,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         bounds[0] + (width / 2),
                         bounds[1] + (height / 2),
                     ]);
-                    view.setZoom(10);
+                    view.setZoom(8);
                 }
             });
         };
@@ -203,19 +230,21 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       
         $.ajax({
-            url: '/staticOverlay.json',
+            url: '/static-overlay.yaml',
             success: function (xhr) {
                 
-                if (typeof xhr.responseJSON != "undefined") {
-                    var responseJson = xhr.responseJSON;
-                } else {
-                    var responseJson = xhr;
-                }
+                // if (typeof xhr.responseJSON != "undefined") {
+                //     var staticOverlayData = xhr.responseJSON;
+                // } else {
+                //     var staticOverlayData = xhr;
+                // }
+                
+                var staticOverlayData = YAML.parse(xhr);
                 
                 var features = [];
                 var circles = [];
                 
-                for (var airspace of responseJson['airspaces']) {
+                for (var airspace of staticOverlayData['airspaces']) {
                     
                     var lonSum = 0.0;
                     var latSum = 0.0;
@@ -262,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     });
                 }
                 
-                for (var waypoint of responseJson['staticwaypoints']) {
+                for (var waypoint of staticOverlayData['staticwaypoints']) {
                     features.push({
                         'type': 'Feature',
                         'geometry': {
@@ -280,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     });
                 }
                 
-                for (var threat of responseJson['threats']) {
+                for (var threat of staticOverlayData['threats']) {
                     var threatFeature = new Feature({
                         geometry: new Circle(
                             proj.fromLonLat([
@@ -562,6 +591,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     if (waypoint == null) {
                         $(".btn-mod-wp", $menu).remove();
+                        $(".btn-del-wp", $menu).remove();
                         $(".btn-add-wp-before", $menu).remove();
                         
                     } else {
@@ -576,6 +606,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     $(document).on('click', '#' + formId + '-mod-wp-btn', function () {
                         closeMenu();
                         $("button[data-id="+ waypoint.id +"]").click();
+                    });
+
+                    $(document).on('click', '#' + formId + '-del-wp-btn', function () {
+                        closeMenu();
+                        $("#waypoint_" + waypoint.id + " a[data-method=delete]")[0].click();
                     });
 
                     $(document).on('click', '#' + formId + '-add-wp-before-btn', function () {
