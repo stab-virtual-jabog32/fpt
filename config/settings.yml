@@ -6676,6 +6676,44 @@ theaters:
     name: Kola
     channels:
       - name: Flight/Squadron specific
+      - name: Rovaniemi ATIS
+        freq: 282.800
+      - name: Rovaniemi Ground
+        freq: 282.500
+      - name: Rovaniemi Tower
+        freq: 250.550
+      - name: Bodo ATIS
+        freq: 320.700
+      - name: Bodo Tower
+        freq: 250.750
+      - name: Kallax ATIS
+        freq: 235.450
+      - name: Kallax Tower
+        freq: 250.300
+      - name: Texaco-1 | KC-135 | Medium / Slow
+        freq: 265.000
+      - name: Arco-1 | KC-135 | High / Fast
+        freq: 319.800
+      - name: Shell-1 | KC-135 MPRS | High / Fast
+        freq: 360.800
+      - name: CVN-71 Rough Rider (RRR)
+        freq: 304.000
+      - name: LHA-1 Tarawa (TWA)
+        freq: 303.000
+      - name: S-3B Mauler-1 (MAU)
+        freq: 247.800
+      - name: Loki (E-2D)
+        freq: 347.800
+      - name: Heimdall (E-3A)
+        freq: 348.700
+      - name: ESR02 - CAS Range Operator
+        freq: 242.170
+      - name: ESR02 - JTAC Odin
+        freq: 34.70
+      - name: Blue
+        freq: 270.50
+      - name: Red
+        freq: 270.75
     navaids:
       - id: BOO
         name: Bodo
@@ -6825,9 +6863,13 @@ theaters:
             elevation: 610
             ils: 111.7
         departures:
-          none: none
+          SID21: SID RWY 21
+          VFRFW: VFR Depature
+          VFRRW: VFR Helicopter
         recoveries:
-          none: none
+          TAC03: Tacan RWY 03
+          VFRFW: VFR Approach
+          VFRRW: VFR Helicopter
       bas100:
         name: BAS 100
         ground: 
@@ -6968,7 +7010,116 @@ theaters:
         recoveries:
           case1: CASE I
           case2: CASE II
-          case3: CASE III       
+          case3: CASE III
+    support:
+      heimdall:
+        callsign: HEIMDALL
+        type: AWACS
+        airframe: E-3A
+        comms: 348.7
+      loki:
+        callsign: LOKI
+        type: AWACS
+        comms: 347.8
+      jtac_odin:
+        callsign: ODIN
+        type: JTAC
+        comms: 34.70
+        position: "ESR02"
+      Texaco1:
+        callsign: TEXACO 1
+        type: TANKER
+        airframe: KC-135
+        comms: 265.0
+        tacan: 71Y
+      Arco1:
+        callsign: ARCO 1
+        type: TANKER
+        airframe: KC-135
+        comms: 319.8
+        tacan: 22Y
+      Shell1:
+        callsign: SHELL 1
+        type: TANKER
+        airframe: KC-135MPRS
+        comms: 360.8
+        tacan: 41Y
+    waypoints:
+      - name: NAFFI
+        lat: 67.077167
+        lon: 23.194333
+      - name: ITVAV
+        lat: 66.743833
+        lon: 19.946
+      - name: SEPJA
+        lat: 67.455
+        lon: 21.201333
+      - name: LIVLI
+        lat: 67.266667
+        lon: 16.790333
+      - name: ENOXI
+        lat: 66.916
+        lon: 21.646333
+      - name: ENEXI
+        lat: 69.334
+        lon: 25.748333
+      - name: AMUBA
+        lat: 67.368333
+        lon: 26.329333
+      - name: ORTEN
+        lat: 70.002333
+        lon: 14.990833
+      - name: LURAP
+        lat: 69.092667
+        lon: 18.264833
+      - name: TUVLA
+        lat: 67.847833
+        lon: 12.886667
+      - name: IBSAN
+        lat: 66.708333
+        lon: 25.018056
+      - name: AFRUT
+        lat: 66.317222
+        lon: 26.369167
+      - name: NEMGU
+        lat: 66.34
+        lon: 24.694167
+      - name: RENVI
+        lat: 66.076111
+        lon: 25.531667
+      - name: MARXO
+        lat: 66.604722
+        lon: 26.748889
+      - name: ROTKO
+        lat: 66.960556
+        lon: 25.961111
+      - name: GOSOV
+        lat: 66.466111
+        lon: 25.657778
+      - name: NIPAK
+        lat: 66.705833
+        lon: 26.101389
+      - name: OSLIT
+        lat: 66.8625
+        lon: 25.406389
+      - name: VIKA
+        lat: 66.624567
+        lon: 26.22595
+      - name: PERUN
+        lat: 66.735583
+        lon: 26.027167
+      - name: IMARI
+        lat: 66.473433
+        lon: 25.521517
+      - name: SIERRA
+        lat: 66.428517
+        lon: 25.776833
+      - name: Initial21
+        lat: 66.644035
+        lon: 25.978033
+      - name: Initial03
+        lat: 66.479883
+        lon: 25.735083
 airframes:
   a10:
     name: A-10C
