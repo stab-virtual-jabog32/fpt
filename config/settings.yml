@@ -6690,17 +6690,17 @@ theaters:
         freq: 235.450
       - name: Kallax Tower
         freq: 250.300
-      - name: Texaco-1 | KC-135 | Medium / Slow
+      - name: Texaco-1 | KC-135 | Medium / Slow | 71Y
         freq: 265.000
-      - name: Arco-1 | KC-135 | High / Fast
+      - name: Arco-1 | KC-135 | High / Fast | 22Y
         freq: 319.800
-      - name: Shell-1 | KC-135 MPRS | High / Fast
+      - name: Shell-1 | KC-135 MPRS | High / Fast | 41Y
         freq: 360.800
-      - name: CVN-71 Rough Rider (RRR)
+      - name: CVN-71 Rough Rider (RRR) | 71X
         freq: 304.000
-      - name: LHA-1 Tarawa (TWA)
+      - name: LHA-1 Tarawa (TWA) | 79X
         freq: 303.000
-      - name: S-3B Mauler-1 (MAU)
+      - name: S-3B Mauler-1 (MAU) |64Y
         freq: 247.800
       - name: Loki (E-2D)
         freq: 347.800
@@ -6721,10 +6721,15 @@ theaters:
         pos: N67 15.838 E014 20.046
         elevation: 43
       - id: BNK
-        name: Lakselv Banak 
+        name: Banak 
         channel: 47
         pos: N70 03.937 E024 58.181
         elevation: 17
+      - id: OYA
+        name: Andoya
+        channel: 28
+        pos: N69 17.175 E016 08.658
+        elevation: 19  
     airbases:
       bodo:
         name: Bodo
@@ -6744,6 +6749,49 @@ theaters:
           - name: 25
             length: 9167
             elevation: 40
+            ils: 108.70
+        departures:
+          none: none
+        recoveries:
+          none: none
+      andoya:
+        name: Andoya
+        ground: 
+        atis: 
+        tower: 250.600
+        elevation: 46
+        takeoff: 14
+        land: 32
+        tacan: 28X
+        ils:
+        runways:
+          - name: 14
+            length: 8097
+            elevation: 23
+          - name: 32
+            length: 8097
+            elevation: 19
+        departures:
+          none: none
+        recoveries:
+          none: none    
+      bardufoss:
+        name: Bardufoss
+        ground: 
+        atis: 
+        tower: 250.650
+        elevation: 253
+        takeoff: 10
+        land: 28
+        tacan:
+        ils: 108.70
+        runways:
+          - name: 10
+            length: 8015
+            elevation: 243
+          - name: 28
+            length: 8015
+            elevation: 225
             ils: 108.70
         departures:
           none: none
@@ -6801,8 +6849,74 @@ theaters:
           none: none
         recoveries:
           none: none
-      lakselv:
-        name: Lakselv Banak
+      jokkmokk:
+        name: Jokkmokk
+        ground: 
+        atis: 
+        tower: 250.150
+        elevation: 902
+        takeoff: 14
+        land: 32
+        tacan:
+        ils:
+        runways:
+          - name: 14
+            length: 6561
+            elevation: 880
+          - name: 32
+            length: 6561
+            elevation: 896
+        departures:
+          none: none
+        recoveries:
+          none: none
+      vidsel:
+        name: Vidsel
+        ground: 
+        atis: 
+        tower: 250.400
+        elevation: 597
+        takeoff: 11
+        land: 29
+        tacan:
+        ils: 109.50
+        runways:
+          - name: 11
+            length: 7320
+            elevation: 594
+          - name: 29
+            length: 7320
+            elevation: 594
+            ils: 109.50
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kallax:
+        name: Kallax
+        ground: 
+        atis: 
+        tower: 250.300
+        elevation: 66
+        takeoff: 14
+        land: 32
+        tacan:
+        ils: 109.90
+        runways:
+          - name: 14
+            length: 10990
+            elevation: 65
+            ils: 110.30
+          - name: 32
+            length: 10990
+            elevation: 23
+            ils: 109.90
+        departures:
+          none: none
+        recoveries:
+          none: none
+      banak:
+        name: Banak
         ground: 
         atis: 
         tower: 250.200
@@ -6819,6 +6933,28 @@ theaters:
             length: 9137
             elevation: 26
             ils: 108.30
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kittila:
+        name: Kittila
+        ground: 
+        atis: 
+        tower: 250.700
+        elevation: 644
+        takeoff: 16
+        land: 34
+        tacan:
+        ils: 111.90
+        runways:
+          - name: 16
+            length: 8202
+            elevation: 636
+          - name: 34
+            length: 8202
+            elevation: 646
+            ils: 111.90
         departures:
           none: none
         recoveries:
@@ -6870,8 +7006,30 @@ theaters:
           TAC03: Tacan RWY 03
           VFRFW: VFR Approach
           VFRRW: VFR Helicopter
-      bas100:
-        name: BAS 100
+      ivalo:
+        name: Ivalo
+        ground: 
+        atis: 
+        tower: 250.450
+        elevation: 482
+        takeoff: 04
+        land: 22
+        tacan:
+        ils: 212.00
+        runways:
+          - name: 04
+            length: 8198
+            elevation: 478
+          - name: 22
+            length: 8198
+            elevation: 467
+            ils: 212.00
+        departures:
+          none: none
+        recoveries:
+          none: none
+      vuojarvi:
+        name: Vuojarvi
         ground: 
         atis: 
         tower: 257.1
@@ -6885,6 +7043,71 @@ theaters:
           - name: 22
             length: 8312
             elevation: 736
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kirkenes:
+        name: Kirkenes
+        ground: 
+        atis: 
+        tower: 250.250
+        elevation: 282
+        takeoff: 05
+        land: 23
+        tacan:
+        ils: 110.30
+        runways:
+          - name: 05
+            length: 6939
+            elevation: 279
+          - name: 23
+            length: 6939
+            elevation: 282
+            ils: 110.30
+        departures:
+          none: none
+        recoveries:
+          none: none
+      alakourtti:
+        name: Alakourtti
+        ground: 
+        atis: 
+        tower: 250.500
+        elevation: 548
+        takeoff: 12
+        land: 30
+        tacan:
+        ils:
+        runways:
+          - name: 12
+            length: 8202
+            elevation: 548
+          - name: 30
+            length: 8202
+            elevation: 548
+        departures:
+          none: none
+        recoveries:
+          none: none
+      kuusamo:
+        name: Kuusamo
+        ground: 
+        atis: 
+        tower: 250.350
+        elevation: 866
+        takeoff: 12
+        land: 30
+        tacan:
+        ils: 110.30
+        runways:
+          - name: 12
+            length: 8071
+            elevation: 864
+            ils: 110.30
+          - name: 30
+            length: 8071
+            elevation: 861
         departures:
           none: none
         recoveries:
@@ -6949,8 +7172,8 @@ theaters:
           none: none
         recoveries:
           none: none
-      olenegorsk:
-        name: Olenegorsk
+      olenya:
+        name: Olenya
         ground: 
         atis: 
         tower: 250.550
@@ -6988,23 +7211,21 @@ theaters:
         recoveries:
           none: none
       carrier:
-        name: CV-73 USS G. Washington
-        tacan: 73X
-        tower: 305.0
-        ground: ICLS 12
+        name: CVN-71 USS Theodore Roosevelt
+        tacan: 71X
+        tower: 304.0
+        ground: ICLS 7
         departures:
           cat: CAT
         recoveries:
           case1: CASE I
           case2: CASE II
           case3: CASE III
-      cvn59:
-        name: CV-59 USS Forrestal
-        tacan: 59X
-        tower: 303.0
-        approach: 303.0
-        clearance: 303.0
-        ground: ICLS 6
+      tarawa:
+        name: LHA-1 USS Tarawa
+        tacan: 
+        tower: 305.0
+        ground: 
         departures:
           cat: CAT
         recoveries:
@@ -7114,12 +7335,57 @@ theaters:
       - name: SIERRA
         lat: 66.428517
         lon: 25.776833
-      - name: Initial21
+      - name: RVNInit21
         lat: 66.644035
         lon: 25.978033
-      - name: Initial03
+      - name: RVNInit03
         lat: 66.479883
         lon: 25.735083
+      - name: R93A-BC-North
+        lat: 67.377433
+        lon: 26.379833
+      - name: R93A-BC-South
+        lat: 67.3538
+        lon: 26.374467
+      - name: R93B-Gunpit-North
+        lat: 67.40335
+        lon: 26.465833
+      - name: R93B-Gunpit-South
+        lat: 67.355933
+        lon: 26.520917
+      - name: T-ESR04-Arty
+        lat: 65.97725
+        lon: 21.6851
+      - name: T-ESR04-Armored Attack
+        lat: 65.85785
+        lon: 21.467
+      - name: T-ESR04-HQ
+        lat: 65.809233
+        lon: 21.6951
+      - name: T-ESR04-Crossroads
+        lat: 65.846983
+        lon: 21.732583
+      - name: T-ESR04-Convoy
+        lat: 65.97505
+        lon: 21.6124
+      - name: T-ESR01 SA10
+        lat: 68.4655
+        lon: 20.881717
+      - name: T-ESR01 SA11
+        lat: 68.539317
+        lon: 21.117633
+      - name: T-ESR01 SA6
+        lat: 68.369233
+        lon: 20.323317
+      - name: T-ESR01 SA2
+        lat: 68.473283
+        lon: 21.35375
+      - name: T-ESR01 SA3
+        lat: 68.366183
+        lon: 21.33335
+      - name: T-ESR01 HQ7
+        lat: 68.2700
+        lon: 21.037267
 airframes:
   a10:
     name: A-10C
