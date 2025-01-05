@@ -6999,11 +6999,14 @@ theaters:
             elevation: 610
             ils: 111.7
         departures:
+          SID03: SID RWY 03
           SID21: SID RWY 21
           VFRFW: VFR Depature
           VFRRW: VFR Helicopter
         recoveries:
+          ILS21: ILS RWY 21
           TAC03: Tacan RWY 03
+          TAC21: Tacan RWY 21
           VFRFW: VFR Approach
           VFRRW: VFR Helicopter
       ivalo:
