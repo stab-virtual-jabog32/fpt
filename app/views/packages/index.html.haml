@@ -1,0 +1,16 @@
+%h1 Packages
+
+- @packages.each do |package|
+  %div
+    %h2= "Package: #{package.task}"
+    %p= "Area of Operation: #{package.ao}"
+    %p= "Frequency: #{package.frequency}"
+    %p= "Lead Flight: #{package.lead_flight&.full_callsign}"
+
+    %h3 Flights in this package:
+    %ul
+      - package.flights.each do |flight|
+        %li= flight.full_callsign
+
+%br
+= link_to 'Back to Main App', root_path, class: 'btn btn-secondary'

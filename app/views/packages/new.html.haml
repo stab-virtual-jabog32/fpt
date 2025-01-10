@@ -1,0 +1,35 @@
+%h1 New Package
+
+= form_for @package do |f|
+  - if @package.errors.any?
+    .alert.alert-danger
+      %h4= "#{pluralize(@package.errors.count, 'error')} prohibited this package from being saved:"
+      %ul
+        - @package.errors.full_messages.each do |message|
+          %li= message
+
+  %table.table.table-striped.table-bordered.table-sm.table-hover
+    %tr
+      %th.bg-secondary(colspan=6) PACKAGE DETAILS
+    %tr
+      %th.align-middle.table-secondary Task
+      %td= f.text_field :task, class: 'form-control'
+      %th.align-middle.table-secondary Area of Operation
+      %td= f.text_field :ao, class: 'form-control'
+      %th.align-middle.table-secondary Frequency
+      %td= f.text_field :frequency, class: 'form-control'
+    %tr
+      %th.align-middle.table-secondary Lead Flight
+      %td
+        .form-row
+          .col-md-12
+            = f.collection_select :lead_flight_id, @flights.select { |flight| flight.start >= Time.current }, :id, :full_callsign, { prompt: "Select Lead Flight" }, class: 'form-control'
+      %th.align-middle.table-secondary Select Flights
+      %td
+        .form-row
+          .col-md-12
+            = f.collection_select :flight_ids, @flights.select { |flight| flight.start >= Time.current }, :id, :full_callsign, {}, multiple: true, class: 'form-control'
+
+  = f.submit 'Create Package', class: 'btn btn-primary'
+
+= link_to 'Back', packages_path, class: 'btn btn-secondary'

@@ -1,3 +1,5 @@
+%link{ rel: "stylesheet", href: "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" }
+%script{ src: "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" }
 - if notice
   %p
     .alert.alert-success= notice
@@ -303,5 +305,50 @@
 = link_to 'Clone', clone_flight_path(@flight), method: :post, class: 'btn btn-info'
 = link_to 'Export', export_flight_waypoints_path(@flight), class: 'btn btn-success'
 = link_to 'Destroy', @flight, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
+%button.btn.btn-primary.waypoints_map_show{data:{target:"#flight_waypoints_map"}}
+  Map
 %p
 = link_to 'Back', flights_path
+
+
+#flight_waypoints_map.waypoints_map{
+  data: {
+      'source-type' => 'flight',
+      'source-url' => url_for(controller: 'flights', action: 'waypointsJsonForFlight', id: @flight.id)
+  },
+  style: "width: 100vw; height: 100vh; position: fixed; left: 0px; top: 0px; z-index: 1000; display: none; background-color: #ddd"
+}
+  %button.btn.btn-primary.waypoints_map_hide{
+      data:{target:"#flight_waypoints_map"}, 
+      style:"position: absolute; top: 5px; right: 5px; z-index: 1100;"
+    }
+    Close
+  .waypoints_map_menu_template{style:"display: none"}
+    #FORM_UUID
+      .row
+        .col-md-12
+          .btn-group
+            %button#FORM_UUID-mod-wp-btn.btn.btn-primary.btn-mod-wp{title:"Modify this Waypoint"}
+              = bootstrap_icon 'pencil-fill', width: 16, height: 20, viewbox: '0 0 16 20'
+            %button#FORM_UUID-add-wp-before-btn.btn.btn-success.btn-add-wp-before{title:"Add Waypoint Before"}
+              = bootstrap_icon 'plus-circle-fill', width: 16, height: 20, viewbox: '0 0 16 20'
+            %button#FORM_UUID-add-wp-here-btn.btn.btn-success.btn-add-wp-here{title:"Add Waypoint here"}
+              = bootstrap_icon 'plus-circle-fill', width: 16, height: 20, viewbox: '0 0 16 20'
+            %button#FORM_UUID-del-wp-btn.btn.btn-danger.btn-del-wp{title:"Delete this Waypoint"}
+              = bootstrap_icon 'x', width: 16, height: 20, viewbox: '0 0 16 20'
+          %button#FORM_UUID-close-btn.btn.btn-light.bt-close.pull-right{style:"position: absolute; right: 10px"}
+            = bootstrap_icon 'x', width: 16, height: 20, viewbox: '0 0 16 20'
+      %hr
+      .row.latlong
+        .col-md-12
+          .form-group
+            %label{for:"FORM_UUID-latlong"}
+              LatLong
+            %input.form-control.input-sm#FORM_UUID-latlong{type:"text", value:"FORM_INPUT_LATLONG", disabled: true, style: "color: black"}
+      .row.hdms
+        .col-md-12
+          .form-group
+            %label{for:"FORM_UUID-hdms"}
+              HDMS
+            %input.form-control.input-sm#FORM_UUID-hdms{type:"text", value:"FORM_INPUT_HDMS", disabled: true, style: "color: black"}
+      
