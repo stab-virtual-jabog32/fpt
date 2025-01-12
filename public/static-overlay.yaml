@@ -146,7 +146,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: E
+  - name: H
     polygon:
       - - 36.5333333
         - -115.4925
@@ -165,7 +165,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: F
+  - name: I
     polygon:
       - - 37.0001667
         - -115.7166667
@@ -180,7 +180,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: G
+  - name: J
     polygon:
       - - 36.8501667
         - -115.7175
