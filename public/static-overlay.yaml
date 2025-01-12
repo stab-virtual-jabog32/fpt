@@ -1,5 +1,5 @@
 airspaces:
-  - name: Polygon #5085
+  - name: A
     polygon:
       - - 37.2833333
         - -115.5841667
@@ -16,7 +16,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #1991
+  - name: B
     polygon:
       - - 37.2833333
         - -115.4341667
@@ -31,7 +31,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #2852
+  - name: C
     polygon:
       - - 37
         - -115.5508333
@@ -48,7 +48,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #3750
+  - name: D
     polygon:
       - - 36.85
         - -115.5508333
@@ -71,7 +71,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #3421
+  - name: E
     polygon:
       - - 36.75
         - -115.4906667
@@ -86,7 +86,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #2121
+  - name: F
     polygon:
       - - 36.7166667
         - -115.5508333
@@ -125,7 +125,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #1549
+  - name: G
     polygon:
       - - 36.5333333
         - -115.4925
@@ -146,7 +146,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #3102
+  - name: E
     polygon:
       - - 36.5333333
         - -115.4925
@@ -165,7 +165,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #1031
+  - name: F
     polygon:
       - - 37.0001667
         - -115.7166667
@@ -180,7 +180,7 @@ airspaces:
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
-  - name: Polygon #2963
+  - name: G
     polygon:
       - - 36.8501667
         - -115.7175
