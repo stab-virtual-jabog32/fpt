@@ -1,6 +1,6 @@
 airspaces:
   #NTTR
-  - name: Range 61A #5085
+  - name: R-61A #5085
     polygon:
       - - 37.2833333
         - -115.5841667
@@ -17,7 +17,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 61B #1991
+  - name: R-61B #1991
     polygon:
       - - 37.2833333
         - -115.4341667
@@ -32,7 +32,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 62A #2852
+  - name: R-62A #2852
     polygon:
       - - 37
         - -115.5508333
@@ -49,7 +49,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 62B #3750
+  - name: R-62B #3750
     polygon:
       - - 36.85
         - -115.5508333
@@ -72,7 +72,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 63A #3421
+  - name: R-63A #3421
     polygon:
       - - 36.75
         - -115.4906667
@@ -87,7 +87,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 63B #2121
+  - name: R-63B #2121
     polygon:
       - - 36.7166667
         - -115.5508333
@@ -126,7 +126,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 63 High #1549
+  - name: R-63 High #1549
     polygon:
       - - 36.5333333
         - -115.4925
@@ -147,7 +147,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 63C #3102
+  - name: R-63C #3102
     polygon:
       - - 36.5333333
         - -115.4925
@@ -166,7 +166,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 64A #1031
+  - name: R-64A #1031
     polygon:
       - - 37.0001667
         - -115.7166667
@@ -181,7 +181,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 64B #2963
+  - name: R-64B #2963
     polygon:
       - - 36.8501667
         - -115.7175
@@ -196,7 +196,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 64C #3058
+  - name: R-64C #3058
     polygon:
       - - 36.6725
         - -115.8558333
@@ -229,7 +229,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 64D #1702
+  - name: R-64D #1702
     polygon:
       - - 36.627
         - -115.8151667
@@ -244,7 +244,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 64E #2341
+  - name: R-64E #2341
     polygon:
       - - 36.6491667
         - -115.6656667
@@ -267,7 +267,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 64F #5065
+  - name: R-64F #5065
     polygon:
       - - 36.6061667
         - -115.617
@@ -282,7 +282,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 65A #3709
+  - name: R-65A #3709
     polygon:
       - - 37.1
         - -115.9341667
@@ -299,7 +299,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 65B #3492
+  - name: R-65B #3492
     polygon:
       - - 37
         - -115.9341667
@@ -314,7 +314,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 65C #1006
+  - name: R-65C #1006
     polygon:
       - - 36.85
         - -115.9341667
@@ -333,7 +333,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 65D #1408
+  - name: R-65D #1408
     polygon:
       - - 36.75
         - -115.9341667
@@ -373,7 +373,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 71N #2127
+  - name: R-71N #2127
     polygon:
       - - 37.8833333
         - -117.0946667
@@ -390,7 +390,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 71S #4229
+  - name: R-71S #4229
     polygon:
       - - 37.6666667
         - -117.0946667
@@ -405,7 +405,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 74A #2007
+  - name: R-74A #2007
     polygon:
       - - 37.55
         - -116.014
@@ -428,7 +428,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 74B #1437
+  - name: R-74B #1437
     polygon:
       - - 37.6326667
         - -116.0246667
@@ -451,7 +451,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 74C #3728
+  - name: R-74C #3728
     polygon:
       - - 37.7
         - -116.1841667
@@ -472,7 +472,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 75E #3395
+  - name: R-75E #3395
     polygon:
       - - 37.55
         - -116.4341667
@@ -493,7 +493,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 75W #3152
+  - name: R-75W #3152
     polygon:
       - - 37.55
         - -116.7083333
@@ -514,7 +514,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: Range 76 #3609
+  - name: R-76 #3609
     polygon:
       - - 37.55
         - -117.0946667
@@ -682,66 +682,7 @@ airspaces:
     color: '#00ff00'
     fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: A #1295
-    polygon:
-      - - 37.2666667
-        - -116.5175
-      - - 37.2666667
-        - -116.3008333
-      - - 37.2666667
-        - -116.2508333
-      - - 37
-        - -116.2508333
-      - - 37
-        - -116.4508333
-      - - 37.1333333
-        - -116.4508333
-      - - 37.2666667
-        - -116.5175
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
-    fillOpacity: 0.8
-  - name: B #3322
-    polygon:
-      - - 37
-        - -116.4508333
-      - - 37
-        - -116.2508333
-      - - 36.8333333
-        - -116.2508333
-      - - 36.6833333
-        - -116.0176667
-      - - 36.6833333
-        - -116.2466667
-      - - 36.7666667
-        - -116.4425
-      - - 36.85
-        - -116.4425
-      - - 36.85
-        - -116.5591667
-      - - 36.9166667
-        - -116.5591667
-      - - 36.9166667
-        - -116.4508333
-      - - 37
-        - -116.4508333
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
-    fillOpacity: 0.8
-  - name: F #3281
-    polygon:
-      - - 36.7666667
-        - -116.4425
-      - - 36.6833333
-        - -116.2466667
-      - - 36.6833333
-        - -116.4425
-      - - 36.7666667
-        - -116.4425
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
-    fillOpacity: 0.8
-  - name: G #4187
+  - name: R-4809A #4187
     polygon:
       - - 37.8833333
         - -116.9175
@@ -757,10 +698,10 @@ airspaces:
         - -116.9175
       - - 37.8833333
         - -116.9175
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: H #5919
+  - name: R-4809B #5919
     polygon:
       - - 37.752
         - -116.5005
@@ -774,10 +715,10 @@ airspaces:
         - -116.5003333
       - - 37.7518333
         - -116.5005
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: I #4249
+  - name: FAC Alpha #4249
     polygon:
       - - 37.3753333
         - -116.7896667
@@ -789,10 +730,10 @@ airspaces:
         - -116.8251667
       - - 37.3753333
         - -116.7896667
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: J #1141
+  - name: FAC Bravo #1141
     polygon:
       - - 37.3751667
         - -116.7501667
@@ -806,10 +747,10 @@ airspaces:
         - -116.7503333
       - - 37.3751667
         - -116.7501667
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: K #4740
+  - name: TPECR #4740
     polygon:
       - - 37.3333333
         - -116.8341667
@@ -829,10 +770,10 @@ airspaces:
         - -116.8341667
       - - 37.3333333
         - -116.8341667
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: L #2058
+  - name: EC East #2058
     polygon:
       - - 37.8833333
         - -116.4341667
@@ -858,10 +799,10 @@ airspaces:
         - -116.4341667
       - - 37.8833333
         - -116.4341667
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: M #3699
+  - name: EC West #3699
     polygon:
       - - 37.8835
         - -116.6675
@@ -889,10 +830,10 @@ airspaces:
         - -116.6675
       - - 37.8835
         - -116.6675
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: N #2835
+  - name: EC South #2835
     polygon:
       - - 37.2666667
         - -116.922
@@ -912,10 +853,10 @@ airspaces:
         - -116.5591667
       - - 37.2666667
         - -116.922
-    color: '#ff00ff00'
-    fillColor: '#0052c866'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: O #2247
+  - name: Pahute A #2247
     polygon:
       - - 37.3833333
         - -116.3008333
@@ -931,6 +872,293 @@ airspaces:
         - -116.3008333
       - - 37.3833333
         - -116.3008333
+    color: '#00ff00'
+    fillColor: '#00ff00'
+    fillOpacity: 0.8
+  - name: A #1568
+    polygon:
+      - - 37.35
+        - -116.5675
+      - - 37.35
+        - -116.4508333
+      - - 37.3833333
+        - -116.3675
+      - - 37.3833333
+        - -116.3168333
+      - - 37.3833333
+        - -116.3008333
+      - - 37.2666667
+        - -116.3008333
+      - - 37.2666667
+        - -116.5175
+      - - 37.35
+        - -116.5675
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: B #8324
+    polygon:
+      - - 38.2333333
+        - -116.3145
+      - - 38.2333333
+        - -115
+      - - 38.0166667
+        - -114.2
+      - - 38.0041667
+        - -114.576
+      - - 37.9993333
+        - -116.667
+      - - 38.2333333
+        - -116.3145
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: C #2275
+    polygon:
+      - - 37.9993333
+        - -116.667
+      - - 38.0041667
+        - -114.576
+      - - 37.9888333
+        - -114.8453333
+      - - 37.9706667
+        - -115.1175
+      - - 37.9458333
+        - -115.433
+      - - 37.909
+        - -115.884
+      - - 37.8833333
+        - -116.1841667
+      - - 37.8833333
+        - -116.4341667
+      - - 37.8835
+        - -116.6675
+      - - 37.8835
+        - -116.8333333
+      - - 37.9993333
+        - -116.667
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: D #1052
+    polygon:
+      - - 37.5506667
+        - -115.8008333
+      - - 37.5511667
+        - -115.4333333
+      - - 37.2833333
+        - -115.4341667
+      - - 37.2833333
+        - -115.5841667
+      - - 37.4666667
+        - -115.5841667
+      - - 37.4668333
+        - -115.8008333
+      - - 37.5506667
+        - -115.8008333
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: E #2341
+    polygon:
+      - - 37.9458333
+        - -115.433
+      - - 37.9706667
+        - -115.1175
+      - - 37.2835
+        - -115.1175
+      - - 37.2
+        - -115.1175
+      - - 37.2833333
+        - -115.1843333
+      - - 37.2833333
+        - -115.3008333
+      - - 37.2833333
+        - -115.4341667
+      - - 37.5511667
+        - -115.4333333
+      - - 37.9458333
+        - -115.433
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: F #1815
+    polygon:
+      - - 37.909
+        - -115.884
+      - - 37.9458333
+        - -115.433
+      - - 37.5511667
+        - -115.4333333
+      - - 37.5506667
+        - -115.8008333
+      - - 37.5505
+        - -115.8841667
+      - - 37.6321667
+        - -115.8841667
+      - - 37.7
+        - -115.8841667
+      - - 37.909
+        - -115.884
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: G #1410
+    polygon:
+      - - 37.8833333
+        - -116.1841667
+      - - 37.909
+        - -115.884
+      - - 37.7
+        - -115.8841667
+      - - 37.7
+        - -116.1841667
+      - - 37.8833333
+        - -116.1841667
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: H #4584
+    polygon:
+      - - 37.9706667
+        - -115.1175
+      - - 37.9888333
+        - -114.8453333
+      - - 37.2833333
+        - -114.8453333
+      - - 37.2835
+        - -115.1175
+      - - 37.9706667
+        - -115.1175
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: I #1230
+    polygon:
+      - - 37.9888333
+        - -114.8453333
+      - - 38.0041667
+        - -114.576
+      - - 37.465
+        - -114.5785
+      - - 37.2833333
+        - -114.8453333
+      - - 37.9888333
+        - -114.8453333
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: J #2025
+    polygon:
+      - - 38.0041667
+        - -114.576
+      - - 38.0166667
+        - -114.2
+      - - 37.8956667
+        - -113.701
+      - - 37.8236667
+        - -113.7003333
+      - - 37.4503333
+        - -114.0078333
+      - - 37.465
+        - -114.5785
+      - - 38.0041667
+        - -114.576
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: K #7772
+    polygon:
+      - - 37.2833333
+        - -114.8453333
+      - - 37.465
+        - -114.5785
+      - - 37.4503333
+        - -114.0078333
+      - - 36.7166667
+        - -114.6008333
+      - - 36.7168333
+        - -114.8453333
+      - - 37.2833333
+        - -114.8453333
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: L #2624
+    polygon:
+      - - 37.2835
+        - -115.1175
+      - - 37.2833333
+        - -114.8453333
+      - - 36.7168333
+        - -114.8453333
+      - - 36.7166667
+        - -115.0508333
+      - - 36.4333333
+        - -115.3008333
+      - - 36.5335
+        - -115.3008333
+      - - 36.6333333
+        - -115.3008333
+      - - 36.8
+        - -115.1178333
+      - - 36.85
+        - -115.1175
+      - - 37
+        - -115.1175
+      - - 37.2
+        - -115.1175
+      - - 37.2835
+        - -115.1175
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: M #2344
+    polygon:
+      - - 37.2833333
+        - -115.3008333
+      - - 37.2833333
+        - -115.1843333
+      - - 37.2
+        - -115.1175
+      - - 37
+        - -115.1175
+      - - 37
+        - -115.3008333
+      - - 37.2833333
+        - -115.3008333
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: N #8459
+    polygon:
+      - - 37
+        - -115.3008333
+      - - 37
+        - -115.1175
+      - - 36.85
+        - -115.1175
+      - - 36.85
+        - -115.3008333
+      - - 37
+        - -115.3008333
+    color: '#ff00ff00'
+    fillColor: '#0052c866'
+    fillOpacity: 0.8
+  - name: O #7869
+    polygon:
+      - - 36.85
+        - -115.3008333
+      - - 36.85
+        - -115.1175
+      - - 36.8
+        - -115.1178333
+      - - 36.6333333
+        - -115.3008333
+      - - 36.7166667
+        - -115.3008333
+      - - 36.85
+        - -115.3008333
     color: '#ff00ff00'
     fillColor: '#0052c866'
     fillOpacity: 0.8
