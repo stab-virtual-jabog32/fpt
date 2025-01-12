@@ -1567,22 +1567,3658 @@ airspaces:
     fillColor: '#0000ff'
     fillOpacity: 0.8
 staticwaypoints:
-  - name: GASS PEAK
+  - name: 4807A
     coordinates:
-      - 36.402333
-      - -115.177667
+      - 37.7268285760516
+      - -116.408744646535
     radius: 2
     color: '#0000ff'
-  - name: DREAM2
+  - name: 4808A
     coordinates:
-      - 37.172333
-      - -114.992167
+      - 37.2834075971712
+      - -115.792488642092
+    radius: 2
+    color: '#0000ff'
+  - name: 4808B
+    coordinates:
+      - 37.1333242878596
+      - -116.092494351877
+    radius: 2
+    color: '#0000ff'
+  - name: 4808C
+    coordinates:
+      - 36.8416575990237
+      - -116.092494353153
+    radius: 2
+    color: '#0000ff'
+  - name: 4808D
+    coordinates:
+      - 37.1333423152176
+      - -116.384161020338
+    radius: 2
+    color: '#0000ff'
+  - name: 4808E
+    coordinates:
+      - 36.885063472344
+      - -116.403218635044
+    radius: 2
+    color: '#0000ff'
+  - name: 4808S
+    coordinates:
+      - 36.6975677013378
+      - -116.4127601923
+    radius: 2
+    color: '#0000ff'
+  - name: 4809A
+    coordinates:
+      - 37.7750788297669
+      - -116.792500014806
+    radius: 2
+    color: '#0000ff'
+  - name: 4809B
+    coordinates:
+      - 37.7269121508562
+      - -116.467327618988
+    radius: 2
+    color: '#0000ff'
+  - name: ACOSU
+    coordinates:
+      - 36.568925
+      - -114.821730555556
+    radius: 2
+    color: '#0000ff'
+  - name: ACTON
+    coordinates:
+      - 36.742
+      - -114.6075
+    radius: 2
+    color: '#0000ff'
+  - name: ALAMO
+    coordinates:
+      - 37.2927487794592
+      - -115.128827787945
+    radius: 2
+    color: '#0000ff'
+  - name: ALAMO A
+    coordinates:
+      - 37.1416621154624
+      - -115.209161056685
+    radius: 2
+    color: '#0000ff'
+  - name: ALAMO B
+    coordinates:
+      - 36.9249909782444
+      - -115.20915535128
+    radius: 2
+    color: '#0000ff'
+  - name: ALAMO C
+    coordinates:
+      - 36.7899623133856
+      - -115.215920678699
+    radius: 2
+    color: '#0000ff'
+  - name: ALAMO LZ
+    coordinates:
+      - 37.3583333333333
+      - -115.190833333333
+    radius: 2
+    color: '#0000ff'
+  - name: ALASKA
+    coordinates:
+      - 37.9666666666667
+      - -114.916666666667
+    radius: 2
+    color: '#0000ff'
+  - name: ANTELOPE
+    coordinates:
+      - 37.803165
+      - -116.422165
+    radius: 2
+    color: '#0000ff'
+  - name: ANTELOPE PK
+    coordinates:
+      - 37.627835
+      - -116.759666666667
+    radius: 2
+    color: '#0000ff'
+  - name: APEX
+    coordinates:
+      - 36.35966666666666666
+      - -114.905666666666666
+    radius: 2
+    color: '#0000ff'
+  - name: APHID
+    coordinates:
+      - 36.3849918945445
+      - -114.894999227647
+    radius: 2
+    color: '#0000ff'
+  - name: AR231V
+    coordinates:
+      - 36.5971589977976
+      - -116.533009543474
+    radius: 2
+    color: '#0000ff'
+  - name: AR231V.1
+    coordinates:
+      - 36.333333333333333333
+      - -116.233333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: AR231V.2
+    coordinates:
+      - 36.566666666666666667
+      - -116.516666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Pegasus.1
+    coordinates:
+      - 37.303333333333333333
+      - -114.403333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Pegasus.2
+    coordinates:
+      - 37.456666666666666667
+      - -114.403333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: AR625.1
+    coordinates:
+      - 37.283333333333333333
+      - -118.033333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: AR625.2
+    coordinates:
+      - 37.8
+      - -118.033333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: AR635.1
+    coordinates:
+      - 38.516666666666666667
+      - -115.7
+    radius: 2
+    color: '#0000ff'
+  - name: AR635.2
+    coordinates:
+      - 38.5
+      - -115.016666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: AR641A.1
+    coordinates:
+      - 37.466666666666666667
+      - -114.65
+    radius: 2
+    color: '#0000ff'
+  - name: AR641A.2
+    coordinates:
+      - 36.566666666666666667
+      - -113.083333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: ARCOE
+    coordinates:
+      - 36.737666666666666666
+      - -114.917
+    radius: 2
+    color: '#0000ff'
+  - name: ATALF
+    coordinates:
+      - 36.3919416666667
+      - -114.872122222222
+    radius: 2
+    color: '#0000ff'
+  - name: AWACS.1
+    coordinates:
+      - 37.816666666666666667
+      - -114.283333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: AWACS.2
+    coordinates:
+      - 37.216666666666666667
+      - -114.766666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: AZC
+    coordinates:
+      - 36.960064
+      - -113.0091756
+    radius: 2
+    color: '#0000ff'
+  - name: Alamo N Point
+    coordinates:
+      - 37.213333333333333333
+      - -115.3416666666666666
+    radius: 2
+    color: '#0000ff'
+  - name: Alamo S Point
+    coordinates:
+      - 36.833333333333333333
+      - -115.3366666666666666
+    radius: 2
+    color: '#0000ff'
+  - name: BAILOUT AREA
+    coordinates:
+      - 36.4666666666667
+      - -114.883331666667
+    radius: 2
+    color: '#0000ff'
+  - name: BALBE
+    coordinates:
+      - 36.4016851637928
+      - -114.852000808696
+    radius: 2
+    color: '#0000ff'
+  - name: BCE
+    coordinates:
+      - 37.689194
+      - -112.303889
+    radius: 2
+    color: '#0000ff'
+  - name: BELTED PK
+    coordinates:
+      - 37.5666666666667
+      - -116.075
+    radius: 2
+    color: '#0000ff'
+  - name: BETTS
+    coordinates:
+      - 37.9545694444444
+      - -116.8633
+    radius: 2
+    color: '#0000ff'
+  - name: BIGHORN
+    coordinates:
+      - 37.866666666666666667
+      - -115.033333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: BIH
+    coordinates:
+      - 37.376944
+      - -118.366528
+    radius: 2
+    color: '#0000ff'
+  - name: BLACK MTN
+    coordinates:
+      - 37.2833333333333
+      - -116.64167
+    radius: 2
+    color: '#0000ff'
+  - name: BLD
+    coordinates:
+      - 35.9958333333333
+      - -114.863666666667
+    radius: 2
+    color: '#0000ff'
+  - name: BOSTON
+    coordinates:
+      - 37.9666666666667
+      - -114.55
+    radius: 2
+    color: '#0000ff'
+  - name: BOXCAR
+    coordinates:
+      - 37.747165
+      - -116.096831666667
+    radius: 2
+    color: '#0000ff'
+  - name: BTY
+    coordinates:
+      - 36.8005833333333
+      - -116.747638888889
+    radius: 2
+    color: '#0000ff'
+  - name: Bakersfield
+    coordinates:
+      - 35.5072329749898
+      - -118.703573711652
+    radius: 2
+    color: '#0000ff'
+  - name: Barstow
+    coordinates:
+      - 35.0559463693807
+      - -116.880095338293
+    radius: 2
+    color: '#0000ff'
+  - name: Beatty
+    coordinates:
+      - 36.809
+      - -116.747666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Beatty Airport
+    coordinates:
+      - 36.8613684307752
+      - -116.786428621771
+    radius: 2
+    color: '#0000ff'
+  - name: Belted Peak
+    coordinates:
+      - 37.566666666666666667
+      - -116.075
+    radius: 2
+    color: '#0000ff'
+  - name: Bishop
+    coordinates:
+      - 37.377
+      - -118.3665
+    radius: 2
+    color: '#0000ff'
+  - name: Black Mt
+    coordinates:
+      - 37.283333333333333333
+      - -116.641666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Boulder
+    coordinates:
+      - 35.995833333333333333333333333
+      - -114.863666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Boulder City Airport
+    coordinates:
+      - 35.9481445359953
+      - -114.856543284
+    radius: 2
+    color: '#0000ff'
+  - name: Buckhorn
+    coordinates:
+      - 34.7773774204513
+      - -117.896163742621
+    radius: 2
+    color: '#0000ff'
+  - name: CAITI
+    coordinates:
+      - 37.6599194444444
+      - -116.709716666667
+    radius: 2
+    color: '#0000ff'
+  - name: CALIENTE
+    coordinates:
+      - 37.6166666666667
+      - -114.516666666667
+    radius: 2
+    color: '#0000ff'
+  - name: CALIENTE A
+    coordinates:
+      - 37.6360608507267
+      - -114.981411068341
+    radius: 2
+    color: '#0000ff'
+  - name: CALIENTE B
+    coordinates:
+      - 37.6437408759446
+      - -114.710661114791
+    radius: 2
+    color: '#0000ff'
+  - name: CALIENTE C
+    coordinates:
+      - 37.7334953749719
+      - -114.139411094131
+    radius: 2
+    color: '#0000ff'
+  - name: CALIENTE N
+    coordinates:
+      - 37.9000016666667
+      - -114.716666666667
+    radius: 2
+    color: '#0000ff'
+  - name: CALIENTE S
+    coordinates:
+      - 37.4666666666667
+      - -114.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: CALIFORNIA
+    coordinates:
+      - 37.45
+      - -116.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: CARPP
+    coordinates:
+      - 37.283333333333333333
+      - -114.845333333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: CARUB
+    coordinates:
+      - 36.3263553357219
+      - -114.934061698405
+    radius: 2
+    color: '#0000ff'
+  - name: CDC
+    coordinates:
+      - 37.787333
+      - -113.068222
+    radius: 2
+    color: '#0000ff'
+  - name: CEDRU
+    coordinates:
+      - 36.2194638888889
+      - -115.052108333333
+    radius: 2
+    color: '#0000ff'
+  - name: CESAR
+    coordinates:
+      - 37.008166666666666666666666667
+      - -116.5085
+    radius: 2
+    color: '#0000ff'
+  - name: CHADS
+    coordinates:
+      - 35.25
+      - -118.583333333333
+    radius: 2
+    color: '#0000ff'
+  - name: CHICAGO
+    coordinates:
+      - 37.9666666666667
+      - -115.066666666667
+    radius: 2
+    color: '#0000ff'
+  - name: CHONGER
+    coordinates:
+      - 37.75
+      - -115.0
+    radius: 2
+    color: '#0000ff'
+  - name: CIBMU
+    coordinates:
+      - 38.0900166666667
+      - -116.805772222222
+    radius: 2
+    color: '#0000ff'
+  - name: COIN
+    coordinates:
+      - 37.7931666666667
+      - -116.287498333333
+    radius: 2
+    color: '#0000ff'
+  - name: COLORADO E
+    coordinates:
+      - 37.0
+      - -115.666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: COLORADO W
+    coordinates:
+      - 37.0
+      - -116.133333333333
+    radius: 2
+    color: '#0000ff'
+  - name: COPAR
+    coordinates:
+      - 38.0112444444444
+      - -116.875386111111
+    radius: 2
+    color: '#0000ff'
+  - name: COYOTE A
+    coordinates:
+      - 37.5097033285517
+      - -115.618749502763
+    radius: 2
+    color: '#0000ff'
+  - name: COYOTE B
+    coordinates:
+      - 37.5853514623755
+      - -115.275821915457
+    radius: 2
+    color: '#0000ff'
+  - name: COYOTE C
+    coordinates:
+      - 37.7482208485591
+      - -115.658583368642
+    radius: 2
+    color: '#0000ff'
+  - name: COYOTE D
+    coordinates:
+      - 37.8044954892371
+      - -116.034077626531
+    radius: 2
+    color: '#0000ff'
+  - name: COYOTE PK
+    coordinates:
+      - 37.625
+      - -115.633331666667
+    radius: 2
+    color: '#0000ff'
+  - name: CRAIG
+    coordinates:
+      - 36.254166666666666666666666667
+      - -115.137833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: CRYSTAL SPRING
+    coordinates:
+      - 37.5333333333333
+      - -115.23333
+    radius: 2
+    color: '#0000ff'
+  - name: CUVAX
+    coordinates:
+      - 36.4301444444444
+      - -114.832319444444
+    radius: 2
+    color: '#0000ff'
+  - name: Caliente A Ctr Point
+    coordinates:
+      - 37.65
+      - -115.0
+    radius: 2
+    color: '#0000ff'
+  - name: Caliente B Ctr Point
+    coordinates:
+      - 37.666666666666666667
+      - -114.716666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Cedar City
+    coordinates:
+      - 37.787333333333333333333333333
+      - -113.081666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Cedar Peak
+    coordinates:
+      - 37.7
+      - -116.333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Coale Dale
+    coordinates:
+      - 38.003333333333333333333333333
+      - -117.7705
+    radius: 2
+    color: '#0000ff'
+  - name: Coyote Alpha HAR
+    coordinates:
+      - 37.4415262887692
+      - -115.500317661076
+    radius: 2
+    color: '#0000ff'
+  - name: Coyote Peak
+    coordinates:
+      - 37.625
+      - -115.633333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Creech
+    coordinates:
+      - 36.5867982345177
+      - -115.682678308288
+    radius: 2
+    color: '#0000ff'
+  - name: Creech AFB
+    coordinates:
+      - 36.586666666666666666666666667
+      - -115.668666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Creech Tower Airspace
+    coordinates:
+      - 36.5947409705158
+      - -115.706827672154
+    radius: 2
+    color: '#0000ff'
+  - name: DAG
+    coordinates:
+      - 34.9575881467904
+      - -116.57816623123
+    radius: 2
+    color: '#0000ff'
+  - name: DAGGS
+    coordinates:
+      - 34.9833333333333
+      - -116.95
+    radius: 2
+    color: '#0000ff'
+  - name: DEVILS GAP
+    coordinates:
+      - 37.725
+      - -114.023333333333
+    radius: 2
+    color: '#0000ff'
+  - name: DOVER
+    coordinates:
+      - 37.75
+      - -114.55
+    radius: 2
+    color: '#0000ff'
+  - name: DRAKO
+    coordinates:
+      - 37.6793805555556
+      - -116.717661111111
+    radius: 2
+    color: '#0000ff'
+  - name: DREAM
+    coordinates:
+      - 37.172333333333333333333333333
+      - -114.992166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: DRY LAKE
+    coordinates:
+      - 36.461333
+      - -114.870183
+    radius: 2
+    color: '#0000ff'
+  - name: DUCK
+    coordinates:
+      - 36.297333333333333333333333333
+      - -114.884833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: DUDBE
+    coordinates:
+      - 36.3641444444444
+      - -115.343019444444
+    radius: 2
+    color: '#0000ff'
+  - name: Daggett
+    coordinates:
+      - 34.9625
+      - -116.578166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Dry Lake
+    coordinates:
+      - 36.461333333333333333333333333
+      - -114.870166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: EAGLE MT
+    coordinates:
+      - 36.2110934038988
+      - -116.355004119879
+    radius: 2
+    color: '#0000ff'
+  - name: EC
+    coordinates:
+      - 37.791199
+      - -113.021004
+    radius: 2
+    color: '#0000ff'
+  - name: EC East
+    coordinates:
+      - 37.7083243463841
+      - -116.309160931976
+    radius: 2
+    color: '#0000ff'
+  - name: EC South
+    coordinates:
+      - 37.1161311990103
+      - -116.596294003976
+    radius: 2
+    color: '#0000ff'
+  - name: EC West
+    coordinates:
+      - 37.716740984155
+      - -116.6258218806
+    radius: 2
+    color: '#0000ff'
+  - name: EED
+    coordinates:
+      - 34.8763359643277
+      - -115.619351150878
+    radius: 2
+    color: '#0000ff'
+  - name: ELGIN
+    coordinates:
+      - 37.2081507236659
+      - -114.530790799192
+    radius: 2
+    color: '#0000ff'
+  - name: ELKXX
+    coordinates:
+      - 37.866666666667
+      - -114.5
+    radius: 2
+    color: '#0000ff'
+  - name: ELVIS
+    coordinates:
+      - 37.25
+      - -115.75
+    radius: 2
+    color: '#0000ff'
+  - name: ENGLA
+    coordinates:
+      - 36.1438388888889
+      - -115.133083333333
+    radius: 2
+    color: '#0000ff'
+  - name: ENIYO
+    coordinates:
+      - 36.2511581722307
+      - -115.015758525065
+    radius: 2
+    color: '#0000ff'
+  - name: EWALD
+    coordinates:
+      - 37.2
+      - -118.13
+    radius: 2
+    color: '#0000ff'
+  - name: Echo Bay Airport
+    coordinates:
+      - 36.3112315802285
+      - -114.463139967244
+    radius: 2
+    color: '#0000ff'
+  - name: Elgin N Point
+    coordinates:
+      - 37.35
+      - -114.533333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Elgin S Point
+    coordinates:
+      - 36.883333333333333333
+      - -114.666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: FAANG
+    coordinates:
+      - 37.0
+      - -118.585
+    radius: 2
+    color: '#0000ff'
+  - name: FAC A
+    coordinates:
+      - 37.3638333333333
+      - -116.797166666667
+    radius: 2
+    color: '#0000ff'
+  - name: FAC Alpha
+    coordinates:
+      - 37.3543287993914
+      - -116.787655300241
+    radius: 2
+    color: '#0000ff'
+  - name: FAC B
+    coordinates:
+      - 37.3568333333333
+      - -116.7055
+    radius: 2
+    color: '#0000ff'
+  - name: FAC Bravo
+    coordinates:
+      - 37.354328819611
+      - -116.709494317792
+    radius: 2
+    color: '#0000ff'
+  - name: FAC C
+    coordinates:
+      - 37.5513333333333
+      - -116.281
+    radius: 2
+    color: '#0000ff'
+  - name: FAC C3
+    coordinates:
+      - 36.855
+      - -115.475
+    radius: 2
+    color: '#0000ff'
+  - name: FAC D
+    coordinates:
+      - 37.4205
+      - -116.569333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FAC HILL
+    coordinates:
+      - 36.6635
+      - -115.781333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FAC JACK
+    coordinates:
+      - 36.7518333333333
+      - -115.436833333333
+    radius: 2
+    color: '#0000ff'
+  - name: FAC JILL
+    coordinates:
+      - 36.6216666666667
+      - -115.525
+    radius: 2
+    color: '#0000ff'
+  - name: FAC KILO
+    coordinates:
+      - 35.5584136707108
+      - -116.770985556202
+    radius: 2
+    color: '#0000ff'
+  - name: FAC LIMA
+    coordinates:
+      - 35.5619355474392
+      - -116.828532281971
+    radius: 2
+    color: '#0000ff'
+  - name: FAC MONA
+    coordinates:
+      - 35.60670593088
+      - -116.727479824785
+    radius: 2
+    color: '#0000ff'
+  - name: FAC R
+    coordinates:
+      - 36.8271666666667
+      - -115.471333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FAC S
+    coordinates:
+      - 36.9051666666667
+      - -115.596333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FAC SEAHAWK
+    coordinates:
+      - 37.3658333333333
+      - -116.871333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FAC STEELER
+    coordinates:
+      - 37.4701666666667
+      - -116.374166666667
+    radius: 2
+    color: '#0000ff'
+  - name: FAC VIKING
+    coordinates:
+      - 37.4426666666667
+      - -116.826666666667
+    radius: 2
+    color: '#0000ff'
+  - name: FAC VIV
+    coordinates:
+      - 36.8916666666667
+      - -115.625166666667
+    radius: 2
+    color: '#0000ff'
+  - name: FAC WHISKEY
+    coordinates:
+      - 36.7765
+      - -115.430333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FAC Z
+    coordinates:
+      - 37.3843333333333
+      - -116.835166666667
+    radius: 2
+    color: '#0000ff'
+  - name: FALAK
+    coordinates:
+      - 37.7529055555556
+      - -116.756441666667
+    radius: 2
+    color: '#0000ff'
+  - name: FILTR
+    coordinates:
+      - 37.525
+      - -114.1
+    radius: 2
+    color: '#0000ff'
+  - name: FLEX
+    coordinates:
+      - 36.310333333333333333333333333
+      - -115.039333333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FLORIDA E
+    coordinates:
+      - 36.85
+      - -114.916666666667
+    radius: 2
+    color: '#0000ff'
+  - name: FLORIDA W
+    coordinates:
+      - 36.85
+      - -115.366666666667
+    radius: 2
+    color: '#0000ff'
+  - name: FLUSH
+    coordinates:
+      - 36.846666666666666666666666667
+      - -116.337833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: FYTTR
+    coordinates:
+      - 36.357333333333333333333333333
+      - -115.691166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: GARTH
+    coordinates:
+      - 37.299333333333333333333333333
+      - -116.354333333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: GASS PEAK
+    coordinates:
+      - 36.402333333333333333333333333
+      - -115.177666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: GCI 1
+    coordinates:
+      - 37.7375086666667
+      - -116.291423333333
+    radius: 2
+    color: '#0000ff'
+  - name: GCI 2
+    coordinates:
+      - 37.3156875
+      - -116.785118
+    radius: 2
+    color: '#0000ff'
+  - name: GCN
+    coordinates:
+      - 35.96034
+      - -112.1460461
+    radius: 2
+    color: '#0000ff'
+  - name: GEORGIA E
+    coordinates:
+      - 37.0
+      - -114.916666666667
+    radius: 2
+    color: '#0000ff'
+  - name: GEORGIA W
+    coordinates:
+      - 37.0
+      - -115.366666666667
+    radius: 2
+    color: '#0000ff'
+  - name: GFS
+    coordinates:
+      - 35.131139
+      - -115.176444
+    radius: 2
+    color: '#0000ff'
+  - name: GOFFS
+    coordinates:
+      - 35.131166666666666666666666667
+      - -115.1765
+    radius: 2
+    color: '#0000ff'
+  - name: GRL
+    coordinates:
+      - 37.2317433808866
+      - -115.802655401997
+    radius: 2
+    color: '#0000ff'
+  - name: Groom Lake
+    coordinates:
+      - 37.275
+      - -115.8
+    radius: 2
+    color: '#0000ff'
+  - name: HAMBO
+    coordinates:
+      - 37.2
+      - -117.641666666667
+    radius: 2
+    color: '#0000ff'
+  - name: HARNE
+    coordinates:
+      - 36.925
+      - -117.188333333333
+    radius: 2
+    color: '#0000ff'
+  - name: HAYFORD PK
+    coordinates:
+      - 36.6646273108349
+      - -115.160250188434
+    radius: 2
+    color: '#0000ff'
+  - name: HEC
+    coordinates:
+      - 34.7919312188217
+      - -116.462924528518
+    radius: 2
+    color: '#0000ff'
+  - name: HEINY
+    coordinates:
+      - 35.8583333333333
+      - -116.541666666667
+    radius: 2
+    color: '#0000ff'
+  - name: HEREM
+    coordinates:
+      - 36.37535
+      - -114.871761111111
+    radius: 2
+    color: '#0000ff'
+  - name: HOCKUM
+    coordinates:
+      - 37.0605
+      - -115.052666666667
+    radius: 2
+    color: '#0000ff'
+  - name: HOKUM
+    coordinates:
+      - 36.4595083333333
+      - -114.987694444444
+    radius: 2
+    color: '#0000ff'
+  - name: HOSER
+    coordinates:
+      - 37.7490611111111
+      - -116.754397222222
+    radius: 2
+    color: '#0000ff'
+  - name: HUBON
+    coordinates:
+      - 37.53015
+      - -116.590691666667
+    radius: 2
+    color: '#0000ff'
+  - name: HUGER
+    coordinates:
+      - 37.8219666666667
+      - -116.792961111111
+    radius: 2
+    color: '#0000ff'
+  - name: HULPU
+    coordinates:
+      - 36.4057638888889
+      - -114.845480555556
+    radius: 2
+    color: '#0000ff'
+  - name: HUSTS
+    coordinates:
+      - 36.0479694444444
+      - -115.235427777778
+    radius: 2
+    color: '#0000ff'
+  - name: HVAA
+    coordinates:
+      - 37.5201215752864
+      - -114.176637170583
+    radius: 2
+    color: '#0000ff'
+  - name: HVAA Forward
+    coordinates:
+      - 37.4412233836782
+      - -114.624230315772
+    radius: 2
+    color: '#0000ff'
+  - name: Hector
+    coordinates:
+      - 34.797166666666666666666666667
+      - -116.463
+    radius: 2
+    color: '#0000ff'
+  - name: Henderson Airport
+    coordinates:
+      - 35.9726546165118
+      - -115.136699055427
+    radius: 2
+    color: '#0000ff'
+  - name: IGM
+    coordinates:
+      - 35.2605131
+      - -113.9340817
+    radius: 2
+    color: '#0000ff'
+  - name: ILC
+    coordinates:
+      - 38.250194
+      - -114.394222
+    radius: 2
+    color: '#0000ff'
+  - name: INS
+    coordinates:
+      - 36.5850416295365
+      - -115.670322085846
+    radius: 2
+    color: '#0000ff'
+  - name: IRAVE
+    coordinates:
+      - 37.6097083333333
+      - -116.648169444444
+    radius: 2
+    color: '#0000ff'
+  - name: ITAVE
+    coordinates:
+      - 37.6964666666667
+      - -116.711016666667
+    radius: 2
+    color: '#0000ff'
+  - name: ITOGE
+    coordinates:
+      - 37.7759638888889
+      - -116.768752777778
+    radius: 2
+    color: '#0000ff'
+  - name: Isabella
+    coordinates:
+      - 35.6142856429726
+      - -118.236411846973
+    radius: 2
+    color: '#0000ff'
+  - name: JACKSON
+    coordinates:
+      - 37.4166666666667
+      - -115.066666666667
+    radius: 2
+    color: '#0000ff'
+  - name: JADPU
+    coordinates:
+      - 38.0683
+      - -116.923108333333
+    radius: 2
+    color: '#0000ff'
+  - name: JANAV
+    coordinates:
+      - 37.9012916666667
+      - -116.835041666667
+    radius: 2
+    color: '#0000ff'
+  - name: JAYSN
+    coordinates:
+      - 36.5737418701805
+      - -116.040733579588
+    radius: 2
+    color: '#0000ff'
+  - name: JELIR
+    coordinates:
+      - 36.291366661726
+      - -114.972106792007
+    radius: 2
+    color: '#0000ff'
+  - name: JENAR
+    coordinates:
+      - 36.3314416666667
+      - -114.928463888889
+    radius: 2
+    color: '#0000ff'
+  - name: JENID
+    coordinates:
+      - 36.355
+      - -116.858333333333
+    radius: 2
+    color: '#0000ff'
+  - name: JEPAR
+    coordinates:
+      - 38.0065638888889
+      - -116.89105
+    radius: 2
+    color: '#0000ff'
+  - name: JESVO
+    coordinates:
+      - 37.5144611111111
+      - -116.630116666667
+    radius: 2
+    color: '#0000ff'
+  - name: JETTISON HIL
+    coordinates:
+      - 36.33139
+      - -115.019446666667
+    radius: 2
+    color: '#0000ff'
+  - name: JIREM
+    coordinates:
+      - 37.5758027777778
+      - -116.663161111111
+    radius: 2
+    color: '#0000ff'
+  - name: JOGEV
+    coordinates:
+      - 36.2917727237606
+      - -114.972664135997
+    radius: 2
+    color: '#0000ff'
+  - name: JOLLY PAD
+    coordinates:
+      - 36.2511094816727
+      - -115.032998213447
+    radius: 2
+    color: '#0000ff'
+  - name: JORDN
+    coordinates:
+      - 36.3978245326448
+      - -115.243172289387
+    radius: 2
+    color: '#0000ff'
+  - name: JUNNO
+    coordinates:
+      - 36.73
+      - -114.8795
+    radius: 2
+    color: '#0000ff'
+  - name: Jean Airport
+    coordinates:
+      - 35.7707365868312
+      - -115.32779715093
+    radius: 2
+    color: '#0000ff'
+  - name: Jettison Hill
+    coordinates:
+      - 36.331333333333333333333333333
+      - -115.0195
+    radius: 2
+    color: '#0000ff'
+  - name: KENO
+    coordinates:
+      - 37.7558333333333
+      - -116.246498333333
+    radius: 2
+    color: '#0000ff'
+  - name: KENO ASTP
+    coordinates:
+      - 37.781665
+      - -116.254996666667
+    radius: 2
+    color: '#0000ff'
+  - name: KIOTE
+    coordinates:
+      - 36.5716666666667
+      - -118.59
+    radius: 2
+    color: '#0000ff'
+  - name: KITCH
+    coordinates:
+      - 36.2533388888889
+      - -115.015427777778
+    radius: 2
+    color: '#0000ff'
+  - name: KRYSS
+    coordinates:
+      - 36.5061583333333
+      - -114.736505555556
+    radius: 2
+    color: '#0000ff'
+  - name: KUTME
+    coordinates:
+      - 36.5047666666667
+      - -114.734588888889
+    radius: 2
+    color: '#0000ff'
+  - name: LAMOUR
+    coordinates:
+      - 37.8118316666667
+      - -116.408996666667
+    radius: 2
+    color: '#0000ff'
+  - name: LAS
+    coordinates:
+      - 36.079694
+      - -115.159806
+    radius: 2
+    color: '#0000ff'
+  - name: LATNWSAM1
+    coordinates:
+      - 36.51891667
+      - -116.46785
+    radius: 2
+    color: '#0000ff'
+  - name: LATNWAAA01
+    coordinates:
+      - 36.618
+      - -116.548
+    radius: 2
+    color: '#0000ff'
+  - name: LATNWAAA02
+    coordinates:
+      - 36.68333333
+      - -116.625
+    radius: 2
+    color: '#0000ff'
+  - name: LATNWAAA03
+    coordinates:
+      - 36.75833333
+      - -116.6916667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNCSAM1
+    coordinates:
+      - 36.31083333
+      - -114.4238333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNCAAA01
+    coordinates:
+      - 36.17675
+      - -114.4475
+    radius: 2
+    color: '#0000ff'
+  - name: LATNCAAA02
+    coordinates:
+      - 36.08743333
+      - -114.47305
+    radius: 2
+    color: '#0000ff'
+  - name: LATNCAAA03
+    coordinates:
+      - 36.0984
+      - -114.1437
+    radius: 2
+    color: '#0000ff'
+  - name: LATNESAM1
+    coordinates:
+      - 36.77076667
+      - -114.1443333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNEAAA01
+    coordinates:
+      - 36.77896667
+      - -114
+    radius: 2
+    color: '#0000ff'
+  - name: LATNEAAA02
+    coordinates:
+      - 36.91971667
+      - -113.942
+    radius: 2
+    color: '#0000ff'
+  - name: LATNEAAA03
+    coordinates:
+      - 37.0977
+      - -114.0683
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC1
+    coordinates:
+      - 36.4333333333333
+      - -115.4
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC10
+    coordinates:
+      - 36.1333333333333
+      - -115.55
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC11
+    coordinates:
+      - 36.2666666666667
+      - -115.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC12
+    coordinates:
+      - 36.4166666666667
+      - -115.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC13
+    coordinates:
+      - 36.35
+      - -115.5
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC14
+    coordinates:
+      - 36.5
+      - -115.5
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC15
+    coordinates:
+      - 36.4333333333333
+      - -115.4
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC2
+    coordinates:
+      - 36.4333333333333
+      - -115.283333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC3
+    coordinates:
+      - 36.7333333333333
+      - -115.063888888889
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC4
+    coordinates:
+      - 36.7333333333333
+      - -114.583333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC5
+    coordinates:
+      - 36.75
+      - -114.566666666667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC6
+    coordinates:
+      - 36.3333333333333
+      - -114.0
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC7
+    coordinates:
+      - 36.25
+      - -113.75
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC8
+    coordinates:
+      - 36.0
+      - -113.75
+    radius: 2
+    color: '#0000ff'
+  - name: LATNC9
+    coordinates:
+      - 36.0
+      - -115.55
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE1
+    coordinates:
+      - 37.75
+      - -113.755555555556
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE10
+    coordinates:
+      - 36.75
+      - -114.566666666667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE11
+    coordinates:
+      - 37.75
+      - -113.755555555556
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE2
+    coordinates:
+      - 37.35
+      - -113.166666666667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE3
+    coordinates:
+      - 37.1666666666667
+      - -113.416666666667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE4
+    coordinates:
+      - 37.1666666666667
+      - -113.8
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE5
+    coordinates:
+      - 37.0
+      - -113.8
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE6
+    coordinates:
+      - 37.0
+      - -113.083333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE7
+    coordinates:
+      - 36.3833333333333
+      - -113.083333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE8
+    coordinates:
+      - 36.2
+      - -113.583333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNE9
+    coordinates:
+      - 36.3333333333333
+      - -114.0
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW1
+    coordinates:
+      - 37.4416666666667
+      - -117.075
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW10
+    coordinates:
+      - 36.35
+      - -115.5
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW11
+    coordinates:
+      - 36.4166666666667
+      - -115.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW12
+    coordinates:
+      - 36.2666666666667
+      - -115.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW13
+    coordinates:
+      - 36.1333333333333
+      - -115.55
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW14
+    coordinates:
+      - 35.9402777777778
+      - -115.55
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW15
+    coordinates:
+      - 35.7222222222222
+      - -115.947222222222
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW16
+    coordinates:
+      - 36.1083333333333
+      - -116.283333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW17
+    coordinates:
+      - 36.4166666666667
+      - -116.666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW18
+    coordinates:
+      - 36.5472222222222
+      - -116.6
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW19
+    coordinates:
+      - 36.75
+      - -116.875
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW2
+    coordinates:
+      - 36.85
+      - -116.558333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW20
+    coordinates:
+      - 37.025
+      - -116.875
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW21
+    coordinates:
+      - 37.025
+      - -117.208333333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW22
+    coordinates:
+      - 37.1986111111111
+      - -117.338888888889
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW23
+    coordinates:
+      - 37.4416666666667
+      - -117.075
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW3
+    coordinates:
+      - 36.85
+      - -116.441666666667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW4
+    coordinates:
+      - 36.6833333333333
+      - -116.441666666667
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW5
+    coordinates:
+      - 36.6833333333333
+      - -116.245833333333
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW6
+    coordinates:
+      - 36.5333333333333
+      - -116.0
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW7
+    coordinates:
+      - 36.5333333333333
+      - -115.663888888889
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW8
+    coordinates:
+      - 36.5666666666667
+      - -115.6
+    radius: 2
+    color: '#0000ff'
+  - name: LATNW9
+    coordinates:
+      - 36.5
+      - -115.5
+    radius: 2
+    color: '#0000ff'
+  - name: LATPE
+    coordinates:
+      - 36.2898707997233
+      - -114.973726568222
+    radius: 2
+    color: '#0000ff'
+  - name: LEEEE
+    coordinates:
+      - 36.3161133333333
+      - -115.532776666667
+    radius: 2
+    color: '#0000ff'
+  - name: LOTUS
+    coordinates:
+      - 37.2666666666667
+      - -115.0
+    radius: 2
+    color: '#0000ff'
+  - name: LOZMO
+    coordinates:
+      - 37.8929527777778
+      - -116.823819444444
+    radius: 2
+    color: '#0000ff'
+  - name: LSV
+    coordinates:
+      - 36.2446666666667
+      - -115.025
+    radius: 2
+    color: '#0000ff'
+  - name: LUCIL
+    coordinates:
+      - 35.9797972222222
+      - -115.307997222222
+    radius: 2
+    color: '#0000ff'
+  - name: Laughlin Airport
+    coordinates:
+      - 35.1569840655723
+      - -114.5585742694
+    radius: 2
+    color: '#0000ff'
+  - name: Leach Lake
+    coordinates:
+      - 35.625166666666666666666666667
+      - -116.677833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Lincoln County Airport
+    coordinates:
+      - 37.7886759048322
+      - -114.419845185145
+    radius: 2
+    color: '#0000ff'
+  - name: MAINE N
+    coordinates:
+      - 37.8
+      - -114.916666666667
+    radius: 2
+    color: '#0000ff'
+  - name: MAKZI
+    coordinates:
+      - 37.008335
+      - -116.345001666667
+    radius: 2
+    color: '#0000ff'
+  - name: MCY
+    coordinates:
+      - 36.627499
+      - -116.028
+    radius: 2
+    color: '#0000ff'
+  - name: MELLAN LZ
+    coordinates:
+      - 37.6843333333333
+      - -116.623665
+    radius: 2
+    color: '#0000ff'
+  - name: MESAE
+    coordinates:
+      - 36.4341666666667
+      - -115.571666666667
+    radius: 2
+    color: '#0000ff'
+  - name: MIAMI
+    coordinates:
+      - 37.2833333333333
+      - -114.845833333333
+    radius: 2
+    color: '#0000ff'
+  - name: MINTT
+    coordinates:
+      - 36.712333333333333333333333333
+      - -115.104833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: MITEL
+    coordinates:
+      - 36.685
+      - -118.585
+    radius: 2
+    color: '#0000ff'
+  - name: MLF
+    coordinates:
+      - 38.360361
+      - -113.013222
+    radius: 2
+    color: '#0000ff'
+  - name: MMM
+    coordinates:
+      - 36.769278
+      - -114.277472
+    radius: 2
+    color: '#0000ff'
+  - name: MODME
+    coordinates:
+      - 37.6908638888889
+      - -116.725441666667
+    radius: 2
+    color: '#0000ff'
+  - name: MOOSE
+    coordinates:
+      - 37.612833333333333333333333333
+      - -114.073666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: MOPAR
+    coordinates:
+      - 37.283333333333333333
+      - -116.75
+    radius: 2
+    color: '#0000ff'
+  - name: MORMON PEAK
+    coordinates:
+      - 36.974
+      - -114.500666666667
+    radius: 2
+    color: '#0000ff'
+  - name: MUD LAKE
+    coordinates:
+      - 37.8833333333333
+      - -117.05
+    radius: 2
+    color: '#0000ff'
+  - name: MULE
+    coordinates:
+      - 38.1908333333333
+      - -114.843833333333
+    radius: 2
+    color: '#0000ff'
+  - name: MVA
+    coordinates:
+      - 38.565306
+      - -118.032861
+    radius: 2
+    color: '#0000ff'
+  - name: McCarran
+    coordinates:
+      - 36.0758649529874
+      - -115.15453722011
+    radius: 2
+    color: '#0000ff'
+  - name: McCarran Intl
+    coordinates:
+      - 36.079666666666666666666666667
+      - -115.159833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Mesquite Airport
+    coordinates:
+      - 36.8320674069801
+      - -114.057562771269
+    radius: 2
+    color: '#0000ff'
+  - name: Milford
+    coordinates:
+      - 38.360333333333333333333333333
+      - -113.013166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Mina
+    coordinates:
+      - 38.565333333333333333333333333
+      - -118.032833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Mina Airport
+    coordinates:
+      - 38.3827323546064
+      - -118.098912990343
+    radius: 2
+    color: '#0000ff'
+  - name: Mormon Mesa
+    coordinates:
+      - 36.769333333333333333333333333
+      - -114.2775
+    radius: 2
+    color: '#0000ff'
+  - name: Mt Helen
+    coordinates:
+      - 37.5
+      - -116.741666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Mt Irish
+    coordinates:
+      - 37.641666666666666666666666667
+      - -115.4
+    radius: 2
+    color: '#0000ff'
+  - name: NEW MEXICO E
+    coordinates:
+      - 36.8166666666667
+      - -115.666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: NEW MEXICO W
+    coordinates:
+      - 36.8166666666667
+      - -116.133333333333
+    radius: 2
+    color: '#0000ff'
+  - name: NEW YORK
+    coordinates:
+      - 37.6333333333333
+      - -114.916666666667
+    radius: 2
+    color: '#0000ff'
+  - name: NIXON
+    coordinates:
+      - 36.5335
+      - -115.5375
+    radius: 2
+    color: '#0000ff'
+  - name: NIXON PK
+    coordinates:
+      - 37.8783333333333
+      - -116.471336666667
+    radius: 2
+    color: '#0000ff'
+  - name: NORTH GAP
+    coordinates:
+      - 36.333333
+      - -114.988333
+    radius: 2
+    color: '#0000ff'
+  - name: NUGGE
+    coordinates:
+      - 37.1305
+      - -114.888166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Needles
+    coordinates:
+      - 34.766
+      - -114.473833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Nellis
+    coordinates:
+      - 36.244666666666666666666666667
+      - -115.025
+    radius: 2
+    color: '#0000ff'
+  - name: North Las Vegas Airport
+    coordinates:
+      - 36.2102821325425
+      - -115.196014807195
+    radius: 2
+    color: '#0000ff'
+  - name: OAL
+    coordinates:
+      - 38.00325
+      - -117.770444
+    radius: 2
+    color: '#0000ff'
+  - name: OLNIE
+    coordinates:
+      - 36.5831472222222
+      - -114.912605555556
+    radius: 2
+    color: '#0000ff'
+  - name: OREGON
+    coordinates:
+      - 37.7
+      - -116.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: OSRIE
+    coordinates:
+      - 37.8218111111111
+      - -116.792886111111
+    radius: 2
+    color: '#0000ff'
+  - name: Owens
+    coordinates:
+      - 36.6095091722568
+      - -118.250434905505
+    radius: 2
+    color: '#0000ff'
+  - name: PAHUTE A
+    coordinates:
+      - 37.3249909472128
+      - -116.242327701061
+    radius: 2
+    color: '#0000ff'
+  - name: PAHUTE B
+    coordinates:
+      - 37.324991005557
+      - -116.434155350539
+    radius: 2
+    color: '#0000ff'
+  - name: PALAE
+    coordinates:
+      - 37.7297444444444
+      - -116.744219444444
+    radius: 2
+    color: '#0000ff'
+  - name: PEMVE
+    coordinates:
+      - 37.9017388888889
+      - -116.835244444444
+    radius: 2
+    color: '#0000ff'
+  - name: PGS
+    coordinates:
+      - 35.624722
+      - -113.544472
+    radius: 2
+    color: '#0000ff'
+  - name: PHINN
+    coordinates:
+      - 36.3071143931579
+      - -114.956798169209
+    radius: 2
+    color: '#0000ff'
+  - name: PINE
+    coordinates:
+      - 37.9551666666667
+      - -113.948666666667
+    radius: 2
+    color: '#0000ff'
+  - name: PINNACLE
+    coordinates:
+      - 37.839
+      - -116.450668333333
+    radius: 2
+    color: '#0000ff'
+  - name: PIPELINE
+    coordinates:
+      - 37.737335
+      - -116.149833333333
+    radius: 2
+    color: '#0000ff'
+  - name: PIUTE
+    coordinates:
+      - 36.511333333333333333333333333
+      - -116.094833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: PLAZA
+    coordinates:
+      - 36.7233316666667
+      - -114.883331666667
+    radius: 2
+    color: '#0000ff'
+  - name: POKER
+    coordinates:
+      - 37.7184983333333
+      - -116.293166666667
+    radius: 2
+    color: '#0000ff'
+  - name: PROSPECT
+    coordinates:
+      - 37.8583333333333
+      - -116.479668333333
+    radius: 2
+    color: '#0000ff'
+  - name: Pahute Mesa Airstrip
+    coordinates:
+      - 37.1016699596376
+      - -116.312893666139
+    radius: 2
+    color: '#0000ff'
+  - name: Panamint
+    coordinates:
+      - 36.024982959503
+      - -117.060291898378
+    radius: 2
+    color: '#0000ff'
+  - name: Peach Springs
+    coordinates:
+      - 35.624666666666666666666666667
+      - -113.5445
+    radius: 2
+    color: '#0000ff'
+  - name: Porterville
+    coordinates:
+      - 35.9014437472767
+      - -118.779238158018
+    radius: 2
+    color: '#0000ff'
+  - name: QUEEN
+    coordinates:
+      - 37.0786666666667
+      - -115.072666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Quartzite Mt
+    coordinates:
+      - 37.516666666666666667
+      - -116.325
+    radius: 2
+    color: '#0000ff'
+  - name: R-2502A
+    coordinates:
+      - 35.251024163914
+      - -116.348403279001
+    radius: 2
+    color: '#0000ff'
+  - name: R-2502E
+    coordinates:
+      - 35.2639879292152
+      - -116.49482073415
+    radius: 2
+    color: '#0000ff'
+  - name: R-2502N
+    coordinates:
+      - 35.4535982563824
+      - -116.691491198834
+    radius: 2
+    color: '#0000ff'
+  - name: R-2505
+    coordinates:
+      - 35.9103200216298
+      - -117.656435763383
+    radius: 2
+    color: '#0000ff'
+  - name: R-2506
+    coordinates:
+      - 35.530634085333
+      - -117.742575291981
+    radius: 2
+    color: '#0000ff'
+  - name: R-2515
+    coordinates:
+      - 35.0803682685543
+      - -117.512632529961
+    radius: 2
+    color: '#0000ff'
+  - name: R-2524
+    coordinates:
+      - 35.5769143444137
+      - -117.104985955326
+    radius: 2
+    color: '#0000ff'
+  - name: R63 Tower
+    coordinates:
+      - 36.616666666666666667
+      - -115.503333333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: R64 W Circle
+    coordinates:
+      - 36.681666666666666666666666667
+      - -115.673333333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: RALEIGH
+    coordinates:
+      - 37.45
+      - -114.55
+    radius: 2
+    color: '#0000ff'
+  - name: RAMMM
+    coordinates:
+      - 36.75
+      - -114.5555
+    radius: 2
+    color: '#0000ff'
+  - name: REBEL
+    coordinates:
+      - 37.8074983333333
+      - -116.287498333333
+    radius: 2
+    color: '#0000ff'
+  - name: REVEILLE GAP
+    coordinates:
+      - 38.0999983333333
+      - -115.0
+    radius: 2
+    color: '#0000ff'
+  - name: REVEILLE North
+    coordinates:
+      - 38.1163335732976
+      - -115.433494311458
+    radius: 2
+    color: '#0000ff'
+  - name: REVEILLE PK
+    coordinates:
+      - 37.8583333333333
+      - -116.133331666667
+    radius: 2
+    color: '#0000ff'
+  - name: REVEILLE South
+    coordinates:
+      - 37.8958945681078
+      - -116.190298742337
+    radius: 2
+    color: '#0000ff'
+  - name: RGN.Alamo
+    coordinates:
+      - 37.5
+      - -115.433333333333
+    radius: 2
+    color: '#0000ff'
+  - name: RGN.Civa
+    coordinates:
+      - 38.0333333333333
+      - -115.45
+    radius: 2
+    color: '#0000ff'
+  - name: RGN.Creech
+    coordinates:
+      - 36.6333333333333
+      - -115.833333333333
+    radius: 2
+    color: '#0000ff'
+  - name: RGN.Hiway
+    coordinates:
+      - 38.0833333333333
+      - -116.133333333333
+    radius: 2
+    color: '#0000ff'
+  - name: RGN.KTNX
+    coordinates:
+      - 37.8166666666667
+      - -116.75
+    radius: 2
+    color: '#0000ff'
+  - name: RGN.Ranch1
+    coordinates:
+      - 37.05
+      - -116.583333333333
+    radius: 2
+    color: '#0000ff'
+  - name: RGN.Ranch2
+    coordinates:
+      - 36.95
+      - -116.55
+    radius: 2
+    color: '#0000ff'
+  - name: RICARDO CABA
+    coordinates:
+      - 37.3538316666667
+      - -116.723998333333
+    radius: 2
+    color: '#0000ff'
+  - name: ROCEN
+    coordinates:
+      - 38.0743222222222
+      - -116.902955555556
+    radius: 2
+    color: '#0000ff'
+  - name: ROCK
+    coordinates:
+      - 36.566665
+      - -115.949996666667
+    radius: 2
+    color: '#0000ff'
+  - name: ROCKX
+    coordinates:
+      - 36.2136444444444
+      - -115.059533333333
+    radius: 2
+    color: '#0000ff'
+  - name: ROMOF
+    coordinates:
+      - 35.8166666666667
+      - -118.585
+    radius: 2
+    color: '#0000ff'
+  - name: RONKY
+    coordinates:
+      - 36.655525
+      - -114.935161111111
+    radius: 2
+    color: '#0000ff'
+  - name: ROSIE
+    coordinates:
+      - 34.8516666666667
+      - -118.206666666667
+    radius: 2
+    color: '#0000ff'
+  - name: ROTSE
+    coordinates:
+      - 36.3337527777778
+      - -114.926013888889
+    radius: 2
+    color: '#0000ff'
+  - name: RUDII
+    coordinates:
+      - 37.7221277777778
+      - -116.740197222222
+    radius: 2
+    color: '#0000ff'
+  - name: RYAAN
+    coordinates:
+      - 36.3392805555556
+      - -115.090622222222
+    radius: 2
+    color: '#0000ff'
+  - name: Range 61A
+    coordinates:
+      - 37.1443059624916
+      - -115.508915352622
+    radius: 2
+    color: '#0000ff'
+  - name: Range 61B
+    coordinates:
+      - 37.1436677577787
+      - -115.36782296466
+    radius: 2
+    color: '#0000ff'
+  - name: Range 62A
+    coordinates:
+      - 36.9249909427442
+      - -115.425827695864
+    radius: 2
+    color: '#0000ff'
+  - name: Range 62B
+    coordinates:
+      - 36.7833335303013
+      - -115.425827521973
+    radius: 2
+    color: '#0000ff'
+  - name: Range 63A
+    coordinates:
+      - 36.7334076264324
+      - -115.457577694591
+    radius: 2
+    color: '#0000ff'
+  - name: Range 63B
+    coordinates:
+      - 36.5749910337981
+      - -115.438822057025
+    radius: 2
+    color: '#0000ff'
+  - name: Range 63B HIGH
+    coordinates:
+      - 36.4834076399973
+      - -115.396655438362
+    radius: 2
+    color: '#0000ff'
+  - name: Range 63C
+    coordinates:
+      - 36.4994909591242
+      - -115.45499438891
+    radius: 2
+    color: '#0000ff'
+  - name: Range 64A
+    coordinates:
+      - 36.9250788380881
+      - -115.63416103596
+    radius: 2
+    color: '#0000ff'
+  - name: Range 64B
+    coordinates:
+      - 36.7832454848764
+      - -115.634161012016
+    radius: 2
+    color: '#0000ff'
+  - name: Range 64C
+    coordinates:
+      - 36.6614076074255
+      - -115.703327697927
+    radius: 2
+    color: '#0000ff'
+  - name: Range 64D
+    coordinates:
+      - 36.6165742993082
+      - -115.74157772436
+    radius: 2
+    color: '#0000ff'
+  - name: Range 64E
+    coordinates:
+      - 36.6282902036304
+      - -115.655309813244
+    radius: 2
+    color: '#0000ff'
+  - name: Range 64F
+    coordinates:
+      - 36.581662153735
+      - -115.593161040999
+    radius: 2
+    color: '#0000ff'
+  - name: Range 65A
+    coordinates:
+      - 37.0499954953784
+      - -115.742494263574
+    radius: 2
+    color: '#0000ff'
+  - name: Range 65B
+    coordinates:
+      - 36.9250743009531
+      - -115.825411041618
+    radius: 2
+    color: '#0000ff'
+  - name: Range 65C
+    coordinates:
+      - 36.7613332013879
+      - -115.825821913898
+    radius: 2
+    color: '#0000ff'
+  - name: Range 65D
+    coordinates:
+      - 36.6332535953435
+      - -115.878755934414
+    radius: 2
+    color: '#0000ff'
+  - name: Range 71N
+    coordinates:
+      - 37.7749954660574
+      - -116.95607761996
+    radius: 2
+    color: '#0000ff'
+  - name: Range 71S
+    coordinates:
+      - 37.6083243054146
+      - -116.905660966937
+    radius: 2
+    color: '#0000ff'
+  - name: Range 74A
+    coordinates:
+      - 37.3014808869766
+      - -116.092119535088
+    radius: 2
+    color: '#0000ff'
+  - name: Range 74B
+    coordinates:
+      - 37.5916206379143
+      - -116.001819074451
+    radius: 2
+    color: '#0000ff'
+  - name: Range 74C
+    coordinates:
+      - 37.6655809863107
+      - -116.034921157309
+    radius: 2
+    color: '#0000ff'
+  - name: Range 75E
+    coordinates:
+      - 37.4503971526704
+      - -116.441767738516
+    radius: 2
+    color: '#0000ff'
+  - name: Range 75W
+    coordinates:
+      - 37.4416576462141
+      - -116.57124430859
+    radius: 2
+    color: '#0000ff'
+  - name: Range 76
+    coordinates:
+      - 37.408324269576
+      - -116.901494326503
+    radius: 2
+    color: '#0000ff'
+  - name: Reveille Peak
+    coordinates:
+      - 37.858333333333333333333333333
+      - -116.133333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: SALEM
+    coordinates:
+      - 37.75
+      - -116.666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: SALLY
+    coordinates:
+      - 37.0080216124482
+      - -114.984673594421
+    radius: 2
+    color: '#0000ff'
+  - name: SAN DIEGO
+    coordinates:
+      - 37.5
+      - -116.666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: SAND
+    coordinates:
+      - 37.8023333333333
+      - -116.053001666667
+    radius: 2
+    color: '#0000ff'
+  - name: SAND DUNES
+    coordinates:
+      - 36.591333
+      - -114.936167
+    radius: 2
+    color: '#0000ff'
+  - name: SOUTH GAP
+    coordinates:
+      - 36.199
+      - -115.006667
+    radius: 2
+    color: '#0000ff'
+  - name: SARAH
+    coordinates:
+      - 36.6075
+      - -115.3005
+    radius: 2
+    color: '#0000ff'
+  - name: SEAMAN WSH A
+    coordinates:
+      - 37.85278
+      - -115.229446666667
+    radius: 2
+    color: '#0000ff'
+  - name: SEAMAN WSH B
+    coordinates:
+      - 37.82861
+      - -115.209441666667
+    radius: 2
+    color: '#0000ff'
+  - name: SEATTLE
+    coordinates:
+      - 37.8833333333333
+      - -116.666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: SECRT
+    coordinates:
+      - 36.3360995430393
+      - -115.268123655798
+    radius: 2
+    color: '#0000ff'
+  - name: SESDE
+    coordinates:
+      - 36.2511972222222
+      - -115.015716666667
+    radius: 2
+    color: '#0000ff'
+  - name: SHEET
+    coordinates:
+      - 36.4088638888889
+      - -114.844191666667
+    radius: 2
+    color: '#0000ff'
+  - name: SHOWW
+    coordinates:
+      - 36.570833333333333333333333333
+      - -116.037833333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: SIMNS
+    coordinates:
+      - 36.289
+      - -115.179166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: ST LOUIS
+    coordinates:
+      - 37.75
+      - -115.066666666667
+    radius: 2
+    color: '#0000ff'
+  - name: STOFF
+    coordinates:
+      - 37.4184833333333
+      - -116.541811111111
+    radius: 2
+    color: '#0000ff'
+  - name: STONEWALL
+    coordinates:
+      - 37.5
+      - -117.05
+    radius: 2
+    color: '#0000ff'
+  - name: STRIP
+    coordinates:
+      - 36.343333333333333333333333333
+      - -115.274666666666666666666666667
     radius: 2
     color: '#0000ff'
   - name: STRYK
     coordinates:
       - 36.427
-      - -115.511667
+      - -115.511666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: STUCKEYS PEAK
+    coordinates:
+      - 37.0683333333333
+      - -114.738335
+    radius: 2
+    color: '#0000ff'
+  - name: SUMNER SPR
+    coordinates:
+      - 37.7739983333333
+      - -116.290665
+    radius: 2
+    color: '#0000ff'
+  - name: SWOOP
+    coordinates:
+      - 36.3166666666667
+      - -118.585
+    radius: 2
+    color: '#0000ff'
+  - name: Saline
+    coordinates:
+      - 36.7873297062537
+      - -117.540607550982
+    radius: 2
+    color: '#0000ff'
+  - name: Sally HAR
+    coordinates:
+      - 36.9333610000345
+      - -114.966118074388
+    radius: 2
+    color: '#0000ff'
+  - name: Shoshone
+    coordinates:
+      - 35.8900026863901
+      - -116.353591628684
+    radius: 2
+    color: '#0000ff'
+  - name: Silverbow
+    coordinates:
+      - 37.8
+      - -116.783333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: St George
+    coordinates:
+      - 37.088166666666666666666666667
+      - -113.592166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Stonewall Mt
+    coordinates:
+      - 37.5
+      - -117.05
+    radius: 2
+    color: '#0000ff'
+  - name: Stuckeys Peak
+    coordinates:
+      - 37.068333333333333333333333333
+      - -114.738333333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Student Gap
+    coordinates:
+      - 37.616666666666666667
+      - -115.0
+    radius: 2
+    color: '#0000ff'
+  - name: TBird Lake
+    coordinates:
+      - 36.968333333333333333333333333
+      - -115.225
+    radius: 2
+    color: '#0000ff'
+  - name: T61.01
+    coordinates:
+      - 37.159575
+      - -115.426253333333
+    radius: 2
+    color: '#ff0000'
+  - name: T61.03
+    coordinates:
+      - 37.15145
+      - -115.391875
+    radius: 2
+    color: '#ff0000'
+  - name: T62.01
+    coordinates:
+      - 36.93089
+      - -115.4571
+    radius: 2
+    color: '#ff0000'
+  - name: T62.02
+    coordinates:
+      - 36.9180883333333
+      - -115.430993333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.03
+    coordinates:
+      - 36.8168007765083
+      - -115.446242792549
+    radius: 2
+    color: '#ff0000'
+  - name: T62.04
+    coordinates:
+      - 36.8966666666667
+      - -115.451068333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.08
+    coordinates:
+      - 36.84532
+      - -115.45158
+    radius: 2
+    color: '#ff0000'
+  - name: T62.09
+    coordinates:
+      - 36.8193583333333
+      - -115.459825
+    radius: 2
+    color: '#ff0000'
+  - name: T62.11
+    coordinates:
+      - 36.78805
+      - -115.44424
+    radius: 2
+    color: '#ff0000'
+  - name: T62.12
+    coordinates:
+      - 36.7882216666667
+      - -115.438601666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.13
+    coordinates:
+      - 36.78787
+      - -115.440491666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.14
+    coordinates:
+      - 36.7889983333333
+      - -115.44927
+    radius: 2
+    color: '#ff0000'
+  - name: T62.21
+    coordinates:
+      - 36.7870183333333
+      - -115.44698
+    radius: 2
+    color: '#ff0000'
+  - name: T62.22
+    coordinates:
+      - 36.78464
+      - -115.446841666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.31
+    coordinates:
+      - 36.7858483333333
+      - -115.452915
+    radius: 2
+    color: '#ff0000'
+  - name: T62.32
+    coordinates:
+      - 36.7742666666667
+      - -115.451
+    radius: 2
+    color: '#ff0000'
+  - name: T62.41
+    coordinates:
+      - 36.778445
+      - -115.44372
+    radius: 2
+    color: '#ff0000'
+  - name: T62.42
+    coordinates:
+      - 36.7767801525025
+      - -115.444910912932
+    radius: 2
+    color: '#ff0000'
+  - name: T62.43
+    coordinates:
+      - 36.7759466666667
+      - -115.449418333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.44
+    coordinates:
+      - 36.7785966666667
+      - -115.445878333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.45
+    coordinates:
+      - 36.7798316666667
+      - -115.446615
+    radius: 2
+    color: '#ff0000'
+  - name: T62.51
+    coordinates:
+      - 36.78376
+      - -115.444341666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.52
+    coordinates:
+      - 36.782845
+      - -115.445161666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.53
+    coordinates:
+      - 36.7805716666667
+      - -115.445043333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.54
+    coordinates:
+      - 36.7812883333333
+      - -115.44438
+    radius: 2
+    color: '#ff0000'
+  - name: T62.55
+    coordinates:
+      - 36.782105
+      - -115.443515
+    radius: 2
+    color: '#ff0000'
+  - name: T62.56
+    coordinates:
+      - 36.78104
+      - -115.446003333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.61
+    coordinates:
+      - 36.7825183333333
+      - -115.441686666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.62
+    coordinates:
+      - 36.7811066666667
+      - -115.442538333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.63
+    coordinates:
+      - 36.7812733333333
+      - -115.440851666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.71
+    coordinates:
+      - 36.78057
+      - -115.44087
+    radius: 2
+    color: '#ff0000'
+  - name: T62.72
+    coordinates:
+      - 36.78046
+      - -115.44212
+    radius: 2
+    color: '#ff0000'
+  - name: T62.73
+    coordinates:
+      - 36.7805383333333
+      - -115.443498333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.74
+    coordinates:
+      - 36.78007
+      - -115.44253
+    radius: 2
+    color: '#ff0000'
+  - name: T62.75
+    coordinates:
+      - 36.77982
+      - -115.44349
+    radius: 2
+    color: '#ff0000'
+  - name: T62.76
+    coordinates:
+      - 36.7797916666667
+      - -115.442065
+    radius: 2
+    color: '#ff0000'
+  - name: T62.77
+    coordinates:
+      - 36.7795033333333
+      - -115.440615
+    radius: 2
+    color: '#ff0000'
+  - name: T62.78
+    coordinates:
+      - 36.778935
+      - -115.442816666667
+    radius: 2
+    color: '#ff0000'
+  - name: T62.79
+    coordinates:
+      - 36.777645
+      - -115.441748333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.81
+    coordinates:
+      - 36.7738533333333
+      - -115.443378333333
+    radius: 2
+    color: '#ff0000'
+  - name: T62.83
+    coordinates:
+      - 36.77681
+      - -115.44298
+    radius: 2
+    color: '#ff0000'
+  - name: T62.91
+    coordinates:
+      - 36.7715666666667
+      - -115.43584
+    radius: 2
+    color: '#ff0000'
+  - name: T62.92
+    coordinates:
+      - 36.77252
+      - -115.43819
+    radius: 2
+    color: '#ff0000'
+  - name: T62.93
+    coordinates:
+      - 36.7760166666667
+      - -115.441715
+    radius: 2
+    color: '#ff0000'
+  - name: T63.01
+    coordinates:
+      - 36.5925297690896
+      - -115.526061173555
+    radius: 2
+    color: '#ff0000'
+  - name: T63.02
+    coordinates:
+      - 36.59888
+      - -115.519976666667
+    radius: 2
+    color: '#ff0000'
+  - name: T63.03
+    coordinates:
+      - 36.6034583333333
+      - -115.50128
+    radius: 2
+    color: '#ff0000'
+  - name: T63.05
+    coordinates:
+      - 36.59194
+      - -115.501468333333
+    radius: 2
+    color: '#ff0000'
+  - name: T63.10
+    coordinates:
+      - 36.66284
+      - -115.486398333333
+    radius: 2
+    color: '#ff0000'
+  - name: T63.12
+    coordinates:
+      - 36.61404
+      - -115.52322
+    radius: 2
+    color: '#ff0000'
+  - name: T63.15
+    coordinates:
+      - 36.5543916043056
+      - -115.497970755293
+    radius: 2
+    color: '#ff0000'
+  - name: T64.05
+    coordinates:
+      - 36.68807
+      - -115.636441666667
+    radius: 2
+    color: '#ff0000'
+  - name: T64.08
+    coordinates:
+      - 36.6821965630063
+      - -115.68733519685
+    radius: 2
+    color: '#ff0000'
+  - name: T64.09
+    coordinates:
+      - 36.6510431218543
+      - -115.694699631206
+    radius: 2
+    color: '#ff0000'
+  - name: T64.10
+    coordinates:
+      - 36.9030133333333
+      - -115.614286666667
+    radius: 2
+    color: '#ff0000'
+  - name: T64.11
+    coordinates:
+      - 36.9191291983361
+      - -115.615714165895
+    radius: 2
+    color: '#ff0000'
+  - name: T64.12
+    coordinates:
+      - 36.9179833333333
+      - -115.637785
+    radius: 2
+    color: '#ff0000'
+  - name: T64.13
+    coordinates:
+      - 36.826162395867
+      - -115.629141780157
+    radius: 2
+    color: '#ff0000'
+  - name: T64.14
+    coordinates:
+      - 36.82071
+      - -115.621046666667
+    radius: 2
+    color: '#ff0000'
+  - name: T64.15
+    coordinates:
+      - 36.7800430532226
+      - -115.633515979569
+    radius: 2
+    color: '#ff0000'
+  - name: T64.17
+    coordinates:
+      - 36.809525
+      - -115.620648333333
+    radius: 2
+    color: '#ff0000'
+  - name: T64.19
+    coordinates:
+      - 36.794931676646
+      - -115.627815630311
+    radius: 2
+    color: '#ff0000'
+  - name: T65.01
+    coordinates:
+      - 36.6887983333333
+      - -115.79475
+    radius: 2
+    color: '#ff0000'
+  - name: T65.02
+    coordinates:
+      - 36.6877533333333
+      - -115.780958333333
+    radius: 2
+    color: '#ff0000'
+  - name: T65.03
+    coordinates:
+      - 36.7098119849219
+      - -115.768773852501
+    radius: 2
+    color: '#ff0000'
+  - name: T65.04
+    coordinates:
+      - 36.73325
+      - -115.751505
+    radius: 2
+    color: '#ff0000'
+  - name: T65.05
+    coordinates:
+      - 36.740185
+      - -115.746526666667
+    radius: 2
+    color: '#ff0000'
+  - name: T65.06
+    coordinates:
+      - 36.7277683333333
+      - -115.80279
+    radius: 2
+    color: '#ff0000'
+  - name: T65.07
+    coordinates:
+      - 36.7846672652981
+      - -115.767151355853
+    radius: 2
+    color: '#ff0000'
+  - name: T65.08
+    coordinates:
+      - 36.7885
+      - -115.746551666667
+    radius: 2
+    color: '#ff0000'
+  - name: T65.10
+    coordinates:
+      - 36.6975766666667
+      - -115.908935
+    radius: 2
+    color: '#ff0000'
+  - name: T65.11
+    coordinates:
+      - 36.6965383333333
+      - -115.807116666667
+    radius: 2
+    color: '#ff0000'
+  - name: T66.01
+    coordinates:
+      - 35.58135
+      - -116.706511666667
+    radius: 2
+    color: '#ff0000'
+  - name: T66.02
+    coordinates:
+      - 35.5804666666667
+      - -116.723933333333
+    radius: 2
+    color: '#ff0000'
+  - name: T66.03
+    coordinates:
+      - 35.5711716666667
+      - -116.755386666667
+    radius: 2
+    color: '#ff0000'
+  - name: T66.04
+    coordinates:
+      - 35.570595
+      - -116.776528333333
+    radius: 2
+    color: '#ff0000'
+  - name: T66.05
+    coordinates:
+      - 35.5692633333333
+      - -116.789295
+    radius: 2
+    color: '#ff0000'
+  - name: T66.06
+    coordinates:
+      - 35.5852233333333
+      - -116.820378333333
+    radius: 2
+    color: '#ff0000'
+  - name: T66.07
+    coordinates:
+      - 35.5798383333333
+      - -116.827815
+    radius: 2
+    color: '#ff0000'
+  - name: T66.08
+    coordinates:
+      - 35.5792383333333
+      - -116.850681666667
+    radius: 2
+    color: '#ff0000'
+  - name: T66.09
+    coordinates:
+      - 35.5668766666667
+      - -116.856881666667
+    radius: 2
+    color: '#ff0000'
+  - name: T71.03
+    coordinates:
+      - 37.6168233333333
+      - -117.00439
+    radius: 2
+    color: '#ff0000'
+  - name: T71.07
+    coordinates:
+      - 37.63248
+      - -116.911801666667
+    radius: 2
+    color: '#ff0000'
+  - name: T71.08
+    coordinates:
+      - 37.61504
+      - -116.939765
+    radius: 2
+    color: '#ff0000'
+  - name: T71.09
+    coordinates:
+      - 37.60029
+      - -116.943085
+    radius: 2
+    color: '#ff0000'
+  - name: T71.12
+    coordinates:
+      - 37.6653
+      - -116.942988333333
+    radius: 2
+    color: '#ff0000'
+  - name: T71.13
+    coordinates:
+      - 37.5980466666667
+      - -116.922735
+    radius: 2
+    color: '#ff0000'
+  - name: T71.14
+    coordinates:
+      - 37.5956483333333
+      - -116.925685
+    radius: 2
+    color: '#ff0000'
+  - name: T71.21
+    coordinates:
+      - 37.5856166666667
+      - -116.934498333333
+    radius: 2
+    color: '#ff0000'
+  - name: T71.22
+    coordinates:
+      - 37.5909266666667
+      - -116.922286666667
+    radius: 2
+    color: '#ff0000'
+  - name: T71.23
+    coordinates:
+      - 37.5951066666667
+      - -116.907296666667
+    radius: 2
+    color: '#ff0000'
+  - name: T71.24
+    coordinates:
+      - 37.5806816666667
+      - -116.921363333333
+    radius: 2
+    color: '#ff0000'
+  - name: T71.25
+    coordinates:
+      - 37.58258
+      - -116.910095
+    radius: 2
+    color: '#ff0000'
+  - name: T71.26
+    coordinates:
+      - 37.5853066666667
+      - -116.902026666667
+    radius: 2
+    color: '#ff0000'
+  - name: T74.01
+    coordinates:
+      - 37.4882983333333
+      - -116.228281666667
+    radius: 2
+    color: '#ff0000'
+  - name: T74.03
+    coordinates:
+      - 37.5344416182159
+      - -116.114174680373
+    radius: 2
+    color: '#ff0000'
+  - name: T74.04
+    coordinates:
+      - 37.406745
+      - -116.23422
+    radius: 2
+    color: '#ff0000'
+  - name: T74.06
+    coordinates:
+      - 37.5118196602285
+      - -116.254012293336
+    radius: 2
+    color: '#ff0000'
+  - name: T74.08
+    coordinates:
+      - 37.4924
+      - -116.24543
+    radius: 2
+    color: '#ff0000'
+  - name: T74.11
+    coordinates:
+      - 37.4537383333333
+      - -116.256905
+    radius: 2
+    color: '#ff0000'
+  - name: T74.21
+    coordinates:
+      - 37.6058716666667
+      - -116.17955
+    radius: 2
+    color: '#ff0000'
+  - name: T74.25
+    coordinates:
+      - 37.45842
+      - -116.229693333333
+    radius: 2
+    color: '#ff0000'
+  - name: T74.26
+    coordinates:
+      - 37.5577616666667
+      - -116.24745
+    radius: 2
+    color: '#ff0000'
+  - name: T74.27
+    coordinates:
+      - 37.5740016666667
+      - -116.212726666667
+    radius: 2
+    color: '#ff0000'
+  - name: T74.29
+    coordinates:
+      - 37.54149
+      - -116.257823333333
+    radius: 2
+    color: '#ff0000'
+  - name: T74.30
+    coordinates:
+      - 37.52756
+      - -116.222546666667
+    radius: 2
+    color: '#ff0000'
+  - name: T74.32
+    coordinates:
+      - 37.4788633333333
+      - -116.190583333333
+    radius: 2
+    color: '#ff0000'
+  - name: T74.33
+    coordinates:
+      - 37.4935733333333
+      - -116.142275
+    radius: 2
+    color: '#ff0000'
+  - name: T74.36
+    coordinates:
+      - 37.6171
+      - -116.187438333333
+    radius: 2
+    color: '#ff0000'
+  - name: T74.39
+    coordinates:
+      - 37.5134787356942
+      - -116.13760731968
+    radius: 2
+    color: '#ff0000'
+  - name: T74.42
+    coordinates:
+      - 37.5629866666667
+      - -116.145378333333
+    radius: 2
+    color: '#ff0000'
+  - name: T75.03
+    coordinates:
+      - 37.4093
+      - -116.566713333333
+    radius: 2
+    color: '#ff0000'
+  - name: T75.04
+    coordinates:
+      - 37.4714366666667
+      - -116.4234
+    radius: 2
+    color: '#ff0000'
+  - name: T75.06
+    coordinates:
+      - 37.4658883333333
+      - -116.51191
+    radius: 2
+    color: '#ff0000'
+  - name: T75.08
+    coordinates:
+      - 37.4614716666667
+      - -116.52439
+    radius: 2
+    color: '#ff0000'
+  - name: T75.10
+    coordinates:
+      - 37.457395
+      - -116.468065
+    radius: 2
+    color: '#ff0000'
+  - name: T75.15
+    coordinates:
+      - 37.4431566666667
+      - -116.54188
+    radius: 2
+    color: '#ff0000'
+  - name: T75.16
+    coordinates:
+      - 37.48721
+      - -116.61758
+    radius: 2
+    color: '#ff0000'
+  - name: T75.19
+    coordinates:
+      - 37.4582566666667
+      - -116.636043333333
+    radius: 2
+    color: '#ff0000'
+  - name: T75.20
+    coordinates:
+      - 37.4571966666667
+      - -116.604568333333
+    radius: 2
+    color: '#ff0000'
+  - name: T75.29
+    coordinates:
+      - 37.38109
+      - -116.447573333333
+    radius: 2
+    color: '#ff0000'
+  - name: T75.32
+    coordinates:
+      - 37.42418
+      - -116.458593333333
+    radius: 2
+    color: '#ff0000'
+  - name: T75.34
+    coordinates:
+      - 37.4564416666667
+      - -116.454306666667
+    radius: 2
+    color: '#ff0000'
+  - name: T75.43
+    coordinates:
+      - 37.468135
+      - -116.413683333333
+    radius: 2
+    color: '#ff0000'
+  - name: T75.46
+    coordinates:
+      - 37.49885
+      - -116.3918
+    radius: 2
+    color: '#ff0000'
+  - name: T75.47
+    coordinates:
+      - 37.42397
+      - -116.655331666667
+    radius: 2
+    color: '#ff0000'
+  - name: T76.01
+    coordinates:
+      - 37.4007683333333
+      - -116.895423333333
+    radius: 2
+    color: '#ff0000'
+  - name: T76.03
+    coordinates:
+      - 37.4304633333333
+      - -116.8536
+    radius: 2
+    color: '#ff0000'
+  - name: T76.05
+    coordinates:
+      - 37.4517616666667
+      - -116.847041666667
+    radius: 2
+    color: '#ff0000'
+  - name: T76.07
+    coordinates:
+      - 37.5170842526167
+      - -116.729817864524
+    radius: 2
+    color: '#ff0000'
+  - name: T76.08
+    coordinates:
+      - 37.40094
+      - -116.774531666667
+    radius: 2
+    color: '#ff0000'
+  - name: T76.09
+    coordinates:
+      - 37.4197916666667
+      - -116.824546666667
+    radius: 2
+    color: '#ff0000'
+  - name: T76.10
+    coordinates:
+      - 37.4014366666667
+      - -116.86792
+    radius: 2
+    color: '#ff0000'
+  - name: T76.11
+    coordinates:
+      - 37.41749
+      - -116.86091
+    radius: 2
+    color: '#ff0000'
+  - name: T76.20
+    coordinates:
+      - 37.39441
+      - -116.867913333333
+    radius: 2
+    color: '#ff0000'
+  - name: T76.21
+    coordinates:
+      - 37.438969
+      - -116.821028333333
+    radius: 2
+    color: '#ff0000'
+  - name: T76.29
+    coordinates:
+      - 37.4431266666667
+      - -116.888011666667
+    radius: 2
+    color: '#ff0000'
+  - name: T76.30
+    coordinates:
+      - 37.422315
+      - -116.833338333333
+    radius: 2
+    color: '#ff0000'
+  - name: T77.01
+    coordinates:
+      - 37.1664266666667
+      - -116.728943333333
+    radius: 2
+    color: '#ff0000'
+  - name: T77.02
+    coordinates:
+      - 37.158845
+      - -116.631883333333
+    radius: 2
+    color: '#ff0000'
+  - name: THULE
+    coordinates:
+      - 36.3233333333333
+      - -115.236663333333
+    radius: 2
+    color: '#0000ff'
+  - name: TIMBR
+    coordinates:
+      - 36.75
+      - -114.743
+    radius: 2
+    color: '#0000ff'
+  - name: TOKEN
+    coordinates:
+      - 37.7748333333333
+      - -116.37033
+    radius: 2
+    color: '#0000ff'
+  - name: TPECR
+    coordinates:
+      - 37.308324313352
+      - -116.675827692849
+    radius: 2
+    color: '#0000ff'
+  - name: TPH
+    coordinates:
+      - 38.030639
+      - -117.0335
+    radius: 2
+    color: '#0000ff'
+  - name: TQQ
+    coordinates:
+      - 37.7904015019163
+      - -116.779264796477
+    radius: 2
+    color: '#0000ff'
+  - name: TRES BURROS
+    coordinates:
+      - 37.1703333333333
+      - -116.80783
+    radius: 2
+    color: '#0000ff'
+  - name: TROPP
+    coordinates:
+      - 36.5897216666667
+      - -114.949721666667
+    radius: 2
+    color: '#0000ff'
+  - name: TROUTT
+    coordinates:
+      - 37.283333333333333333
+      - -115.1175
+    radius: 2
+    color: '#0000ff'
+  - name: TTR
+    coordinates:
+      - 37.8010790824132
+      - -116.778274833132
+    radius: 2
+    color: '#0000ff'
+  - name: TUCKY
+    coordinates:
+      - 36.591666666666666666666666667
+      - -117.001666666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: TUMBE
+    coordinates:
+      - 36.8055555555556
+      - -116.6675
+    radius: 2
+    color: '#0000ff'
+  - name: Texas Lake
+    coordinates:
+      - 37.316666666666666667
+      - -114.958333333333333333333333333
+    radius: 2
+    color: '#0000ff'
+  - name: Tonopah Airport
+    coordinates:
+      - 38.0590885333186
+      - -117.084797122845
+    radius: 2
+    color: '#0000ff'
+  - name: Tonopah Muni
+    coordinates:
+      - 38.030666666666666666666666667
+      - -117.0335
+    radius: 2
+    color: '#0000ff'
+  - name: UTI
+    coordinates:
+      - 37.0176194
+      - -113.5179
+    radius: 2
+    color: '#0000ff'
+  - name: VETTT
+    coordinates:
+      - 36.622333333333333333333333333
+      - -114.5865
+    radius: 2
+    color: '#0000ff'
+  - name: VIRGINIA
+    coordinates:
+      - 37.4666666666667
+      - -114.916666666667
+    radius: 2
+    color: '#0000ff'
+  - name: WASHINGTON
+    coordinates:
+      - 37.825
+      - -116.783333333333
+    radius: 2
+    color: '#0000ff'
+  - name: WATLU
+    coordinates:
+      - 37.7760222222222
+      - -116.768661111111
+    radius: 2
+    color: '#0000ff'
+  - name: WEBSO
+    coordinates:
+      - 36.1740944444444
+      - -115.100711111111
+    radius: 2
+    color: '#0000ff'
+  - name: WEBUL
+    coordinates:
+      - 37.7525166666667
+      - -116.756222222222
+    radius: 2
+    color: '#0000ff'
+  - name: WEST FLEX
+    coordinates:
+      - 36.310667
+      - -115.133333
+    radius: 2
+    color: '#0000ff'
+  - name: WILD HORSE
+    coordinates:
+      - 37.7931666666667
+      - -116.396163333333
+    radius: 2
+    color: '#0000ff'
+  - name: WILIE
+    coordinates:
+      - 36.2731748749283
+      - -114.993360636924
+    radius: 2
+    color: '#0000ff'
+  - name: WISTO
+    coordinates:
+      - 36.5897944444444
+      - -114.949611111111
+    radius: 2
+    color: '#0000ff'
+  - name: Wilson Creek
+    coordinates:
+      - 38.250333333333333333333333333
+      - -114.394166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: Winner LZ
+    coordinates:
+      - 36.338833333333333333333333333
+      - -115.004166666666666666666666667
+    radius: 2
+    color: '#0000ff'
+  - name: XRay Circular
+    coordinates:
+      - 36.5776334244308
+      - -114.966485263671
+    radius: 2
+    color: '#0000ff'
+  - name: XRay Extension
+    coordinates:
+      - 36.5671702163336
+      - -114.965207191965
+    radius: 2
+    color: '#0000ff'
+  - name: XR.Orbit
+    coordinates:
+      - 36.575
+      - -114.966666666667
+    radius: 2
+    color: '#0000ff'
+  - name: ZINAX
+    coordinates:
+      - 36.3904027777778
+      - -114.850855555556
     radius: 2
     color: '#0000ff'
 threats:
