@@ -893,8 +893,8 @@ airspaces:
         - -116.5175
       - - 37.35
         - -116.5675
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Reveille North #8324
     polygon:
@@ -910,8 +910,8 @@ airspaces:
         - -116.667
       - - 38.2333333
         - -116.3145
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Reville South #2275
     polygon:
@@ -937,8 +937,8 @@ airspaces:
         - -116.8333333
       - - 37.9993333
         - -116.667
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Coyote A #1052
     polygon:
@@ -956,8 +956,8 @@ airspaces:
         - -115.8008333
       - - 37.5506667
         - -115.8008333
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Coyote B #2341
     polygon:
@@ -979,8 +979,8 @@ airspaces:
         - -115.4333333
       - - 37.9458333
         - -115.433
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Coyote C #1815
     polygon:
@@ -1000,8 +1000,8 @@ airspaces:
         - -115.8841667
       - - 37.909
         - -115.884
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Coyote D #1410
     polygon:
@@ -1015,8 +1015,8 @@ airspaces:
         - -116.1841667
       - - 37.8833333
         - -116.1841667
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Caliente A #4584
     polygon:
@@ -1030,8 +1030,8 @@ airspaces:
         - -115.1175
       - - 37.9706667
         - -115.1175
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Caliente B #1230
     polygon:
@@ -1045,8 +1045,8 @@ airspaces:
         - -114.8453333
       - - 37.9888333
         - -114.8453333
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Caliente C #2025
     polygon:
@@ -1064,8 +1064,8 @@ airspaces:
         - -114.5785
       - - 38.0041667
         - -114.576
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: ELGIN #7772
     polygon:
@@ -1081,8 +1081,8 @@ airspaces:
         - -114.8453333
       - - 37.2833333
         - -114.8453333
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Sally #2624
     polygon:
@@ -1110,8 +1110,8 @@ airspaces:
         - -115.1175
       - - 37.2835
         - -115.1175
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Alamo A #2344
     polygon:
@@ -1127,8 +1127,8 @@ airspaces:
         - -115.3008333
       - - 37.2833333
         - -115.3008333
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Alamo B #8459
     polygon:
@@ -1142,8 +1142,8 @@ airspaces:
         - -115.3008333
       - - 37
         - -115.3008333
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: Alamo C #7869
     polygon:
@@ -1159,8 +1159,8 @@ airspaces:
         - -115.3008333
       - - 36.85
         - -115.3008333
-    color: '#0000ff'
-    fillColor: '#0000ff'
+    color: '#00ff00'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
   - name: R-2502N
     polygon:
