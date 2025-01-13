@@ -10272,6 +10272,10 @@ payload:
     short: Door
     type: pylon
     weight: 8
+  f16sta3467pylon:
+    name: F-16 Station 3/4 & Station 6/7 Pylon
+    type: pylon
+    weight: 289    
 loadout:
   a10:
     1: &a10station1
@@ -10708,6 +10712,12 @@ loadout:
       - weapon: mk82air
         amount: 3
         pylon: ter9a
+      - weapon: mk84
+        pylon: f16sta3467pylon
+      - weapon: mk84agp
+        pylon: f16sta3467pylon
+      - weapon: mk84atp
+        pylon: f16sta3467pylon
       - weapon: bdu33
         amount: 3
         pylon: ter9a
@@ -10790,6 +10800,12 @@ loadout:
       - weapon: mk82air
         amount: 3
         pylon: ter9a
+      - weapon: mk84
+        pylon: f16sta3467pylon
+      - weapon: mk84agp
+        pylon: f16sta3467pylon
+      - weapon: mk84atp
+        pylon: f16sta3467pylon
       - weapon: bdu33
         amount: 3
         pylon: ter9a
