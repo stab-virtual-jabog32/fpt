@@ -1946,7 +1946,7 @@ airspaces:
       - - 68.496987718842
         - 12.429209988109
     color: '#ff80ff'
-    fillColor: '#00ff00'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ESR06
     polygon:
@@ -1958,8 +1958,8 @@ airspaces:
         - 23.100179477323
       - - 65.563188821471
         - 23.127791004941
-    color: '#ff00ffff'
-    fillColor: '#00ff00'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ERN03 
     polygon:
@@ -1972,7 +1972,7 @@ airspaces:
       - - 65.564174390524
         - 7.9581225996752
     color: '#ff80ff'
-    fillColor: '#00ff00'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ERN01 
     polygon:
@@ -1985,7 +1985,7 @@ airspaces:
       - - 70.186438250526
         - 17.606383065943
     color: '#ff80ff'
-    fillColor: '#00ff00'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ERN06 
     polygon:
@@ -1997,10 +1997,11 @@ airspaces:
         - 13.056269325141
       - - 65.912136581003
         - 11.596993554904
-    color: '#ff550000'
-    fillColor: '#00ff00'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
 staticwaypoints:
+#NTTR
   - name: 4807A
     coordinates:
       - 37.7268285760516
@@ -5655,6 +5656,247 @@ staticwaypoints:
       - -114.850855555556
     radius: 2
     color: '#0000ff'
+#Kola
+  - name: NAFFI
+    coordinates:
+      - 67.077167
+      - 23.194333
+    radius: 2
+    color: '#0000ff'
+  - name: ITVAV
+    coordinates:
+      - 66.743833
+      - 19.946
+    radius: 2
+    color: '#0000ff'
+  - name: SEPJA
+    coordinates:
+      - 67.455
+      - 21.201333
+    radius: 2
+    color: '#0000ff'
+  - name: LIVLI
+    coordinates:
+      - 67.266667
+      - 16.790333
+    radius: 2
+    color: '#0000ff'
+  - name: ENOXI
+    coordinates:
+      - 66.916
+      - 21.646333
+    radius: 2
+    color: '#0000ff'
+  - name: ENEXI
+    coordinates:
+      - 69.334
+      - 25.748333
+    radius: 2
+    color: '#0000ff'
+  - name: AMUBA
+    coordinates:
+      - 67.368333
+      - 26.329333
+    radius: 2
+    color: '#0000ff'
+  - name: ORTEN
+    coordinates:
+      - 70.002333
+      - 14.990833
+    radius: 2
+    color: '#0000ff'
+  - name: LURAP
+    coordinates:
+      - 69.092667
+      - 18.264833
+    radius: 2
+    color: '#0000ff'
+  - name: TUVLA
+    coordinates:
+      - 67.847833
+      - 12.886667
+    radius: 2
+    color: '#0000ff'
+  - name: IBSAN
+    coordinates:
+      - 66.708333
+      - 25.018056
+    radius: 2
+    color: '#0000ff'
+  - name: AFRUT
+    coordinates:
+      - 66.317222
+      - 26.369167
+    radius: 2
+    color: '#0000ff'
+  - name: NEMGU
+    coordinates:
+      - 66.34
+      - 24.694167
+    radius: 2
+    color: '#0000ff'
+  - name: RENVI
+    coordinates:
+      - 66.076111
+      - 25.531667
+    radius: 2
+    color: '#0000ff'
+  - name: MARXO
+    coordinates:
+      - 66.604722
+      - 26.748889
+    radius: 2
+    color: '#0000ff'
+  - name: ROTKO
+    coordinates:
+      - 66.960556
+      - 25.961111
+    radius: 2
+    color: '#0000ff'
+  - name: GOSOV
+    coordinates:
+      - 66.466111
+      - 25.657778
+    radius: 2
+    color: '#0000ff'
+  - name: NIPAK
+    coordinates:
+      - 66.705833
+      - 26.101389
+    radius: 2
+    color: '#0000ff'
+  - name: OSLIT
+    coordinates:
+      - 66.8625
+      - 25.406389
+    radius: 2
+    color: '#0000ff'
+  - name: VIKA
+    coordinates:
+      - 66.624567
+      - 26.22595
+    radius: 2
+    color: '#0000ff'
+  - name: PERUN
+    coordinates:
+      - 66.735583
+      - 26.027167
+    radius: 2
+    color: '#0000ff'
+  - name: IMARI
+    coordinates:
+      - 66.473433
+      - 25.521517
+    radius: 2
+    color: '#0000ff'
+  - name: SIERRA
+    coordinates:
+      - 66.428517
+      - 25.776833
+    radius: 2
+    color: '#0000ff'
+  - name: RVNInit21
+    coordinates:
+      - 66.644035
+      - 25.978033
+    radius: 2
+    color: '#0000ff'
+  - name: RVNInit03
+    coordinates:
+      - 66.479883
+      - 25.735083
+    radius: 2
+    color: '#0000ff'
+  - name: R93A-BC-North
+    coordinates:
+      - 67.377433
+      - 26.379833
+    radius: 2
+    color: '#0000ff'
+  - name: R93A-BC-South
+    coordinates:
+      - 67.3538
+      - 26.374467
+    radius: 2
+    color: '#0000ff'
+  - name: R93B-Gunpit-North
+    coordinates:
+      - 67.40335
+      - 26.465833
+    radius: 2
+    color: '#0000ff'
+  - name: R93B-Gunpit-South
+    coordinates:
+      - 67.355933
+      - 26.520917
+    radius: 2
+    color: '#0000ff'
+  - name: T-ESR04-Arty
+    coordinates:
+      - 65.97725
+      - 21.6851
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR04-Armored Attack
+    coordinates:
+      - 65.85785
+      - 21.467
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR04-HQ
+    coordinates:
+      - 65.809233
+      - 21.6951
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR04-Crossroads
+    coordinates:
+      - 65.846983
+      - 21.732583
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR04-Convoy
+    coordinates:
+      - 65.97505
+      - 21.6124
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR01 SA10
+    coordinates:
+      - 68.4655
+      - 20.881717
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR01 SA11
+    coordinates:
+      - 68.539317
+      - 21.117633
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR01 SA6
+    coordinates:
+      - 68.369233
+      - 20.323317
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR01 SA2
+    coordinates:
+      - 68.473283
+      - 21.35375
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR01 SA3
+    coordinates:
+      - 68.366183
+      - 21.33335
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR01 HQ7
+    coordinates:
+      - 68.2700
+      - 21.037267
+    radius: 2
+    color: '#ff0000'
 threats:
   - name: Threat 1
     coordinates:
