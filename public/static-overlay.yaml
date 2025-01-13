@@ -1579,8 +1579,8 @@ airspaces:
         - 27.635262766036
       - - 68.600584335354
         - 27.679431860075
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: EFR119A
     polygon:
@@ -1592,8 +1592,8 @@ airspaces:
         - 27.67940872139
       - - 68.600626112396
         - 27.596280267109
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: EFR116
     polygon:
@@ -1605,8 +1605,8 @@ airspaces:
         - 26.412779662297
       - - 67.417431676038
         - 26.462379447871
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: EFR115
     polygon:
@@ -1622,8 +1622,8 @@ airspaces:
         - 26.296007546256
       - - 67.402166412997
         - 26.312521216015
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: EFR92E
     polygon:
@@ -1637,8 +1637,8 @@ airspaces:
         - 26.338716876446
       - - 66.985856767023
         - 26.391508514393
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: EFR92D
     polygon:
@@ -1654,8 +1654,8 @@ airspaces:
         - 27.113757124175
       - - 66.835142487958
         - 27.114061851533
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: EFR92C
     polygon:
@@ -1669,8 +1669,8 @@ airspaces:
         - 26.839936897539
       - - 66.838490192857
         - 26.836461110993
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: EFR92B
     polygon:
@@ -1688,8 +1688,8 @@ airspaces:
         - 26.553867428106
       - - 66.936037969643
         - 26.55406395328
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: END408 - Halkavarre
     polygon:
@@ -1705,8 +1705,8 @@ airspaces:
       - 25.076286373465
     - - 69.921218933705
       - 24.986255838476
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: END404 - Setermoen
     polygon:
@@ -1726,8 +1726,8 @@ airspaces:
         - 18.088031243365
       - - 68.702902338468
         - 18.085042882788
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: END404 - D2
     polygon:
@@ -1741,8 +1741,8 @@ airspaces:
         - 18.375042731998
       - - 68.742785299669
         - 18.271796204052
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: END404 - D1
     polygon:
@@ -1756,8 +1756,8 @@ airspaces:
         - 18.368497625108
       - - 68.793218483565
         - 18.306656116742
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: END406
     polygon:
@@ -1775,8 +1775,8 @@ airspaces:
         - 19.072282203937
       - - 69.095264723698
         - 18.852769410549
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: END407
     polygon:
@@ -1790,8 +1790,8 @@ airspaces:
         - 19.245425877564
       - - 69.014622867642
         - 19.22701954593
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ESR02
     polygon:
@@ -1809,8 +1809,8 @@ airspaces:
         - 20.167474209881
       - - 65.866811475004
         - 19.45601290036
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ESR03
     polygon:
@@ -1828,8 +1828,8 @@ airspaces:
         - 22.829510053908
       - - 66.063366341848
         - 23.429685867213
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ESR05
     polygon:
@@ -1847,8 +1847,8 @@ airspaces:
         - 21.716228108515
       - - 65.804246814474
         - 21.572762988044
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ESR04
     polygon:
@@ -1866,8 +1866,8 @@ airspaces:
         - 22.013731973594
       - - 65.901667217106
         - 22.211594533285
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: R92D Border
     polygon:
@@ -1881,8 +1881,8 @@ airspaces:
         - 26.592695884251
       - - 67.050249783358
         - 26.585158262758
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
   - name: ESR01
     polygon:
@@ -1932,10 +1932,10 @@ airspaces:
         - 20.921830894801
       - - 68.002697506749
         - 20.842393447636
-    color: '#ff80ffff'
-    fillColor: '#33ff0000'
+    color: '#ff80ff'
+    fillColor: '#33ff00'
     fillOpacity: 0.8
-  - name: ERN02 Box
+  - name: ERN02 
     polygon:
       - - 68.604951601324
         - 14.888906309133
@@ -1945,10 +1945,10 @@ airspaces:
         - 12.620548679945
       - - 68.496987718842
         - 12.429209988109
-    color: '#ff80ffff'
-    fillColor: '#00ff0000'
+    color: '#ff80ff'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: ESR06 Box
+  - name: ESR06
     polygon:
       - - 65.533500796291
         - 24.679326324041
@@ -1959,9 +1959,9 @@ airspaces:
       - - 65.563188821471
         - 23.127791004941
     color: '#ff00ffff'
-    fillColor: '#00ff0000'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: ERN03 Box
+  - name: ERN03 
     polygon:
       - - 67.773265641201
         - 9.5264366222156
@@ -1971,10 +1971,10 @@ airspaces:
         - 10.536802690577
       - - 65.564174390524
         - 7.9581225996752
-    color: '#ff80ffff'
-    fillColor: '#00ff0000'
+    color: '#ff80ff'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: ERN01 Box
+  - name: ERN01 
     polygon:
       - - 70.862130247142
         - 23.718840619313
@@ -1984,10 +1984,10 @@ airspaces:
         - 18.628817990617
       - - 70.186438250526
         - 17.606383065943
-    color: '#ff80ffff'
-    fillColor: '#00ff0000'
+    color: '#ff80ff'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
-  - name: ERN06 Box
+  - name: ERN06 
     polygon:
       - - 67.088282419767
         - 12.601640423959
@@ -1998,7 +1998,7 @@ airspaces:
       - - 65.912136581003
         - 11.596993554904
     color: '#ff550000'
-    fillColor: '#00ff0000'
+    fillColor: '#00ff00'
     fillOpacity: 0.8
 staticwaypoints:
   - name: 4807A
