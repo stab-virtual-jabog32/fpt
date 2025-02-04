@@ -6674,6 +6674,7 @@ theaters:
           case3: CASE III
   kola:
     name: Kola
+    link: https://docs.google.com/spreadsheets/d/1DIYXXAOR9MnFZEL2D0b9HDx3bwxl57aWsjKsYskgj0Q/edit?gid=482676572#gid=482676572
     channels:
       - name: Flight/Squadron specific
       - name: Rovaniemi ATIS
