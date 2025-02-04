@@ -6735,8 +6735,8 @@ theaters:
       bodo:
         name: Bodo
         ground: 
-        atis: 
-        tower: 250.450
+        atis: 320.70
+        tower: 250.75
         elevation: 19
         takeoff: 07
         land: 25
@@ -6896,8 +6896,8 @@ theaters:
       kallax:
         name: Kallax
         ground: 
-        atis: 
-        tower: 250.300
+        atis: 235.45
+        tower: 250.30
         elevation: 66
         takeoff: 14
         land: 32
@@ -6984,9 +6984,9 @@ theaters:
           none: none
       rovaniemi:
         name: Rovaniemi
-        ground: 
-        atis: 
-        tower: 250.250
+        ground: 282.50
+        atis: 282.80
+        tower: 250.55
         elevation: 643
         takeoff: 03
         land: 21
