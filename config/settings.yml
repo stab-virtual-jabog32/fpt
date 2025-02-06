@@ -7327,6 +7327,18 @@ theaters:
       - name: OSLIT
         lat: 66.8625
         lon: 25.406389
+      - name: PIKUT	
+        lat: 66.633889
+        lon: 25.963611
+      - name: INSAR	
+        lat: 66.6475
+        lon: 25.988889
+      - name: EVOLA
+        lat: 68.514333
+        lon: 24.9735
+      - name: KUNUB
+        lat: 69.340667
+        lon: E21.006667
       - name: VIKA
         lat: 66.624567
         lon: 26.22595
@@ -7390,6 +7402,66 @@ theaters:
       - name: T-ESR01 HQ7
         lat: 68.2700
         lon: 21.037267
+      - name: T-ESR03-01
+        lat: 66.6428
+        lon: 23.1331
+      - name: T-ESR03-02
+        lat: 66.6423
+        lon: 23.145
+      - name: T-ESR03-03
+        lat: 66.5838
+        lon: 23.0142
+      - name: T-ESR03-04
+        lat: 66.3266
+        lon: 22.8378
+      - name: T-ESR03-05
+        lat: 66.3089
+        lon: 23.1891
+      - name: T-ESR03-06
+        lat: 66.2353
+        lon: 22.9535
+      - name: T-ESR03-07
+        lat: 66.0718
+        lon: 23.2507
+      - name: T-ESR03-08
+        lat: 65.9963
+        lon: 23.272
+      - name: T-ESR03-09
+        lat: 65.8734
+        lon: 23.068
+      - name: T-ESR06 Anti-Ship-01
+        lat: 65.41734
+        lon: 23.9621
+      - name: T-ENR06 Anti-Ship-01
+        lat: 66.3887
+        lon: 12.6073
+      - name: T-ENR06 Anti-Ship-02
+        lat: 66.3458
+        lon: 12.6903
+      - name: T-ENR06 Anti-Ship-03
+        lat: 66.30578
+        lon: 12.5667
+      - name: R92A-FARP-KIMI
+        lat: 66.63
+        lon: 26.378611
+      - name: R92A-BP-GOLF
+        lat: 66.67
+        lon: 26.192778
+      - name: R92B-ENTRY-SOUTH
+        lat: 66.651944
+        lon: 26.42
+      - name: R92B-BP ALPHA
+        lat: 66.664444
+        lon: 26.479722
+      - name: R92B-RP EAST
+        lat: 66.736944
+        lon: 26.4375
+      - name: R92B-RP WEST
+        lat: 66.757222
+        lon: 26.360556
+      - name: R92B-BP HUNTER
+        lat: 66.7875
+        lon: 26.471389
       - name: AR-TEXACO1
         lat: 67.28775
         lon: 25.23607
