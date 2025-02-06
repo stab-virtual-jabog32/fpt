@@ -7390,6 +7390,15 @@ theaters:
       - name: T-ESR01 HQ7
         lat: 68.2700
         lon: 21.037267
+      - name: AR-TEXACO1
+        lat: 67.28775
+        lon: 25.23607
+      - name: AR-SHELL1
+        lat: 67.44653
+        lon: 24.57862
+      - name: AR-ARCO
+        lat: 67.71907
+        lon: 24.29937
 airframes:
   a10:
     name: A-10C
