@@ -2000,6 +2000,15 @@ airspaces:
     color: '#ff80ff'
     fillColor: '#33ff00'
     fillOpacity: 0.8
+  - name: BODO-LIVLI
+    polygon:
+      - - 67.2692
+        - 14.3651
+      - - 67.266667
+        - 16.790333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
 staticwaypoints:
 #NTTR
   - name: 4807A
@@ -5771,6 +5780,30 @@ staticwaypoints:
       - 25.406389
     radius: 2
     color: '#0000ff'
+  - name: PIKUT
+    coordinates:
+      - 66.633889
+      - 25.963611
+    radius: 2
+    color: '#0000ff'
+  - name: INSAR
+    coordinates:
+      - 66.6475
+      - 25.988889
+    radius: 2
+    color: '#0000ff'
+  - name: EVOLA
+    coordinates:
+      - 68.514333
+      - 24.9735
+    radius: 2
+    color: '#0000ff'
+  - name: KUNUB
+    coordinates:
+      - 69.340667
+      - 21.006667
+    radius: 2
+    color: '#0000ff'
   - name: VIKA
     coordinates:
       - 66.624567
@@ -5793,6 +5826,60 @@ staticwaypoints:
     coordinates:
       - 66.428517
       - 25.776833
+    radius: 2
+    color: '#0000ff'
+  - name: TEMMO
+    coordinates:
+      - 66.57422
+      - 25.44422
+    radius: 2
+    color: '#0000ff'
+  - name: MIPGO
+    coordinates:
+      - 66.47212
+      - 25.39263
+    radius: 2
+    color: '#0000ff'
+  - name: JERJO
+    coordinates:
+      - 66.68135
+      - 25.65357
+    radius: 2
+    color: '#0000ff'
+  - name: EKNOM
+    coordinates:
+      - 66.58667
+      - 25.64442
+    radius: 2
+    color: '#0000ff'
+  - name: NILJA
+    coordinates:
+      - 66.38188
+      - 25.87295
+    radius: 2
+    color: '#0000ff'
+  - name: HEINU
+    coordinates:
+      - 66.50872
+      - 26.11672
+    radius: 2
+    color: '#0000ff'
+  - name: TUTUT
+    coordinates:
+      - 66.65485
+      - 26.26620
+    radius: 2
+    color: '#0000ff'
+  - name: ARFUT
+    coordinates:
+      - 66.31647
+      - 26.36595
+    radius: 2
+    color: '#0000ff'
+  - name: KERTTUVAARA
+    coordinates:
+      - 68.60788
+      - 27.68770
     radius: 2
     color: '#0000ff'
   - name: RVNInit21
@@ -5897,6 +5984,144 @@ staticwaypoints:
       - 21.037267
     radius: 2
     color: '#ff0000'
+  - name: T-ESR03-01
+    coordinates:
+      - 66.6428
+      - 23.1331
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-02
+    coordinates:
+      - 66.6423
+      - 23.145
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-03
+    coordinates:
+      - 66.5838
+      - 23.0142
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-04
+    coordinates:
+      - 66.3266
+      - 22.8378
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-05
+    coordinates:
+      - 66.3089
+      - 23.1891
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-06
+    coordinates:
+      - 66.2353
+      - 22.9535
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-07
+    coordinates:
+      - 66.0718
+      - 23.2507
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-08
+    coordinates:
+      - 65.9963
+      - 23.272
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR03-09
+    coordinates:
+      - 65.8734
+      - 23.068
+    radius: 2
+    color: '#ff0000'
+  - name: T-ESR06 Anti-Ship-01
+    coordinates:
+      - 65.41734
+      - 23.9621
+    radius: 2
+    color: '#ff0000'
+  - name: T-ENR06 Anti-Ship-01
+    coordinates:
+      - 66.3887
+      - 12.6073
+    radius: 2
+    color: '#ff0000'
+  - name: T-ENR06 Anti-Ship-02
+    coordinates:
+      - 66.3458
+      - 12.6903
+    radius: 2
+    color: '#ff0000'
+  - name: T-ENR06 Anti-Ship-03
+    coordinates:
+      - 66.30578
+      - 12.5667
+    radius: 2
+    color: '#ff0000'
+  - name: R92A-FARP-KIMI
+    coordinates:
+      - 66.63
+      - 26.378611
+    radius: 2
+    color: '#0000ff'
+  - name: R92A-BP-GOLF
+    coordinates:
+      - 66.67
+      - 26.192778
+    radius: 2
+    color: '#0000ff'
+  - name: R92B-ENTRY-SOUTH
+    coordinates:
+      - 66.651944
+      - 26.42
+    radius: 2
+    color: '#0000ff'
+  - name: R92B-BP ALPHA
+    coordinates:
+      - 66.664444
+      - 26.479722
+    radius: 2
+    color: '#0000ff'
+  - name: R92B-RP EAST
+    coordinates:
+      - 66.736944
+      - 26.4375
+    radius: 2
+    color: '#0000ff'
+  - name: R92B-RP WEST
+    coordinates:
+      - 66.757222
+      - 26.360556
+    radius: 2
+    color: '#0000ff'
+  - name: R92B-BP HUNTER
+    coordinates:
+      - 66.7875
+      - 26.471389
+    radius: 2
+    color: '#0000ff'
+  - name: AR-TEXACO1
+    coordinates:
+      - 67.28775
+      - 25.23607
+    radius: 2
+    color: '#0000ff'
+  - name: AR-SHELL1
+    coordinates:
+      - 67.44653
+      - 24.57862
+    radius: 2
+    color: '#0000ff'
+  - name: AR-ARCO1
+    coordinates:
+      - 67.71907
+      - 24.29937
+    radius: 2
+    color: '#0000ff'
 threats:
   - name: Threat 1
     coordinates:
