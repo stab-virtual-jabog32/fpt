@@ -2000,21 +2000,166 @@ airspaces:
     color: '#ff80ff'
     fillColor: '#33ff00'
     fillOpacity: 0.8
+  #STTR Routes
   - name: #BODO-LIVLI
     polygon:
-      - - 67.2692
+      - - 67.2692 #BODO
         - 14.3651
-      - - 67.266667
+      - - 67.266667 #LIVLI
         - 16.790333
     color: '#ffffff'
     fillColor: '#ffffff'
     fillOpacity: 0.8
   - name: #LIVLI-SEPJA
     polygon:
-      - - 67.266667
+      - - 67.266667 #LIVLI
         - 16.790333
-      - - 67.455
+      - - 67.455 #SEPJA
         - 21.201333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #BODO-LURAP
+    polygon:
+      - - 67.2692 #BODO
+        - 14.3651
+      - - 69.092667 #LURAP
+        - 18.264833
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #ORTEN-LURAP
+    polygon:
+      - - 70.002333 #ORTEN
+        - 14.990833
+      - - 69.092667 #LURAP
+        - 18.264833
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #LURAP-SEPJA
+    polygon:
+      - - 69.092667 #LURAP
+        - 18.264833
+      - - 67.455 #SEPJA
+        - 21.201333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #LURAP-KUNUB
+    polygon:
+      - - 69.092667 #LURAP
+        - 18.264833
+      - - 69.340667 #KUNUB
+        - 21.006667
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #KUNUB-ENEXI
+    polygon:
+      - - 69.340667 #KUNUB
+        - 21.006667
+      - - 69.334 #ENEXI
+        - 25.748333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #ENEXI-BANAK
+    polygon:
+      - - 69.334 #ENEXI
+        - 25.748333
+      - - 70.0688 #BANAK
+        - 24.9658
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #ENEXI-EVOLA
+    polygon:
+      - - 69.334 #ENEXI
+        - 25.748333
+      - - 68.514333 #EVOLA
+        - 24.9735
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #KUNUB-EVOLA
+    polygon:
+      - - 69.340667 #KUNUB
+        - 21.006667
+      - - 68.514333 #EVOLA
+        - 24.9735
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #EVOLA-ROTKO
+    polygon:
+      - - 68.514333 #EVOLA
+        - 24.9735
+      - - 66.960556 #ROTKO
+        - 25.961111
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #SEPJA-ITVAV
+    polygon:
+      - - 67.455 #SEPJA
+        - 21.201333
+      - - 66.743833 #ITVAV
+        - 19.946
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #SEPJA-NAFFI
+    polygon:
+      - - 67.455 #SEPJA
+        - 21.201333
+      - - 67.077167 #NAFFI
+        - 23.194333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #SEPJA-ESR01
+    polygon:
+      - - 67.455 #SEPJA
+        - 21.201333
+      - - 67.7814 #ESR01 Entry South
+        - 21.1420
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #ITVAV-ENOXI
+    polygon:
+      - - 66.743833 #ITVAV
+        - 19.946
+      - - 66.916 #ENOXI
+        - 21.646333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #ENOXI-NAFFI
+    polygon:
+      - - 66.916 #ENOXI
+        - 21.646333
+      - - 67.077167 #NAFFI
+        - 23.194333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #ENOXI-ESR04
+    polygon:
+      - - 66.916 #ENOXI
+        - 21.646333
+      - - 66.0863833 #ESR04 Entry North
+        - 21.6298833
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #NAFFI-IBSAN
+    polygon:
+      - - 67.077167 #NAFFI
+        - 23.194333
+      - - 66.708333 #IBSAN
+        - 25.018056
     color: '#ffffff'
     fillColor: '#ffffff'
     fillOpacity: 0.8
