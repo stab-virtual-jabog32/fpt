@@ -7351,6 +7351,33 @@ theaters:
       - name: SIERRA
         lat: 66.428517
         lon: 25.776833
+      - name: TEMMO
+        lat: 66.57422
+        lon: 25.44422
+      - name: MIPGO
+        lat: 66.47212
+        lon: 25.39263
+      - name: JERJO
+        lat: 66.68135
+        lon: 25.65357
+      - name: EKNOM
+        lat: 66.58667
+        lon: 25.64442
+      - name: NILJA
+        lat: 66.38188
+        lon: 25.87295
+      - name: HEINU
+        lat: 66.50872
+        lon: 26.11672
+      - name: TUTUT
+        lat:  66.65485
+        lon: 26.26620
+      - name: ARFUT
+        lat: 66.31647
+        lon: 26.36595
+      - name: KERTTUVAARA
+        lat: 68.60788
+        lon: 27.68770
       - name: RVNInit21
         lat: 66.644035
         lon: 25.978033
@@ -7468,7 +7495,7 @@ theaters:
       - name: AR-SHELL1
         lat: 67.44653
         lon: 24.57862
-      - name: AR-ARCO
+      - name: AR-ARCO1
         lat: 67.71907
         lon: 24.29937
 airframes:
