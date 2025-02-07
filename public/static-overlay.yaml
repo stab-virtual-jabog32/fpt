@@ -2000,12 +2000,21 @@ airspaces:
     color: '#ff80ff'
     fillColor: '#33ff00'
     fillOpacity: 0.8
-  - name: BODO-LIVLI
+  - name: #BODO-LIVLI
     polygon:
       - - 67.2692
         - 14.3651
       - - 67.266667
         - 16.790333
+    color: '#ffffff'
+    fillColor: '#ffffff'
+    fillOpacity: 0.8
+  - name: #LIVLI-SEPJA
+    polygon:
+      - - 67.266667
+        - 16.790333
+      - - 67.455
+        - 21.201333
     color: '#ffffff'
     fillColor: '#ffffff'
     fillOpacity: 0.8
