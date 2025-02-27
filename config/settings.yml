@@ -7384,118 +7384,118 @@ theaters:
       - name: RVNInit03
         lat: 66.479883
         lon: 25.735083
-      - name: R93A-BC-North
+      - name: R93A.BC.North
         lat: 67.377433
         lon: 26.379833
-      - name: R93A-BC-South
+      - name: R93A.BC.South
         lat: 67.3538
         lon: 26.374467
-      - name: R93B-Gunpit-North
+      - name: R93B.Gunpit.North
         lat: 67.40335
         lon: 26.465833
-      - name: R93B-Gunpit-South
+      - name: R93B.Gunpit.South
         lat: 67.355933
         lon: 26.520917
-      - name: T-ESR04-Arty
+      - name: T.ESR04.Arty
         lat: 65.97725
         lon: 21.6851
-      - name: T-ESR04-Armored Attack
+      - name: T.ESR04.Armored Attack
         lat: 65.85785
         lon: 21.467
-      - name: T-ESR04-HQ
+      - name: T.ESR04.HQ
         lat: 65.809233
         lon: 21.6951
-      - name: T-ESR04-Crossroads
+      - name: T.ESR04.Crossroads
         lat: 65.846983
         lon: 21.732583
-      - name: T-ESR04-Convoy
+      - name: T.ESR04.Convoy
         lat: 65.97505
         lon: 21.6124
-      - name: T-ESR01 SA10
+      - name: T.ESR01.SA10
         lat: 68.4655
         lon: 20.881717
-      - name: T-ESR01 SA11
+      - name: T.ESR01.SA11
         lat: 68.539317
         lon: 21.117633
-      - name: T-ESR01 SA6
+      - name: T.ESR01.SA6
         lat: 68.369233
         lon: 20.323317
-      - name: T-ESR01 SA2
+      - name: T.ESR01.SA2
         lat: 68.473283
         lon: 21.35375
-      - name: T-ESR01 SA3
+      - name: T.ESR01.SA3
         lat: 68.366183
         lon: 21.33335
-      - name: T-ESR01 HQ7
+      - name: T.ESR01.HQ7
         lat: 68.2700
         lon: 21.037267
-      - name: T-ESR03-01
+      - name: T.ESR03.01
         lat: 66.6428
         lon: 23.1331
-      - name: T-ESR03-02
+      - name: T.ESR03.02
         lat: 66.6423
         lon: 23.145
-      - name: T-ESR03-03
+      - name: T.ESR03.03
         lat: 66.5838
         lon: 23.0142
-      - name: T-ESR03-04
+      - name: T.ESR03.04
         lat: 66.3266
         lon: 22.8378
-      - name: T-ESR03-05
+      - name: T.ESR03.05
         lat: 66.3089
         lon: 23.1891
-      - name: T-ESR03-06
+      - name: T.ESR03.06
         lat: 66.2353
         lon: 22.9535
-      - name: T-ESR03-07
+      - name: T.ESR03.07
         lat: 66.0718
         lon: 23.2507
-      - name: T-ESR03-08
+      - name: T.ESR03.08
         lat: 65.9963
         lon: 23.272
-      - name: T-ESR03-09
+      - name: T.ESR03.09
         lat: 65.8734
         lon: 23.068
-      - name: T-ESR06 Anti-Ship-01
+      - name: T.ESR06.AntiShip01
         lat: 65.41734
         lon: 23.9621
-      - name: T-ENR06 Anti-Ship-01
+      - name: T.ESR06.AntiShip01
         lat: 66.3887
         lon: 12.6073
-      - name: T-ENR06 Anti-Ship-02
+      - name: T.ESR06.AntiShip02
         lat: 66.3458
         lon: 12.6903
-      - name: T-ENR06 Anti-Ship-03
+      - name: T.ESR06.AntiShip03
         lat: 66.30578
         lon: 12.5667
-      - name: R92A-FARP-KIMI
+      - name: R92A.FARP.KIMI
         lat: 66.63
         lon: 26.378611
-      - name: R92A-BP-GOLF
+      - name: R92A.BP.GOLF
         lat: 66.67
         lon: 26.192778
-      - name: R92B-ENTRY-SOUTH
+      - name: R92B.ENTRY.SOUTH
         lat: 66.651944
         lon: 26.42
-      - name: R92B-BP ALPHA
+      - name: R92B.BP.ALPHA
         lat: 66.664444
         lon: 26.479722
-      - name: R92B-RP EAST
+      - name: R92B.RP.EAST
         lat: 66.736944
         lon: 26.4375
-      - name: R92B-RP WEST
+      - name: R92B.RP.WEST
         lat: 66.757222
         lon: 26.360556
-      - name: R92B-BP HUNTER
+      - name: R92B.BP.HUNTER
         lat: 66.7875
         lon: 26.471389
-      - name: AR-TEXACO1
+      - name: AR.TEXACO1
         lat: 67.28775
         lon: 25.23607
-      - name: AR-SHELL1
+      - name: AR.SHELL1
         lat: 67.44653
         lon: 24.57862
-      - name: AR-ARCO1
+      - name: AR.ARCO1
         lat: 67.71907
         lon: 24.29937
 airframes:
