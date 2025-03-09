@@ -7489,6 +7489,24 @@ theaters:
       - name: R92B.BP.HUNTER
         lat: 66.7875
         lon: 26.471389
+      - name: R92D.ENTRY.SOUTH
+        lat: 66.673333
+        lon: 26.905000
+      - name: R92D.ENTRY.NORTH
+        lat: 66.946111
+        lon: 26.952778
+      - name: R92D.AO.1
+        lat: 66.765000
+        lon: 27.061944
+      - name: R92D.AO.2
+        lat: 66.792500
+        lon: 26.900278
+      - name: R92D.AO.3
+        lat: 66.821389
+        lon: 27.044167
+      - name: R92D.AO.4
+        lat: 66.842500
+        lon: 26.910000
       - name: AR.TEXACO1
         lat: 67.28775
         lon: 25.23607
