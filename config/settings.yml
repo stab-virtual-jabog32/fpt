@@ -6991,6 +6991,7 @@ theaters:
         takeoff: 03
         land: 21
         ils: 111.7
+        tacan: 12X
         runways:
           - name: 03
             length: 9849
