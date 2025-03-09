@@ -6258,6 +6258,42 @@ staticwaypoints:
       - 26.471389
     radius: 2
     color: '#0000ff'
+  - name: R92D.ENTRY.SOUTH
+    coordinates:
+      - 66.673333
+      - 26.905000
+    radius: 2
+    color: '#0000ff'
+  - name: R92D.ENTRY.NORTH
+    coordinates:
+      - 66.946111
+      - 26.952778
+    radius: 2
+    color: '#0000ff'
+  - name: R92D.AO.1
+    coordinates:
+      - 66.765000
+      - 27.061944
+    radius: 2
+    color: '#0000ff'
+  - name: R92D.AO.2
+    coordinates:
+      - 66.792500
+      - 26.900278
+    radius: 2
+    color: '#0000ff'
+  - name: R92D.AO.3
+    coordinates:
+      - 66.821389
+      - 27.044167
+    radius: 2
+    color: '#0000ff'
+  - name: R92D.AO.4
+    coordinates:
+      - 66.842500
+      - 26.910000
+    radius: 2
+    color: '#0000ff'
   - name: AR.TEXACO1
     coordinates:
       - 67.28775
