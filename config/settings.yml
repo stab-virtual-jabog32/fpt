@@ -7469,6 +7469,15 @@ theaters:
       - name: T.ESR06.AntiShip03
         lat: 66.30578
         lon: 12.5667
+      - name: T.ESR07.01
+        lat: 68.5486
+        lon: 17.5336
+      - name: T.ESR07.02
+        lat: 68.4602 
+        lon: 16.6994
+      - name: T.ESR07.03
+        lat: 68.6827
+        lon: 16.5288
       - name: R92A.FARP.KIMI
         lat: 66.63
         lon: 26.378611
