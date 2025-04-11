@@ -6138,7 +6138,7 @@ staticwaypoints:
       - 21.037267
     radius: 2
     color: '#ff0000'
-  - name: T-ESR03-01
+  - name: T.ESR03.01
     coordinates:
       - 66.6428
       - 23.1331
@@ -6214,6 +6214,24 @@ staticwaypoints:
     coordinates:
       - 66.30578
       - 12.5667
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR07.01
+    coordinates:
+      - 68.5486
+      - 17.5336
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR07.02
+    coordinates:
+      - 68.4602
+      - 16.6994
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR07.03
+    coordinates:
+      - 68.6827
+      - 16.5288
     radius: 2
     color: '#ff0000'
   - name: R92A.FARP.KIMI
