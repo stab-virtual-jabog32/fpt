@@ -1869,6 +1869,23 @@ airspaces:
     color: '#ff80ff'
     fillColor: '#33ff00'
     fillOpacity: 0.8
+  - name: ENR07
+    polygon:
+      - - 68.552683
+        - 17.839133
+      - - 68.957167
+        - 16.292950
+      - - 68.965133
+        - 15.630333
+      - - 68.647583
+        - 15.451000
+      - - 68.307967
+        - 16.396783
+      - - 68.287800
+        - 17.341617
+    color: '#ff80ff'
+    fillColor: '#33ff00'
+    fillOpacity: 0.8
   - name: R92D Border
     polygon:
       - - 66.985892932295
@@ -6216,22 +6233,34 @@ staticwaypoints:
       - 12.5667
     radius: 2
     color: '#ff0000'
-  - name: T.ESR07.01
+  - name: T.ENR07.01
     coordinates:
       - 68.5486
       - 17.5336
     radius: 2
     color: '#ff0000'
-  - name: T.ESR07.02
+  - name: T.ENR07.02
     coordinates:
       - 68.4602
       - 16.6994
     radius: 2
     color: '#ff0000'
-  - name: T.ESR07.03
+  - name: T.ENR07.03
     coordinates:
       - 68.6827
       - 16.5288
+    radius: 2
+    color: '#ff0000'
+  - name: T.ENR07.04
+    coordinates:
+      - 68.7994
+      - 15.7002
+    radius: 2
+    color: '#ff0000'
+  - name: T.ENR07.05
+    coordinates:
+      - 68.5588
+      - 15.9852
     radius: 2
     color: '#ff0000'
   - name: R92A.FARP.KIMI
