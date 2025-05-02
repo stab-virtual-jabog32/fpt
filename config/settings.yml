@@ -7532,6 +7532,1605 @@ theaters:
       - name: AR.ARCO1
         lat: 67.71907
         lon: 24.29937
+  coldwargermany:
+    name: Cold War Germany
+    link: 
+    channels:
+      - name: Flight/Squadron specific
+    navaids:
+      - id: ZBU
+        name: Zweibrücken
+        channel: 48
+        pos: N49 12.952 E007 24.493
+        elevation: 1115
+      - id: BIT
+        name: Bitburg
+        channel: 1198
+        pos: N49 56.316 E006 33.340
+        elevation: 17
+      - id: GBL
+        name: Giebelstadt
+        channel: 47
+        pos: N49 38.619 E009 57.025
+        elevation: 953
+      - id: GSO
+        name: Gütersloh
+        channel: 108
+        pos: N51 55.458 E008 17.203
+        elevation: 213
+      - id: HAH
+        name: Hahn
+        channel: 24
+        pos: N49 56.499 E007 15.654
+        elevation: 1621
+      - id: WRB
+        name: Warburg
+        channel: 84
+        pos: N51 30.292 E009 06.772
+        elevation: 778
+      - id: BUE
+        name: Büchel
+        channel: 118
+        pos: N50 10.692 E007 04.234
+        elevation: 1509
+      - id: PFF
+        name: Pferdsfeld
+        channel: 77
+        pos: N49 51.496 E007 36.014
+        elevation: 1313
+      - id: RMS
+        name: Rammstein
+        channel: 81
+        pos: N49 26.068 E007 35.488
+        elevation: 805
+      - id: SEM
+        name: Sembach
+        channel: 28
+        pos: N49 30.410 E007 52.197
+        elevation: 1022
+      - id: SPA
+        name: Spangdahlem
+        channel: 32
+        pos: N49 58.610 E006 42.128
+        elevation: 984
+      - id: WDB/WIB
+        name: Zweibrücken
+        channel: 88
+        pos: N50 02.918 E008 19.694
+        elevation: 454
+      - id: WUN
+        name: Wunstorf
+        channel: 116
+        pos: N52 27.583 E009 26.696
+        elevation: 164  
+    airbases:
+      HFRG18:
+        name: H FRG 18
+        ground:
+        atis:
+        tower:
+        elevation: 172
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG02:
+        name: H FRG 02
+        ground:
+        atis:
+        tower:
+        elevation: 10
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG01:
+        name: H Med FRG 01
+        ground:
+        atis:
+        tower:
+        elevation: 10
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Lubeck:
+        name: Lübeck
+        ground: 
+        atis: 
+        tower: 254.300
+        elevation: 70
+        takeoff: 07
+        land: 25
+        runways:
+          - name: 07
+            length: 5972
+            elevation: 74
+          - name: 25
+            length: 5972
+            elevation: 65
+        departures:
+          none: none
+        recoveries:
+          none: none
+      AirracingLubeck:
+        name: Airracing Lübeck
+        ground:
+        atis:
+        tower: 252.600
+        elevation: 28
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG12:
+        name: H FRG 12
+        ground:
+        atis:
+        tower:
+        elevation: 151
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG04:
+        name: H FRG 04
+        ground:
+        atis:
+        tower:
+        elevation: 96
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG03:
+        name: H FRG 03
+        ground:
+        atis:
+        tower:
+        elevation: 121
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Hamburg:
+        name: Hamburg
+        ground: 
+        atis: 
+        tower: 252.350
+        elevation: 73
+        takeoff: 33
+        land: 05
+        tacan:
+        ils: 110.50
+        runways:
+          - name: 05
+            length: 9205
+            elevation: 73
+            ils: 110.50
+          - name: 23
+            length: 9205
+            elevation: 73
+            ils: 111.50
+          - name: 15
+            length: 10487
+            elevation: 73
+            ils: 111.35
+          - name: 33
+            length: 10487
+            elevation: 73
+            ils: 109.90
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HMedFRG02:
+        name: H Med FRG 02
+        ground:
+        atis:
+        tower:
+        elevation: 46
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG19:
+        name: H FRG 19
+        ground:
+        atis:
+        tower:
+        elevation: 10
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HamburgFinkenwerder:
+        name: Hamburg Finkenwerder
+        ground: 
+        atis: 
+        tower: 252.400
+        elevation: 10
+        takeoff: 05
+        land: 23
+        tacan: 
+        ils: 110.70
+        runways:
+          - name: 05
+            length: 5824
+            elevation: 10
+            ils: 108.50
+          - name: 23
+            length: 5824
+            elevation: 10
+            ils: 110.70
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Uetersen:
+        name: Uetersen
+        ground:
+        atis:
+        tower: 254.500
+        elevation: 23
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Bremen:
+        name: Bremen
+        ground: 
+        atis: 
+        tower: 254.100
+        elevation: 41
+        takeoff: 09
+        land: 27
+        tacan: 
+        ils: 110.70
+        runways:
+          - name: 09
+            length: 6800
+            elevation: 41
+            ils: 110.30
+          - name: 27
+            length: 6800
+            elevation: 41
+            ils: 110.90
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG06:
+        name: H FRG 06
+        ground:
+        atis:
+        tower:
+        elevation: 13
+        departures:
+          none: None
+        recoveries:
+          none: None
+      WeserWumme:
+        name: WeserWummer
+        ground:
+        atis:
+        tower: 250.300
+        elevation: 82
+        departures:
+          none: None
+        recoveries:
+          none: None
+      VerdenScharnhorst:
+        name: Verden-Scharnhorst
+        ground: 
+        atis: 
+        tower: 250.850
+        elevation: 138
+        takeoff: 13
+        land: 31
+        tacan: 
+        ils:
+        runways:
+          - name: 13
+            length: 1946
+            elevation: 146
+          - name: 31
+            length: 1946
+            elevation: 121
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG17:
+        name: H FRG 17
+        ground:
+        atis:
+        tower:
+        elevation: 85
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG04:
+        name: H Med FRG 04
+        ground:
+        atis:
+        tower:
+        elevation: 90
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Luneburg:
+        name: Lüneburg
+        ground: 
+        atis: 
+        tower: 254.550
+        elevation: 148
+        takeoff: 06
+        land: 24
+        tacan: 
+        ils:
+        runways:
+          - name: 06
+            length: 2343
+            elevation: 148
+          - name: 24
+            length: 2343
+            elevation: 148
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG05:
+        name: H FRG 05
+        ground:
+        atis:
+        tower:
+        elevation: 213
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG07:
+        name: H FRG 07
+        ground:
+        atis:
+        tower:
+        elevation: 33
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Northeim:
+        name: Northeim
+        ground:
+        atis:
+        tower: 254.650
+        elevation: 49
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Uelzen:
+        name: Uelzen
+        ground: 
+        atis: 
+        tower: 250.150
+        elevation: 250
+        takeoff: 09
+        land: 27
+        tacan: 
+        ils:
+        runways:
+          - name: 09
+            length: 3952
+            elevation: 253
+          - name: 24
+            length: 3952
+            elevation: 250
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Fassberg:
+        name: Fassberg
+        ground: 
+        atis: 
+        tower: 251.000
+        elevation: 254
+        takeoff: 09
+        land: 27
+        tacan: 
+        ils:
+        runways:
+          - name: 09
+            length: 8044
+            elevation: 254
+          - name: 24
+            length: 8044
+            elevation: 254
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG23:
+        name: H FRG 23
+        ground:
+        atis:
+        tower:
+        elevation: 249
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG11:
+        name: H FRG 11
+        ground:
+        atis:
+        tower:
+        elevation: 230
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG50:
+        name: H FRG 50
+        ground:
+        atis:
+        tower:
+        elevation: 262
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Celle:
+        name: Celle
+        ground: 
+        atis: 
+        tower: 254.600
+        elevation: 126
+        takeoff: 08
+        land: 26
+        tacan: 
+        ils: 109.10
+        runways:
+          - name: 08
+            length: 6050
+            elevation: 126
+          - name: 26
+            length: 6050
+            elevation: 126
+            ils: 109.10
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Ummern:
+        name: Ummern
+        ground: 
+        atis: 
+        tower: 250.750
+        elevation: 219
+        takeoff: 13
+        land: 31
+        tacan: 
+        ils:
+        runways:
+          - name: 13
+            length: 2345
+            elevation: 219
+          - name: 31
+            length: 2345
+            elevation: 219
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG08:
+        name: H FRG 08
+        ground:
+        atis:
+        tower:
+        elevation: 190
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG09:
+        name: H FRG 09
+        ground:
+        atis:
+        tower:
+        elevation: 230
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG10:
+        name: H FRG 10
+        ground:
+        atis:
+        tower:
+        elevation: 215
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Hannover:
+        name: Hannover
+        ground: 
+        atis: 
+        tower: 252.450
+        elevation: 168
+        takeoff: 09R
+        land: 27R
+        tacan:
+        ils: 108.30
+        runways:
+          - name: 09L
+            length: 8852
+            elevation: 168
+            ils: 108.90
+          - name: 27R
+            length: 8852
+            elevation: 168
+            ils: 108.30
+          - name: 09R
+            length: 7661
+            elevation: 168
+            ils: 109.50
+          - name: 27L
+            length: 7661
+            elevation: 168
+            ils: 108.70
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Wunstorf:
+        name: Wunstorf
+        ground: 
+        atis: 
+        tower: 253.950
+        elevation: 161
+        takeoff: 08
+        land: 26
+        tacan: 116
+        ils: 109.70
+        runways:
+          - name: 08
+            length: 5737
+            elevation: 156
+          - name: 26
+            length: 5737
+            elevation: 165
+            ils: 109.70
+          - name: 21
+            length: 5125
+            elevation: 165
+          - name: 03
+            length: 5125
+            elevation: 161
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Buckeburg:
+        name: Bückeburg
+        ground: 
+        atis: 
+        tower: 254.200
+        elevation: 193
+        takeoff: 08
+        land: 26
+        tacan: 
+        ils: 110.10
+        runways:
+          - name: 08
+            length: 5476
+            elevation: 193
+            ils: 114.80
+          - name: 26
+            length: 5476
+            elevation: 193
+            ils: 110.10
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HMedFRG06:
+        name: H Med FRG 06
+        ground:
+        atis:
+        tower:
+        elevation: 189
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Rinteln:
+        name: Rinteln
+        ground: 
+        atis: 
+        tower: 250.900
+        elevation: 174
+        takeoff: 12
+        land: 30
+        tacan: 
+        ils:
+        runways:
+          - name: 12
+            length: 2340
+            elevation: 174
+          - name: 30
+            length: 2340
+            elevation: 174
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Glindbruchkippe:
+        name: Glindbruchkippe
+        ground:
+        atis:
+        tower: 250.700
+        elevation: 159
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Braunschweig:
+        name: Braunschweig
+        ground: 
+        atis: 
+        tower: 250.350
+        elevation: 273
+        takeoff: 08
+        land: 26
+        tacan: 
+        ils: 111.10
+        runways:
+          - name: 08
+            length: 3922
+            elevation: 273
+          - name: 26
+            length: 3922
+            elevation: 273
+            ils: 111.10
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG21:
+        name: H FRG 21
+        ground:
+        atis:
+        tower:
+        elevation: 367
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG01:
+        name: H FRG 01
+        ground:
+        atis:
+        tower:
+        elevation: 277
+        departures:
+          none: None
+        recoveries:
+          none: None
+      GrosseWiese:
+        name: Große Wiese
+        ground:
+        atis:
+        tower: 251.250
+        elevation: 278
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Hildesheim:
+        name: Hildesheim
+        ground: 
+        atis: 
+        tower: 250.800
+        elevation: 322
+        takeoff: 07
+        land: 25
+        tacan: 
+        ils: 109.20
+        runways:
+          - name: 07
+            length: 3639
+            elevation: 322
+            ils: 109.10
+          - name: 25
+            length: 3639
+            elevation: 193
+            ils: 109.20
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG16:
+        name: H FRG 16
+        ground:
+        atis:
+        tower:
+        elevation: 344
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG13:
+        name: H FRG 13
+        ground:
+        atis:
+        tower:
+        elevation: 293
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Gutersloh:
+        name: Gütersloh
+        ground: 
+        atis: 
+        tower: 252.200
+        elevation: 213
+        takeoff: 06
+        land: 28
+        tacan: 108
+        ils: 110.70
+        runways:
+          - name: 06
+            length: 7461
+            elevation: 213
+          - name: 28
+            length: 7461
+            elevation: 213
+            ils: 110.70
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HMedFRG11:
+        name: H Med FRG 11
+        ground:
+        atis:
+        tower:
+        elevation: 394
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG16:
+        name: H Med FRG 16
+        ground:
+        atis:
+        tower:
+        elevation: 732
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG24:
+        name: H Med FRG 24
+        ground:
+        atis:
+        tower:
+        elevation: 810
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG12:
+        name: H Med FRG 12
+        ground:
+        atis:
+        tower:
+        elevation: 1870
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG17:
+        name: H Med FRG 17
+        ground:
+        atis:
+        tower:
+        elevation: 758
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG27:
+        name: H FRG 27
+        ground:
+        atis:
+        tower:
+        elevation: 579
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG15:
+        name: H Med FRG 15
+        ground:
+        atis:
+        tower:
+        elevation: 791
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Fritzlar:
+        name: Fritzlar
+        ground: 
+        atis: 
+        tower: 251.350
+        elevation: 552
+        takeoff: 12
+        land: 30
+        tacan: 
+        ils:
+        runways:
+          - name: 12
+            length: 3379
+            elevation: 552
+          - name: 30
+            length: 3379
+            elevation: 552
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HMedFRG14:
+        name: H Med FRG 14
+        ground:
+        atis:
+        tower:
+        elevation: 787
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG25:
+        name: H FRG 25
+        ground:
+        atis:
+        tower:
+        elevation: 1332
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG39:
+        name: H FRG 39
+        ground:
+        atis:
+        tower:
+        elevation: 1060
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Fulda:
+        name: Fulda
+        ground: 
+        atis: 
+        tower: 252.000
+        elevation: 937
+        takeoff: 09
+        land: 27
+        tacan: 
+        ils:
+        runways:
+          - name: 09
+            length: 2245
+            elevation: 937
+          - name: 27
+            length: 2245
+            elevation: 937
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG38:
+        name: H FRG 38
+        ground:
+        atis:
+        tower:
+        elevation: 1408
+        departures:
+          none: None
+        recoveries:
+          none: None
+      OberMorlen:
+        name: Ober-Mörlen
+        ground:
+        atis:
+        tower: 253.350
+        elevation: 716
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HRadarFRG02:
+        name: H Radard FRG 02
+        ground:
+        atis:
+        tower:
+        elevation: 2820
+        departures:
+          none: None
+        recoveries:
+          none: None
+      AirracingKoblenz:
+        name: Airracing Koblenz
+        ground:
+        atis:
+        tower: 251.050
+        elevation: 1056
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG40:
+        name: H FRG 40
+        ground:
+        atis:
+        tower:
+        elevation: 279
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG34:
+        name: H FRG 34
+        ground:
+        atis:
+        tower:
+        elevation: 265
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Mendig:
+        name: Mendig
+        ground: 
+        atis: 
+        tower: 252.100
+        elevation: 601
+        takeoff: 08
+        land: 26
+        tacan: 
+        ils:
+        runways:
+          - name: 08
+            length: 5351
+            elevation: 601
+          - name: 26
+            length: 5351
+            elevation: 601
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Buchel:
+        name: Büchel
+        ground: 
+        atis: 
+        tower: 252.900
+        elevation: 1509
+        takeoff: 03
+        land: 21
+        tacan: 118
+        ils:
+        runways:
+          - name: 03
+            length: 8306
+            elevation: 1509
+          - name: 21
+            length: 8306
+            elevation: 1509
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Spangdahlem:
+        name: Spangdahlem
+        ground: 
+        atis: 
+        tower: 251.800
+        elevation: 984
+        takeoff: 05
+        land: 23
+        tacan: 32
+        ils: 108.10
+        runways:
+          - name: 05
+            length: 10019
+            elevation: 984
+            ils: 109.15
+          - name: 23
+            length: 10019
+            elevation: 984
+            ils: 108.10
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Bitburg:
+        name: Bitburg
+        ground: 
+        atis: 
+        tower: 252.550
+        elevation: 1211
+        takeoff: 06
+        land: 24
+        tacan: 56
+        ils: 111.90
+        runways:
+          - name: 06
+            length: 8324
+            elevation: 1206
+          - name: 26
+            length: 8324
+            elevation: 1208
+            ils: 111.90
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG48:
+        name: H FRG 48
+        ground:
+        atis:
+        tower:
+        elevation: 1161
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG26:
+        name: H Med FRG 26
+        ground:
+        atis:
+        tower:
+        elevation: 512
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Hahn:
+        name: Hahn
+        ground: 
+        atis: 
+        tower: 251.400
+        elevation: 1621
+        takeoff: 03
+        land: 21
+        tacan: 24
+        ils: 112.00
+        runways:
+          - name: 03
+            length: 8087
+            elevation: 1621
+            ils: 112.30
+          - name: 21
+            length: 8087
+            elevation: 1621
+            ils: 112.00
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG30:
+        name: H FRG 30
+        ground:
+        atis:
+        tower:
+        elevation: 1601
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG31:
+        name: H FRG 31
+        ground:
+        atis:
+        tower:
+        elevation: 1400
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Pferdsfeld:
+        name: Pferdsfeld
+        ground: 
+        atis: 
+        tower: 252.850
+        elevation: 1313
+        takeoff: 09
+        land: 27
+        tacan: 77
+        ils: 109.10
+        runways:
+          - name: 03
+            length: 8105
+            elevation: 1313
+            ils: 109.20
+          - name: 27
+            length: 8105
+            elevation: 1313
+            ils: 109.10
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG51:
+        name: H FRG 51
+        ground:
+        atis:
+        tower:
+        elevation: 1444
+        departures:
+          none: None
+        recoveries:
+          none: None
+      AirracingFrankfurt:
+        name: Airracing Frankfurt
+        ground:
+        atis:
+        tower: 252.650
+        elevation: 276
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG27:
+        name: H Med FRG 27
+        ground:
+        atis:
+        tower:
+        elevation: 550
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Wiesbaden:
+        name: Wiesbaden
+        ground: 
+        atis: 
+        tower: 252.850
+        elevation: 453
+        takeoff: 08
+        land: 26
+        tacan: 88
+        ils: 109.10
+        runways:
+          - name: 08
+            length: 6975
+            elevation: 453
+            ils: 109.20
+          - name: 26
+            length: 6975
+            elevation: 454
+            ils: 109.10
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG49:
+        name: H FRG 49
+        ground:
+        atis:
+        tower:
+        elevation: 347
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Frankfurt:
+        name: Frankfurt
+        ground: 
+        atis: 
+        tower: 251.850
+        elevation: 328
+        takeoff: 07R
+        land: 25R
+        tacan:
+        ils: 109.50
+        runways:
+          - name: 07L
+            length: 13695
+            elevation: 328
+            ils: 109.60
+          - name: 25R
+            length: 13695
+            elevation: 328
+            ils: 109.50
+          - name: 07R
+            length: 12857
+            elevation: 328
+            ils: 110.80
+          - name: 25L
+            length: 12857
+            elevation: 328
+            ils: 110.70
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Langenselbold:
+        name: Langenselbold
+        ground:
+        atis:
+        tower: 253.250
+        elevation: 392
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Gelnhausen:
+        name: Gelnhausen
+        ground:
+        atis:
+        tower: 253.100
+        elevation: 417
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Schweinfurt:
+        name: Schweinfurt
+        ground: 
+        atis: 
+        tower: 251.700
+        elevation: 753
+        takeoff: 09
+        land: 27
+        tacan: 
+        ils:
+        runways:
+          - name: 09
+            length: 2215
+            elevation: 753
+          - name: 27
+            length: 2215
+            elevation: 753
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG46:
+        name: H FRG 46
+        ground:
+        atis:
+        tower:
+        elevation: 1050
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG42:
+        name: H FRG 42
+        ground:
+        atis:
+        tower:
+        elevation: 745
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG41:
+        name: H FRG 41
+        ground:
+        atis:
+        tower:
+        elevation: 790
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Giebelstadt:
+        name: Giebelstadt
+        ground: 
+        atis: 
+        tower: 251.600
+        elevation: 953
+        takeoff: 08
+        land: 26
+        tacan: 47X
+        ils:
+        runways:
+          - name: 09
+            length: 6124
+            elevation: 953
+          - name: 27
+            length: 6124
+            elevation: 953
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG43:
+        name: H FRG 43
+        ground:
+        atis:
+        tower:
+        elevation: 1046
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG44:
+        name: H FRG 44
+        ground:
+        atis:
+        tower:
+        elevation: 421
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG45:
+        name: H FRG 45
+        ground:
+        atis:
+        tower:
+        elevation: 1290
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HFRG47:
+        name: H FRG 41
+        ground:
+        atis:
+        tower:
+        elevation: 1403
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Adelsheim:
+        name: Adelsheim
+        ground:
+        atis:
+        tower: 
+        elevation: 1023
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Walldorf:
+        name: Walldorf
+        ground:
+        atis:
+        tower: 253.300
+        elevation: 363
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Hockenheim:
+        name: Hockenheim
+        ground:
+        atis:
+        tower: 253.200
+        elevation: 323
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Herrenteich:
+        name: Herrenteich
+        ground:
+        atis:
+        tower: 253.150
+        elevation: 306
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Worms:
+        name: Worms
+        ground: 
+        atis: 
+        tower: 253.500
+        elevation: 275
+        takeoff: 06
+        land: 24
+        tacan: 
+        ils:
+        runways:
+          - name: 06
+            length: 1945
+            elevation: 277
+          - name: 24
+            length: 1945
+            elevation: 273
+        departures:
+          none: none
+        recoveries:
+          none: none
+      BadDurkheim:
+        name: Bad Dürkheim
+        ground: 
+        atis: 
+        tower: 253.050
+        elevation: 348
+        takeoff: 06
+        land: 24
+        tacan: 
+        ils:
+        runways:
+          - name: 06
+            length: 2340
+            elevation: 348
+          - name: 24
+            length: 2340
+            elevation: 348
+        departures:
+          none: none
+        recoveries:
+          none: none
+      Sembach:
+        name: Sembach
+        ground: 
+        atis: 
+        tower: 251.450
+        elevation: 1022
+        takeoff: 09
+        land: 27
+        tacan: 28
+        ils:
+        runways:
+          - name: 09
+            length: 8141
+            elevation: 805
+          - name: 27
+            length: 8141
+            elevation: 805
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HFRG32:
+        name: H FRG 32
+        ground:
+        atis:
+        tower:
+        elevation: 1022
+        departures:
+          none: None
+        recoveries:
+          none: None
+      HMedFRG13:
+        name: H Med FRG 13
+        ground:
+        atis:
+        tower:
+        elevation: 916
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Rammstein:
+        name: Rammstein
+        ground: 
+        atis: 
+        tower: 251.950
+        elevation: 805
+        takeoff: 09
+        land: 27
+        tacan: 81
+        ils: 110.75
+        runways:
+          - name: 07
+            length: 7935
+            elevation: 1022
+            ils: 111.50
+          - name: 25
+            length: 7935
+            elevation: 1022
+            ils: 110.75
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HMedFRG29:
+        name: H Med FRG 29
+        ground:
+        atis:
+        tower:
+        elevation: 1158
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Pottschutthohe:
+        name: Pottschutthöhe
+        ground: 
+        atis: 
+        tower: 253.400
+        elevation: 1099
+        takeoff: 04
+        land: 22
+        tacan: 
+        ils:
+        runways:
+          - name: 04
+            length: 2341
+            elevation: 1099
+          - name: 22
+            length: 2341
+            elevation: 1099
+        departures:
+          none: none
+        recoveries:
+          none: none
+      HMedFRG21:
+        name: H Med FRG 21
+        ground:
+        atis:
+        tower:
+        elevation: 746
+        departures:
+          none: None
+        recoveries:
+          none: None
+      Zweibrucken:
+        name: Zweibrücken
+        ground: 
+        atis: 
+        tower: 251.550
+        elevation: 1116
+        takeoff: 21
+        land: 03
+        tacan: 48
+        ils: 117.10
+        runways:
+          - name: 03
+            length: 7977
+            elevation: 1116
+            ils: 117.10
+          - name: 21
+            length: 7977
+            elevation: 1208
+        departures:
+          none: none
+        recoveries:
+          none: none
+      carrier:
+        name: CVN-71 USS Theodore Roosevelt
+        tacan: 71X
+        tower: 304.0
+        ground: ICLS 7
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III
+      tarawa:
+        name: LHA-1 USS Tarawa
+        tacan: 
+        tower: 305.0
+        ground: 
+        departures:
+          cat: CAT
+        recoveries:
+          case1: CASE I
+          case2: CASE II
+          case3: CASE III
+    support:
+    waypoints:
 airframes:
   a10:
     name: A-10C
