@@ -213,3 +213,10 @@ h1, h2, h3, h4, h5, h6 {
 .waypoints_map input {
     color: black;
 }
+
+pre {
+  color: #ffffff !important;  // Force white text for <pre> blocks
+  background-color: #1a2942;  // Optional: Add a dark background to match your theme
+  border-radius: 5px;         // Optional: For rounded corners
+  padding: 10px;              // Optional: Add some padding for better readability
+}
