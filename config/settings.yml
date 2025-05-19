@@ -7451,6 +7451,39 @@ theaters:
       - name: T.ESR03.07
         lat: 66.0718
         lon: 23.2507
+      - name: T.ESR03.07.AD
+        lat: 66.072633
+        lon: 23.252267
+      - name: T.ESR03.07.CT
+        lat: 66.072850
+        lon: 23.251000
+      - name: T.ESR03.07.FT01
+        lat: 66.072767
+        lon: 23.250150
+      - name: T.ESR03.07.FT02
+        lat: 66.072450
+        lon: 23.250133
+      - name: T.ESR03.07.FT03
+        lat: 66.072767
+        lon: 23.249717
+      - name: T.ESR03.07.FT04
+        lat: 66.072450
+        lon: 23.249700
+      - name: T.ESR03.07.FT05
+        lat: 66.072783
+        lon: 23.249300
+      - name: T.ESR03.07.FT06
+        lat: 66.072467
+        lon: 23.249283
+      - name: T.ESR03.07.TT
+        lat: 66.071450
+        lon: 23.251850
+      - name: T.ESR03.07.HQ
+        lat: 66.070950
+        lon: 23.252083
+      - name: T.ESR03.07.BU
+        lat: 66.071333
+        lon: 23.250100
       - name: T.ESR03.08
         lat: 65.9963
         lon: 23.272
@@ -7545,7 +7578,7 @@ theaters:
         elevation: 1115
       - id: BIT
         name: Bitburg
-        channel: 1198
+        channel: 56
         pos: N49 56.316 E006 33.340
         elevation: 17
       - id: GBL

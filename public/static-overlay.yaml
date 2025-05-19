@@ -6197,6 +6197,72 @@ staticwaypoints:
       - 23.2507
     radius: 2
     color: '#ff0000'
+  - name: T.ESR03.07.AD
+    coordinates:
+      - 66.072633
+      - 23.252267
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.CT
+    coordinates:
+      - 66.072850
+      - 23.251000
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.FT01
+    coordinates:
+      - 66.072767
+      - 23.250150
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.FT02
+    coordinates:
+      - 66.072450
+      - 23.250133
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.FT03
+    coordinates:
+      - 66.072767
+      - 23.249717
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.FT04
+    coordinates:
+      - 66.072450
+      - 23.249700
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.FT05
+    coordinates:
+      - 66.072783
+      - 23.249300
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.FT06
+    coordinates:
+      - 66.072467
+      - 23.249283
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.TT
+    coordinates:
+      - 66.071450
+      - 23.251850
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.HQ
+    coordinates:
+      - 66.070950
+      - 23.252083
+    radius: 2
+    color: '#ff0000'
+  - name: T.ESR03.07.BU
+    coordinates:
+      - 66.071333
+      - 23.250100
+    radius: 2
+    color: '#ff0000'
   - name: T.ESR03.08
     coordinates:
       - 65.9963
