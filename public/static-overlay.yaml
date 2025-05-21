@@ -6053,6 +6053,24 @@ staticwaypoints:
       - 27.68770
     radius: 2
     color: '#0000ff'
+  - name: OBAPA
+    coordinates:
+      - 68.5305
+      - 16.906333
+    radius: 2
+    color: '#0000ff'
+  - name: GOGPI
+    coordinates:
+      - 68.583333
+      - 15.616667
+    radius: 2
+    color: '#0000ff'
+  - name: RIMER
+    coordinates:
+      - 68.74
+      - 16.328833
+    radius: 2
+    color: '#0000ff'
   - name: RVNInit21
     coordinates:
       - 66.644035

@@ -7379,6 +7379,15 @@ theaters:
       - name: KERTTUVAARA
         lat: 68.60788
         lon: 27.68770
+      - name: OBAPA
+        lat: 68.5305
+        lon: 16.906333
+      - name: GOGPI
+        lat: 68.583333
+        lon: 15.616667
+      - name: RIMER
+        lat: 68.74
+        lon: 16.328833
       - name: RVNInit21
         lat: 66.644035
         lon: 25.978033
