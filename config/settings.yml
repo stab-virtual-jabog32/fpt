@@ -7388,6 +7388,15 @@ theaters:
       - name: RIMER
         lat: 68.74
         lon: 16.328833
+      - name: GIBMO
+        lat: 69.3903
+        lon: 18.037817
+      - name: GILGU
+        lat: 69.496333
+        lon: 17.501
+      - name: LULAX
+        lat: 69.149167
+        lon: 17.394  
       - name: RVNInit21
         lat: 66.644035
         lon: 25.978033
