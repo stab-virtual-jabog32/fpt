@@ -6071,6 +6071,24 @@ staticwaypoints:
       - 16.328833
     radius: 2
     color: '#0000ff'
+  - name: GIBMO
+    coordinates:
+      - 69.3903
+      - 18.037817
+    radius: 2
+    color: '#0000ff'
+  - name: GILGU
+    coordinates:
+      - 69.496333
+      - 17.501
+    radius: 2
+    color: '#0000ff'
+  - name: LULAX
+    coordinates:
+      - 69.149167
+      - 17.394
+    radius: 2
+    color: '#0000ff'
   - name: RVNInit21
     coordinates:
       - 66.644035
