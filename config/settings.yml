@@ -10927,6 +10927,11 @@ payload:
     short: TGP
     type: pod
     weight: 492
+  aaq33:
+    name: AN/AAQ-33 Advanced Targeting Pod
+    short: ATP
+    type: pod
+    weight: 639
   aaq13:
     name: AN/AAQ-13 LANTIRN NAV POD
     short: NAV
@@ -12623,6 +12628,7 @@ loadout:
       - weapon: alq184l
     7:
       - weapon: aaq28
+      - weapon: aaq33
     8: *f16station4
     9: *f16station3
     10: *f16station2
