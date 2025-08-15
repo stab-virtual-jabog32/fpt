@@ -6937,7 +6937,7 @@ theaters:
         departures:
           none: none
         recoveries:
-          none: none
+          ils34: ILS or LOC RWY 34
       kittila:
         name: Kittila
         ground: 
@@ -7271,6 +7271,12 @@ theaters:
         comms: 360.8
         tacan: 41Y
     waypoints:
+      - name: BANAK
+        lat: 70.066667
+        lon: 24.973889
+      - name: ROVANIEMI
+        lat: 66.562725
+        lon: 25.826411
       - name: NAFFI
         lat: 67.077167
         lon: 23.194333
