@@ -1965,6 +1965,47 @@ airspaces:
     color: '#ff80ff'
     fillColor: '#33ff00'
     fillOpacity: 0.8
+  - name: ENR04
+    polygon:
+      - - 68.866667
+        - 18.286667
+      - - 68.812222
+        - 18.606389
+      - - 68.666389
+        - 18.540556
+      - - 68.702778
+        - 18.084944
+      - - 68.818611
+        - 18.173056
+    color: '#ff80ff'
+    fillColor: '#33ff00'
+    fillOpacity: 0.8
+  - name: ENR05
+    polygon:
+      - - 69.081389
+        - 19.047778
+      - - 69.064722
+        - 19.310000
+      - - 69.012778
+        - 19.245278
+      - - 69.028889
+        - 19.042222
+    color: '#ff80ff'
+    fillColor: '#33ff00'
+    fillOpacity: 0.8
+  - name: ENR08
+    polygon:
+      - - 69.767972
+        - 18.0735
+      - - 69.247778
+        - 18.623972
+      - - 69.061111
+        - 17.183333
+      - - 69.576111
+        - 16.603
+    color: '#ff80ff'
+    fillColor: '#33ff00'
+    fillOpacity: 0.8
   - name: ESR06
     polygon:
       - - 65.533500796291
@@ -6309,6 +6350,24 @@ staticwaypoints:
     coordinates:
       - 65.8734
       - 23.068
+    radius: 2
+    color: '#ff0000'
+  - name: ENR04.BC.North
+    coordinates:
+      - 68.854767
+      - 18.30685
+    radius: 2
+    color: '#ff0000'
+  - name: ENR04.BC.South
+    coordinates:
+      - 68.805817
+      - 18.514583
+    radius: 2
+    color: '#ff0000'
+  - name: ENR05.Gunpit
+    coordinates:
+      - 69.063417
+      - 19.230417
     radius: 2
     color: '#ff0000'
   - name: T.ESR06.AntiShip01
