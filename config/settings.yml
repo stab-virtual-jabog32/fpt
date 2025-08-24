@@ -7526,6 +7526,15 @@ theaters:
       - name: T.ESR06.AntiShip03
         lat: 66.30578
         lon: 12.5667
+      - name: ENR04.BC.North
+        lat: 68.854767
+        lon: 18.30685
+      - name: ENR04.BC.South
+        lat: 68.805817
+        lon: 18.514583  
+      - name: ENR05.Gunpit
+        lat: 69.063417
+        lon: 19.230417
       - name: T.ENR07.01
         lat: 68.5486
         lon: 17.5336
