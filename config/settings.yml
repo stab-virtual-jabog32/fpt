@@ -7237,6 +7237,20 @@ theaters:
           case1: CASE I
           case2: CASE II
           case3: CASE III
+      fobsimo:
+        name: FOB SIMO
+        ground: 
+        atis: 
+        tower:
+        elevation:
+        takeoff:
+        land:
+        tacan:
+        ils:
+        departures:
+          none: none
+        recoveries:
+          none: none
     support:
       heimdall:
         callsign: HEIMDALL
@@ -7598,6 +7612,9 @@ theaters:
       - name: AR.ARCO1
         lat: 67.71907
         lon: 24.29937
+      - name: FOB SIMO
+        lat: 68.064383
+        lon: 27.093117
   coldwargermany:
     name: Cold War Germany
     link: 
