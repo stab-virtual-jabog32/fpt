@@ -6922,8 +6922,8 @@ theaters:
         atis: 
         tower: 250.200
         elevation: 26
-        takeoff: 36
-        land: 36
+        takeoff: 16
+        land: 34
         ils: 109.1
         tacan: 47X
         runways:
