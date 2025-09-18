@@ -11674,6 +11674,18 @@ payload:
     type: tank
     weight: 110
     fuel: 2475
+  f16ft300:
+    name: Fuel tank 300 gal
+    short: FT300
+    type: tank
+    weight: 558
+    fuel: 2006
+  f16ft370:
+    name: Fuel tank 370 gal
+    short: FT370
+    type: tank
+    weight: 769
+    fuel: 2475
   agm62w2:
     name: AGM-62 Walleye II - Guided Weapon Mk5 (TV Guided)
     short: A62
@@ -12645,11 +12657,11 @@ loadout:
       - weapon: lau3wtu1b
       - weapon: agm88c
       - weapon: mxu648
-      - weapon: ft300
+      - weapon: f16ft370
     5:
       - weapon: ansq213  
     6:
-      - weapon: ft300
+      - weapon: f16ft300
       - weapon: mxu648
       - weapon: alq131
       - weapon: alq184
