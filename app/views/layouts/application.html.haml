@@ -2,63 +2,17 @@
 %html
   %head
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    %meta{ content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
-    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no" }
+    %meta(content="text/html; charset=UTF-8" http-equiv="Content-Type")
+    %meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     %title Fpt
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_pack_tag 'application', media: 'all'
     = javascript_pack_tag 'application'
-
-    // Leaflet styles and scripts
+    
+    // Leaflet styles and scripts with the correct integrity attribute
     %link{ href: "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css", rel: "stylesheet", integrity: "sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==", crossorigin: "anonymous" }
     %script{ src: "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js", integrity: "sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==", crossorigin: "anonymous" }
 
-    / Inline CSS for Theme Toggle Button
-    :css
-      .theme-toggle-btn {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 9999;
-        background-color: #4caf50;
-        color: #fff;
-        border: none;
-        border-radius: 20px;
-        padding: 8px 16px;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .theme-toggle-btn:hover {
-        background-color: #388e3c;
-      }
-
   %body.container
-    / Dark/Light Mode Toggle Button
-    %button#theme-toggle.theme-toggle-btn Light Mode
-
     = yield
-
-    / JavaScript for Theme Toggling
-    :javascript
-      document.addEventListener('DOMContentLoaded', function() {
-        const toggleButton = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        function updateButton() {
-          toggleButton.textContent = body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
-        }
-
-        toggleButton.addEventListener('click', function() {
-          body.classList.toggle('dark-mode');
-          updateButton();
-          localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
-        });
-
-        // Apply stored theme preference on page load
-        if (localStorage.getItem('theme') === 'dark') {
-          body.classList.add('dark-mode');
-        }
-        updateButton();
-      });
