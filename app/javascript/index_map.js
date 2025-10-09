@@ -5,7 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const colors = ["#ff0000", "#00ff00", "#0000ff", "#ff00ff", "#00ffff", "#ffff00"];
 
     // Initialize the map for each date
-    var map = L.map(`map_${index}`);
+    var map = L.map(`map_${index}`, {
+      fullscreenControl: true,
+      fullscreenControlOptions: {
+        position: 'topleft'
+      }
+    });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
