@@ -7528,6 +7528,9 @@ theaters:
       - name: T.ESR03.09
         lat: 65.8734
         lon: 23.068
+      - name: T.ESR03.10
+        lat: 66.4454
+        lon: 23.163467
       - name: T.ESR06.AntiShip01
         lat: 65.41734
         lon: 23.9621

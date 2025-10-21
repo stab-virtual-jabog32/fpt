@@ -6352,6 +6352,12 @@ staticwaypoints:
       - 23.068
     radius: 2
     color: '#ff0000'
+  - name: T.ESR03.10
+    coordinates:
+      - 66.4454
+      - 23.163467
+    radius: 2
+    color: '#ff0000'
   - name: ENR04.BC.North
     coordinates:
       - 68.854767
