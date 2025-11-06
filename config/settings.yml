@@ -6935,8 +6935,9 @@ theaters:
             elevation: 26
             ils: 108.30
         departures:
-          none: none
+          vfr: VFR Departure RWY 16/34
         recoveries:
+          vfr: VFR Arrival RWY 16/34
           ils34: ILS or LOC RWY 34
       kittila:
         name: Kittila
@@ -7248,9 +7249,9 @@ theaters:
         tacan:
         ils:
         departures:
-          none: none
+          helo: Helo Procedures
         recoveries:
-          none: none
+          helo: Helo Procedures
     support:
       heimdall:
         callsign: HEIMDALL
@@ -7417,6 +7418,15 @@ theaters:
       - name: LULAX
         lat: 69.149167
         lon: 17.394  
+      - name: AKKOY
+        lat: 70.236100
+        lon: 24.965550
+      - name: RODDE
+        lat: 70.200000
+        lon: 25.282217
+      - name: PORSANG
+        lat: 69.898333
+        lon: 25.008050
       - name: RVNInit21
         lat: 66.644035
         lon: 25.978033
