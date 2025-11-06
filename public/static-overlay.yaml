@@ -6130,6 +6130,24 @@ staticwaypoints:
       - 17.394
     radius: 2
     color: '#0000ff'
+  - name: AKKOY
+    coordinates:
+      - 70.2361
+      - 24.96555
+    radius: 2
+    color: '#0000ff'
+  - name: RODDE
+    coordinates:
+      - 70.2
+      - 25.282217
+    radius: 2
+    color: '#0000ff'
+  - name: PORSANG
+    coordinates:
+      - 69.898333
+      - 25.00805
+    radius: 2
+    color: '#0000ff'
   - name: RVNInit21
     coordinates:
       - 66.644035
