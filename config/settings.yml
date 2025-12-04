@@ -9366,6 +9366,51 @@ airframes:
     expendables:
       - chaff: 120
         flares: 120
+  c130j30:
+    name: C-130J
+    seats: 2
+    weight:
+      empty: 86200
+      fuel: 43413
+      tol: 175001
+    gun:
+      amount: 0
+      weight: 0
+      types:
+        none: none
+    expendables:
+      - chaff: 220
+        flares: 200
+      - chaff: 420
+        flares: 0
+      - chaff: 390
+        flares: 30
+      - chaff: 360
+        flares: 60
+      - chaff: 330
+        flares: 90
+      - chaff: 300
+        flares: 120
+      - chaff: 270
+        flares: 150
+      - chaff: 240
+        flares: 180
+      - chaff: 210
+        flares: 210
+      - chaff: 180
+        flares: 240
+      - chaff: 150
+        flares: 270
+      - chaff: 120
+        flares: 300
+      - chaff: 90
+        flares: 330
+      - chaff: 60
+        flares: 360
+      - chaff: 30
+        flares: 390
+      - chaff: 0
+        flares: 420
   e3a:
     name: E-3A
   f4e45mc:
@@ -11699,6 +11744,17 @@ payload:
     type: tank
     weight: 769
     fuel: 2475
+  c130ft8900:
+    name: Fuel tank 8900 pounds
+    short: FT8900
+    type: tank
+    weight: 240
+    fuel: 8900
+  c130cargoM4:
+    name: Cargo Bay M4
+    short: Cargo Bay M4
+    type: pod
+    weight: 2
   agm62w2:
     name: AGM-62 Walleye II - Guided Weapon Mk5 (TV Guided)
     short: A62
@@ -13854,6 +13910,12 @@ loadout:
       - weapon: kiowamms
     Doors:
       - weapon: kiowadoor
+  c130j30:
+    Rear: &c130j30station1
+      - weapon: c130j30cargoM4
+    Right: &c130j30station2
+      - weapon: c130j30ft8900
+    Left: *c130j30station2
   ch47f:
     L-MG: &ch47fstation1
       - weapon: m60ddgch47
