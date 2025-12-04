@@ -11744,13 +11744,13 @@ payload:
     type: tank
     weight: 769
     fuel: 2475
-  c130ft8900:
+  c130j30ft8900:
     name: Fuel tank 8900 pounds
     short: FT8900
     type: tank
     weight: 240
     fuel: 8900
-  c130cargoM4:
+  c130j30cargoM4:
     name: Cargo Bay M4
     short: Cargo Bay M4
     type: pod
