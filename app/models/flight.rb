@@ -9,7 +9,7 @@ class Flight < ApplicationRecord
 
   scope :ordered, -> { order(start: :asc, callsign: :asc, callsign_number: :asc) }
   scope :current, -> { where('date(start) >= ?', Date.today) }
-  scope :with_pilot, ->(pilot) { joins(:pilots).where('pilots.name like ?', "%#{pilot}%") }
+  scope :with_pilot, ->(pilot) { joins(:pilots).where('pilots.name = ?', pilot) }
 
   validates :start, presence: true
   validates :iff, presence: true, numericality: { only_integer: true, greater_than: 99, less_than: 800 }
